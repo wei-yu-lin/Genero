@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="Big5" ?>
+<ManagedForm databaseName="rdbpcm" fileVersion="31400" gstVersion="31408" name="managedform" uid="{d11e6e66-61da-4f24-a420-0c87d15c202d}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="r_pcmb030f" uid="{ee8dd735-0574-492e-81d3-ea66b40f3882}">
+    <RecordField colName="COIL_NO" fieldIdRef="6" fieldType="TABLE_COLUMN" name="PCMB030M.COIL_NO" sqlTabName="PCMB030M" sqlType="VARCHAR" table_alias_name="" uid="{01138db9-72a6-483b-9890-38f9bef8cf5e}"/>
+    <RecordField colName="SCHD_NO" fieldIdRef="7" fieldType="TABLE_COLUMN" name="PCMB030M.SCHD_NO" sqlTabName="PCMB030M" sqlType="VARCHAR" table_alias_name="" uid="{90ce67f2-6f33-4c8b-9c00-5c0b6175d5b9}"/>
+    <RecordField colName="STATION" fieldIdRef="8" fieldType="TABLE_COLUMN" name="PCMB030M.STATION" sqlTabName="PCMB030M" sqlType="VARCHAR" table_alias_name="" uid="{91e1d99b-54a4-475b-9d0b-27c1feddafbc}"/>
+    <RecordField colName="SLAB_ID" fieldIdRef="9" fieldType="TABLE_COLUMN" name="PCMB030M.SLAB_ID" sqlTabName="PCMB030M" sqlType="VARCHAR" table_alias_name="" uid="{2f5dfd35-a41f-48e9-9259-a8861727936b}"/>
+    <RecordField colName="DATE_LAST_MAINT" fieldIdRef="10" fieldType="TABLE_COLUMN" name="PCMB030M.DATE_LAST_MAINT" sqlTabName="PCMB030M" sqlType="VARCHAR" table_alias_name="" uid="{c69e157d-5428-40ec-80ab-aad8d04d542e}"/>
+    <RecordField colName="HEAT_NO" fieldIdRef="11" fieldType="TABLE_COLUMN" name="PCMB030M.HEAT_NO" sqlTabName="PCMB030M" sqlType="VARCHAR" table_alias_name="" uid="{783a2e20-75ef-4c50-af64-e2f72dbeff2e}"/>
+    <RecordField defaultValue="N" fieldIdRef="12" name="del_rec" uid="{5aac6277-a521-4f51-978c-e6ca28cad660}"/>
+    <RecordField fieldIdRef="13" name="upd_flag" uid="{75c20801-738c-4bb2-8cec-ee5ed0ab0389}"/>
+  </Record>
+  <Form fourSTFile="../../SYS/sys_style.4st" gridHeight="29" gridWidth="89" name="pcms030f_form" style="mystyle" text="Form">
+    <HBox gridHeight="15" gridWidth="89" name="HBox2" posX="0" posY="14">
+      <Table gridHeight="15" gridWidth="85" name="table1" posX="2" posY="0" style="s" totalRows="6">
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="COIL_NO" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" length="1" name="PCMB030M.COIL_NO" notNull="true" posX="1" posY="1" scroll="true" sqlTabName="PCMB030M" sqlType="VARCHAR" tabIndex="" table_alias_name="" title="鋼捲編號" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="SCHD_NO" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" length="1" name="PCMB030M.SCHD_NO" notNull="true" posX="11" posY="1" scroll="true" sqlTabName="PCMB030M" sqlType="VARCHAR" tabIndex="" table_alias_name="" title="排程編號" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="STATION" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" length="1" name="PCMB030M.STATION" notNull="true" posX="22" posY="1" scroll="true" sqlTabName="PCMB030M" sqlType="VARCHAR" tabIndex="" table_alias_name="" title="產出產線" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="SLAB_ID" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" length="1" name="PCMB030M.SLAB_ID" notNull="false" posX="33" posY="1" scroll="true" sqlTabName="PCMB030M" sqlType="VARCHAR" tabIndex="" table_alias_name="" title="鋼胚編號" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="DATE_LAST_MAINT" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" length="1" name="PCMB030M.DATE_LAST_MAINT" notNull="false" posX="11" posY="1" scroll="true" sqlTabName="PCMB030M" sqlType="VARCHAR" tabIndex="" table_alias_name="" title="維護日期" widget="Edit"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="HEAT_NO" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" length="1" name="PCMB030M.HEAT_NO" notNull="false" posX="11" posY="1" scroll="true" sqlTabName="PCMB030M" sqlType="VARCHAR" tabIndex="" table_alias_name="" title="盧卡爐號" widget="Edit"/>
+        <CheckBox defaultValue="N" fieldId="12" gridHeight="1" gridWidth="8" name="del_rec" notNull="true" posX="32" posY="1" tabIndex="-1" title="刪除" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit fieldId="13" gridHeight="1" gridWidth="8" hidden="true" name="upd_flag" posX="40" posY="1" tabIndex="-1" title="upd_flag" widget="Edit"/>
+      </Table>
+    </HBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBlAGUAOABkAGQANwAzADUALQAwADUANwA0AC0ANAA5ADIAZQAtADgAMQBkADMALQBlAGEANgA2AGIANAAwAGYAMwA4ADgAMgB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm fileVersion="31400" gstVersion="31408" name="ManagedForm" uid="{0e430adf-6695-4735-840a-71007118da20}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="Undefined" order="" uid="{db342358-6c2a-4d77-a29f-e024b8041fd2}" where=""/>
+  <Form fourSTFile="../../SYS/sys_style.4st" gridHeight="16" gridWidth="57" name="mic_menu" style="mystyle" text="冶金規範系統">
+    <Grid gridHeight="12" gridWidth="46" name="Grid1" posX="4" posY="1">
+      <Image gridHeight="10" gridWidth="43" height="30" image="fam_menu.jpg" name="mic_main" posX="1" posY="1" sizePolicy="initial" stretch="both" unitHeight="pixels" unitWidth="pixels" width="50"/>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBkAGIAMwA0ADIAMwA1ADgALQA2AGMAMgBhAC0ANABkADcANwAtAGEAMgA5AGYALQBlADAAMgA0AGIAOAAwADQAMQBmAGQAMgB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

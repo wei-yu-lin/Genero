@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="Big5" ?>
+<ManagedForm databaseName="rdbmic36" fileVersion="31400" gstVersion="31408" name="ManagedForm" uid="{ee9683f6-5200-486e-a372-13a057de3d12}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="sys_login" order="" uid="{7044a0c3-0636-4f6b-8bbf-aa5a5fa24af1}" where="">
+    <RecordField colName="account" fieldIdRef="1" name="user_id" sqlTabName="formonly" sqlType="VARCHAR" table_alias_name="" uid="{301bae5b-6425-412c-bec8-7091018c51ab}"/>
+    <RecordField colName="password" fieldIdRef="2" name="password" sqlTabName="formonly" sqlType="VARCHAR" table_alias_name="" uid="{7b1c71a5-04cc-49c6-a083-bb0076d988c1}"/>
+  </Record>
+  <Record active="false" additionalTables="" joinLeft="" joinOperator="" joinRight="" name="get_sys" order="" uid="{32a2c8e9-4861-4659-959e-8498396dd2d7}" where="">
+    <RecordField colName="sys_name" fieldIdRef="3" fieldType="NON_DATABASE" name="sys_name" sqlTabName="secsys" sqlType="VARCHAR" table_alias_name="setsys" uid="{2c322119-7655-4787-9566-4b4cb2644fa6}"/>
+  </Record>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="sys_style" order="" uid="{cfdedb43-321a-4198-86cf-14eab236947d}" where=""/>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="lang" order="" uid="{44358965-0229-44af-877e-69cc3051ef80}" where=""/>
+  <Record name="record1" uid="{844115ae-605d-46da-aa4f-95aceee9ba11}"/>
+  <Form fourSTFile="sys_style.4st" gridHeight="28" gridWidth="89" minHeight="30" minWidth="100" name="sys_login" spacing="normal" style="login" text="精密帶鋼廠">
+    <ActionDefaultList name="ActionDefaultList1">
+      <ActionDefault acceleratorName="Enter" name="ok"/>
+    </ActionDefaultList>
+    <Grid gridHeight="28" gridWidth="89" name="grid1" posX="0" posY="0">
+      <Label fontPitch="fixed" gridHeight="7" gridWidth="2" name="poser_y" posX="22" posY="0" sizePolicy="fixed" text=""/>
+      <Label fontPitch="fixed" gridHeight="1" gridWidth="20" name="poser_x" posX="1" posY="7" sizePolicy="fixed" text=""/>
+      <Group fontPitch="variable" gridChildrenInParent="true" gridHeight="14" gridWidth="45" lstrcomment="false" lstrtext="false" name="main_group" posX="22" posY="7" style="login" text="">
+        <Image autoScale="true" gridHeight="2" gridWidth="41" height="3" image="Logo" name="Image1" posX="2" posY="1" sizePolicy="fixed" stretch="none" style="login" width="20"/>
+        <Label gridHeight="1" gridWidth="4" name="label5" posX="10" posY="4" text="系統"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="sys_name" fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="15" items="" length="48" name="sys_name" posX="15" posY="4" scroll="false" sqlTabName="secsys" sqlType="VARCHAR" tabIndex="5" table_alias_name="setsys" title="ComboBox1" widget="ComboBox"/>
+        <Label gridHeight="1" gridWidth="4" name="label6" posX="10" posY="5" text="帳號"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="account" fieldId="1" gridHeight="1" gridWidth="15" name="user_id" posX="15" posY="5" sqlTabName="formonly" sqlType="VARCHAR" tabIndex="1" table_alias_name="" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="4" name="label7" posX="10" posY="6" text="密碼"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="password" fieldId="2" gridHeight="1" gridWidth="15" invisible="true" lstrcomment="true" name="password" posX="15" posY="6" sqlTabName="formonly" sqlType="VARCHAR" tabIndex="2" table_alias_name="" widget="Edit"/>
+        <Button gridHeight="1" gridWidth="20" name="ok" posX="10" posY="11" tabIndex="3" text="登入"/>
+        <Button gridHeight="1" gridWidth="20" name="bye" posX="10" posY="12" tabIndex="4" text="離開"/>
+      </Group>
+      <Label fontPitch="fixed" gridHeight="1" gridWidth="20" name="poser_x1" posX="68" posY="7" sizePolicy="fixed" text=""/>
+      <Label fontPitch="fixed" gridHeight="7" gridWidth="2" name="poser_y1" posX="22" posY="21" sizePolicy="fixed" text=""/>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA3ADAANAA0AGEAMABjADMALQAwADYAMwA2AC0ANABmADYAYgAtADgAYgBiAGYALQBhAGEANQBhADUAZgBhADIANABhAGYAMQB9wHLgABLgAAfAVcAAFcAACD+ysCDEm6XnAQAAAEwAewA0ADQAMwA1ADgAOQA2ADUALQAwADIAMgA5AC0ANAA0AGEAZgAtADgANwA3AGUALQA2ADkAYwBjADMAMAA1ADEAZQBmADgAMAB9wCMzMx////dAPZmZrQAABT+1P3ztkWh3AQAAAEwAewA4ADQANAAxADEANQBhAGUALQA2ADAANQBkAC0ANAA2AGQAYQAtAGEAYQA0AGYALQA5ADUAYQBjAGUAZQBlADkAYgBhADEAMQB9QEQAAAAAAABARAAAAAAAAAAAAAAAAAAAAQAAAEwAewBjAGYAZABlAGQAYgA0ADMALQAzADIAMQBhAC0ANAAxADkAOAAtADgANgBjAGYALQAxADQAZQBhAGIAMgAzADYAOQA0ADcAZAB9wEhmZmT///3AUpmZmn///j+ztkWhysCHAQAAAEwAewAzADIAYQAyAGMAOABlADkALQA0ADgANgAxAC0ANAA2ADUAOQAtADkANQA5AGUALQA4ADQAOQA4ADMAOQA2AGQAZAAyAGQANwB9wGjgABjgAAlAPgAAHgAACj+y8an752yPAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

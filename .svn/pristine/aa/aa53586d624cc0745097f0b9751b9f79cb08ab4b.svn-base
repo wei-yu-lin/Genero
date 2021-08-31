@@ -1,0 +1,29 @@
+<!--
+  FOURJS_START_COPYRIGHT(D,2011)
+  Property of Four Js*
+  (c) Copyright Four Js 2011, 2012. All Rights Reserved.
+  * Trademark of Four Js Development Tools Europe Ltd
+    in the United States and elsewhere
+  
+  This file can be modified by licensees according to the product manual.
+  FOURJS_END_COPYRIGHT
+-->
+<TopMenu>
+   <!--系統資料維護作業-->
+    <TopMenuGroup name = "wipb010m" text="油拋線維護作業" style="mystyle">
+        <TopMenuCommand name="view" text="油拋線維護作業業" image="notecheck.png"></TopMenuCommand>
+        <TopMenuSeparator/>
+        <TopMenuCommand name="wipsxxxf" text="其它維護作業" image="notecheck.png"></TopMenuCommand>
+    </TopMenuGroup>
+   
+   <!--異動處理作業-->    
+    <TopMenuGroup name = "wipt000m" text="異動處理作業" style="mystyle">
+        <TopMenuCommand name="wip010f" text="異動處理作業" image="notecheck.png"></TopMenuCommand>
+    </TopMenuGroup>
+
+    <TopMenuGroup name = "exit"  text="離開">
+        <TopMenuCommand name="reload" text="重新登入" image="exchange.png"></TopMenuCommand>
+        <TopMenuCommand name="exit" text="離開" image="home.png"></TopMenuCommand>
+    </TopMenuGroup>
+    
+</TopMenu>

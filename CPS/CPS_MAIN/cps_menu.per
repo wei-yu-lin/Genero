@@ -1,0 +1,113 @@
+---------------------------------------------------------------------------------- 
+-- File created from C:\Users\yu65426\Desktop\¤p¯QÀtgenero\CPS\CPS_MAIN\cps_menu.4fd by Genero Studio
+-- WARNING! All changes made in this file will be lost!
+----------------------------------------------------------------------------------
+
+SCHEMA formonly
+
+ACTION DEFAULTS
+  ACTION parts_append(text=%"Append", image="listadd")
+  ACTION parts_delete(text=%"Delete", image="listdel")
+  ACTION parts_modify(text=%"Modify", image="pen")
+  ACTION tree_delete(text=%"Delete", image="treedel1", comment=%"Delete current node")
+  ACTION tree_append_child(text=%"New child", image="treeadd2", comment=%"Insert new child (makes a parent from current node)")
+  ACTION tree_insert_sibling(text=%"Insert sibling", image="treeins1", comment=%"Insert new sibling (before current child)")
+  ACTION tree_clear(text=%"Delete all", image="treeclear", comment=%"Delete all nodes")
+  ACTION tree_mup(text=%"Move up", image="treeup", comment=%"Move current node up")
+  ACTION tree_mdown(text=%"Move down", image="treedown", comment=%"Move current node down")
+  ACTION tree_qincr(text=%"Incr quant", image="treeplus", comment=%"Increment quatity by one")
+  ACTION tree_qdecr(text=%"Decr quant", image="treeminus", comment=%"Decrement quatity by one")
+  ACTION tree_expall(text=%"Expand all", image="treeexp1", comment=%"Expand whole node")
+  ACTION tree_colall(text=%"Collapse all", image="treecol1", comment=%"Collapse whole node")
+END -- ACTION DEFAULTS
+
+TOPMENU topmenu1
+  GROUP file(text=%"File")
+    COMMAND search(text=%"Search")
+    SEPARATOR topmenuseparator1
+    COMMAND close(text=%"Quit")
+  END -- file
+  GROUP edit(text=%"Edit BOM")
+    COMMAND tree_delete
+    COMMAND tree_append_child
+    COMMAND tree_insert_sibling
+    COMMAND tree_mup
+    COMMAND tree_mdown
+    SEPARATOR topmenuseparator2
+    COMMAND tree_qincr
+    COMMAND tree_qdecr
+  END -- edit
+  GROUP edit(text=%"Edit Parts")
+    COMMAND parts_append
+    COMMAND parts_delete
+    COMMAND parts_modify
+  END -- edit
+  GROUP help(text=%"Help")
+    COMMAND about(text=%"About")
+  END -- help
+END -- topmenu1
+
+LAYOUT (windowStyle="main2")
+VBOX vbox1(splitter)
+GRID grid1
+{
+ <G grou><TREE mybom                                                                        >
+         [name                                   |descr|link|lin|material |quantity |price  ]
+  [tree] [name                                   |descr|link|lin|material |quantity |price  ]
+  [tre1] [name                                   |descr|link|lin|material |quantity |price  ]
+  [tre2] [name                                   |descr|link|lin|material |quantity |price  ]
+  [tre3] [name                                   |descr|link|lin|material |quantity |price  ]
+  [tre4] [name                                   |descr|link|lin|material |quantity |price  ]
+  [tre5] [name                                   |descr|link|lin|material |quantity |price  ]
+  [tre6] [name                                   |descr|link|lin|material |quantity |price  ]
+  [tre7] [name                                   |descr|link|lin|material |quantity |price  ]
+  [tre8] [name                                   |descr|link|lin|material |quantity |price  ]
+  [tre9]
+ <      ><                                                                                  >
+
+
+
+
+
+
+
+
+
+
+
+}
+END -- grid1
+END -- vbox1
+END -- cps_menu
+
+ATTRIBUTES
+GROUP grou:group1;
+BUTTON tree:tree_delete, tabIndex=1;
+BUTTON tre1:tree_append_child, tabIndex=2;
+BUTTON tre2:tree_insert_sibling, tabIndex=3;
+BUTTON tre3:tree_clear, tabIndex=4;
+BUTTON tre4:tree_mup, tabIndex=5;
+BUTTON tre5:tree_mdown, tabIndex=6;
+BUTTON tre6:tree_qincr, tabIndex=7;
+BUTTON tre7:tree_qdecr, tabIndex=8;
+BUTTON tre8:tree_expall, tabIndex=9;
+BUTTON tre9:tree_colall, tabIndex=10;
+TREE mybom:mybom, parentIdColumn=parentid, idColumn=id, expandedColumn=expanded, doubleClick=show_part, unsortableColumns, width = 84 characters;
+EDIT name=formonly.name, tabIndex=11, title=%"Bill of material", imageColumn=image;
+PHANTOM formonly.image;
+PHANTOM formonly.parentid;
+PHANTOM formonly.id;
+PHANTOM formonly.expanded;
+EDIT descr=formonly.description, tabIndex=12, title=%"Desc", hidden = user, scroll;
+EDIT link=formonly.linknum, tabIndex=13, title=%"Num", hidden = user;
+EDIT lin=formonly.linkpos, tabIndex=14, title=%"Pos Material", hidden = user;
+EDIT material=formonly.material, tabIndex=15, hidden = user, scroll;
+EDIT quantity=formonly.quantity, tabIndex=16, title=%"Quantity", scroll;
+PHANTOM formonly.unitprice;
+EDIT price=formonly.price, tabIndex=17, title=%"Price";
+END -- ATTRIBUTES
+
+INSTRUCTIONS
+SCREEN RECORD tvsr(formonly.name,formonly.image,formonly.parentid,formonly.id,formonly.expanded,formonly.linknum,formonly.linkpos,formonly.description,formonly.material,formonly.quantity,formonly.unitprice,formonly.price)
+END -- INSTRUCTIONS
+

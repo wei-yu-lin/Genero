@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='CP950'?>
+<Form name="view_f.tmp" build="3.20.08" text="油拋線維護作業" windowStyle="bk1" width="31" height="7">
+  <LStr text="油拋線維護作業"/>
+  <Grid name="grid1" width="31" height="7">
+    <Label name="label1" width="9" text="母鋼捲編號" style="bk1" posY="1" posX="4" gridWidth="9">
+      <LStr text="母鋼捲編號"/>
+    </Label>
+    <FormField name="formonly.m_coil_no" colName="m_coil_no" fieldId="0" sqlTabName="formonly" tabIndex="1">
+      <Edit width="14" shift="up" posY="1" posX="16" gridWidth="14"/>
+    </FormField>
+    <Label name="label2" width="9" text="排程編號" posY="3" posX="4" gridWidth="9">
+      <LStr text="排程編號"/>
+    </Label>
+    <FormField name="formonly.schd_no" colName="schd_no" fieldId="1" sqlTabName="formonly" tabIndex="2">
+      <Edit width="14" posY="3" posX="16" gridWidth="14"/>
+    </FormField>
+    <Label name="label3" width="9" text="鋼種" posY="5" posX="4" gridWidth="9">
+      <LStr text="鋼種"/>
+    </Label>
+    <FormField name="formonly.steel_grade" colName="steel_grade" fieldId="2" sqlTabName="formonly" tabIndex="3">
+      <Edit width="14" posY="5" posX="16" gridWidth="14"/>
+    </FormField>
+  </Grid>
+  <RecordView tabName="formonly">
+    <Link colName="m_coil_no" fieldIdRef="0"/>
+    <Link colName="schd_no" fieldIdRef="1"/>
+    <Link colName="steel_grade" fieldIdRef="2"/>
+  </RecordView>
+  <RecordView tabName="view_rec">
+    <Link colName="m_coil_no" fieldIdRef="0"/>
+    <Link colName="schd_no" fieldIdRef="1"/>
+    <Link colName="steel_grade" fieldIdRef="2"/>
+  </RecordView>
+</Form>

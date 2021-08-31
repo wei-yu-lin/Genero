@@ -1,0 +1,280 @@
+IMPORT FGL fgldialog
+SCHEMA yud221
+
+DEFINE
+    t_uid VARCHAR(10),
+    t_pwd VARCHAR(15),
+    t_station VARCHAR(3)
+
+DEFINE login_rec RECORD
+    uid STRING,
+    pwd STRING,
+    auto_login CHAR(1),
+    select_sys STRING
+END RECORD
+
+DEFINE list_count SMALLINT
+#----------------------------------------------------------------------
+#login畫面
+#----------------------------------------------------------------------
+FUNCTION sys_login()
+    DEFINE s_auto_login CHAR(1),
+            s_client_ip CHAR(15),
+            ip_address CHAR(15)
+    SET CONNECTION "MIS"
+
+    LET t_station = ""
+
+    LET s_client_ip = fgl_getenv("CLIENT_IP")
+
+    #自動登入
+    IF AutoLogin(s_client_ip) THEN
+        #進入系統選擇畫面
+        CALL sys_select()
+    ELSE
+        #無自動登入設定或第一次登入，進入帳號登入畫面
+        OPEN WINDOW sys_login WITH FORM "sys_login"
+        CALL ui.Interface.loadStyles("sys_style")
+        DISPLAY fgl_getenv("CLIENT_IP") TO client_ip
+        #LET INT_FLAG = FALSE
+        DIALOG ATTRIBUTE(UNBUFFERED)
+            SUBDIALOG sys_login_dm
+        END DIALOG
+
+        #成功登入
+        IF INT_FLAG THEN
+            SELECT AUTO_LOGIN
+                INTO s_auto_login
+                FROM SECAUTOLOGIN
+                WHERE CLIENT_IP = s_client_ip
+            #此IP第一次登入，寫入自動登入檔
+            IF s_auto_login IS NULL THEN
+                #IP為有效值才存入自動登入檔
+                IF fgl_getenv("CLIENT_IP") IS NOT NULL THEN
+                    INSERT INTO SECAUTOLOGIN(CLIENT_IP, AUTO_LOGIN, LAST_USER_NO)
+                        VALUES (s_client_ip, login_rec.auto_login, login_rec.uid)
+                END IF
+            ELSE
+                #更新此IP的最新自動登入資訊
+                UPDATE SECAUTOLOGIN
+                    SET  LAST_USER_NO = login_rec.uid,
+                        AUTO_LOGIN = login_rec.auto_login
+                    WHERE CLIENT_IP = s_client_ip
+            END IF
+            
+            #關閉帳號登入畫面
+            CLOSE WINDOW sys_login
+            #進入系統選擇畫面
+            CALL sys_select()
+        END IF
+    END IF
+
+END FUNCTION
+#----------------------------------------------------------------------
+#system select page
+#----------------------------------------------------------------------
+FUNCTION sys_select()
+    DEFINE prog_name, cmd STRING
+    DEFINE s_client_ip CHAR(15)
+
+    LET s_client_ip = fgl_getenv("CLIENT_IP")
+    
+    OPEN WINDOW sys_login WITH FORM "sys_select"
+    CALL ui.Interface.loadStyles("sys_style")
+    DISPLAY fgl_getenv("CLIENT_IP") TO client_ip
+    DISPLAY login_rec.uid TO user_no
+    DIALOG ATTRIBUTE(UNBUFFERED)
+        SUBDIALOG sys_select_dm
+        #進入系統
+        ON ACTION ok
+            IF login_rec.select_sys IS NULL THEN
+                CALL fgl_winmessage("警示", "請選擇系統!!", "stop")
+            ELSE
+                CALL fgl_setenv("g_user_id", t_uid)
+                LET prog_name = login_rec.select_sys CLIPPED || "_MAIN"
+                LET cmd = "fglrun " || prog_name #|| prog_name
+                DISPLAY cmd
+                TRY
+                    RUN cmd WITHOUT WAITING
+                    EXIT DIALOG
+                CATCH
+                    DISPLAY "An error occurred during report execution: "
+                END TRY
+               
+            END IF
+        #登出帳號並回到帳號登入畫面
+        ON ACTION logout
+            UPDATE SECAUTOLOGIN
+                SET AUTO_LOGIN = 'N'
+                WHERE CLIENT_IP = s_client_ip
+            RUN "fglrun sys_main" WITHOUT WAITING
+            EXIT DIALOG
+        #直接離開
+        ON ACTION bye
+            EXIT DIALOG
+    END DIALOG
+END FUNCTION
+#----------------------------------------------------------------------
+#login dialog module
+#----------------------------------------------------------------------
+DIALOG sys_login_dm()
+    DEFINE t_u_type, t_u_pwd STRING
+
+    INPUT login_rec.uid, login_rec.pwd, login_rec.auto_login
+        FROM user_id, password, auto_login_cb
+
+        BEFORE FIELD password
+            CALL DIALOG.setActionActive("ok", TRUE)
+
+        BEFORE INPUT
+            #登入鍵預設為disable
+            CALL DIALOG.setActionActive("ok", FALSE)
+            #離開鍵預設為enable
+            CALL DIALOG.setActionActive("bye", TRUE)
+            LET INT_FLAG = FALSE
+        #帳號登入
+        ON ACTION ok
+            #密碼檢查
+            SELECT u_type, password
+                INTO t_u_type, t_u_pwd
+                FROM secuser
+                WHERE user_id = login_rec.uid
+
+            IF login_rec.pwd <> t_u_pwd OR SQLCA.SQLCODE = 100 THEN
+                CALL FGL_WINMESSAGE("警示", "帳號密碼錯誤,請確認", "stop")
+            ELSE
+                #登入成功
+                LET INT_FLAG = TRUE
+                {IF login_rec.auto_login THEN
+                    LET s_client_ip = fgl_getenv("CLIENT_IP")
+                    UPDATE SECAUTOLOGIN
+                        SET AUTO_LOGIN = 'Y'
+                        WHERE CLIENT_IP = s_client_ip
+                END IF}
+                ACCEPT DIALOG
+            END IF
+
+            #直接離開
+        ON ACTION bye
+            EXIT DIALOG
+
+            #密碼變更
+        ON ACTION chg_pwd
+            IF length(login_rec.uid) = 0 OR length(login_rec.pwd) = 0 THEN
+                CALL FGL_WINMESSAGE("警示", "請先輸入帳號密碼!", "stop")
+            ELSE
+                SELECT * FROM secuser WHERE user_id = t_uid AND password = t_pwd
+                IF sqlca.sqlcode <> 0 THEN
+                    CALL FGL_WINMESSAGE("警示", "帳號密碼錯誤,請確認", "stop")
+                ELSE
+                    CALL sys_chg_pwd()
+                    LET t_pwd = ""
+                    DISPLAY t_pwd TO sys_login.password
+                END IF
+            END IF
+    END INPUT
+END DIALOG
+#----------------------------------------------------------------------
+#system select module
+#----------------------------------------------------------------------
+DIALOG sys_select_dm()
+    DEFINE sys_list ui.ComboBox
+    DEFINE t_sys_no, t_sys_name STRING
+    INPUT login_rec.select_sys FROM get_sys.sys_name
+        BEFORE INPUT
+            #載入系統清單
+            LET sys_list = ui.ComboBox.forName("get_sys.sys_name")
+            CALL sys_list.clear()
+
+            DECLARE get_sname CURSOR FOR
+                SELECT sys_no, sys_name FROM secsys ORDER BY sys_no
+            LET list_count = 1
+
+            FOREACH get_sname INTO t_sys_no, t_sys_name
+                CALL sys_list.addItem(t_sys_no, t_sys_name)
+                LET list_count = list_count + 1
+            END FOREACH
+
+    END INPUT
+END DIALOG
+#----------------------------------------------------------------------
+#auto login
+#----------------------------------------------------------------------
+FUNCTION AutoLogin(s_client_ip CHAR(15))
+    DEFINE s_auto_login CHAR(1)
+    IF s_client_ip IS NULL THEN
+        RETURN FALSE
+    END IF
+
+    SELECT AUTO_LOGIN, LAST_USER_NO
+        INTO s_auto_login, login_rec.uid
+        FROM SECAUTOLOGIN
+        WHERE CLIENT_IP = s_client_ip
+
+    IF s_auto_login == 'Y' THEN
+        RETURN TRUE
+    ELSE
+        RETURN FALSE
+    END IF
+END FUNCTION
+#----------------------------------------------------------------------
+#change password
+#----------------------------------------------------------------------
+FUNCTION sys_chg_pwd()
+    DEFINE
+        t_new_pwd, t_new_pwd_chk VARCHAR(10),
+        t_mark SMALLINT
+
+    LET t_mark = 0
+    OPEN WINDOW sys_chg_pwd WITH FORM "sys_chg_pwd" ATTRIBUTES(STYLE = 'dialog')
+    CURRENT WINDOW IS sys_chg_pwd
+    DIALOG ATTRIBUTE(UNBUFFERED)
+
+        INPUT t_new_pwd, t_new_pwd_chk
+            FROM r_chgpwd.new_pwd, r_chgpwd.new_pwd_chk
+
+            ON ACTION ACCEPT
+                IF t_station MATCHES "[A-Z]??" THEN
+                    IF t_new_pwd <> t_new_pwd_chk THEN
+                        #"SYS0120"="兩次輸入密碼不同,請確認!"
+                        CALL FGL_WINMESSAGE(
+                            LSTR("SYS0020"), LSTR("SYS0120"), "stop")
+                        NEXT FIELD new_pwd
+                    ELSE
+                        IF length(t_new_pwd) = 0 THEN
+                            #"SYS0118"="請輸入新密碼"
+                            CALL FGL_WINMESSAGE(
+                                LSTR("SYS0020"), LSTR("SYS0118"), "stop")
+                            NEXT FIELD new_pwd
+                        ELSE
+                            IF length(t_new_pwd_chk) = 0 THEN
+                                #"SYS0119"="再次輸入新密碼確認"
+                                CALL FGL_WINMESSAGE(
+                                    LSTR("SYS0020"), LSTR("SYS0119"), "stop")
+                                NEXT FIELD new_pwd_chk
+                            ELSE
+                                LET t_mark = 1
+                                EXIT DIALOG
+                            END IF
+                        END IF
+                    END IF
+                ELSE
+
+                END IF
+
+            ON ACTION CANCEL
+                LET t_mark = 0
+                EXIT DIALOG
+        END INPUT
+
+    END DIALOG
+    CLOSE WINDOW sys_chg_pwd
+
+    IF t_mark = 1 THEN
+        UPDATE secuser SET password = t_new_pwd WHERE user_id = t_uid
+        IF sqlca.sqlcode = 0 THEN
+            CALL FGL_WINMESSAGE("提示", "密碼變更成功!", "information")
+        END IF
+    END IF
+
+END FUNCTION

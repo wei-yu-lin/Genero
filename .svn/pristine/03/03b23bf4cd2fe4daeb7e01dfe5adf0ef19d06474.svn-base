@@ -1,0 +1,13 @@
+1. as.xcf為gas設定檔，預設位置在C:\Program Files\FourJs\Genero Studio\gas\etc
+將as.xcf中res.YuERP變數指向自己的YuERP專案
+例如: <RESOURCE Id="res.YuERP" Source="INTERNAL">$(res.path.home)/Desktop/Genero/YuERP</RESOURCE>
+
+2. sys_delegate.xcf為delegation services設定檔
+請將它放到C:\ProgramData\FourJs\gas\3.20.08-201911221018\services資料夾下
+修改sys_delegate.xcf中PATH變數指向自己的YuERP專案的bin資料夾
+例如: <PATH>C:\Users\yu65656\Desktop\Genero\YuERP\bin</PATH>
+
+3. 啟動Genero Application Server 3.20.08
+
+4. GDC創建HTTP type Shortcut
+使用URL: http://localhost:6394/ua/r/YuERP

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='CP950'?>
+<Form name="pcms020f.tmp" build="3.20.08" sqlDbName="rdbpcm" minWidth="60" minHeight="10" text="Form" style="mystyle" windowStyle="mystyle" width="56" height="6">
+  <LStr text="Form"/>
+  <Grid name="grid1" width="56" height="6">
+    <Label name="lpcmb020m_coil_no" width="6" text="鋼捲編號" justify="center" posY="1" posX="4" gridWidth="6">
+      <LStr text="鋼捲編號"/>
+    </Label>
+    <FormField name="pcmb020m.coil_no" colName="coil_no" sqlType="CHAR(11)" fieldId="0" sqlTabName="pcmb020m" tabIndex="1" notNull="1" required="1">
+      <Edit width="10" shift="up" scroll="1" posY="1" posX="11" gridWidth="10"/>
+    </FormField>
+    <Label name="lpcmb020m_slab_id" width="6" text="鋼胚編號" justify="center" posY="1" posX="22" gridWidth="6">
+      <LStr text="鋼胚編號"/>
+    </Label>
+    <FormField name="pcmb020m.slab_id" colName="slab_id" sqlType="CHAR(10)" fieldId="1" sqlTabName="pcmb020m" notNull="1" required="1" tabIndex="2">
+      <Edit width="10" shift="up" scroll="1" posY="1" posX="29" gridWidth="10"/>
+    </FormField>
+    <Label name="lpcmb020m_ic_code" width="4" text="狀態" justify="center" posY="1" posX="40" gridWidth="4">
+      <LStr text="狀態"/>
+    </Label>
+    <FormField name="pcmb020m.ic_code" colName="ic_code" sqlType="CHAR(2)" fieldId="2" sqlTabName="pcmb020m" notNull="1" required="1" tabIndex="3">
+      <Edit width="10" shift="up" scroll="1" posY="1" posX="45" gridWidth="10"/>
+    </FormField>
+    <Label name="lpcmb020m_cb_first_order_item" width="6" text="訂單編號" justify="center" posY="3" posX="4" gridWidth="6">
+      <LStr text="訂單編號"/>
+    </Label>
+    <FormField name="pcmb020m.cb_first_order_item" colName="cb_first_order_item" sqlType="CHAR(9)" fieldId="3" sqlTabName="pcmb020m" notNull="1" required="1" tabIndex="4">
+      <Edit width="10" shift="up" scroll="1" posY="3" posX="11" gridWidth="10"/>
+    </FormField>
+    <Label name="lpcmb020m_date_last_maint" width="6" text="維護日期" justify="center" posY="3" posX="22" gridWidth="6">
+      <LStr text="維護日期"/>
+    </Label>
+    <FormField name="pcmb020m.date_last_maint" colName="date_last_maint" sqlType="CHAR(8)" fieldId="4" sqlTabName="pcmb020m" notNull="1" required="1" tabIndex="5">
+      <Edit width="10" shift="up" scroll="1" posY="3" posX="29" gridWidth="10"/>
+    </FormField>
+  </Grid>
+  <RecordView tabName="pcmb020m">
+    <Link colName="coil_no" fieldIdRef="0"/>
+    <Link colName="slab_id" fieldIdRef="1"/>
+    <Link colName="ic_code" fieldIdRef="2"/>
+    <Link colName="cb_first_order_item" fieldIdRef="3"/>
+    <Link colName="date_last_maint" fieldIdRef="4"/>
+  </RecordView>
+  <RecordView tabName="r_pcmb020f">
+    <Link colName="coil_no" fieldIdRef="0"/>
+    <Link colName="slab_id" fieldIdRef="1"/>
+    <Link colName="ic_code" fieldIdRef="2"/>
+    <Link colName="cb_first_order_item" fieldIdRef="3"/>
+    <Link colName="date_last_maint" fieldIdRef="4"/>
+  </RecordView>
+</Form>

@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='CP950'?>
+<Form name="pcms030f.tmp" build="3.20.08" sqlDbName="rdbpcm" text="Form" style="mystyle" width="85" height="14">
+  <LStr text="Form"/>
+  <HBox name="hbox2">
+    <Table pageSize="6" name="table1" style="s" tabName="r_pcmb030f">
+      <TableColumn name="pcmb030m.coil_no" colName="coil_no" sqlType="CHAR(11)" fieldId="0" sqlTabName="pcmb030m" text="鋼捲編號" notNull="1" required="1" tabIndex="1">
+        <Edit width="10" shift="up" scroll="1"/>
+        <LStr text="鋼捲編號"/>
+      </TableColumn>
+      <TableColumn name="pcmb030m.schd_no" colName="schd_no" sqlType="CHAR(4)" fieldId="1" sqlTabName="pcmb030m" text="排程編號" notNull="1" required="1" tabIndex="2">
+        <Edit width="10" shift="up" scroll="1"/>
+        <LStr text="排程編號"/>
+      </TableColumn>
+      <TableColumn name="pcmb030m.station" colName="station" sqlType="CHAR(3)" fieldId="2" sqlTabName="pcmb030m" text="產出產線" notNull="1" required="1" tabIndex="3">
+        <Edit width="10" shift="up" scroll="1"/>
+        <LStr text="產出產線"/>
+      </TableColumn>
+      <TableColumn name="pcmb030m.slab_id" colName="slab_id" sqlType="CHAR(10)" fieldId="3" sqlTabName="pcmb030m" text="鋼胚編號" tabIndex="4">
+        <Edit width="10" shift="up" scroll="1"/>
+        <LStr text="鋼胚編號"/>
+      </TableColumn>
+      <TableColumn name="pcmb030m.date_last_maint" colName="date_last_maint" sqlType="CHAR(8)" fieldId="4" sqlTabName="pcmb030m" text="維護日期" tabIndex="5">
+        <Edit width="10" shift="up" scroll="1"/>
+        <LStr text="維護日期"/>
+      </TableColumn>
+      <TableColumn name="pcmb030m.heat_no" colName="heat_no" sqlType="CHAR(8)" fieldId="5" sqlTabName="pcmb030m" text="盧卡爐號" tabIndex="6">
+        <Edit width="10" shift="up" scroll="1"/>
+        <LStr text="盧卡爐號"/>
+      </TableColumn>
+      <TableColumn name="formonly.del_rec" colName="del_rec" fieldId="6" sqlTabName="formonly" defaultValue="N" text="刪除" notNull="1" required="1" tabIndex="7">
+        <CheckBox width="8" valueChecked="Y" valueUnchecked="N"/>
+        <LStr text="刪除"/>
+      </TableColumn>
+      <TableColumn name="formonly.upd_flag" colName="upd_flag" fieldId="7" sqlTabName="formonly" text="upd_flag" hidden="1" tabIndex="8">
+        <Edit width="8"/>
+        <LStr text="upd_flag"/>
+      </TableColumn>
+    </Table>
+  </HBox>
+  <RecordView tabName="pcmb030m">
+    <Link colName="coil_no" fieldIdRef="0"/>
+    <Link colName="schd_no" fieldIdRef="1"/>
+    <Link colName="station" fieldIdRef="2"/>
+    <Link colName="slab_id" fieldIdRef="3"/>
+    <Link colName="date_last_maint" fieldIdRef="4"/>
+    <Link colName="heat_no" fieldIdRef="5"/>
+  </RecordView>
+  <RecordView tabName="formonly">
+    <Link colName="del_rec" fieldIdRef="6"/>
+    <Link colName="upd_flag" fieldIdRef="7"/>
+  </RecordView>
+</Form>

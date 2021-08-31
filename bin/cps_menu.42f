@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='CP950'?>
+<Form name="cps_menu.tmp" build="3.20.08" sqlDbName="rdbcps36" windowStyle="main2" width="93" height="27">
+  <ActionDefaultList>
+    <ActionDefault name="parts_append" text="Append" image="listadd">
+      <LStr text="Append"/>
+    </ActionDefault>
+    <ActionDefault name="parts_delete" text="Delete" image="listdel">
+      <LStr text="Delete"/>
+    </ActionDefault>
+    <ActionDefault name="parts_modify" text="Modify" image="pen">
+      <LStr text="Modify"/>
+    </ActionDefault>
+    <ActionDefault name="tree_delete" text="Delete" image="treedel1" comment="Delete current node">
+      <LStr text="Delete" comment="Delete current node"/>
+    </ActionDefault>
+    <ActionDefault name="tree_append_child" text="New child" image="treeadd2" comment="Insert new child (makes a parent from current node)">
+      <LStr text="New child" comment="Insert new child (makes a parent from current node)"/>
+    </ActionDefault>
+    <ActionDefault name="tree_insert_sibling" text="Insert sibling" image="treeins1" comment="Insert new sibling (before current child)">
+      <LStr text="Insert sibling" comment="Insert new sibling (before current child)"/>
+    </ActionDefault>
+    <ActionDefault name="tree_clear" text="Delete all" image="treeclear" comment="Delete all nodes">
+      <LStr text="Delete all" comment="Delete all nodes"/>
+    </ActionDefault>
+    <ActionDefault name="tree_mup" text="Move up" image="treeup" comment="Move current node up">
+      <LStr text="Move up" comment="Move current node up"/>
+    </ActionDefault>
+    <ActionDefault name="tree_mdown" text="Move down" image="treedown" comment="Move current node down">
+      <LStr text="Move down" comment="Move current node down"/>
+    </ActionDefault>
+    <ActionDefault name="tree_qincr" text="Incr quant" image="treeplus" comment="Increment quatity by one">
+      <LStr text="Incr quant" comment="Increment quatity by one"/>
+    </ActionDefault>
+    <ActionDefault name="tree_qdecr" text="Decr quant" image="treeminus" comment="Decrement quatity by one">
+      <LStr text="Decr quant" comment="Decrement quatity by one"/>
+    </ActionDefault>
+    <ActionDefault name="tree_expall" text="Expand all" image="treeexp1" comment="Expand whole node">
+      <LStr text="Expand all" comment="Expand whole node"/>
+    </ActionDefault>
+    <ActionDefault name="tree_colall" text="Collapse all" image="treecol1" comment="Collapse whole node">
+      <LStr text="Collapse all" comment="Collapse whole node"/>
+    </ActionDefault>
+  </ActionDefaultList>
+  <TopMenu name="topmenu1">
+    <TopMenuGroup name="file" text="File">
+      <LStr text="File"/>
+      <TopMenuCommand name="search" text="Search">
+        <LStr text="Search"/>
+      </TopMenuCommand>
+      <TopMenuSeparator name="topmenuseparator1"/>
+      <TopMenuCommand name="close" text="Quit">
+        <LStr text="Quit"/>
+      </TopMenuCommand>
+    </TopMenuGroup>
+    <TopMenuGroup name="help" text="Help">
+      <LStr text="Help"/>
+      <TopMenuCommand name="about" text="About">
+        <LStr text="About"/>
+      </TopMenuCommand>
+    </TopMenuGroup>
+  </TopMenu>
+  <VBox name="vbox1" splitter="1">
+    <Grid name="grid1" width="93" height="15">
+      <Table pageSize="5" name="mybom" doubleClick="show_part" unsortableColumns="1" width="84" posY="0" posX="2" gridWidth="84" gridHeight="13" tabName="+tn_0">
+        <TableColumn name="ccaa030m.schedule_number" colName="schedule_number" sqlType="CHAR(4)" fieldId="0" sqlTabName="ccaa030m" text="軋延序號" tabIndex="14">
+          <Edit width="8"/>
+          <LStr text="軋延序號"/>
+        </TableColumn>
+        <TableColumn name="ccaa030m.coil_number" colName="coil_number" sqlType="CHAR(11)" fieldId="1" sqlTabName="ccaa030m" tabIndex="10" text="鋼 捲 編 號">
+          <Edit width="13" scroll="1"/>
+          <LStr text="鋼 捲 編 號"/>
+        </TableColumn>
+        <TableColumn name="ccaa030m.steel_grade" colName="steel_grade" sqlType="CHAR(10)" fieldId="2" sqlTabName="ccaa030m" tabIndex="11" text="鋼種">
+          <Edit width="11"/>
+          <LStr text="鋼種"/>
+        </TableColumn>
+        <TableColumn name="ccaa030m.actual_weight" colName="actual_weight" sqlType="INTEGER" fieldId="3" sqlTabName="ccaa030m" tabIndex="9" text="重量" numAlign="1">
+          <Edit width="13"/>
+          <LStr text="重量"/>
+        </TableColumn>
+        <TableColumn name="ccaa030m.actual_width" colName="actual_width" sqlType="INTEGER" fieldId="4" sqlTabName="ccaa030m" tabIndex="12" text="寬度" numAlign="1">
+          <Edit width="10"/>
+          <LStr text="寬度"/>
+        </TableColumn>
+        <TableColumn name="ccaa030m.actual_thickness" colName="actual_thickness" sqlType="FLOAT" fieldId="5" sqlTabName="ccaa030m" tabIndex="13" text="厚度" numAlign="1">
+          <Edit width="9" scroll="1"/>
+          <LStr text="厚度"/>
+        </TableColumn>
+      </Table>
+      <Group name="group1" posY="0" posX="86" gridWidth="7" gridHeight="13">
+        <Button name="treeback" width="4" tabIndex="1" text="回主畫面" image="fa-twitch" posY="2" posX="2" gridWidth="4">
+          <LStr text="回主畫面"/>
+        </Button>
+        <Button name="treeselect" width="4" tabIndex="2" text="Select" image="ok2" posY="3" posX="2" gridWidth="4">
+          <LStr text="Select"/>
+        </Button>
+        <Button name="treedeselect" width="4" tabIndex="3" text="Deselect" image="fa-remove" posY="4" posX="2" gridWidth="4">
+          <LStr text="Deselect"/>
+        </Button>
+        <Button name="treemoveup" width="4" tabIndex="4" text="MoveUp" image="fa-arrow-up" posY="5" posX="2" gridWidth="4">
+          <LStr text="MoveUp"/>
+        </Button>
+        <Button name="treemovedown" width="4" text="MoveDown" image="arrdown" posY="6" posX="2" gridWidth="4" tabIndex="15">
+          <LStr text="MoveDown"/>
+        </Button>
+        <Button name="treedelete" width="4" tabIndex="5" text="Delete" image="delete" posY="7" posX="2" gridWidth="4">
+          <LStr text="Delete"/>
+        </Button>
+        <Button name="treerequest" width="4" tabIndex="6" text="Request" image="fa-repeat" posY="8" posX="2" gridWidth="4">
+          <LStr text="Request"/>
+        </Button>
+        <Button name="treeprint" width="4" tabIndex="7" text="Print" image="fa-picture-o" posY="9" posX="2" gridWidth="4">
+          <LStr text="Print"/>
+        </Button>
+        <Button name="treepdo" width="4" tabIndex="8" text="Pdo" image="fa-github-alt" posY="10" posX="2" gridWidth="4">
+          <LStr text="Pdo"/>
+        </Button>
+      </Group>
+    </Grid>
+    <Grid name="grid2" width="85" height="12">
+      <Table pageSize="5" name="table1" width="84" posY="0" posX="1" gridWidth="84" gridHeight="8" tabName="+tn_1">
+        <TableColumn name="ccaa030m1.schedule_number" colName="schedule_number" sqlType="CHAR(4)" fieldId="6" sqlTabName="ccaa030m" text="軋延序號" tabIndex="16">
+          <Edit width="10"/>
+          <LStr text="軋延序號"/>
+        </TableColumn>
+        <TableColumn name="ccaa030m1.coil_number" colName="coil_number" sqlType="CHAR(11)" fieldId="7" sqlTabName="ccaa030m" text="鋼 捲 編 號" tabIndex="17">
+          <Edit width="10"/>
+          <LStr text="鋼 捲 編 號"/>
+        </TableColumn>
+        <TableColumn name="ccaa030m1.steel_grade" colName="steel_grade" sqlType="CHAR(10)" fieldId="8" sqlTabName="ccaa030m" text="鋼種" tabIndex="18">
+          <Edit width="10"/>
+          <LStr text="鋼種"/>
+        </TableColumn>
+        <TableColumn name="ccaa030m1.actual_weight" colName="actual_weight" sqlType="INTEGER" fieldId="9" sqlTabName="ccaa030m" text="重量" tabIndex="19" numAlign="1">
+          <Edit width="10"/>
+          <LStr text="重量"/>
+        </TableColumn>
+        <TableColumn name="ccaa030m1.actual_width" colName="actual_width" sqlType="INTEGER" fieldId="10" sqlTabName="ccaa030m" text="寬度" tabIndex="20" numAlign="1">
+          <Edit width="10"/>
+          <LStr text="寬度"/>
+        </TableColumn>
+        <TableColumn name="ccaa030m1.actual_thickness" colName="actual_thickness" sqlType="FLOAT" fieldId="11" sqlTabName="ccaa030m" text="厚度" tabIndex="21" numAlign="1">
+          <Edit width="10"/>
+          <LStr text="厚度"/>
+        </TableColumn>
+      </Table>
+    </Grid>
+  </VBox>
+  <RecordView tabName="ccaa030m1">
+    <Link colName="schedule_number" fieldIdRef="6"/>
+    <Link colName="coil_number" fieldIdRef="7"/>
+    <Link colName="steel_grade" fieldIdRef="8"/>
+    <Link colName="actual_weight" fieldIdRef="9"/>
+    <Link colName="actual_width" fieldIdRef="10"/>
+    <Link colName="actual_thickness" fieldIdRef="11"/>
+  </RecordView>
+  <RecordView tabName="ccaa030m">
+    <Link colName="schedule_number" fieldIdRef="0"/>
+    <Link colName="coil_number" fieldIdRef="1"/>
+    <Link colName="steel_grade" fieldIdRef="2"/>
+    <Link colName="actual_weight" fieldIdRef="3"/>
+    <Link colName="actual_width" fieldIdRef="4"/>
+    <Link colName="actual_thickness" fieldIdRef="5"/>
+  </RecordView>
+  <RecordView tabName="awaitpdi">
+    <Link colName="coil_number" fieldIdRef="1"/>
+    <Link colName="schedule_number" fieldIdRef="0"/>
+    <Link colName="steel_grade" fieldIdRef="2"/>
+    <Link colName="actual_width" fieldIdRef="4"/>
+    <Link colName="actual_thickness" fieldIdRef="5"/>
+    <Link colName="actual_weight" fieldIdRef="3"/>
+  </RecordView>
+  <RecordView tabName="confirmpdi">
+    <Link colName="coil_number" fieldIdRef="7"/>
+    <Link colName="schedule_number" fieldIdRef="6"/>
+    <Link colName="steel_grade" fieldIdRef="8"/>
+    <Link colName="actual_width" fieldIdRef="10"/>
+    <Link colName="actual_thickness" fieldIdRef="11"/>
+    <Link colName="actual_weight" fieldIdRef="9"/>
+  </RecordView>
+</Form>

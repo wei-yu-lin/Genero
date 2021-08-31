@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="Big5" ?>
+<ManagedForm databaseName="rdbpcm" fileVersion="31400" gstVersion="31408" name="managedform" uid="{e1ba176b-5bc1-4a50-ba34-aca2bac1f9e4}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="r_pcmb020f" uid="{3bbeffa8-d3aa-44c1-9d43-f9ec51301464}">
+    <RecordField colName="COIL_NO" fieldIdRef="1" fieldType="TABLE_COLUMN" name="PCMB020M.COIL_NO" sqlTabName="PCMB020M" sqlType="VARCHAR" table_alias_name="" uid="{497228d9-8d86-481d-92f7-9106378ec5c1}"/>
+    <RecordField colName="SLAB_ID" fieldIdRef="2" fieldType="TABLE_COLUMN" name="PCMB020M.SLAB_ID" sqlTabName="PCMB020M" sqlType="VARCHAR" table_alias_name="" uid="{0ca3e6e1-73e4-407c-800b-f1f9cbc86c6e}"/>
+    <RecordField colName="IC_CODE" fieldIdRef="3" fieldType="TABLE_COLUMN" name="PCMB020M.IC_CODE" sqlTabName="PCMB020M" sqlType="VARCHAR" table_alias_name="" uid="{fdf53b44-b9f2-4f61-92dc-5b39086ab1e8}"/>
+    <RecordField colName="CB_FIRST_ORDER_ITEM" fieldIdRef="4" fieldType="TABLE_COLUMN" name="PCMB020M.CB_FIRST_ORDER_ITEM" sqlTabName="PCMB020M" sqlType="VARCHAR" table_alias_name="" uid="{0ed23ae7-fd7f-4b49-9717-f0383bb38900}"/>
+    <RecordField colName="DATE_LAST_MAINT" fieldIdRef="5" fieldType="TABLE_COLUMN" name="PCMB020M.DATE_LAST_MAINT" sqlTabName="PCMB020M" sqlType="VARCHAR" table_alias_name="" uid="{f56f6c6c-f93c-4a12-8712-5d653588b874}"/>
+  </Record>
+  <Form fourSTFile="../../SYS/sys_style.4st" gridHeight="10" gridWidth="60" minHeight="10" minWidth="60" name="pcms020f_form" style="mystyle" text="Form" windowStyle="mystyle">
+    
+        <Grid gridHeight="6" gridWidth="76" name="grid1" posX="2" posY="0">
+          <Label gridHeight="1" gridWidth="6" justify="center" name="LPCMB020M_coil_no" posX="4" posY="1" text="鋼捲編號"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="COIL_NO" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" length="1" name="PCMB020M.COIL_NO" notNull="true" posX="11" posY="1" scroll="true" sqlTabName="PCMB020M" sqlType="VARCHAR" tabIndex="1" table_alias_name="" title="鋼捲編號" widget="Edit"/>
+          <Label gridHeight="1" gridWidth="6" justify="center" name="LPCMB020M_slab_id" posX="22" posY="1" text="鋼胚編號"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="SLAB_ID" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" length="1" name="PCMB020M.SLAB_ID" notNull="true" posX="29" posY="1" scroll="true" sqlTabName="PCMB020M" sqlType="VARCHAR" tabIndex="" table_alias_name="" title="鋼胚編號" widget="Edit"/>
+          <Label gridHeight="1" gridWidth="4" justify="center" name="LPCMB020M_ic_code" posX="40" posY="1" text="狀態"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="IC_CODE" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" length="1" name="PCMB020M.IC_CODE" notNull="true" posX="45" posY="1" scroll="true" sqlTabName="PCMB020M" sqlType="VARCHAR" tabIndex="" table_alias_name="" title="狀態" widget="Edit"/>
+          <Label gridHeight="1" gridWidth="6" justify="center" name="LPCMB020M_cb_first_order_item" posX="4" posY="3" text="訂單編號"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="CB_FIRST_ORDER_ITEM" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" length="1" name="PCMB020M.CB_FIRST_ORDER_ITEM" notNull="true" posX="11" posY="3" scroll="true" sqlTabName="PCMB020M" sqlType="VARCHAR" tabIndex="" table_alias_name="" title="狀態" widget="Edit"/>
+          <Label gridHeight="1" gridWidth="6" justify="center" name="LPCMB020M_date_last_maint" posX="22" posY="3" text="維護日期"/>
+          <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="DATE_LAST_MAINT" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" length="1" name="PCMB020M.DATE_LAST_MAINT" notNull="true" posX="29" posY="3" scroll="true" sqlTabName="PCMB020M" sqlType="VARCHAR" tabIndex="" table_alias_name="" title="狀態" widget="Edit"/>
+        </Grid>
+      <!-- - </HBox>
+    </VBox>-->
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAzAGIAYgBlAGYAZgBhADgALQBkADMAYQBhAC0ANAA0AGMAMQAtADkAZAA0ADMALQBmADkAZQBjADUAMQAzADAAMQA0ADYANAB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

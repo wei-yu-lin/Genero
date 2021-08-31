@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="rdbord" fileVersion="31400" gstVersion="31408" name="managedform" uid="{fe87687d-2d22-44af-a8f8-6547ed726c37}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="v_ordb010m" uid="{9cfa87f8-4c36-47da-ab0c-7cf6c6b95833}">
+    <RecordField colName="ORDER_NO" fieldIdRef="7" fieldType="TABLE_COLUMN" name="ORDB010M.ORDER_NO" sqlTabName="ORDB010M" uid="{79b386f7-6924-47c5-9ef0-69c07225a329}"/>
+    <RecordField fieldIdRef="3" length="8" name="ORDER_DATE" qualFraction="MONTH" sqlType="DATETIME" uid="{a449c393-704e-45e9-8b06-aa8ee9ba3de5}"/>
+    <RecordField colName="ORDER_KIND" fieldIdRef="4" fieldType="TABLE_COLUMN" name="ORDB010M.ORDER_KIND" sqlTabName="ORDB010M" uid="{245e0850-acb5-4e83-8498-ca1616bd8430}"/>
+  </Record>
+  <Record name="v_ordb011m" uid="{9cb7698f-74b7-4f1d-8609-7288b4bcbee8}">
+    <RecordField colName="ORDER_ITEM" fieldIdRef="1" fieldType="TABLE_COLUMN" name="ORDB011M.ORDER_ITEM" sqlTabName="ORDB011M" uid="{3c66fc47-afba-4b63-a996-489ba1d5a0a3}"/>
+    <RecordField colName="PRODUCT_TYPE" fieldIdRef="2" fieldType="TABLE_COLUMN" name="ORDB011M.PRODUCT_TYPE" sqlTabName="ORDB011M" uid="{4358b401-0fcc-4fe2-bb6d-55c3bc3bb458}"/>
+    <RecordField colName="ORDER_AMOUNT" fieldIdRef="9" fieldType="TABLE_COLUMN" name="ORDB011M.ORDER_AMOUNT" sqlTabName="ORDB011M" uid="{e2a4bf62-547b-4c1e-8e8a-1296bcc5be58}"/>
+    <RecordField colName="ORDER_STATUS" fieldIdRef="10" fieldType="TABLE_COLUMN" name="ORDB011M.ORDER_STATUS" sqlTabName="ORDB011M" uid="{1abd7096-b076-497f-a5bd-ae1675922962}"/>
+    <RecordField defaultValue="N" fieldIdRef="5" name="del_rec" uid="{9c9282ba-d87b-4a72-a518-c7aac1599888}"/>
+    <RecordField fieldIdRef="6" name="upd_flag" uid="{a5766213-164d-4724-bf66-f3196bbc9afb}"/>
+  </Record>
+  <Form fourSTFile="../SYS/lib/sys_style.4st" gridHeight="25" gridWidth="80" name="form" text="訂單處理作業">
+    <Grid gridHeight="19" gridWidth="66" name="grid1" posX="5" posY="1">
+      <Group gridHeight="5" gridWidth="50" name="group1" posX="3" posY="1" text="">
+        <Label gridHeight="1" gridWidth="6" name="label5" posX="1" posY="1" text="訂單編號"/>
+        <Edit case="upper" colName="ORDER_NO" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" name="ORDB010M.ORDER_NO" posX="8" posY="1" sqlTabName="ORDB010M" tabIndex="-1" title="edit6" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="6" name="label4" posX="20" posY="1" text="訂貨日期"/>
+        <DateEdit fieldId="3" format="yyyymmdd" gridHeight="1" gridWidth="13" length="8" name="ORDER_DATE" posX="28" posY="1" qualFraction="MONTH" sqlType="DATETIME" tabIndex="-1" title="dateedit1" widget="DateEdit"/>
+        <Label gridHeight="1" gridWidth="13" name="label1" posX="1" posY="3" text="訂單類別(1.排單2.庫存)"/>
+        <Edit colName="ORDER_KIND" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="3" name="ORDB010M.ORDER_KIND" posX="15" posY="3" sqlTabName="ORDB010M" tabIndex="-1" title="edit1" widget="Edit"/>
+      </Group>
+      <Group gridHeight="11" gridWidth="57" name="group2" posX="3" posY="7" text="">
+        <Table gridHeight="8" gridWidth="55" name="table1" posX="1" posY="1" style="custom_style" totalRows="5">
+          <Edit colName="ORDER_ITEM" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="ORDB011M.ORDER_ITEM" posX="0" posY="0" sqlTabName="ORDB011M" tabIndex="-1" title="項次" widget="Edit"/>
+          <Edit case="upper" colName="PRODUCT_TYPE" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="ORDB011M.PRODUCT_TYPE" posX="8" posY="0" sqlTabName="ORDB011M" tabIndex="-1" title="產品代碼" widget="Edit"/>
+          <Edit colName="ORDER_AMOUNT" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" justify="right" name="ORDB011M.ORDER_AMOUNT" posX="16" posY="0" sqlTabName="ORDB011M" tabIndex="-1" title="重量" widget="Edit"/>
+          <Edit colName="ORDER_STATUS" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" justify="center" name="ORDB011M.ORDER_STATUS" posX="24" posY="0" sqlTabName="ORDB011M" tabIndex="-1" title="狀態" widget="Edit"/>
+          <CheckBox defaultValue="N" fieldId="5" gridHeight="1" gridWidth="8" name="del_rec" notNull="true" posX="32" posY="0" tabIndex="-1" title="刪除" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+          <Edit fieldId="6" gridHeight="1" gridWidth="8" hidden="true" name="upd_flag" posX="40" posY="0" tabIndex="-1" title="upd_flag" widget="Edit"/>
+        </Table>
+      </Group>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA5AGMAYgA3ADYAOQA4AGYALQA3ADQAYgA3AC0ANABmADEAZAAtADgANgAwADkALQA3ADIAOAA4AGIANABiAGMAYgBlAGUAOAB9QHCwAAAAAABAHAAAAAAAAD+vO2RaHKwPAQAAAEwAewA5AGMAZgBhADgANwBmADgALQA0AGMAMwA2AC0ANAA3AGQAYQAtAGEAYgAwAGMALQA3AGMAZgA2AGMANgBiADkANQA4ADMAMwB9QFPAAAAAAABATQAAAAAAAD+qn752yLQ/AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

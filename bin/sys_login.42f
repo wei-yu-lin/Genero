@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='CP950'?>
+<Form name="sys_login.tmp" build="3.20.08" sqlDbName="rdbmic36" minWidth="100" minHeight="30" spacing="normal" text="精密帶鋼廠" style="login" width="106" height="30">
+  <ActionDefaultList>
+    <ActionDefault name="ok" acceleratorName="enter"/>
+  </ActionDefaultList>
+  <LStr text="精密帶鋼廠"/>
+  <Grid name="grid1" width="106" height="30">
+    <Label name="poser_y" width="2" height="8" text="" fontPitch="fixed" sizePolicy="fixed" posY="0" posX="35" gridWidth="2" gridHeight="8">
+      <LStr text=""/>
+    </Label>
+    <Label name="label1" width="8" text="Client IP:" sizePolicy="initial" style="user_info" posY="1" posX="1" gridWidth="8">
+      <LStr text="Client IP:"/>
+    </Label>
+    <FormField name="formonly.client_ip" colName="client_ip" fieldId="0" sqlTabName="formonly" tabIndex="5">
+      <Edit width="22" style="user_info" posY="1" posX="11" gridWidth="22"/>
+    </FormField>
+    <Group name="main_group" text="" fontPitch="variable" style="login" gridChildrenInParent="1" posY="8" posX="33" gridWidth="50" gridHeight="22">
+      <Image name="image1" width="25" height="6" image="cat" autoScale="1" stretch="none" sizePolicy="fixed" style="login" posY="1" posX="5" gridWidth="41" gridHeight="8"/>
+      <Label name="label6" width="4" text="帳號" posY="10" posX="13" gridWidth="4">
+        <LStr text="帳號"/>
+      </Label>
+      <FormField name="formonly.user_id" colName="user_id" sqlType="VARCHAR" fieldId="1" sqlTabName="formonly" tabIndex="1">
+        <Edit width="15" shift="up" posY="10" posX="21" gridWidth="15"/>
+      </FormField>
+      <Label name="label7" width="4" text="密碼" posY="12" posX="13" gridWidth="4">
+        <LStr text="密碼"/>
+      </Label>
+      <FormField name="formonly.password" colName="password" sqlType="VARCHAR" fieldId="2" sqlTabName="formonly" tabIndex="2">
+        <Edit width="15" isPassword="1" posY="12" posX="21" gridWidth="15"/>
+      </FormField>
+      <FormField name="formonly.auto_login_cb" colName="auto_login_cb" fieldId="3" sqlTabName="formonly" defaultValue="N" notNull="1" required="1" tabIndex="6">
+        <CheckBox width="7" text="自動登入" valueChecked="Y" valueUnchecked="N" posY="14" posX="13" gridWidth="7">
+          <LStr text="自動登入"/>
+        </CheckBox>
+      </FormField>
+      <Button name="ok" width="20" tabIndex="3" text="登入" posY="16" posX="12" gridWidth="20">
+        <LStr text="登入"/>
+      </Button>
+      <Button name="bye" width="20" tabIndex="4" text="離開" posY="18" posX="12" gridWidth="20">
+        <LStr text="離開"/>
+      </Button>
+    </Group>
+    <Label name="poser_x" width="31" text="" fontPitch="fixed" sizePolicy="fixed" posY="13" posX="1" gridWidth="31">
+      <LStr text=""/>
+    </Label>
+    <Label name="poser_x1" width="20" text="" fontPitch="fixed" sizePolicy="fixed" posY="14" posX="85" gridWidth="20">
+      <LStr text=""/>
+    </Label>
+    <Label name="poser_y1" width="2" height="7" text="" fontPitch="fixed" sizePolicy="fixed" posY="23" posX="25" gridWidth="2" gridHeight="7">
+      <LStr text=""/>
+    </Label>
+  </Grid>
+  <RecordView tabName="formonly">
+    <Link colName="client_ip" fieldIdRef="0"/>
+    <Link colName="user_id" fieldIdRef="1"/>
+    <Link colName="password" fieldIdRef="2"/>
+    <Link colName="auto_login_cb" fieldIdRef="3"/>
+  </RecordView>
+  <RecordView tabName="sys_login">
+    <Link colName="user_id" fieldIdRef="1"/>
+    <Link colName="password" fieldIdRef="2"/>
+    <Link colName="client_ip" fieldIdRef="0"/>
+    <Link colName="auto_login_cb" fieldIdRef="3"/>
+  </RecordView>
+</Form>

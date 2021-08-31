@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='CP950'?>
+<Form name="sys_select.tmp" build="3.20.08" sqlDbName="rdbmic36" minWidth="100" minHeight="30" spacing="normal" text="精密帶鋼廠" style="login" width="89" height="29">
+  <ActionDefaultList>
+    <ActionDefault name="ok" acceleratorName="enter"/>
+  </ActionDefaultList>
+  <LStr text="精密帶鋼廠"/>
+  <Grid name="grid1" width="89" height="29">
+    <Label name="poser_y" width="2" height="7" text="" fontPitch="fixed" sizePolicy="fixed" posY="0" posX="22" gridWidth="2" gridHeight="7">
+      <LStr text=""/>
+    </Label>
+    <Label name="label1" width="4" text="Client IP:" style="user_info" posY="1" posX="1" gridWidth="4">
+      <LStr text="Client IP:"/>
+    </Label>
+    <FormField name="formonly.client_ip" colName="client_ip" fieldId="0" sqlTabName="formonly" tabIndex="4">
+      <Edit width="8" style="user_info" posY="1" posX="6" gridWidth="8"/>
+    </FormField>
+    <Label name="label2" width="4" text="User No:" style="user_info" posY="2" posX="1" gridWidth="4">
+      <LStr text="User No:"/>
+    </Label>
+    <FormField name="formonly.user_no" colName="user_no" fieldId="1" sqlTabName="formonly" tabIndex="5">
+      <Edit width="8" style="user_info" posY="2" posX="6" gridWidth="8"/>
+    </FormField>
+    <Label name="poser_x" width="20" text="" fontPitch="fixed" sizePolicy="fixed" posY="7" posX="1" gridWidth="20">
+      <LStr text=""/>
+    </Label>
+    <Group name="main_group" text="" fontPitch="variable" style="login" gridChildrenInParent="1" posY="7" posX="22" gridWidth="45" gridHeight="15">
+      <Image name="image1" width="20" height="3" image="Logo" autoScale="1" stretch="none" sizePolicy="fixed" style="login" posY="1" posX="2" gridWidth="41" gridHeight="2"/>
+      <Label name="label5" width="4" text="系統" posY="4" posX="10" gridWidth="4">
+        <LStr text="系統"/>
+      </Label>
+      <FormField name="formonly.sys_name" colName="sys_name" sqlType="VARCHAR" fieldId="2" sqlTabName="formonly" tabIndex="3">
+        <ComboBox width="13" posY="4" posX="15" gridWidth="15"/>
+      </FormField>
+      <Button name="ok" width="20" tabIndex="1" text="進入系統" posY="11" posX="10" gridWidth="20">
+        <LStr text="進入系統"/>
+      </Button>
+      <Button name="logout" width="20" tabIndex="2" text="登出帳號" posY="12" posX="10" gridWidth="20">
+        <LStr text="登出帳號"/>
+      </Button>
+      <Button name="bye" width="20" text="離開" posY="13" posX="10" gridWidth="20" tabIndex="6">
+        <LStr text="離開"/>
+      </Button>
+    </Group>
+    <Label name="poser_x1" width="20" text="" fontPitch="fixed" sizePolicy="fixed" posY="7" posX="68" gridWidth="20">
+      <LStr text=""/>
+    </Label>
+    <Label name="poser_y1" width="2" height="6" text="" fontPitch="fixed" sizePolicy="fixed" posY="22" posX="22" gridWidth="2" gridHeight="6">
+      <LStr text=""/>
+    </Label>
+  </Grid>
+  <RecordView tabName="formonly">
+    <Link colName="client_ip" fieldIdRef="0"/>
+    <Link colName="user_no" fieldIdRef="1"/>
+    <Link colName="sys_name" fieldIdRef="2"/>
+  </RecordView>
+  <RecordView tabName="sys_login">
+    <Link colName="client_ip" fieldIdRef="0"/>
+    <Link colName="user_no" fieldIdRef="1"/>
+  </RecordView>
+  <RecordView tabName="get_sys">
+    <Link colName="sys_name" fieldIdRef="2"/>
+  </RecordView>
+</Form>

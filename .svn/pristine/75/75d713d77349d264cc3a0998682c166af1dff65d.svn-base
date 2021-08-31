@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="rdbmic36" fileVersion="31400" gstVersion="31408" name="managedform" uid="{80717426-b163-41a2-b810-938320bcfaea}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="v_mics060f" uid="{f29ceeee-34d1-4750-aceb-2f7b6ef0dbbd}">
+    <RecordField colName="CODE_TYPE" fieldIdRef="1" fieldType="TABLE_COLUMN" name="MICM060M.CODE_TYPE" sqlTabName="MICM060M" uid="{3fd5a206-48ce-4806-ac3c-9e0c246c83d3}"/>
+    <RecordField fieldIdRef="2" name="code_desc" uid="{d9b3c22f-cc75-4887-9e4e-ba23bece12f9}"/>
+    <RecordField colName="CODE" fieldIdRef="3" fieldType="TABLE_COLUMN" name="MICM060M.CODE" sqlTabName="MICM060M" uid="{caa1672b-e4ed-43c2-8cca-b6709f0b4ce4}"/>
+    <RecordField colName="REMARK" fieldIdRef="4" fieldType="TABLE_COLUMN" name="MICM060M.REMARK" sqlTabName="MICM060M" uid="{6f1f6ca7-5f9b-4541-b1f1-9f5f295bdb89}"/>
+    <RecordField defaultValue="N" fieldIdRef="5" name="del_rec" uid="{212eb2ce-195f-4418-b88b-975f6de758fe}"/>
+    <RecordField fieldIdRef="6" name="upd_flag" uid="{75c20801-738c-4bb2-8cec-ee5ed0ab0389}"/>
+  </Record>
+  <Form fourSTFile="../../SYS/sys_style.4st" gridHeight="25" gridWidth="80" name="form" text="系統代碼維護作業">
+    <Grid gridHeight="18" gridWidth="69" name="grid1" posX="6" posY="1">
+      <Table gridHeight="13" gridWidth="61" name="table1" posX="4" posY="3" style="custom_style" totalRows="5">
+        <Edit colName="CODE_TYPE" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="MICM060M.CODE_TYPE" posX="0" posY="0" sqlTabName="MICM060M" tabIndex="-1" title="類別" widget="Edit"/>
+        <Edit fieldId="2" gridHeight="1" gridWidth="8" name="code_desc" posX="8" posY="0" tabIndex="-1" title="大類" widget="Edit"/>
+        <Edit colName="CODE" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="MICM060M.CODE" posX="16" posY="0" sqlTabName="MICM060M" tabIndex="-1" title="區分碼" widget="Edit"/>
+        <Edit colName="REMARK" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="MICM060M.REMARK" posX="24" posY="0" sqlTabName="MICM060M" tabIndex="-1" title="內容" widget="Edit"/>
+        <CheckBox defaultValue="N" fieldId="5" gridHeight="1" gridWidth="8" name="del_rec" notNull="true" posX="32" posY="0" tabIndex="-1" title="刪除" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit fieldId="6" gridHeight="1" gridWidth="8" hidden="true" name="upd_flag" posX="40" posY="0" tabIndex="-1" title="upd_flag" widget="Edit"/>
+      </Table>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBmADIAOQBjAGUAZQBlAGUALQAzADQAZAAxAC0ANAA3ADUAMAAtAGEAYwBlAGIALQAyAGYANwBiADYAZQBmADAAZABiAGIAZAB9AAAAAAAAAAAAAAAAAAAAAD+AYk3S8an8AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

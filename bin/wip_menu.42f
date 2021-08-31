@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='CP950'?>
+<Form name="wip_menu.tmp" build="3.20.08" text="品檢系統" style="mystyle" width="45" height="12">
+  <LStr text="品檢系統"/>
+  <Grid name="grid1" width="45" height="12">
+    <Image name="wip_main" width="965px" height="540px" image="fam_menu.jpg" stretch="both" sizePolicy="initial" posY="1" posX="1" gridWidth="43" gridHeight="10"/>
+  </Grid>
+</Form>

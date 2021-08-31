@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Schema gstVersion="31408" id="{6c74932a-cd48-4450-86ff-704fd43945ec}" version="4.0">
+  <AGSettings version="1.1">
+    <DynamicProperties version="2">
+      <DynamicProperty description="Associated label when generating form" initialValue="" isDefaultInherited="false" isHidden="false" label="標籤" name="label" readOnly="false" type="TEXT"/>
+      <DynamicProperty description="Associated widget" editorInfo="contains:ButtonEdit|CheckBox|ComboBox|DateEdit|DateTimeEdit|Edit|FFImage|FFLabel|Field|Phantom|ProgressBar|RadioGroup|Slider|SpinEdit|TextEdit|TimeEdit" initialValue="Edit" isDefaultInherited="false" isHidden="false" label="Widget" name="widget" readOnly="false" type="ENUM"/>
+      <DynamicPropertyGroup collapsed="false" description="Formfied properties" label="Formfield" name="formfieldGroup" properties="label;widget"/>
+    </DynamicProperties>
+    <NodeInfos version="1">
+      <NodeInfo mimeType="db/column" properties="widget;label"/>
+    </NodeInfos>
+  </AGSettings>
+  <ExtractionSettings/>
+  <Table active="true" name="edua010m" status="R" uuid="db/table141">
+    <Column fglLength="11" fglType="201" name="order_no" notNull="true" order="1" status="R" uuid="db/column927"/>
+    <Column fglLength="1" fglType="201" name="order_kind" notNull="false" order="2" status="R" uuid="db/column929"/>
+    <Column fglLength="8" fglType="201" name="order_date" notNull="false" order="3" status="R" uuid="db/column931"/>
+    <Column fglLength="6" fglType="201" name="cust_no" notNull="false" order="4" status="R" uuid="db/column933"/>
+    <Column fglLength="5" fglType="201" name="sales_man" notNull="false" order="5" status="R" uuid="db/column935"/>
+  </Table>
+  <Table active="true" name="edua020m" status="R" uuid="db/table143">
+    <Column fglLength="11" fglType="201" name="order_no" notNull="true" order="1" status="R" uuid="db/column937"/>
+    <Column fglLength="3" fglType="201" name="order_item" notNull="true" order="2" status="R" uuid="db/column939"/>
+    <Column fglLength="10" fglType="201" name="product_no" notNull="false" order="3" status="R" uuid="db/column941"/>
+    <Column fglLength="3075" fglType="5" name="order_amount" notNull="false" order="4" status="R" uuid="db/column943"/>
+    <Column fglLength="3076" fglType="5" name="unit_price" notNull="false" order="5" status="R" uuid="db/column945"/>
+  </Table>
+  <Table active="true" name="educ010m" status="R" uuid="db/table145">
+    <Column fglLength="6" fglType="201" name="cust_no" notNull="true" order="1" status="R" uuid="db/column947"/>
+    <Column fglLength="50" fglType="201" name="cust_name" notNull="false" order="2" status="R" uuid="db/column949"/>
+    <Column fglLength="100" fglType="201" name="address" notNull="false" order="3" status="R" uuid="db/column951"/>
+    <Column fglLength="30" fglType="201" name="country" notNull="false" order="4" status="R" uuid="db/column953"/>
+    <Column fglLength="20" fglType="201" name="connect_man" notNull="false" order="5" status="R" uuid="db/column955"/>
+    <Column fglLength="20" fglType="201" name="tel" notNull="false" order="6" status="R" uuid="db/column957"/>
+    <Column fglLength="20" fglType="201" name="fax" notNull="false" order="7" status="R" uuid="db/column959"/>
+    <Column fglLength="10" fglType="201" name="id_no" notNull="false" order="8" status="R" uuid="db/column961"/>
+  </Table>
+  <Table active="true" name="menu_lvl" status="U" uuid="db/table147">
+    <Column fglLength="20" fglType="201" name="id_no" notNull="true" order="1" status="U" uuid="db/column963"/>
+    <Column fglLength="20" fglType="201" name="p_id_no" notNull="false" order="2" status="U" uuid="db/column965"/>
+    <Column fglLength="60" fglType="201" name="id_name" notNull="false" order="3" status="U" uuid="db/column967"/>
+    <Column fglLength="1" fglType="201" name="prg_yn" notNull="false" order="4" status="U" uuid="db/column969"/>
+    <Column fglLength="3" fglType="201" name="sys_no" notNull="true" order="5" status="U" uuid="db/column971"/>
+  </Table>
+  <Table active="true" name="secprg" status="U" uuid="db/table149">
+    <Column fglLength="20" fglType="201" name="prg_no" notNull="true" order="1" status="U" uuid="db/column973"/>
+    <Column fglLength="4" fglType="201" name="sys_no" notNull="true" order="2" status="U" uuid="db/column975"/>
+    <Column fglLength="60" fglType="201" name="prg_name" notNull="false" order="3" status="U" uuid="db/column977"/>
+    <Column fglLength="3" fglType="201" name="sys_item_no" notNull="false" order="4" status="U" uuid="db/column979"/>
+    <Column fglLength="768" fglType="5" name="prg_seq" notNull="false" order="5" status="U" uuid="db/column981"/>
+  </Table>
+  <Table active="true" name="secsys" status="U" uuid="db/table151">
+    <Column fglLength="4" fglType="201" name="sys_no" notNull="true" order="1" status="U" uuid="db/column983"/>
+    <Column fglLength="48" fglType="201" name="sys_name" notNull="false" order="2" status="U" uuid="db/column985"/>
+  </Table>
+  <Table active="true" name="secuprg" status="U" uuid="db/table153">
+    <Column fglLength="20" fglType="201" name="prg_no" notNull="true" order="1" status="U" uuid="db/column987"/>
+    <Column fglLength="8" fglType="201" name="user_id" notNull="true" order="2" status="U" uuid="db/column989"/>
+    <Column fglLength="1" fglType="201" name="padd" notNull="false" order="3" status="U" uuid="db/column991"/>
+    <Column fglLength="1" fglType="201" name="pdelete" notNull="false" order="4" status="U" uuid="db/column993"/>
+    <Column fglLength="1" fglType="201" name="pmodify" notNull="false" order="5" status="U" uuid="db/column995"/>
+    <Column fglLength="1" fglType="201" name="pquery" notNull="false" order="6" status="U" uuid="db/column997"/>
+    <Column fglLength="1" fglType="201" name="pprint" notNull="false" order="7" status="U" uuid="db/column999"/>
+    <Column fglLength="1" fglType="201" name="pexecute" notNull="false" order="8" status="U" uuid="db/column1001"/>
+  </Table>
+  <Table active="true" name="secuser" status="U" uuid="db/table155">
+    <Column fglLength="8" fglType="201" name="user_id" notNull="true" order="1" status="U" uuid="db/column1003"/>
+    <Column fglLength="20" fglType="201" name="user_name" notNull="false" order="2" status="U" uuid="db/column1005"/>
+    <Column fglLength="15" fglType="201" name="password" notNull="false" order="3" status="U" uuid="db/column1007"/>
+    <Column fglLength="1" fglType="201" name="u_type" notNull="false" order="4" status="U" uuid="db/column1009"/>
+    <Column fglLength="30" fglType="201" name="u_style" notNull="false" order="5" status="U" uuid="db/column1011"/>
+  </Table>
+  <Table active="true" name="sitvariable" status="R" uuid="db/table157">
+    <Column fglLength="30" fglType="201" name="var_name" notNull="true" order="1" status="R" uuid="db/column1013"/>
+    <Column fglLength="1" fglType="201" name="var_type" notNull="true" order="2" status="R" uuid="db/column1015"/>
+    <Column fglLength="128" fglType="201" name="var_value" notNull="false" order="3" status="R" uuid="db/column1017"/>
+    <Column fglLength="30" fglType="201" name="var_comment" notNull="false" order="4" status="R" uuid="db/column1019"/>
+  </Table>
+  <Table active="true" name="sys_log" status="U" uuid="db/table159">
+    <Column fglLength="8" fglType="201" name="user_id" notNull="true" order="1" status="U" uuid="db/column1021"/>
+    <Column fglLength="4" fglType="201" name="sys_no" notNull="true" order="2" status="U" uuid="db/column1023"/>
+    <Column fglLength="2" fglType="201" name="company" notNull="true" order="3" status="U" uuid="db/column1025"/>
+    <Column fglLength="1" fglType="201" name="log_flag" notNull="false" order="4" status="U" uuid="db/column1027"/>
+  </Table>
+  <Table active="true" name="sys_menu" status="U" uuid="db/table161">
+    <Column fglLength="3" fglType="201" name="sys_no" notNull="true" order="1" status="U" uuid="db/column1029"/>
+    <Column fglLength="3" fglType="201" name="sys_item_no" notNull="true" order="2" status="U" uuid="db/column1031"/>
+    <Column fglLength="60" fglType="201" name="sys_item_name" notNull="false" order="3" status="U" uuid="db/column1033"/>
+    <Column fglLength="3" fglType="201" name="up_item_no" notNull="false" order="4" status="U" uuid="db/column1035"/>
+    <Column fglLength="768" fglType="5" name="item_seq" notNull="false" order="5" status="U" uuid="db/column1037"/>
+  </Table>
+  <Table active="true" name="sys_prg_log" status="U" uuid="db/table163">
+    <Column fglLength="8" fglType="201" name="user_id" notNull="true" order="1" status="U" uuid="db/column1039"/>
+    <Column fglLength="20" fglType="201" name="prg_no" notNull="true" order="2" status="U" uuid="db/column1041"/>
+    <Column fglLength="2" fglType="201" name="company" notNull="false" order="3" status="U" uuid="db/column1043"/>
+    <Column fglLength="1" fglType="201" name="log_flag" notNull="false" order="4" status="U" uuid="db/column1045"/>
+  </Table>
+  <Table active="true" name="version_ctrl" status="U" uuid="db/table165">
+    <Column fglLength="25" fglType="201" name="prg_no" notNull="true" order="1" status="U" uuid="db/column1047"/>
+    <Column fglLength="60" fglType="201" name="prg_name" notNull="false" order="2" status="U" uuid="db/column1049"/>
+    <Column fglLength="5" fglType="201" name="user_last_maint" notNull="false" order="3" status="U" uuid="db/column1051"/>
+    <Column fglLength="8" fglType="201" name="upload_date" notNull="false" order="4" status="U" uuid="db/column1053"/>
+    <Column fglLength="1" fglType="201" name="lock_yn" notNull="false" order="5" status="U" uuid="db/column1055"/>
+    <Column fglLength="8" fglType="201" name="download_date" notNull="false" order="6" status="U" uuid="db/column1057"/>
+    <Column fglLength="20" fglType="201" name="app_no" notNull="false" order="7" status="U" uuid="db/column1059"/>
+  </Table>
+  <Views ActiveView="視圖-1" showLabels="true">
+    <View Name="視圖-1">
+      <Layout>
+        <![CDATA[AAAAAgAAABYAZABiAC8AdABhAGIAbABlADEANQAzQJwgAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEANAA5QJLAAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEANQA5QKUYAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEANgAxQKdwAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEANgAzQKnIAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEANAAxAAAAAAAAAABANAAAAAAAAD9QYk3S8an8AAAAABYAZABiAC8AdABhAGIAbABlADEANQA1QKBoAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEANQAxQJdwAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEANAA1QILAAAAAAABANAAAAAAAAD9ok3S8an76AAAAABYAZABiAC8AdABhAGIAbABlADEANAA3QIwgAAAAAABANAAAAAAAAD9wYk3S8an8AQAAABYAZABiAC8AdABhAGIAbABlADEANAAzQHLAAAAAAABANAAAAAAAAD9gYk3S8an8AAAAABYAZABiAC8AdABhAGIAbABlADEANQA3QKLAAAAAAABANAAAAAAAAD90euFHrhR7AAAAABYAZABiAC8AdABhAGIAbABlADEANgA1QKwgAAAAAABANAAAAAAAAAAAAAAAAAAAAQ==]]>
+      </Layout>
+    </View>
+  </Views>
+</Schema>

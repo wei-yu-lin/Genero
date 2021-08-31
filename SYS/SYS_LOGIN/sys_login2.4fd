@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="rdbmic36" fileVersion="31400" gstVersion="31408" name="ManagedForm" uid="{ee9683f6-5200-486e-a372-13a057de3d12}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="sys_login" order="" uid="{7044a0c3-0636-4f6b-8bbf-aa5a5fa24af1}" where="">
+    <RecordField colName="account" fieldIdRef="1" name="user_id" sqlTabName="formonly" sqlType="VARCHAR" table_alias_name="" uid="{301bae5b-6425-412c-bec8-7091018c51ab}"/>
+    <RecordField colName="password" fieldIdRef="2" name="password" sqlTabName="formonly" sqlType="VARCHAR" table_alias_name="" uid="{7b1c71a5-04cc-49c6-a083-bb0076d988c1}"/>
+  </Record>
+  <Record active="false" additionalTables="" joinLeft="" joinOperator="" joinRight="" masterTable="secsys" name="get_sys" order="" uid="{32a2c8e9-4861-4659-959e-8498396dd2d7}" uniqueKey="" where="">
+    <RecordField colName="SYS_NAME" fieldIdRef="3" fieldType="TABLE_COLUMN" name="SECSYS.SYS_NAME" sqlTabName="SECSYS" sqlType="VARCHAR" table_alias_name="setsys" uid="{2c322119-7655-4787-9566-4b4cb2644fa6}"/>
+  </Record>
+  <Form fourSTFile="sys_style.4st" gridHeight="15" gridWidth="44" minHeight="25" minWidth="30" name="sys_login" style="login" text="登錄畫面">
+    <ActionDefaultList name="ActionDefaultList1">
+      <ActionDefault acceleratorName="Enter" name="ok"/>
+    </ActionDefaultList>
+    <VBox gridHeight="15" gridWidth="44" name="VBox1" posX="0" posY="0">
+      <Grid gridHeight="13" gridWidth="44" name="Grid1" posX="0" posY="1">
+        <Image autoScale="true" gridHeight="3" gridWidth="41" height="3" image="yu_logo.jpg" name="Image1" posX="1" posY="0" sizePolicy="fixed" stretch="none" width="20"/>
+        <Label gridHeight="1" gridWidth="15" name="Label3" posX="1" posY="3" text=""/>
+        <Label gridHeight="1" gridWidth="7" name="label8" posX="18" posY="3" text="系統登入"/>
+        <Label gridHeight="1" gridWidth="11" name="Label4" posX="32" posY="3" text=""/>
+        <Label gridHeight="1" gridWidth="7" name="label5" posX="7" posY="4" text="請選擇系統"/>
+        <ComboBox aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="SYS_NAME" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" items="" name="SECSYS.SYS_NAME" posX="19" posY="4" scroll="false" sqlTabName="SECSYS" sqlType="VARCHAR" tabIndex="5" table_alias_name="setsys" title="ComboBox1" widget="ComboBox"/>
+        <Label gridHeight="1" gridWidth="7" name="label6" posX="7" posY="5" text="請輸入帳號"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" case="upper" colName="account" fieldId="1" gridHeight="1" gridWidth="12" name="user_id" posX="19" posY="5" sqlTabName="formonly" sqlType="VARCHAR" tabIndex="1" table_alias_name="" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="7" name="label7" posX="7" posY="6" text="請輸入密碼"/>
+        <Edit aggregateColName="" aggregateName="" aggregateTableAliasName="" aggregateTableName="" colName="password" fieldId="2" gridHeight="1" gridWidth="12" invisible="true" lstrcomment="true" name="password" posX="19" posY="6" sqlTabName="formonly" sqlType="VARCHAR" tabIndex="2" table_alias_name="" widget="Edit"/>
+        <Label gridHeight="2" gridWidth="42" name="Label1" posX="1" posY="7" text=""/>
+        <Button gridHeight="1" gridWidth="15" name="ok" posX="14" posY="9" tabIndex="3" text="登入"/>
+        <Button gridHeight="1" gridWidth="15" name="bye" posX="14" posY="10" tabIndex="4" text="離開"/>
+        <Button gridHeight="1" gridWidth="15" name="chg_pwd" posX="14" posY="11" tabIndex="6" text="繼續輸入"/>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAzADIAYQAyAGMAOABlADkALQA0ADgANgAxAC0ANAA2ADUAOQAtADkANQA5AGUALQA4ADQAOQA4ADMAOQA2AGQAZAAyAGQANwB9wGjgABjgAAlAPgAAHgAACj+z987ZFocvAQAAAEwAewA3ADAANAA0AGEAMABjADMALQAwADYAMwA2AC0ANABmADYAYgAtADgAYgBiAGYALQBhAGEANQBhADUAZgBhADIANABhAGYAMQB9wHLgABLgAAfAVcAAFcAACD+ysCDEm6XnAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

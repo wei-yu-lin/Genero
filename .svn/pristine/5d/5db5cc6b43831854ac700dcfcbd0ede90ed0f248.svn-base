@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<WorkspaceViewState version="1.0">
+  <ExpandedNodes>
+    <Node path="ERP.4pw" type="pm/main-project"/>
+    <Node path="ERP.4pw/MIC" type="pm/group"/>
+    <Node path="ERP.4pw/MIC/Library" type="pm/library"/>
+    <Node path="ERP.4pw/MIC/MIC_MAIN" type="pm/application"/>
+    <Node path="ERP.4pw/MIC/MICM012F" type="pm/application"/>
+    <Node path="ERP.4pw/MIC/MICS060F" type="pm/application"/>
+    <Node path="ERP.4pw/ORD/Library" type="pm/library"/>
+    <Node path="ERP.4pw/ORD/ORD1" type="pm/application"/>
+    <Node path="ERP.4pw/ORD/ORD_MAIN" type="pm/application"/>
+    <Node path="ERP.4pw/SYS" type="pm/group"/>
+    <Node path="ERP.4pw/SYS/Database" type="pm/library"/>
+    <Node path="ERP.4pw/SYS/Library" type="pm/library"/>
+    <Node path="ERP.4pw/SYS/SYS_DELEGATE" type="pm/application"/>
+    <Node path="ERP.4pw/SYS/SYS_LOGIN" type="pm/application"/>
+    <Node path="ERP.4pw/TQC/Library" type="pm/library"/>
+    <Node path="ERP.4pw/TQC/TQC_MAIN" type="pm/application"/>
+    <Node path="ERP.4pw/WIP/Database" type="pm/library"/>
+    <Node path="ERP.4pw/WIP/Library" type="pm/library"/>
+    <Node path="ERP.4pw/WIP/view" type="pm/application"/>
+    <Node path="ERP.4pw/WIP/WIP_MAIN" type="pm/application"/>
+  </ExpandedNodes>
+  <OpenDocuments>
+    <Document container="true" filePath="MIC/MICM012F/micm012f.4gl" locator="463:30" module="mod-ce3">
+      <Data name="8" value="Big5"/>
+    </Document>
+    <Document container="true" filePath="MIC/MICM012F/micm012f.4fd" locator="" module="mod-fd"/>
+    <Document container="true" filePath="SYS/SYS_LOGIN/sys_login.4gl" locator="23:1" module="mod-ce3">
+      <Data name="8" value="Big5"/>
+    </Document>
+    <Document container="true" filePath="SYS/SYS_LOGIN/sys_main.4gl" locator="1:21" module="mod-ce3">
+      <Data name="8" value="Big5"/>
+    </Document>
+    <Document container="true" filePath="SYS/SYS_LOGIN/sys_select.4fd" locator="" module="mod-fd"/>
+    <Document container="true" filePath="SYS/SYS_LOGIN/sys_login.4fd" locator="" module="mod-fd"/>
+    <Document container="true" filePath="SYS/SYS_LOGIN/sys_delegate.4gl" locator="13:54:13:62" module="mod-ce3">
+      <Data name="8" value="Big5"/>
+    </Document>
+  </OpenDocuments>
+  <CurrentDocument filePath="SYS/SYS_LOGIN/sys_login.4gl" module="mod-ce3"/>
+</WorkspaceViewState>

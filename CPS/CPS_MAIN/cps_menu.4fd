@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="rdbcps36" fileVersion="31400" gstVersion="31408" name="ManagedForm" uid="{51562ad8-f2f1-4309-91c7-483e7694acdc}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="awaitPdi" uid="{daa7faaa-8160-4258-bec4-ea4227b65ad2}">
+    <RecordField colName="COIL_NUMBER" fieldIdRef="7" fieldType="TABLE_COLUMN" name="CCAA030M.COIL_NUMBER" sqlTabName="CCAA030M" uid="{8bdd7a1b-1d8a-477e-9f71-748f4564976b}"/>
+    <RecordField colName="SCHEDULE_NUMBER" fieldIdRef="1" fieldType="TABLE_COLUMN" name="CCAA030M.SCHEDULE_NUMBER" sqlTabName="CCAA030M" uid="{d2de4632-5e97-4803-af27-b7507b526719}"/>
+    <RecordField colName="STEEL_GRADE" fieldIdRef="5" fieldType="TABLE_COLUMN" name="CCAA030M.STEEL_GRADE" sqlTabName="CCAA030M" uid="{040ec9f9-d7fc-4480-a85b-5b3d39264120}"/>
+    <RecordField colName="ACTUAL_WIDTH" fieldIdRef="6" fieldType="TABLE_COLUMN" name="CCAA030M.ACTUAL_WIDTH" sqlTabName="CCAA030M" uid="{6a40755b-6ebb-4cb4-9070-16d4a99123da}"/>
+    <RecordField colName="ACTUAL_THICKNESS" fieldIdRef="8" fieldType="TABLE_COLUMN" name="CCAA030M.ACTUAL_THICKNESS" sqlTabName="CCAA030M" uid="{0ebc323c-4d47-40fa-8a3f-6a49f9ebff71}"/>
+    <RecordField colName="ACTUAL_WEIGHT" fieldIdRef="0" fieldType="TABLE_COLUMN" name="CCAA030M.ACTUAL_WEIGHT" sqlTabName="CCAA030M" uid="{ff7c434f-3bf7-417e-93aa-677023bd1c94}"/>
+  </Record>
+  <Record name="confirmPdi" uid="{b5ff4677-dd9f-4298-a5ee-ec36d512e42d}">
+    <RecordField colName="COIL_NUMBER" fieldIdRef="12" fieldType="TABLE_ALIAS" name="CCAA030M1.COIL_NUMBER" sqlTabName="CCAA030M" table_alias_name="CCAA030M1" uid="{314bb8a0-ac3f-481f-a8b6-5790330b9df9}"/>
+    <RecordField colName="SCHEDULE_NUMBER" fieldIdRef="11" fieldType="TABLE_ALIAS" name="CCAA030M1.SCHEDULE_NUMBER" sqlTabName="CCAA030M" table_alias_name="CCAA030M1" uid="{3f99fcc8-12e9-4fcf-9245-76bef2555300}"/>
+    <RecordField colName="STEEL_GRADE" fieldIdRef="2" fieldType="TABLE_ALIAS" name="CCAA030M1.STEEL_GRADE" sqlTabName="CCAA030M" table_alias_name="CCAA030M1" uid="{036fe67e-5096-4796-bd8a-e47a60759d60}"/>
+    <RecordField colName="ACTUAL_WIDTH" fieldIdRef="9" fieldType="TABLE_ALIAS" name="CCAA030M1.ACTUAL_WIDTH" sqlTabName="CCAA030M" table_alias_name="CCAA030M1" uid="{35dfe242-a1d2-484b-bf99-2c8927486f05}"/>
+    <RecordField colName="ACTUAL_THICKNESS" fieldIdRef="3" fieldType="TABLE_ALIAS" name="CCAA030M1.ACTUAL_THICKNESS" sqlTabName="CCAA030M" table_alias_name="CCAA030M1" uid="{62e4c64c-6c0f-4713-9d8a-295c0829ffe2}"/>
+    <RecordField colName="ACTUAL_WEIGHT" fieldIdRef="4" fieldType="TABLE_ALIAS" name="CCAA030M1.ACTUAL_WEIGHT" sqlTabName="CCAA030M" table_alias_name="CCAA030M1" uid="{52a1d3d4-8397-418b-b8b4-054945647ba3}"/>
+  </Record>
+  <Form gridHeight="29" gridWidth="116" name="cps_menu" windowStyle="main2">
+    <ActionDefaultList name="actiondefaultlist1">
+      <ActionDefault image="listadd" name="parts_append" text="Append"/>
+      <ActionDefault image="listdel" name="parts_delete" text="Delete"/>
+      <ActionDefault image="pen" name="parts_modify" text="Modify"/>
+      <ActionDefault comment="Delete current node" image="treedel1" name="tree_delete" text="Delete"/>
+      <ActionDefault comment="Insert new child (makes a parent from current node)" image="treeadd2" name="tree_append_child" text="New child"/>
+      <ActionDefault comment="Insert new sibling (before current child)" image="treeins1" name="tree_insert_sibling" text="Insert sibling"/>
+      <ActionDefault comment="Delete all nodes" image="treeclear" name="tree_clear" text="Delete all"/>
+      <ActionDefault comment="Move current node up" image="treeup" name="tree_mup" text="Move up"/>
+      <ActionDefault comment="Move current node down" image="treedown" name="tree_mdown" text="Move down"/>
+      <ActionDefault comment="Increment quatity by one" image="treeplus" name="tree_qincr" text="Incr quant"/>
+      <ActionDefault comment="Decrement quatity by one" image="treeminus" name="tree_qdecr" text="Decr quant"/>
+      <ActionDefault comment="Expand whole node" image="treeexp1" name="tree_expall" text="Expand all"/>
+      <ActionDefault comment="Collapse whole node" image="treecol1" name="tree_colall" text="Collapse all"/>
+    </ActionDefaultList>
+    <TopMenu name="topmenu1">
+      <TopMenuGroup name="file" text="File">
+        <TopMenuCommand name="search" text="Search"/>
+        <TopMenuSeparator name="topmenuseparator1"/>
+        <TopMenuCommand name="close" text="Quit"/>
+      </TopMenuGroup>
+      <TopMenuGroup name="help" text="Help">
+        <TopMenuCommand name="about" text="About"/>
+      </TopMenuGroup>
+    </TopMenu>
+    <VBox gridHeight="29" gridWidth="110" name="vbox1" posX="0" posY="0" splitter="true">
+      <Grid gridHeight="15" gridWidth="110" name="grid1" posX="0" posY="1">
+        <Table doubleClick="show_part" gridHeight="13" gridWidth="84" name="mybom" posX="2" posY="0" totalRows="5" unitWidth="characters" unsortableColumns="true" width="84">
+          <Edit colName="SCHEDULE_NUMBER" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="CCAA030M.SCHEDULE_NUMBER" posX="0" posY="0" sqlTabName="CCAA030M" tabIndex="-1" title="軋延序號" widget="Edit"/>
+          <Edit colName="COIL_NUMBER" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" hidden="false" name="CCAA030M.COIL_NUMBER" posX="8" posY="0" scroll="true" sqlTabName="CCAA030M" tabIndex="10" title="鋼 捲 編 號" widget="Edit"/>
+          <Edit colName="STEEL_GRADE" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" hidden="false" name="CCAA030M.STEEL_GRADE" posX="21" posY="0" sqlTabName="CCAA030M" tabIndex="11" title="鋼種" widget="Edit"/>
+          <Edit colName="ACTUAL_WEIGHT" fieldId="0" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" name="CCAA030M.ACTUAL_WEIGHT" posX="32" posY="0" sqlTabName="CCAA030M" tabIndex="9" title="重量" widget="Edit"/>
+          <Edit colName="ACTUAL_WIDTH" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" hidden="false" name="CCAA030M.ACTUAL_WIDTH" posX="45" posY="0" sqlTabName="CCAA030M" tabIndex="12" title="寬度" widget="Edit"/>
+          <Edit colName="ACTUAL_THICKNESS" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" hidden="false" name="CCAA030M.ACTUAL_THICKNESS" posX="55" posY="0" scroll="true" sqlTabName="CCAA030M" tabIndex="13" title="厚度" widget="Edit"/>
+        </Table>
+        <Group gridHeight="13" gridWidth="7" name="group1" posX="86" posY="0">
+          <Button gridHeight="1" gridWidth="4" image="fa-twitch" name="treeBack" posX="2" posY="2" tabIndex="1" text="回主畫面"/>
+          <Button gridHeight="1" gridWidth="4" image="ok2" name="treeSelect" posX="2" posY="3" tabIndex="2" text="Select"/>
+          <Button gridHeight="1" gridWidth="4" image="fa-remove" name="treeDeselect" posX="2" posY="4" tabIndex="3" text="Deselect"/>
+          <Button gridHeight="1" gridWidth="4" image="fa-arrow-up" name="treeMoveUp" posX="2" posY="5" tabIndex="4" text="MoveUp"/>
+          <Button gridHeight="1" gridWidth="4" image="arrdown" name="treeMoveDown" posX="2" posY="6" tabIndex="-1" text="MoveDown"/>
+          <Button gridHeight="1" gridWidth="4" image="delete" name="treeDelete" posX="2" posY="7" tabIndex="5" text="Delete"/>
+          <Button gridHeight="1" gridWidth="4" image="fa-repeat" name="treeRequest" posX="2" posY="8" tabIndex="6" text="Request"/>
+          <Button gridHeight="1" gridWidth="4" image="fa-picture-o" name="treePrint" posX="2" posY="9" tabIndex="7" text="Print"/>
+          <Button gridHeight="1" gridWidth="4" image="fa-github-alt" name="treePdo" posX="2" posY="10" tabIndex="8" text="Pdo"/>
+        </Group>
+      </Grid>
+      <Grid gridHeight="12" gridWidth="110" name="grid2" posX="0" posY="16">
+        <Table gridHeight="8" gridWidth="84" name="table1" posX="1" posY="0" totalRows="5" unitWidth="characters" width="84">
+          <Edit colName="SCHEDULE_NUMBER" fieldId="11" fieldType="TABLE_ALIAS" gridHeight="1" gridWidth="10" name="CCAA030M1.SCHEDULE_NUMBER" posX="0" posY="0" sqlTabName="CCAA030M" tabIndex="-1" table_alias_name="CCAA030M1" title="軋延序號" widget="Edit"/>
+          <Edit colName="COIL_NUMBER" fieldId="12" fieldType="TABLE_ALIAS" gridHeight="1" gridWidth="10" name="CCAA030M1.COIL_NUMBER" posX="10" posY="0" sqlTabName="CCAA030M" tabIndex="-1" table_alias_name="CCAA030M1" title="鋼 捲 編 號" widget="Edit"/>
+          <Edit colName="STEEL_GRADE" fieldId="2" fieldType="TABLE_ALIAS" gridHeight="1" gridWidth="10" name="CCAA030M1.STEEL_GRADE" posX="20" posY="0" sqlTabName="CCAA030M" tabIndex="-1" table_alias_name="CCAA030M1" title="鋼種" widget="Edit"/>
+          <Edit colName="ACTUAL_WEIGHT" fieldId="4" fieldType="TABLE_ALIAS" gridHeight="1" gridWidth="10" name="CCAA030M1.ACTUAL_WEIGHT" posX="30" posY="0" sqlTabName="CCAA030M" tabIndex="-1" table_alias_name="CCAA030M1" title="重量" widget="Edit"/>
+          <Edit colName="ACTUAL_WIDTH" fieldId="9" fieldType="TABLE_ALIAS" gridHeight="1" gridWidth="10" name="CCAA030M1.ACTUAL_WIDTH" posX="40" posY="0" sqlTabName="CCAA030M" tabIndex="-1" table_alias_name="CCAA030M1" title="寬度" widget="Edit"/>
+          <Edit colName="ACTUAL_THICKNESS" fieldId="3" fieldType="TABLE_ALIAS" gridHeight="1" gridWidth="10" name="CCAA030M1.ACTUAL_THICKNESS" posX="50" posY="0" sqlTabName="CCAA030M" tabIndex="-1" table_alias_name="CCAA030M1" title="厚度" widget="Edit"/>
+        </Table>
+      </Grid>
+    </VBox>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBiADUAZgBmADQANgA3ADcALQBkAGQAOQBmAC0ANAAyADkAOAAtAGEANQBlAGUALQBlAGMAMwA2AGQANQAxADIAZQA0ADIAZAB9QEwRWw4AAABAcytjwMAAAD+x64UeuFHvAQAAAEwAewBkAGEAYQA3AGYAYQBhAGEALQA4ADEANgAwAC0ANAAyADUAOAAtAGIAZQBjADQALQBlAGEANAAyADIANwBiADYANQBhAGQAMgB9wGTY8u+AAABAX+6kzwAAAD+w5WBBiTdPAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

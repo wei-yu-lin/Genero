@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm fileVersion="31400" gstVersion="31408" name="managedform" uid="{06bb87e3-4e14-481d-9497-e31d67b9e5cb}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Form fourSTFile="$(ProjectDir)/SYS/sys_style.4st" gridHeight="50" gridWidth="80" name="form" style="mystyle" text="Form">
+    <Grid gridHeight="19" gridWidth="48" name="grid1" posX="0" posY="0" style="backimage"/>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAg==]]>
+  </DiagramLayout>
+</ManagedForm>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="Big5"?>
+<ToolBar >
+  <ToolBarItem name="pcms020f_query" image="find" text="查詢" />
+  <ToolBarSeparator name="pcms020f_querysep" />
+  
+  <ToolBarItem name="pcms020f_add" image="new" text="新增" />
+  <ToolBarSeparator name="pcms020f_addsep" />
+  
+  <ToolBarItem name="pcms020f_prev" image="gorev" text="上一筆" />
+  <ToolBarSeparator name="pcms020f_prevsep" />
+  
+  <ToolBarItem name="pcms020f_next" image="goforw" text="下一筆" />
+  <ToolBarSeparator name="pcms020f_nextsep" />
+  
+  <ToolBarItem name="pcms020f_upd" image="prop" text="修改" />
+  <ToolBarSeparator name="pcms020f_updsep" />
+
+  <ToolBarItem name="pcms020f_del" image="eraser" text="刪除" />
+  <ToolBarSeparator name="pcms020f_delsep" />
+
+  <ToolBarItem name="pcms020f_save" image="disk" text="存檔" />
+  <ToolBarSeparator name="pcms020f_savesep" />
+
+  <ToolBarItem name="bye" image="quit" text="離開" />
+</ToolBar>

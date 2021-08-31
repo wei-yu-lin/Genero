@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="rdbmic36" fileVersion="31400" gstVersion="31408" name="managedform" uid="{80717426-b163-41a2-b810-938320bcfaea}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="v_micm012f" uid="{f29ceeee-34d1-4750-aceb-2f7b6ef0dbbd}">
+    <RecordField colName="PROC_CODE" fieldIdRef="1" fieldType="TABLE_COLUMN" name="MICM012M.PROC_CODE" sqlTabName="MICM012M" uid="{3fd5a206-48ce-4806-ac3c-9e0c246c83d3}"/>
+    <RecordField colName="ORD_THICK_MIN" fieldIdRef="2" fieldType="TABLE_COLUMN" name="MICM012M.ORD_THICK_MIN" sqlTabName="MICM012M" uid="{d9b3c22f-cc75-4887-9e4e-ba23bece12f9}"/>
+    <RecordField colName="ORD_THICK_MAX" fieldIdRef="3" fieldType="TABLE_COLUMN" name="MICM012M.ORD_THICK_MAX" sqlTabName="MICM012M" uid="{caa1672b-e4ed-43c2-8cca-b6709f0b4ce4}"/>
+    <RecordField colName="ORD_WIDTH_MIN" fieldIdRef="4" fieldType="TABLE_COLUMN" name="MICM012M.ORD_WIDTH_MIN" sqlTabName="MICM012M" uid="{6f1f6ca7-5f9b-4541-b1f1-9f5f295bdb89}"/>
+    <RecordField colName="ORD_WIDTH_MAX" fieldIdRef="5" fieldType="TABLE_COLUMN" name="MICM012M.ORD_WIDTH_MAX" sqlTabName="MICM012M" uid="{212eb2ce-195f-4418-b88b-975f6de758fe}"/>
+    <RecordField colName="PROCESS_CODE" fieldIdRef="6" fieldType="TABLE_COLUMN" name="MICM012M.PROCESS_CODE" sqlTabName="MICM012M" uid="{75c20801-738c-4bb2-8cec-ee5ed0ab0389}"/>
+    <RecordField colName="REMARK" fieldIdRef="7" fieldType="TABLE_COLUMN" name="MICM060M.REMARK" sqlTabName="MICM060M" uid="{d9a14c5f-063d-4f1d-b583-62f17098f953}"/>
+    <RecordField defaultValue="N" fieldIdRef="8" name="del_rec" uid="{19332273-59c1-43fb-b7bf-95c9c37f57a2}"/>
+    <RecordField fieldIdRef="9" name="upd_flag" uid="{ca5a5c7f-8b9e-4eb3-aee1-eab5e077dc10}"/>
+  </Record>
+  <Form fourSTFile="../../SYS/sys_style.4st" gridHeight="25" gridWidth="92" name="form" text="製程函數維護作業">
+    <Grid gridHeight="18" gridWidth="86" name="grid1" posX="6" posY="1">
+      <Table gridHeight="13" gridWidth="82" name="table1" posX="4" posY="3" style="custom_style" totalRows="5">
+        <Edit case="upper" colName="PROC_CODE" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="MICM012M.PROC_CODE" posX="0" posY="0" sqlTabName="MICM012M" tabIndex="-1" title="製程函數" widget="Edit"/>
+        <Edit colName="ORD_THICK_MIN" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="MICM012M.ORD_THICK_MIN" posX="8" posY="0" sqlTabName="MICM012M" tabIndex="-1" title="訂單厚度MIN" widget="Edit"/>
+        <Edit colName="ORD_THICK_MAX" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="MICM012M.ORD_THICK_MAX" posX="16" posY="0" sqlTabName="MICM012M" tabIndex="-1" title="訂單厚度MAX" widget="Edit"/>
+        <Edit colName="ORD_WIDTH_MIN" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="MICM012M.ORD_WIDTH_MIN" posX="24" posY="0" sqlTabName="MICM012M" tabIndex="-1" title="訂單寬度MIN" widget="Edit"/>
+        <Edit colName="ORD_WIDTH_MAX" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="MICM012M.ORD_WIDTH_MAX" notNull="true" posX="32" posY="0" sqlTabName="MICM012M" tabIndex="-1" title="訂單寬度MAX" widget="Edit"/>
+        <Edit case="upper" colName="PROCESS_CODE" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" hidden="false" name="MICM012M.PROCESS_CODE" posX="40" posY="0" sqlTabName="MICM012M" tabIndex="-1" title="製程代碼" widget="Edit"/>
+        <Edit colName="REMARK" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="MICM060M.REMARK" posX="48" posY="0" sqlTabName="MICM060M" tabIndex="-1" title="備註" widget="Edit"/>
+        <CheckBox defaultValue="N" fieldId="8" gridHeight="1" gridWidth="8" name="del_rec" posX="56" posY="0" tabIndex="-1" title="刪除" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit fieldId="9" gridHeight="1" gridWidth="8" hidden="true" name="upd_flag" posX="64" posY="0" tabIndex="-1" title="upd_flag" widget="Edit"/>
+      </Table>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBmADIAOQBjAGUAZQBlAGUALQAzADQAZAAxAC0ANAA3ADUAMAAtAGEAYwBlAGIALQAyAGYANwBiADYAZQBmADAAZABiAGIAZAB9AAAAAAAAAAAAAAAAAAAAAD+0OVgQYk3XAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

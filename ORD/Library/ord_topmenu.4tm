@@ -1,0 +1,22 @@
+<!--
+  FOURJS_START_COPYRIGHT(D,2011)
+  Property of Four Js*
+  (c) Copyright Four Js 2011, 2012. All Rights Reserved.
+  * Trademark of Four Js Development Tools Europe Ltd
+    in the United States and elsewhere
+  
+  This file can be modified by licensees according to the product manual.
+  FOURJS_END_COPYRIGHT
+-->
+<TopMenu>
+   <!--異動處理作業-->    
+    <TopMenuGroup name = "ord0000m" text="訂單相關處理作業" style="mystyle">
+        <TopMenuCommand name="ord1" text="訂單處理作業" image="notecheck.png"></TopMenuCommand>
+    </TopMenuGroup>
+
+    <TopMenuGroup name = "exit"  text="離開">
+        <TopMenuCommand name="reload" text="重新登入" image="exchange.png"></TopMenuCommand>
+        <TopMenuCommand name="exit" text="離開" image="home.png"></TopMenuCommand>
+    </TopMenuGroup>
+    
+</TopMenu>
