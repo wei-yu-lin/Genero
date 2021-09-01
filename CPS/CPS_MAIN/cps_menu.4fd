@@ -19,7 +19,7 @@
     <RecordField colName="ACTUAL_THICKNESS" fieldIdRef="3" fieldType="TABLE_ALIAS" name="CCAA030M1.ACTUAL_THICKNESS" sqlTabName="CCAA030M" table_alias_name="CCAA030M1" uid="{62e4c64c-6c0f-4713-9d8a-295c0829ffe2}"/>
     <RecordField colName="ACTUAL_WEIGHT" fieldIdRef="4" fieldType="TABLE_ALIAS" name="CCAA030M1.ACTUAL_WEIGHT" sqlTabName="CCAA030M" table_alias_name="CCAA030M1" uid="{52a1d3d4-8397-418b-b8b4-054945647ba3}"/>
   </Record>
-  <Form gridHeight="29" gridWidth="116" name="cps_menu" windowStyle="main2">
+  <Form gridHeight="32" gridWidth="124" name="cps_menu" windowStyle="main2">
     <ActionDefaultList name="actiondefaultlist1">
       <ActionDefault image="listadd" name="parts_append" text="Append"/>
       <ActionDefault image="listdel" name="parts_delete" text="Delete"/>
@@ -45,9 +45,9 @@
         <TopMenuCommand name="about" text="About"/>
       </TopMenuGroup>
     </TopMenu>
-    <VBox gridHeight="29" gridWidth="110" name="vbox1" posX="0" posY="0" splitter="true">
-      <Grid gridHeight="15" gridWidth="110" name="grid1" posX="0" posY="1">
-        <Table doubleClick="show_part" gridHeight="13" gridWidth="84" name="mybom" posX="2" posY="0" totalRows="5" unitWidth="characters" unsortableColumns="true" width="84">
+    <VBox gridHeight="32" gridWidth="124" name="vbox1" posX="0" posY="0" splitter="true">
+      <Grid gridHeight="30" gridWidth="124" name="grid1" posX="0" posY="1">
+        <Table doubleClick="show_part" gridHeight="13" gridWidth="113" name="mybom" posX="2" posY="0" totalRows="5" unitWidth="characters" unsortableColumns="true" width="84">
           <Edit colName="SCHEDULE_NUMBER" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="CCAA030M.SCHEDULE_NUMBER" posX="0" posY="0" sqlTabName="CCAA030M" tabIndex="-1" title="軋延序號" widget="Edit"/>
           <Edit colName="COIL_NUMBER" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="13" hidden="false" name="CCAA030M.COIL_NUMBER" posX="8" posY="0" scroll="true" sqlTabName="CCAA030M" tabIndex="10" title="鋼 捲 編 號" widget="Edit"/>
           <Edit colName="STEEL_GRADE" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" hidden="false" name="CCAA030M.STEEL_GRADE" posX="21" posY="0" sqlTabName="CCAA030M" tabIndex="11" title="鋼種" widget="Edit"/>
@@ -55,7 +55,7 @@
           <Edit colName="ACTUAL_WIDTH" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" hidden="false" name="CCAA030M.ACTUAL_WIDTH" posX="45" posY="0" sqlTabName="CCAA030M" tabIndex="12" title="寬度" widget="Edit"/>
           <Edit colName="ACTUAL_THICKNESS" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" hidden="false" name="CCAA030M.ACTUAL_THICKNESS" posX="55" posY="0" scroll="true" sqlTabName="CCAA030M" tabIndex="13" title="厚度" widget="Edit"/>
         </Table>
-        <Group gridHeight="13" gridWidth="7" name="group1" posX="86" posY="0">
+        <Group gridHeight="13" gridWidth="7" name="group1" posX="116" posY="0">
           <Button gridHeight="1" gridWidth="4" image="fa-twitch" name="treeBack" posX="2" posY="2" tabIndex="1" text="回主畫面"/>
           <Button gridHeight="1" gridWidth="4" image="ok2" name="treeSelect" posX="2" posY="3" tabIndex="2" text="Select"/>
           <Button gridHeight="1" gridWidth="4" image="fa-remove" name="treeDeselect" posX="2" posY="4" tabIndex="3" text="Deselect"/>
@@ -66,9 +66,7 @@
           <Button gridHeight="1" gridWidth="4" image="fa-picture-o" name="treePrint" posX="2" posY="9" tabIndex="7" text="Print"/>
           <Button gridHeight="1" gridWidth="4" image="fa-github-alt" name="treePdo" posX="2" posY="10" tabIndex="8" text="Pdo"/>
         </Group>
-      </Grid>
-      <Grid gridHeight="12" gridWidth="110" name="grid2" posX="0" posY="16">
-        <Table gridHeight="8" gridWidth="84" name="table1" posX="1" posY="0" totalRows="5" unitWidth="characters" width="84">
+        <Table gridHeight="10" gridWidth="123" name="table1" posX="0" posY="14" totalRows="5" unitWidth="characters" width="84">
           <Edit colName="SCHEDULE_NUMBER" fieldId="11" fieldType="TABLE_ALIAS" gridHeight="1" gridWidth="10" name="CCAA030M1.SCHEDULE_NUMBER" posX="0" posY="0" sqlTabName="CCAA030M" tabIndex="-1" table_alias_name="CCAA030M1" title="軋延序號" widget="Edit"/>
           <Edit colName="COIL_NUMBER" fieldId="12" fieldType="TABLE_ALIAS" gridHeight="1" gridWidth="10" name="CCAA030M1.COIL_NUMBER" posX="10" posY="0" sqlTabName="CCAA030M" tabIndex="-1" table_alias_name="CCAA030M1" title="鋼 捲 編 號" widget="Edit"/>
           <Edit colName="STEEL_GRADE" fieldId="2" fieldType="TABLE_ALIAS" gridHeight="1" gridWidth="10" name="CCAA030M1.STEEL_GRADE" posX="20" posY="0" sqlTabName="CCAA030M" tabIndex="-1" table_alias_name="CCAA030M1" title="鋼種" widget="Edit"/>
@@ -80,6 +78,6 @@
     </VBox>
   </Form>
   <DiagramLayout>
-    <![CDATA[AAAAAgAAAEwAewBiADUAZgBmADQANgA3ADcALQBkAGQAOQBmAC0ANAAyADkAOAAtAGEANQBlAGUALQBlAGMAMwA2AGQANQAxADIAZQA0ADIAZAB9QEwRWw4AAABAcytjwMAAAD+x64UeuFHvAQAAAEwAewBkAGEAYQA3AGYAYQBhAGEALQA4ADEANgAwAC0ANAAyADUAOAAtAGIAZQBjADQALQBlAGEANAAyADIANwBiADYANQBhAGQAMgB9wGTY8u+AAABAX+6kzwAAAD+w5WBBiTdPAQ==]]>
+    <![CDATA[AAAAAgAAAEwAewBkAGEAYQA3AGYAYQBhAGEALQA4ADEANgAwAC0ANAAyADUAOAAtAGIAZQBjADQALQBlAGEANAAyADIANwBiADYANQBhAGQAMgB9wGTY8tgIKdpAX+6kqw3Auj+ybpeNT98/AQAAAEwAewBiADUAZgBmADQANgA3ADcALQBkAGQAOQBmAC0ANAAyADkAOAAtAGEANQBlAGUALQBlAGMAMwA2AGQANQAxADIAZQA0ADIAZAB9QF/upL8zs0hAXk4ZoK7iXj+ysCDEm6XnAQ==]]>
   </DiagramLayout>
 </ManagedForm>

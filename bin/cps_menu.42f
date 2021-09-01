@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='CP950'?>
-<Form name="cps_menu.tmp" build="3.20.08" sqlDbName="rdbcps36" windowStyle="main2" width="93" height="27">
+<Form name="cps_menu.tmp" build="3.20.08" sqlDbName="rdbcps36" windowStyle="main2" width="124" height="30">
   <ActionDefaultList>
     <ActionDefault name="parts_append" text="Append" image="listadd">
       <LStr text="Append"/>
@@ -60,8 +60,8 @@
     </TopMenuGroup>
   </TopMenu>
   <VBox name="vbox1" splitter="1">
-    <Grid name="grid1" width="93" height="15">
-      <Table pageSize="5" name="mybom" doubleClick="show_part" unsortableColumns="1" width="84" posY="0" posX="2" gridWidth="84" gridHeight="13" tabName="+tn_0">
+    <Grid name="grid1" width="124" height="30">
+      <Table pageSize="5" name="mybom" doubleClick="show_part" unsortableColumns="1" width="84" posY="0" posX="3" gridWidth="113" gridHeight="13" tabName="+tn_0">
         <TableColumn name="ccaa030m.schedule_number" colName="schedule_number" sqlType="CHAR(4)" fieldId="0" sqlTabName="ccaa030m" text="軋延序號" tabIndex="14">
           <Edit width="8"/>
           <LStr text="軋延序號"/>
@@ -87,7 +87,7 @@
           <LStr text="厚度"/>
         </TableColumn>
       </Table>
-      <Group name="group1" posY="0" posX="86" gridWidth="7" gridHeight="13">
+      <Group name="group1" posY="0" posX="117" gridWidth="7" gridHeight="13">
         <Button name="treeback" width="4" tabIndex="1" text="回主畫面" image="fa-twitch" posY="2" posX="2" gridWidth="4">
           <LStr text="回主畫面"/>
         </Button>
@@ -116,9 +116,7 @@
           <LStr text="Pdo"/>
         </Button>
       </Group>
-    </Grid>
-    <Grid name="grid2" width="85" height="12">
-      <Table pageSize="5" name="table1" width="84" posY="0" posX="1" gridWidth="84" gridHeight="8" tabName="+tn_1">
+      <Table pageSize="5" name="table1" width="84" posY="14" posX="1" gridWidth="123" gridHeight="10" tabName="+tn_1">
         <TableColumn name="ccaa030m1.schedule_number" colName="schedule_number" sqlType="CHAR(4)" fieldId="6" sqlTabName="ccaa030m" text="軋延序號" tabIndex="16">
           <Edit width="10"/>
           <LStr text="軋延序號"/>
@@ -146,14 +144,6 @@
       </Table>
     </Grid>
   </VBox>
-  <RecordView tabName="ccaa030m1">
-    <Link colName="schedule_number" fieldIdRef="6"/>
-    <Link colName="coil_number" fieldIdRef="7"/>
-    <Link colName="steel_grade" fieldIdRef="8"/>
-    <Link colName="actual_weight" fieldIdRef="9"/>
-    <Link colName="actual_width" fieldIdRef="10"/>
-    <Link colName="actual_thickness" fieldIdRef="11"/>
-  </RecordView>
   <RecordView tabName="ccaa030m">
     <Link colName="schedule_number" fieldIdRef="0"/>
     <Link colName="coil_number" fieldIdRef="1"/>
@@ -161,6 +151,14 @@
     <Link colName="actual_weight" fieldIdRef="3"/>
     <Link colName="actual_width" fieldIdRef="4"/>
     <Link colName="actual_thickness" fieldIdRef="5"/>
+  </RecordView>
+  <RecordView tabName="ccaa030m1">
+    <Link colName="schedule_number" fieldIdRef="6"/>
+    <Link colName="coil_number" fieldIdRef="7"/>
+    <Link colName="steel_grade" fieldIdRef="8"/>
+    <Link colName="actual_weight" fieldIdRef="9"/>
+    <Link colName="actual_width" fieldIdRef="10"/>
+    <Link colName="actual_thickness" fieldIdRef="11"/>
   </RecordView>
   <RecordView tabName="awaitpdi">
     <Link colName="coil_number" fieldIdRef="1"/>

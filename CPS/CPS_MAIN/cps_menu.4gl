@@ -1,4 +1,5 @@
 SCHEMA rdbcps36
+DEFINE dnd ui.DragDrop
 TYPE t_pdo RECORD
     COIL_NUMBER LIKE ccaa030m.COIL_NUMBER,
     SCHEDULE_NUMBER LIKE ccaa030m.SCHEDULE_NUMBER,
@@ -13,12 +14,13 @@ DEFINE options RECORD
     last_row INTEGER
 END RECORD
 
-DEFINE
-    havewhere INTEGER,
-    ci INTEGER
-
-DEFINE cap_pdo DYNAMIC ARRAY OF t_pdo
+DEFINE havewhere, drop_index, i, AA, Q INTEGER
+DEFINE drag_source STRING
+DEFINE topPdi DYNAMIC ARRAY OF t_pdo
+DEFINE downPdi DYNAMIC ARRAY OF t_pdo
 DEFINE rec t_pdo
+CONSTANT _await = "awaitPdi"
+CONSTANT _confirm = "confirmPdi"
 
 MAIN
     CLOSE WINDOW SCREEN
@@ -29,15 +31,14 @@ MAIN
     CURRENT WINDOW IS pdoPrograme
     CALL read_pdo() RETURNING havewhere
     CALL bom_build()
-    
+
 END MAIN
 
 FUNCTION read_pdo()
     DEFINE
         s_sql STRING,
         x INTEGER
-    
-    INITIALIZE cap_pdo TO NULL
+    INITIALIZE topPdi TO NULL
     LET s_sql =
         "SELECT COIL_NUMBER,SCHEDULE_NUMBER,STEEL_GRADE,ACTUAL_WIDTH,ACTUAL_THICKNESS"
             || " FROM ccaa030m where STEEL_GRADE<>'' and ACTUAL_WIDTH>0"
@@ -47,14 +48,12 @@ FUNCTION read_pdo()
     PREPARE query_sql FROM s_sql
     DECLARE mast_cur1 SCROLL CURSOR FOR query_sql
     OPEN mast_cur1
-    
-    CALL cap_pdo.clear()
+    CALL topPdi.clear()
     LET x = 0
     FOREACH mast_cur1 INTO rec.*
         LET x = x + 1
-        LET cap_pdo[x].* = rec.*
+        LET topPdi[x].* = rec.*
     END FOREACH
-
     FREE query_sql
     FREE mast_cur1
     RETURN havewhere
@@ -62,13 +61,58 @@ END FUNCTION
 
 FUNCTION bom_build()
     DIALOG ATTRIBUTES(UNBUFFERED)
-        DISPLAY ARRAY cap_pdo TO awaitPdi.*
+        DISPLAY ARRAY topPdi TO awaitPdi.*
             BEFORE ROW
-                CALL DIALOG.setSelectionMode("awaitPdi",1)
+                CALL DIALOG.setSelectionMode("awaitPdi", 1)
                 CALL bom_dialog_setup(DIALOG)
+            AFTER DISPLAY
+            ON DRAG_START(dnd)
+                LET drag_source = _await
+            ON DRAG_FINISHED(dnd)
+                INITIALIZE drag_source TO NULL
+            ON DRAG_ENTER(dnd)
+                IF drag_source IS NULL OR drag_source != _confirm THEN
+                    CALL dnd.setOperation(NULL)
+                END IF
+            ON DROP(dnd)
+                # from下面to上面
+                LET drop_index = dnd.getLocationRow()
+                FOR i = downPdi.getLength() TO 1 STEP -1
+                    IF DIALOG.isRowSelected(_confirm, i) THEN
+                        CALL DIALOG.insertRow(_await, drop_index)
+                        CALL DIALOG.setSelectionRange(
+                            _await, drop_index, drop_index, TRUE)
+                        LET topPdi[drop_index].* = downPdi[i].*
+                        CALL DIALOG.deleteRow(_confirm, i)
+                    END IF
+                END FOR
         END DISPLAY
-        
-    
+
+        DISPLAY ARRAY downPdi TO confirmPdi.*
+            AFTER DISPLAY
+            ON DRAG_START(dnd)
+                LET drag_source = _confirm
+            ON DRAG_FINISHED(dnd)
+                INITIALIZE drag_source TO NULL
+            ON DRAG_ENTER(dnd)
+                IF drag_source IS NULL OR drag_source != _await THEN
+                    CALL dnd.setOperation(NULL)
+                END IF
+            ON DROP(dnd)
+                LET drop_index = dnd.getLocationRow()
+                    FOR i = topPdi.getLength() TO 1 STEP -1
+                        IF DIALOG.isRowSelected(_await, i) THEN
+                            CALL DIALOG.insertRow(_confirm, drop_index)
+                            CALL DIALOG.setSelectionRange(
+                                _confirm, drop_index, drop_index, TRUE)
+                            LET downPdi[drop_index].* = topPdi[i].*
+                            CALL DIALOG.deleteRow(_await, i)
+                        END IF
+                    END FOR
+        END DISPLAY
+        BEFORE DIALOG
+            CALL DIALOG.setSelectionMode(_await, 1)
+            CALL DIALOG.setSelectionMode(_confirm, 1)
         AFTER DIALOG
         ON ACTION treeMoveUp
             CALL bomTreeMoveUp(DIALOG, DIALOG.getCurrentRow("awaitPdi"))
@@ -80,7 +124,7 @@ FUNCTION bom_build()
             CALL bomTreeDelete(DIALOG, DIALOG.getCurrentRow("awaitPdi"))
             CALL bom_dialog_setup(DIALOG)
         ON ACTION treeSelect
-            CALL bomTreeSelect(DIALOG) 
+            CALL bomTreeSelect(DIALOG)
             CALL bom_dialog_setup(DIALOG)
         ON ACTION close
             ACCEPT DIALOG
@@ -116,35 +160,34 @@ FUNCTION bomTreeMoveUp(d, c)
     DEFINE c INT
 
     CALL d.insertRow("awaitPdi", c + 1)
-    LET cap_pdo[c + 1].* = cap_pdo[c - 1].*
-    LET cap_pdo[c - 1].* = cap_pdo[c].*
-    LET cap_pdo[c].* = cap_pdo[c + 1].*
+    LET topPdi[c + 1].* = topPdi[c - 1].*
+    LET topPdi[c - 1].* = topPdi[c].*
+    LET topPdi[c].* = topPdi[c + 1].*
     CALL d.deleteRow("awaitPdi", c + 1)
     CALL d.setCurrentRow("awaitPdi", c - 1)
 END FUNCTION
 
-FUNCTION bomTreeMoveDown(d,c)
+FUNCTION bomTreeMoveDown(d, c)
     DEFINE d ui.Dialog
     DEFINE c INT
     CALL d.insertRow("awaitPdi", c + 2)
-    LET cap_pdo[c + 2].* = cap_pdo[c + 1].*
-    LET cap_pdo[c + 1].* = cap_pdo[c].*
-    LET cap_pdo[c].* = cap_pdo[c + 2].*
+    LET topPdi[c + 2].* = topPdi[c + 1].*
+    LET topPdi[c + 1].* = topPdi[c].*
+    LET topPdi[c].* = topPdi[c + 2].*
     CALL d.deleteRow("awaitPdi", c + 2)
     CALL d.setCurrentRow("awaitPdi", c + 1)
 END FUNCTION
 
-FUNCTION bomTreeDelete(d,c)
+FUNCTION bomTreeDelete(d, c)
     DEFINE d ui.Dialog
     DEFINE c INT
     CALL d.deleteRow("awaitPdi", c)
 END FUNCTION
 
 FUNCTION bomTreeSelect(d)
-    DEFINE d ui.Dialog 
+    DEFINE d ui.Dialog
     #CALL d.setSelectionRange("awaitPdi",selected[1],selected[2],TRUE)
 END FUNCTION
-
 
 FUNCTION treeCanUp(_dialog, currentRow)
     DEFINE _dialog ui.Dialog
@@ -171,17 +214,19 @@ FUNCTION treeCanDelete(_dialog, currentRow)
     DEFINE _dialog ui.Dialog
     DEFINE currentRow INT
     IF currentRow == -1 THEN
-       LET currentRow = _dialog.getCurrentRow("awaitPdi")
+        LET currentRow = _dialog.getCurrentRow("awaitPdi")
     END IF
-    IF currentRow <= 0 THEN RETURN FALSE END IF
+    IF currentRow <= 0 THEN
+        RETURN FALSE
+    END IF
     RETURN TRUE
 END FUNCTION
 
 FUNCTION treeCanSelect(_dialog, currentRow)
     DEFINE _dialog ui.Dialog
     DEFINE currentRow INT
-   # IF _dialog.isRowSelected("awaitPdi",selected[1]) THEN
-   #     RETURN FALSE
-   # END IF
+    # IF _dialog.isRowSelected("awaitPdi",selected[1]) THEN
+    #     RETURN FALSE
+    # END IF
     RETURN TRUE
 END FUNCTION
