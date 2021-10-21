@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='CP950'?>
+<Form name="ord_menu.tmp" build="3.20.08" style="mystyle" width="45" height="12">
+  <Grid name="grid1" width="45" height="12">
+    <Image name="ord_main" width="50px" height="30px" image="fam_menu.jpg" stretch="both" sizePolicy="initial" posY="1" posX="1" gridWidth="43" gridHeight="10"/>
+  </Grid>
+</Form>

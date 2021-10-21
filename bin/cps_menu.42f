@@ -144,14 +144,6 @@
       </Table>
     </Grid>
   </VBox>
-  <RecordView tabName="ccaa030m">
-    <Link colName="schedule_number" fieldIdRef="0"/>
-    <Link colName="coil_number" fieldIdRef="1"/>
-    <Link colName="steel_grade" fieldIdRef="2"/>
-    <Link colName="actual_weight" fieldIdRef="3"/>
-    <Link colName="actual_width" fieldIdRef="4"/>
-    <Link colName="actual_thickness" fieldIdRef="5"/>
-  </RecordView>
   <RecordView tabName="ccaa030m1">
     <Link colName="schedule_number" fieldIdRef="6"/>
     <Link colName="coil_number" fieldIdRef="7"/>
@@ -159,6 +151,14 @@
     <Link colName="actual_weight" fieldIdRef="9"/>
     <Link colName="actual_width" fieldIdRef="10"/>
     <Link colName="actual_thickness" fieldIdRef="11"/>
+  </RecordView>
+  <RecordView tabName="ccaa030m">
+    <Link colName="schedule_number" fieldIdRef="0"/>
+    <Link colName="coil_number" fieldIdRef="1"/>
+    <Link colName="steel_grade" fieldIdRef="2"/>
+    <Link colName="actual_weight" fieldIdRef="3"/>
+    <Link colName="actual_width" fieldIdRef="4"/>
+    <Link colName="actual_thickness" fieldIdRef="5"/>
   </RecordView>
   <RecordView tabName="awaitpdi">
     <Link colName="coil_number" fieldIdRef="1"/>

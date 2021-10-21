@@ -1,14 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<WorkspaceDatabase fileContentsEncoding="CP950" version="3.0">
-<File n="CPS/CPS_MAIN/cps_menu.4gl" s="2" ts="20210827151521364">
-<Fct c="10" el="104" l="89" n="bomTreeMoveUp(d ui.Dialog,c INTEGER)" t="F" v="pub"/>
-<Fct c="10" el="85" l="70" n="bom_build()" t="F" v="pub">
-<Call c="18" l="79" n="bomTreeMoveUp" t="F"/>
+<WorkspaceDatabase fileContentsEncoding="fglutf8" version="3.0">
+<File n="CPS/CPS_MAIN/cps_menu.4gl" s="2" ts="20210907163121091">
+<Fct c="10" el="277" l="270" n="treeCanDeSelect(_dialog ui.Dialog,currentConfirmRow INTEGER)" t="F" v="pub"/>
+<Fct c="10" el="267" l="260" n="treeCanSelect(_dialog ui.Dialog,currentRow INTEGER)" t="F" v="pub"/>
+<Fct c="10" el="258" l="248" n="treeCanDelete(_dialog ui.Dialog,currentRow INTEGER)" t="F" v="pub"/>
+<Fct c="10" el="246" l="236" n="treeCanDown(_dialog ui.Dialog,currentRow INTEGER)" t="F" v="pub"/>
+<Fct c="10" el="234" l="227" n="treeCanUp(_dialog ui.Dialog,currentRow INTEGER)" t="F" v="pub"/>
+<Fct c="10" el="225" l="197" n="bomTreeSelect_DeSelect(d ui.Dialog,_from STRING,_target STRING)" t="F" v="pub"/>
+<Fct c="10" el="195" l="191" n="bomTreeDelete(d ui.Dialog,c INTEGER)" t="F" v="pub"/>
+<Fct c="10" el="189" l="180" n="bomTreeMoveDown(d ui.Dialog,c INTEGER)" t="F" v="pub"/>
+<Fct c="10" el="178" l="168" n="bomTreeMoveUp(d ui.Dialog,c INTEGER)" t="F" v="pub"/>
+<Fct c="10" el="166" l="142" n="bom_dialog_setup(d ui.Dialog)" t="F" v="pub">
+<Call c="46" l="160" n="treeCanUp" t="F"/>
+<Call c="48" l="161" n="treeCanDown" t="F"/>
+<Call c="46" l="162" n="treeCanDelete" t="F"/>
+<Call c="46" l="163" n="treeCanSelect" t="F"/>
+<Call c="48" l="164" n="treeCanDeSelect" t="F"/>
 </Fct>
-<Fct c="10" el="68" l="45" n="read_pdo()" t="F" v="pub"/>
-<Fct c="1" el="43" l="32" n="main()" t="F" v="pub">
-<Call c="10" l="39" n="read_pdo" t="F"/>
-<Call c="10" l="40" n="bom_build" t="F"/>
+<Fct c="10" el="140" l="62" n="bom_build()" t="F" v="pub">
+<Call c="22" l="67" n="bom_dialog_setup" t="F"/>
+<Call c="22" l="94" n="bom_dialog_setup" t="F"/>
+<Call c="18" l="123" n="bomTreeMoveUp" t="F"/>
+<Call c="18" l="124" n="bom_dialog_setup" t="F"/>
+<Call c="18" l="126" n="bomTreeMoveDown" t="F"/>
+<Call c="18" l="127" n="bom_dialog_setup" t="F"/>
+<Call c="18" l="129" n="bomTreeDelete" t="F"/>
+<Call c="18" l="130" n="bom_dialog_setup" t="F"/>
+<Call c="18" l="132" n="bomTreeSelect_DeSelect" t="F"/>
+<Call c="18" l="133" n="bom_dialog_setup" t="F"/>
+<Call c="18" l="135" n="bomTreeSelect_DeSelect" t="F"/>
+<Call c="18" l="136" n="bom_dialog_setup" t="F"/>
+</Fct>
+<Fct c="10" el="60" l="37" n="read_pdo()" t="F" v="pub"/>
+<Fct c="1" el="35" l="25" n="main()" t="F" v="pub">
+<Call c="10" l="32" n="read_pdo" t="F"/>
+<Call c="10" l="33" n="bom_build" t="F"/>
 </Fct>
 </File>
 <File n="MIC/MIC_MAIN/mic_menu.4gl" s="2" ts="20210714084602777">

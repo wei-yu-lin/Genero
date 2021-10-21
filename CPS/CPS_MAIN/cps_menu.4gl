@@ -14,7 +14,7 @@ DEFINE options RECORD
     last_row INTEGER
 END RECORD
 
-DEFINE havewhere, drop_index, i, AA, Q INTEGER
+DEFINE havewhere, drop_index, i INTEGER
 DEFINE drag_source STRING
 DEFINE topPdi DYNAMIC ARRAY OF t_pdo
 DEFINE downPdi DYNAMIC ARRAY OF t_pdo
@@ -89,6 +89,9 @@ FUNCTION bom_build()
         END DISPLAY
 
         DISPLAY ARRAY downPdi TO confirmPdi.*
+            BEFORE ROW
+                CALL DIALOG.setSelectionMode("confirmPdi", 1)
+                CALL bom_dialog_setup(DIALOG)
             AFTER DISPLAY
             ON DRAG_START(dnd)
                 LET drag_source = _confirm
@@ -99,16 +102,18 @@ FUNCTION bom_build()
                     CALL dnd.setOperation(NULL)
                 END IF
             ON DROP(dnd)
+                # from上面to下面
                 LET drop_index = dnd.getLocationRow()
-                    FOR i = topPdi.getLength() TO 1 STEP -1
-                        IF DIALOG.isRowSelected(_await, i) THEN
-                            CALL DIALOG.insertRow(_confirm, drop_index)
-                            CALL DIALOG.setSelectionRange(
-                                _confirm, drop_index, drop_index, TRUE)
-                            LET downPdi[drop_index].* = topPdi[i].*
-                            CALL DIALOG.deleteRow(_await, i)
-                        END IF
-                    END FOR
+                DISPLAY drop_index
+                FOR i = topPdi.getLength() TO 1 STEP -1
+                    IF DIALOG.isRowSelected(_await, i) THEN
+                        CALL DIALOG.insertRow(_confirm, drop_index)
+                        CALL DIALOG.setSelectionRange(
+                            _confirm, drop_index, drop_index, TRUE)
+                        LET downPdi[drop_index].* = topPdi[i].*
+                        CALL DIALOG.deleteRow(_await, i)
+                    END IF
+                END FOR
         END DISPLAY
         BEFORE DIALOG
             CALL DIALOG.setSelectionMode(_await, 1)
@@ -124,7 +129,10 @@ FUNCTION bom_build()
             CALL bomTreeDelete(DIALOG, DIALOG.getCurrentRow("awaitPdi"))
             CALL bom_dialog_setup(DIALOG)
         ON ACTION treeSelect
-            CALL bomTreeSelect(DIALOG)
+            CALL bomTreeSelect_DeSelect(DIALOG, _await, _confirm)
+            CALL bom_dialog_setup(DIALOG)
+        ON ACTION treeDeselect
+            CALL bomTreeSelect_DeSelect(DIALOG, _confirm, _await)
             CALL bom_dialog_setup(DIALOG)
         ON ACTION close
             ACCEPT DIALOG
@@ -133,9 +141,10 @@ END FUNCTION
 
 FUNCTION bom_dialog_setup(d)
     DEFINE d ui.Dialog
-    DEFINE n, c INT
+    DEFINE n, c, confirmRow INT
     LET n = d.getArrayLength("awaitPdi")
     LET c = d.getCurrentRow("awaitPdi")
+    LET confirmRow = d.getCurrentRow("confirmPdi")
     IF c <= 0 THEN
         CALL d.setActionActive("treeBack", FALSE)
         CALL d.setActionActive("tree_append_child", FALSE)
@@ -152,6 +161,7 @@ FUNCTION bom_dialog_setup(d)
         CALL d.setActionActive("treeMoveDown", treeCanDown(d, c))
         CALL d.setActionActive("treeDelete", treeCanDelete(d, -1))
         CALL d.setActionActive("treeSelect", treeCanSelect(d, c))
+        CALL d.setActionActive("treeDeselect", treeCanDeSelect(d, confirmRow))
     END IF
 END FUNCTION
 
@@ -184,9 +194,34 @@ FUNCTION bomTreeDelete(d, c)
     CALL d.deleteRow("awaitPdi", c)
 END FUNCTION
 
-FUNCTION bomTreeSelect(d)
+FUNCTION bomTreeSelect_DeSelect(d, _from, _target)
     DEFINE d ui.Dialog
-    #CALL d.setSelectionRange("awaitPdi",selected[1],selected[2],TRUE)
+    DEFINE _from, _target STRING
+    DEFINE idx, len, isSelected INT
+    DEFINE targetArray DYNAMIC ARRAY OF t_pdo
+    DEFINE fromArray DYNAMIC ARRAY OF t_pdo
+    LET len = d.getArrayLength(_target) + 1
+    IF _from == "awaitPdi" THEN
+        LET targetArray = downPdi
+        LET fromArray = topPdi
+    ELSE
+        LET targetArray = topPdi
+        LET fromArray = downPdi
+    END IF
+
+    FOR idx = fromArray.getLength() TO 1 STEP -1
+        IF d.isRowSelected(_from, idx) THEN
+            LET isSelected = d.isRowSelected(_from, idx)
+            CALL d.insertRow(_target, len)
+            CALL d.setSelectionRange(_target, len, len, TRUE)
+            LET targetArray[len].* = fromArray[idx].*
+            CALL d.deleteRow(_from, idx)
+            DISPLAY idx
+            CALL d.setCurrentRow(_from,idx)
+        END IF
+    END FOR
+    
+    
 END FUNCTION
 
 FUNCTION treeCanUp(_dialog, currentRow)
@@ -225,8 +260,18 @@ END FUNCTION
 FUNCTION treeCanSelect(_dialog, currentRow)
     DEFINE _dialog ui.Dialog
     DEFINE currentRow INT
-    # IF _dialog.isRowSelected("awaitPdi",selected[1]) THEN
-    #     RETURN FALSE
-    # END IF
+    IF currentRow == _dialog.getArrayLength("awaitPdi")THEN
+        RETURN FALSE 
+    END IF
+    RETURN TRUE
+END FUNCTION
+
+
+FUNCTION treeCanDeSelect(_dialog, currentConfirmRow)
+    DEFINE _dialog ui.Dialog
+    DEFINE currentConfirmRow INT
+    IF currentConfirmRow == _dialog.getArrayLength("confirmPdi")THEN
+        RETURN FALSE 
+    END IF
     RETURN TRUE
 END FUNCTION

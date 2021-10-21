@@ -4,11 +4,11 @@
     <Node path="ERP.4pw" type="pm/main-project"/>
     <Node path="ERP.4pw/CPS" type="pm/group"/>
     <Node path="ERP.4pw/CPS/CPS_MAIN" type="pm/application"/>
+    <Node path="ERP.4pw/CPS/Database" type="pm/library"/>
     <Node path="ERP.4pw/ORD/Library" type="pm/library"/>
     <Node path="ERP.4pw/ORD/ORD1" type="pm/application"/>
     <Node path="ERP.4pw/ORD/ORD_MAIN" type="pm/application"/>
     <Node path="ERP.4pw/PCM/PCMS020F" type="pm/application"/>
-    <Node path="ERP.4pw/SYS" type="pm/group"/>
     <Node path="ERP.4pw/TQC/Library" type="pm/library"/>
     <Node path="ERP.4pw/TQC/TQC_MAIN" type="pm/application"/>
     <Node path="ERP.4pw/WIP/Database" type="pm/library"/>
@@ -17,10 +17,10 @@
     <Node path="ERP.4pw/WIP/WIP_MAIN" type="pm/application"/>
   </ExpandedNodes>
   <OpenDocuments>
-    <Document container="true" filePath="CPS/CPS_MAIN/cps_menu.4gl" locator="96:27" module="mod-ce3">
-      <Data name="8" value="Big5"/>
-    </Document>
     <Document container="true" filePath="CPS/CPS_MAIN/cps_menu.4fd" locator="" module="mod-fd"/>
+    <Document container="true" filePath="CPS/CPS_MAIN/cps_menu.4gl" locator="141:1" module="mod-ce3">
+      <Data name="8" value="UTF-8"/>
+    </Document>
   </OpenDocuments>
   <CurrentDocument filePath="CPS/CPS_MAIN/cps_menu.4gl" module="mod-ce3"/>
 </WorkspaceViewState>

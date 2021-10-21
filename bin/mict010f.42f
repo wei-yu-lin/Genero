@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='CP950'?>
+<Form name="mict010f.tmp" build="3.20.08" sqlDbName="rdbmic36" text="Form" width="66" height="30">
+  <LStr text="Form"/>
+  <Grid name="grid1" width="66" height="30">
+    <Label name="label1" width="60" height="3" text="冶金規範資料維護" justify="center" sizePolicy="fixed" style="title" posY="0" posX="5" gridWidth="60" gridHeight="3">
+      <LStr text="冶金規範資料維護"/>
+    </Label>
+    <Label name="label2" width="8" text="MIC NO" style="column" posY="4" posX="5" gridWidth="8">
+      <LStr text="MIC NO"/>
+    </Label>
+    <FormField name="micm010m.mic_no" colName="mic_no" sqlType="CHAR(6)" fieldId="0" sqlTabName="micm010m" tabIndex="1">
+      <Edit width="10" style="column" posY="4" posX="15" gridWidth="10"/>
+    </FormField>
+    <Label name="label3" width="11" text="建檔日期" style="column" posY="4" posX="28" gridWidth="11">
+      <LStr text="建檔日期"/>
+    </Label>
+    <FormField name="micm010m.date_last_maint" colName="date_last_maint" sqlType="CHAR(8)" fieldId="1" sqlTabName="micm010m" tabIndex="2">
+      <Edit width="11" style="column" posY="4" posX="40" gridWidth="11"/>
+    </FormField>
+  </Grid>
+  <RecordView tabName="micm010m">
+    <Link colName="mic_no" fieldIdRef="0"/>
+    <Link colName="date_last_maint" fieldIdRef="1"/>
+  </RecordView>
+  <RecordView tabName="mict010f">
+    <Link colName="mic_no" fieldIdRef="0"/>
+    <Link colName="date_last_maint" fieldIdRef="1"/>
+  </RecordView>
+</Form>

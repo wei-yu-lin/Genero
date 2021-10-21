@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='CP950'?>
+<Form name="ord1.tmp" build="3.20.08" sqlDbName="rdbord" text="訂單處理作業" width="60" height="19">
+  <LStr text="訂單處理作業"/>
+  <Grid name="grid1" width="60" height="19">
+    <Group name="group1" text="" posY="1" posX="3" gridWidth="50" gridHeight="5">
+      <LStr text=""/>
+      <Label name="label5" width="6" text="訂單編號" posY="1" posX="1" gridWidth="6">
+        <LStr text="訂單編號"/>
+      </Label>
+      <FormField name="ordb010m.order_no" colName="order_no" sqlType="CHAR(7)" fieldId="0" sqlTabName="ordb010m" tabIndex="1">
+        <Edit width="10" shift="up" posY="1" posX="8" gridWidth="10"/>
+      </FormField>
+      <Label name="label4" width="6" text="訂貨日期" posY="1" posX="20" gridWidth="6">
+        <LStr text="訂貨日期"/>
+      </Label>
+      <FormField name="formonly.order_date" colName="order_date" sqlType="DATETIME YEAR TO MONTH" fieldId="1" sqlTabName="formonly" tabIndex="2">
+        <DateEdit width="11" format="yyyymmdd" posY="1" posX="28" gridWidth="13"/>
+      </FormField>
+      <Label name="label1" width="13" text="訂單類別(1.排單2.庫存)" posY="3" posX="1" gridWidth="13">
+        <LStr text="訂單類別(1.排單2.庫存)"/>
+      </Label>
+      <FormField name="ordb010m.order_kind" colName="order_kind" sqlType="CHAR(1)" fieldId="2" sqlTabName="ordb010m" tabIndex="3">
+        <Edit width="3" posY="3" posX="15" gridWidth="3"/>
+      </FormField>
+    </Group>
+    <Group name="group2" text="" posY="7" posX="3" gridWidth="57" gridHeight="11">
+      <LStr text=""/>
+      <Table pageSize="5" name="table1" style="custom_style" width="55" posY="1" posX="1" gridWidth="55" gridHeight="8" tabName="v_ordb011m">
+        <TableColumn name="ordb011m.order_item" colName="order_item" sqlType="CHAR(2)" fieldId="3" sqlTabName="ordb011m" text="項次" tabIndex="4">
+          <Edit width="8"/>
+          <LStr text="項次"/>
+        </TableColumn>
+        <TableColumn name="ordb011m.product_type" colName="product_type" sqlType="CHAR(3)" fieldId="4" sqlTabName="ordb011m" text="產品代碼" tabIndex="5">
+          <Edit width="8" shift="up"/>
+          <LStr text="產品代碼"/>
+        </TableColumn>
+        <TableColumn name="ordb011m.order_amount" colName="order_amount" sqlType="FLOAT" fieldId="5" sqlTabName="ordb011m" text="重量" tabIndex="6" numAlign="1">
+          <Edit width="8" justify="right"/>
+          <LStr text="重量"/>
+        </TableColumn>
+        <TableColumn name="ordb011m.order_status" colName="order_status" sqlType="CHAR(2)" fieldId="6" sqlTabName="ordb011m" text="狀態" tabIndex="7">
+          <Edit width="8" justify="center"/>
+          <LStr text="狀態"/>
+        </TableColumn>
+        <TableColumn name="formonly.del_rec" colName="del_rec" fieldId="7" sqlTabName="formonly" defaultValue="N" text="刪除" notNull="1" required="1" tabIndex="8">
+          <CheckBox width="8" valueChecked="Y" valueUnchecked="N"/>
+          <LStr text="刪除"/>
+        </TableColumn>
+        <TableColumn name="formonly.upd_flag" colName="upd_flag" fieldId="8" sqlTabName="formonly" text="upd_flag" hidden="1" tabIndex="9">
+          <Edit width="8"/>
+          <LStr text="upd_flag"/>
+        </TableColumn>
+      </Table>
+    </Group>
+  </Grid>
+  <RecordView tabName="ordb010m">
+    <Link colName="order_no" fieldIdRef="0"/>
+    <Link colName="order_kind" fieldIdRef="2"/>
+  </RecordView>
+  <RecordView tabName="ordb011m">
+    <Link colName="order_item" fieldIdRef="3"/>
+    <Link colName="product_type" fieldIdRef="4"/>
+    <Link colName="order_amount" fieldIdRef="5"/>
+    <Link colName="order_status" fieldIdRef="6"/>
+  </RecordView>
+  <RecordView tabName="formonly">
+    <Link colName="order_date" fieldIdRef="1"/>
+    <Link colName="del_rec" fieldIdRef="7"/>
+    <Link colName="upd_flag" fieldIdRef="8"/>
+  </RecordView>
+  <RecordView tabName="v_ordb010m">
+    <Link colName="order_no" fieldIdRef="0"/>
+    <Link colName="order_date" fieldIdRef="1"/>
+    <Link colName="order_kind" fieldIdRef="2"/>
+  </RecordView>
+</Form>
