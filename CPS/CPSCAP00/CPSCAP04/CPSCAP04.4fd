@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm fileVersion="31400" gstVersion="31408" name="managedform" uid="{a12a6288-147a-425a-a0dc-b232eefc30be}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="CCAP215M_r" uid="{4699dacb-5ddd-437f-ad88-70e223ea9c7e}">
+    <RecordField fieldIdRef="1" name="COIL_NO_col" uid="{c1dcf55c-8d5f-4f55-8826-5cde28a4311e}"/>
+    <RecordField fieldIdRef="3" name="ACK_col" uid="{40e09fd3-ed28-4897-be23-5938a004c090}"/>
+    <RecordField fieldIdRef="2" name="TIMER_col" uid="{35b3a9a1-8303-4bc8-b507-10a9f6d86846}"/>
+  </Record>
+  <Record name="ConnMSG_r" uid="{da79ae6e-3b56-42e0-8f80-7aa21a54bf38}">
+    <RecordField fieldIdRef="4" name="ConnMsg_te" uid="{e8db56ef-97fc-45f2-87b1-7d23e568f1fb}"/>
+    <RecordField fieldIdRef="5" length="15" name="L2_ip_e" uid="{4bffaed6-5f03-4260-8c90-7d1b6fade60a}"/>
+    <RecordField fieldIdRef="6" length="4" name="port_e" uid="{26d6a3df-4870-4ec8-baf8-73f9b9424faf}"/>
+  </Record>
+  <Form gridHeight="30" gridWidth="150" name="form" text="Form">
+    <Grid gridHeight="30" gridWidth="150" name="grid1" posX="0" posY="0">
+      <Label gridHeight="1" gridWidth="6" name="label1" posX="1" posY="1" text="L2 Server:"/>
+      <Edit fieldId="5" gridHeight="1" gridWidth="15" length="15" name="L2_ip_e" posX="8" posY="1" sizePolicy="initial" tabIndex="-1" title="edit1" widget="Edit"/>
+      <TextEdit fieldId="4" gridHeight="28" gridWidth="52" name="ConnMsg_te" posX="83" posY="1" scroll="true" tabIndex="-1" title="textedit1" widget="TextEdit"/>
+      <Button gridHeight="1" gridWidth="13" name="CAPSCH04_F1" posX="136" posY="1" tabIndex="-1" text="PDI傳送"/>
+      <Label gridHeight="1" gridWidth="6" name="label2" posX="1" posY="2" text="port:"/>
+      <Edit fieldId="6" gridHeight="1" gridWidth="4" length="4" name="port_e" posX="8" posY="2" tabIndex="-1" title="edit2" widget="Edit"/>
+      <Button gridHeight="1" gridWidth="13" name="clean_msg_bt" posX="136" posY="2" tabIndex="-1" text="清空訊息"/>
+      <Table gridHeight="26" gridWidth="81" name="table1" posX="1" posY="3" totalRows="5">
+        <Edit fieldId="1" gridHeight="1" gridWidth="8" name="COIL_NO_col" posX="0" posY="0" tabIndex="-1" title="鋼捲編號" widget="Edit"/>
+        <Edit fieldId="2" gridHeight="1" gridWidth="8" name="TIMER_col" posX="8" posY="0" tabIndex="-1" title="Timer" widget="Edit"/>
+        <Edit fieldId="3" gridHeight="1" gridWidth="8" name="ACK_col" posX="16" posY="0" tabIndex="-1" title="Response" widget="Edit"/>
+      </Table>
+      <Button gridHeight="1" gridWidth="13" name="CAPSCH04_F2" posX="136" posY="3" tabIndex="-1" text="刪除傳送"/>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBkAGEANwA5AGEAZQA2AGUALQAzAGIANQA2AC0ANAAyAGUAMAAtADgAZgA4ADAALQA3AGEAYQAyADEAYQA1ADQAYgBmADMAOAB9QCQAAAAAAABAJAAAAAAAAD9ok3S8an76AQAAAEwAewA0ADYAOQA5AGQAYQBjAGIALQA1AGQAZABkAC0ANAAzADcAZgAtAGEAZAA4ADgALQA3ADAAZQAyADIAMwBlAGEAOQBjADcAZQB9wHGgAAAAAADAQwAAAAAAAD9gYk3S8an8AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

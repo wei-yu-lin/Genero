@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="rdbmic36" fileVersion="31400" gstVersion="31408" name="managedform" uid="{7d3c9dc4-5f59-48cb-b60b-d76abb834713}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="micm140m_rec" uid="{5d5af0c8-21c2-47f2-a3cb-8e7a21620835}">
+    <RecordField colName="SPEC" fieldIdRef="1" fieldType="TABLE_COLUMN" name="MICM140M.SPEC" sqlTabName="MICM140M" uid="{f59de65a-c4bb-4520-bb08-774c4f59cd30}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="80" name="micm140m_f" text="規範查詢作業">
+    <Grid gridHeight="16" gridWidth="58" name="micm140q_gr" posX="4" posY="2">
+      <Group gridHeight="14" gridWidth="53" name="micm140q_group" posX="2" posY="1" text="">
+        <Table gridHeight="9" gridWidth="46" name="micm140m_rec" posX="3" posY="2" totalRows="8">
+          <Edit colName="SPEC" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="33" name="MICM140M.SPEC" posX="0" posY="0" sqlTabName="MICM140M" tabIndex="-1" title="規範" widget="Edit"/>
+        </Table>
+        <Button gridHeight="1" gridWidth="8" name="accept" posX="10" posY="12" tabIndex="-1" text="確定"/>
+        <Button gridHeight="1" gridWidth="8" name="cancel" posX="29" posY="12" tabIndex="-1" text="取消"/>
+      </Group>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA1AGQANQBhAGYAMABjADgALQAyADEAYwAyAC0ANAA3AGYAMgAtAGEAMwBjAGIALQA4AGUANwBhADIAMQA2ADIAMAA4ADMANQB9AAAAAAAAAAAAAAAAAAAAAD9gYk3S8an8AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

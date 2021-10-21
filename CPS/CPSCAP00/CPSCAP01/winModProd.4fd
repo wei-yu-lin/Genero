@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm fileVersion="31400" gstVersion="31408" name="managedform" uid="{dc4e5e98-3205-4048-9c82-74da3214e53f}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="modify_proc_r" uid="{c4ce4ac2-5c56-416c-baee-5639bcba43f1}">
+    <RecordField fieldIdRef="5" name="coil_no_fd" uid="{e0006268-dcf7-4830-8dbb-63b56dec78b6}"/>
+    <RecordField fieldIdRef="6" name="past_station_fd" uid="{741d3f29-e87a-4699-bbac-659620fc200b}"/>
+    <RecordField fieldIdRef="1" length="20" name="coming_station_fd" sqlType="CHAR" uid="{9a68e4b7-3582-418d-a60a-fc5b07ab15b1}"/>
+    <RecordField fieldIdRef="2" length="20" name="plan_station_fd" uid="{235b9b64-59ab-4c4e-a7ae-be3ce34eb2b3}"/>
+    <RecordField fieldIdRef="3" name="prod_thick_fd" uid="{e7514fd2-e42f-4bca-b33b-d88bd73bf626}"/>
+    <RecordField fieldIdRef="4" name="apn_code_fd" uid="{c54e45a7-e088-4898-a3b6-df3909e2ca7c}"/>
+  </Record>
+  <Form gridHeight="8" gridWidth="30" minHeight="10" minWidth="30" name="form" text="修改製程">
+    <Grid gridHeight="7" gridWidth="28" name="grid1" posX="1" posY="0">
+      <Label gridHeight="1" gridWidth="7" name="label1" posX="1" posY="0" text="鋼捲編號:"/>
+      <Edit fieldId="5" gridHeight="1" gridWidth="18" name="coil_no_fd" noEntry="false" posX="9" posY="0" tabIndex="-1" title="edit1" widget="Edit"/>
+      <Label gridHeight="1" gridWidth="7" name="label3" posX="1" posY="1" sizePolicy="fixed" text="實際製程:"/>
+      <Label gridHeight="1" gridWidth="2" name="past_station_fd" posX="9" posY="1" sizePolicy="dynamic" text="" underline="false"/>
+      <Edit autoNext="false" case="upper" fieldId="1" fontPitch="variable" gridHeight="1" gridWidth="15" length="20" name="coming_station_fd" noEntry="false" posX="12" posY="1" sizePolicy="fixed" sqlType="CHAR" tabIndex="-1" title="edit1" widget="Edit"/>
+      <Label gridHeight="1" gridWidth="7" name="label4" posX="1" posY="2" sizePolicy="fixed" text="標準製程:"/>
+      <Edit colorCondition="%V%d2%&gt;%C3" fieldId="2" gridHeight="1" gridWidth="18" length="20" name="plan_station_fd" noEntry="true" posX="9" posY="2" sizePolicy="fixed" tabIndex="-1" title="edit1" widget="Edit"/>
+      <Label gridHeight="1" gridWidth="7" name="label5" posX="1" posY="3" sizePolicy="fixed" text="成品厚度:"/>
+      <Edit case="upper" fieldId="3" gridHeight="1" gridWidth="4" name="prod_thick_fd" noEntry="true" posX="9" posY="3" sizePolicy="fixed" tabIndex="-1" title="edit1" widget="Edit"/>
+      <Label gridHeight="1" gridWidth="7" name="label6" posX="1" posY="4" sizePolicy="fixed" text="APN CODE:"/>
+      <Edit fieldId="4" gridHeight="1" gridWidth="4" justify="right" name="apn_code_fd" noEntry="true" posX="9" posY="4" sizePolicy="initial" tabIndex="-1" title="edit2" widget="Edit"/>
+      <Label gridHeight="1" gridWidth="19" name="label8" posX="1" posY="5" text=""/>
+      <Button gridHeight="1" gridWidth="8" name="mod_rs_bt" posX="1" posY="6" sizePolicy="initial" tabIndex="-1" text="Reset"/>
+      <Button gridHeight="1" gridWidth="8" name="accept" posX="10" posY="6" sizePolicy="initial" tabIndex="-1" text="確認修改"/>
+      <Button gridHeight="1" gridWidth="8" name="cancel" posX="19" posY="6" tabIndex="-1" text="取消修改"/>
+      <Phantom fieldId="6" name="past_station_fd" widget="Phantom"/>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBjADQAYwBlADQAYQBjADIALQA1AGMANQA2AC0ANAAxADYAYwAtAGIAYQBlAGUALQA1ADYAMwA5AGIAYwBiAGEANAAzAGYAMQB9AAAAAAAAAAAAAAAAAAAAAD+EeuFHrhR8AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

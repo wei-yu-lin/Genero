@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TopMenu>
+  <TopMenuGroup name = "exit"  text="??">
+    <TopMenuCommand name="reload" text="??????" image="exchange.png" />
+	<TopMenuCommand name="logout" text="????" image="fa-sign-in" />
+    <TopMenuCommand name="exit" text="??" image="quit" />
+  </TopMenuGroup>
+
+</TopMenu>

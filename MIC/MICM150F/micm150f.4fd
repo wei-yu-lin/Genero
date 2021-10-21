@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="rdbord" fileVersion="31400" gstVersion="31408" name="managedform" uid="{4dc36149-20f4-407f-b3d6-4a10abfbf45b}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="v_micm150f" uid="{a1295884-7a46-496f-acb6-7008665c527d}">
+    <RecordField colName="PRODUCT_CODE" fieldIdRef="1" fieldType="TABLE_COLUMN" name="ORDC010M.PRODUCT_CODE" sqlTabName="ORDC010M" uid="{5d29dc33-c2a9-4942-aa4a-6b2b8604a43e}"/>
+    <RecordField colName="PRODUCT_TYPE" fieldIdRef="2" fieldType="TABLE_COLUMN" name="ORDC010M.PRODUCT_TYPE" sqlTabName="ORDC010M" uid="{245bae98-1bb2-4d69-b616-ac49e4827fa5}"/>
+    <RecordField colName="PRODUCT_ABBR" fieldIdRef="3" fieldType="TABLE_COLUMN" name="ORDC010M.PRODUCT_ABBR" sqlTabName="ORDC010M" uid="{594bdd26-d17f-4f70-acf2-4eeb7904867f}"/>
+    <RecordField colName="SURFACE_FINISH" fieldIdRef="4" fieldType="TABLE_COLUMN" name="ORDC010M.SURFACE_FINISH" sqlTabName="ORDC010M" uid="{137b742e-664b-4863-ad0a-e9e60d2b812d}"/>
+    <RecordField colName="PRODUCT_STYLE" fieldIdRef="5" fieldType="TABLE_COLUMN" name="ORDC010M.PRODUCT_STYLE" sqlTabName="ORDC010M" uid="{0c7df8a2-12ef-4d7d-b07a-324193d08a85}"/>
+    <RecordField colName="PRODUCT_PLANT" fieldIdRef="6" fieldType="TABLE_COLUMN" name="ORDC010M.PRODUCT_PLANT" sqlTabName="ORDC010M" uid="{f9e464dc-19f4-4494-9101-43a3e25e457c}"/>
+    <RecordField colName="PRODUCT_CHI" fieldIdRef="7" fieldType="TABLE_COLUMN" name="ORDC010M.PRODUCT_CHI" sqlTabName="ORDC010M" uid="{51c49ab3-399f-4a2f-b17d-c741eddb5fdc}"/>
+    <RecordField colName="PRODUCT_ENG" fieldIdRef="8" fieldType="TABLE_COLUMN" name="ORDC010M.PRODUCT_ENG" sqlTabName="ORDC010M" uid="{94beafdf-678e-4ea3-9a86-459253b1cb35}"/>
+    <RecordField colName="PRODUCT_REMARK" fieldIdRef="9" fieldType="TABLE_COLUMN" name="ORDC010M.PRODUCT_REMARK" sqlTabName="ORDC010M" uid="{5c76ec76-f7c3-4c02-998e-8175dacd3e7b}"/>
+  </Record>
+  <Form gridHeight="17" gridWidth="67" name="form" text="產品中英文名稱對照維護作業">
+    <Grid gridHeight="16" gridWidth="65" name="grid1" posX="1" posY="0">
+      <Label gridHeight="1" gridWidth="6" name="label1" posX="3" posY="1" text="產品代碼:"/>
+      <Edit colName="PRODUCT_CODE" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="4" name="ORDC010M.PRODUCT_CODE" posX="10" posY="1" sqlTabName="ORDC010M" tabIndex="-1" title="edit1" widget="Edit"/>
+      <Edit colName="PRODUCT_TYPE" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" name="ORDC010M.PRODUCT_TYPE" posX="15" posY="1" sqlTabName="ORDC010M" tabIndex="-1" title="edit2" widget="Edit"/>
+      <Label gridHeight="1" gridWidth="6" name="label2" posX="32" posY="1" text="產品簡稱:"/>
+      <Edit colName="PRODUCT_ABBR" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" name="ORDC010M.PRODUCT_ABBR" posX="39" posY="1" sqlTabName="ORDC010M" tabIndex="-1" title="edit3" widget="Edit"/>
+      <Label gridHeight="1" gridWidth="6" name="label3" posX="3" posY="3" text="表面品級:"/>
+      <Edit colName="SURFACE_FINISH" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" name="ORDC010M.SURFACE_FINISH" posX="10" posY="3" sqlTabName="ORDC010M" tabIndex="-1" title="edit4" widget="Edit"/>
+      <Label gridHeight="1" gridWidth="5" name="label4" posX="23" posY="3" text="產品別:"/>
+      <Edit colName="PRODUCT_STYLE" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" name="ORDC010M.PRODUCT_STYLE" posX="29" posY="3" sqlTabName="ORDC010M" tabIndex="-1" title="edit5" widget="Edit"/>
+      <Label gridHeight="1" gridWidth="4" name="label5" posX="41" posY="3" text="廠別:"/>
+      <Edit colName="PRODUCT_PLANT" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" name="ORDC010M.PRODUCT_PLANT" posX="46" posY="3" sqlTabName="ORDC010M" tabIndex="-1" title="edit6" widget="Edit"/>
+      <Label gridHeight="1" gridWidth="10" name="label6" posX="3" posY="6" text="產品名稱(中文) :"/>
+      <Edit colName="PRODUCT_CHI" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="43" name="ORDC010M.PRODUCT_CHI" posX="14" posY="6" sqlTabName="ORDC010M" tabIndex="-1" title="edit7" widget="Edit"/>
+      <Label gridHeight="1" gridWidth="10" name="label7" posX="3" posY="8" text="產品名稱(英文) :"/>
+      <Edit colName="PRODUCT_ENG" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="43" name="ORDC010M.PRODUCT_ENG" posX="14" posY="8" sqlTabName="ORDC010M" tabIndex="-1" title="edit8" widget="Edit"/>
+      <Label gridHeight="1" gridWidth="4" name="label8" posX="3" posY="10" text="備註 :"/>
+      <Edit colName="PRODUCT_REMARK" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="49" name="ORDC010M.PRODUCT_REMARK" posX="8" posY="10" sqlTabName="ORDC010M" tabIndex="-1" title="edit9" widget="Edit"/>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBhADEAMgA5ADUAOAA4ADQALQA3AGEANAA2AC0ANAA5ADYAZgAtAGEAYwBiADYALQA3ADAAMAA4ADYANgA1AGMANQAyADcAZAB9AAAAAAAAAAAAAAAAAAAAAD+Ik3S8an78AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

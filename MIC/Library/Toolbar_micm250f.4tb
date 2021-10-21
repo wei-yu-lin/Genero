@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="Big5"?>
+<ToolBar >
+  <ToolBarItem name="micm250f_query" image="find" text="查詢" />
+  <ToolBarSeparator name="micm250f_querysep" />
+  
+  <ToolBarItem name="micm250f_add" image="new" text="新增" />
+  <ToolBarSeparator name="micm250f_addsep" />
+  
+  <ToolBarItem name="micm250f_prev" image="gorev" text="上一筆" />
+  <ToolBarSeparator name="micm250f_prevsep" />
+  
+  <ToolBarItem name="micm250f_next" image="goforw" text="下一筆" />
+  <ToolBarSeparator name="micm250f_nextsep" />
+  
+  <ToolBarItem name="micm250f_upd" image="prop" text="修改" />
+  <ToolBarSeparator name="micm250f_updsep" />
+
+  <ToolBarItem name="micm250f_del" image="eraser" text="刪除" />
+  <ToolBarSeparator name="micm250f_delsep" />
+
+  <ToolBarItem name="micm250f_save" image="disk" text="存檔" />
+  <ToolBarSeparator name="micm250f_savesep" />
+
+  <ToolBarItem name="micm250f_p2" image="edit" text="P2" />
+  <ToolBarSeparator name="micm250f_editsep" />
+  
+  <ToolBarItem name="bye" image="quit" text="離開" />
+  
+
+  
+</ToolBar>

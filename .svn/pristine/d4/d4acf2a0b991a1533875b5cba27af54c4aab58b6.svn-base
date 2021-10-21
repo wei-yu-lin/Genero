@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="rdbmic36" fileVersion="31400" gstVersion="31408" name="managedform" uid="{86179545-b351-48a9-bf0e-d9741d6f8868}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="v_micm220f" uid="{291caf27-b484-48dd-a0a1-6a9dc613fe82}">
+    <RecordField colName="SPEC" fieldIdRef="1" fieldType="TABLE_COLUMN" name="MICM210M.SPEC" sqlTabName="MICM210M" uid="{39dc555b-e28b-41b4-af99-0aeb7f3601bf}"/>
+    <RecordField colName="STEEL_GRADE_JIS" fieldIdRef="2" fieldType="TABLE_COLUMN" name="MICM210M.STEEL_GRADE_JIS" sqlTabName="MICM210M" uid="{c2c4c37a-d8ea-47a0-bf0b-dad59ce8a8a2}"/>
+    <RecordField colName="THICK_MIN" fieldIdRef="3" fieldType="TABLE_COLUMN" name="MICM210M.THICK_MIN" sqlTabName="MICM210M" uid="{ead07ba5-6c33-4db7-a545-3be03290cb9c}"/>
+    <RecordField colName="THICK_MAX" fieldIdRef="4" fieldType="TABLE_COLUMN" name="MICM210M.THICK_MAX" sqlTabName="MICM210M" uid="{d309c0b2-f802-4fc2-9dab-87525e3fe33d}"/>
+    <RecordField colName="OTHER" fieldIdRef="5" fieldType="TABLE_COLUMN" name="MICM210M.OTHER" sqlTabName="MICM210M" uid="{d2a24bef-df35-4e20-9187-f71c4912ec26}"/>
+    <RecordField colName="C_MIN" defaultValue="0" fieldIdRef="6" fieldType="TABLE_COLUMN" name="MICM210M.C_MIN" sqlTabName="MICM210M" uid="{cb43b4c2-8082-41aa-b527-dff8e5422601}"/>
+    <RecordField colName="C_MAX" fieldIdRef="7" fieldType="TABLE_COLUMN" name="MICM210M.C_MAX" sqlTabName="MICM210M" uid="{0a1a67cf-478d-4a72-8325-4811e9227d4b}"/>
+    <RecordField colName="SI_MIN" fieldIdRef="8" fieldType="TABLE_COLUMN" name="MICM210M.SI_MIN" sqlTabName="MICM210M" uid="{47d46644-5652-4625-8529-98d02fc42528}"/>
+    <RecordField colName="SI_MAX" fieldIdRef="9" fieldType="TABLE_COLUMN" name="MICM210M.SI_MAX" sqlTabName="MICM210M" uid="{ecb0b3fa-43b7-4e6f-bd3a-5f2be05abd24}"/>
+    <RecordField colName="MN_MIN" fieldIdRef="10" fieldType="TABLE_COLUMN" name="MICM210M.MN_MIN" sqlTabName="MICM210M" uid="{7b471a97-3223-4cf7-86f9-c53443f0800d}"/>
+    <RecordField colName="MN_MAX" fieldIdRef="11" fieldType="TABLE_COLUMN" name="MICM210M.MN_MAX" sqlTabName="MICM210M" uid="{d1331fa5-4b55-4217-914c-b52384bc1bd4}"/>
+    <RecordField colName="P_MIN" fieldIdRef="12" fieldType="TABLE_COLUMN" name="MICM210M.P_MIN" sqlTabName="MICM210M" uid="{ca5d9382-5acd-483f-8484-f42fc1664ee1}"/>
+    <RecordField colName="P_MAX" fieldIdRef="13" fieldType="TABLE_COLUMN" name="MICM210M.P_MAX" sqlTabName="MICM210M" uid="{ea058063-da15-4f76-b4dc-d6c83637ad5e}"/>
+    <RecordField colName="S_MIN" fieldIdRef="14" fieldType="TABLE_COLUMN" name="MICM210M.S_MIN" sqlTabName="MICM210M" uid="{c3b9ab0d-32e4-45cb-a612-22675fc81fa4}"/>
+    <RecordField colName="S_MAX" fieldIdRef="15" fieldType="TABLE_COLUMN" name="MICM210M.S_MAX" sqlTabName="MICM210M" uid="{a0b21c74-8f0f-4f59-977b-bec81dae4f69}"/>
+    <RecordField colName="NI_MIN" fieldIdRef="16" fieldType="TABLE_COLUMN" name="MICM210M.NI_MIN" sqlTabName="MICM210M" uid="{a311e4f6-1abf-4704-801d-73c2fdbb05f4}"/>
+    <RecordField colName="NI_MAX" fieldIdRef="17" fieldType="TABLE_COLUMN" name="MICM210M.NI_MAX" sqlTabName="MICM210M" uid="{c6c60ac4-1cb5-4465-8187-9de64af012ed}"/>
+    <RecordField colName="CR_MIN" fieldIdRef="18" fieldType="TABLE_COLUMN" name="MICM210M.CR_MIN" sqlTabName="MICM210M" uid="{8714a9a0-01ee-4db2-ab88-4d789412fb45}"/>
+    <RecordField colName="CR_MAX" fieldIdRef="19" fieldType="TABLE_COLUMN" name="MICM210M.CR_MAX" sqlTabName="MICM210M" uid="{2bccc72b-e5fe-4d36-9d6e-4221f3a3fffd}"/>
+    <RecordField colName="MO_MIN" fieldIdRef="20" fieldType="TABLE_COLUMN" name="MICM210M.MO_MIN" sqlTabName="MICM210M" uid="{8ddea61d-ffc5-4584-ac9b-d748c88d64f3}"/>
+    <RecordField colName="MO_MAX" fieldIdRef="21" fieldType="TABLE_COLUMN" name="MICM210M.MO_MAX" sqlTabName="MICM210M" uid="{97aeb972-e9f2-4ea8-93c1-d67e2aca10ac}"/>
+    <RecordField colName="N_MIN" fieldIdRef="22" fieldType="TABLE_COLUMN" name="MICM210M.N_MIN" sqlTabName="MICM210M" uid="{9562fbf2-391c-4ca3-a51e-e7e25cb40970}"/>
+    <RecordField colName="N_MAX" fieldIdRef="23" fieldType="TABLE_COLUMN" name="MICM210M.N_MAX" sqlTabName="MICM210M" uid="{05c4df95-c17a-4253-a57e-02488a4e63ed}"/>
+    <RecordField colName="AL_MIN" fieldIdRef="24" fieldType="TABLE_COLUMN" name="MICM210M.AL_MIN" sqlTabName="MICM210M" uid="{cd2d762c-fc33-4162-b64c-f9093c4746ee}"/>
+    <RecordField colName="AL_MAX" fieldIdRef="25" fieldType="TABLE_COLUMN" name="MICM210M.AL_MAX" sqlTabName="MICM210M" uid="{404eda49-ce3a-4678-8973-bd05cd925e1e}"/>
+    <RecordField colName="CU_MIN" fieldIdRef="26" fieldType="TABLE_COLUMN" name="MICM210M.CU_MIN" sqlTabName="MICM210M" uid="{fcd0b086-6b5d-4a87-9571-5e6372009103}"/>
+    <RecordField colName="CU_MAX" fieldIdRef="27" fieldType="TABLE_COLUMN" name="MICM210M.CU_MAX" sqlTabName="MICM210M" uid="{f84bc4d7-a9ab-4bd6-8805-cf96299f7229}"/>
+    <RecordField colName="TI_MIN" fieldIdRef="28" fieldType="TABLE_COLUMN" name="MICM210M.TI_MIN" sqlTabName="MICM210M" uid="{cb2a8b22-f497-4aaa-9447-eba5e831e82a}"/>
+    <RecordField colName="TI_MAX" fieldIdRef="29" fieldType="TABLE_COLUMN" name="MICM210M.TI_MAX" sqlTabName="MICM210M" uid="{8704b930-cebe-45c7-911d-b09ba42e4147}"/>
+    <RecordField colName="NB_MIN" fieldIdRef="30" fieldType="TABLE_COLUMN" name="MICM210M.NB_MIN" sqlTabName="MICM210M" uid="{54cccdb5-ed26-44a0-a6e7-db4f4e112d55}"/>
+    <RecordField colName="NB_MAX" fieldIdRef="31" fieldType="TABLE_COLUMN" name="MICM210M.NB_MAX" sqlTabName="MICM210M" uid="{12f867e8-2f78-4056-9f44-c00ee509dde9}"/>
+    <RecordField colName="V_MIN" fieldIdRef="32" fieldType="TABLE_COLUMN" name="MICM210M.V_MIN" sqlTabName="MICM210M" uid="{beff3c53-c4e5-4bac-a38c-e3744c83a5db}"/>
+    <RecordField colName="V_MAX" fieldIdRef="33" fieldType="TABLE_COLUMN" name="MICM210M.V_MAX" sqlTabName="MICM210M" uid="{c3a21df9-2770-407a-952d-cb8049342f6a}"/>
+    <RecordField colName="CE_MIN" fieldIdRef="34" fieldType="TABLE_COLUMN" name="MICM210M.CE_MIN" sqlTabName="MICM210M" uid="{541d66ce-3a29-42b5-a7a7-9c2495dc86c7}"/>
+    <RecordField colName="CE_MAX" fieldIdRef="35" fieldType="TABLE_COLUMN" name="MICM210M.CE_MAX" sqlTabName="MICM210M" uid="{297beeb9-c883-42f4-84d0-c676ba3c22f0}"/>
+    <RecordField colName="WC_MIN" fieldIdRef="36" fieldType="TABLE_COLUMN" name="MICM210M.WC_MIN" sqlTabName="MICM210M" uid="{08c0503c-7917-4e83-aa65-a3f95f95a037}"/>
+    <RecordField colName="WC_MAX" fieldIdRef="37" fieldType="TABLE_COLUMN" name="MICM210M.WC_MAX" sqlTabName="MICM210M" uid="{7a946945-e571-48b2-829f-ca159df528c9}"/>
+    <RecordField colName="CO_MIN" fieldIdRef="38" fieldType="TABLE_COLUMN" name="MICM210M.CO_MIN" sqlTabName="MICM210M" uid="{61e86198-e471-4223-80a1-9408d8f299d6}"/>
+    <RecordField colName="CO_MAX" fieldIdRef="39" fieldType="TABLE_COLUMN" name="MICM210M.CO_MAX" sqlTabName="MICM210M" uid="{b6f9ded4-9cc4-4f98-9b7b-884afd015db4}"/>
+    <RecordField colName="B_MIN" fieldIdRef="40" fieldType="TABLE_COLUMN" name="MICM210M.B_MIN" sqlTabName="MICM210M" uid="{72ee7c28-b283-4d37-916e-bf5400e80273}"/>
+    <RecordField colName="B_MAX" fieldIdRef="41" fieldType="TABLE_COLUMN" name="MICM210M.B_MAX" sqlTabName="MICM210M" uid="{c08a9087-5605-4ca7-85ba-4d3757ff0fe7}"/>
+    <RecordField colName="KFA_MIN" fieldIdRef="42" fieldType="TABLE_COLUMN" name="MICM210M.KFA_MIN" sqlTabName="MICM210M" uid="{ba77fdf4-82d8-4f2e-bf4d-d3d2a5347328}"/>
+    <RecordField colName="KFA_MAX" fieldIdRef="43" fieldType="TABLE_COLUMN" name="MICM210M.KFA_MAX" sqlTabName="MICM210M" uid="{169d64fd-4b1d-4e45-95ff-3bdb69d4e733}"/>
+    <RecordField colName="YS_02_MIN" fieldIdRef="44" fieldType="TABLE_COLUMN" name="MICM210M.YS_02_MIN" sqlTabName="MICM210M" uid="{be3450f2-f7aa-473d-9719-79069ba47104}"/>
+    <RecordField colName="YS_02_MAX" fieldIdRef="45" fieldType="TABLE_COLUMN" name="MICM210M.YS_02_MAX" sqlTabName="MICM210M" uid="{b13c0ba4-3b85-40da-a4fe-495427a9fb51}"/>
+    <RecordField colName="YS_10_MIN" fieldIdRef="46" fieldType="TABLE_COLUMN" name="MICM210M.YS_10_MIN" sqlTabName="MICM210M" uid="{19b68dba-b219-4af6-8d8d-0dcf6b50594c}"/>
+    <RecordField colName="YS_10_MAX" fieldIdRef="47" fieldType="TABLE_COLUMN" name="MICM210M.YS_10_MAX" sqlTabName="MICM210M" uid="{5151ccce-e9a2-48ac-97c8-2cbab8135375}"/>
+    <RecordField colName="TS_MIN" fieldIdRef="48" fieldType="TABLE_COLUMN" name="MICM210M.TS_MIN" sqlTabName="MICM210M" uid="{8b95f95b-17d1-4193-9650-3929bbc01284}"/>
+    <RecordField colName="TS_MAX" fieldIdRef="49" fieldType="TABLE_COLUMN" name="MICM210M.TS_MAX" sqlTabName="MICM210M" uid="{5de5acd6-ac32-4c1c-add6-8348371b924e}"/>
+    <RecordField colName="ELONGATION_MIN" fieldIdRef="50" fieldType="TABLE_COLUMN" name="MICM210M.ELONGATION_MIN" sqlTabName="MICM210M" uid="{53a11f93-8af8-487c-9158-b709511f9f19}"/>
+    <RecordField colName="ELONGATION_MAX" fieldIdRef="51" fieldType="TABLE_COLUMN" name="MICM210M.ELONGATION_MAX" sqlTabName="MICM210M" uid="{11baa48f-07df-4878-bd4a-bac2997014d0}"/>
+    <RecordField colName="HARD_HRB_MIN" fieldIdRef="52" fieldType="TABLE_COLUMN" name="MICM210M.HARD_HRB_MIN" sqlTabName="MICM210M" uid="{13df89d7-1846-44a7-a550-c9124f3ad8fc}"/>
+    <RecordField colName="HARD_HRB_MAX" fieldIdRef="53" fieldType="TABLE_COLUMN" name="MICM210M.HARD_HRB_MAX" sqlTabName="MICM210M" uid="{7d3a3269-c390-483a-8df3-2c0d21cfb40f}"/>
+    <RecordField colName="HARD_HV_MIN" fieldIdRef="54" fieldType="TABLE_COLUMN" name="MICM210M.HARD_HV_MIN" sqlTabName="MICM210M" uid="{d5adfb7e-f6ee-4e7e-bdc7-1cfe858a218d}"/>
+    <RecordField colName="HARD_HV_MAX" fieldIdRef="55" fieldType="TABLE_COLUMN" name="MICM210M.HARD_HV_MAX" sqlTabName="MICM210M" uid="{4a45f201-bec1-48a2-b8ad-85e096785a7a}"/>
+    <RecordField colName="HARD_HB_MIN" fieldIdRef="56" fieldType="TABLE_COLUMN" name="MICM210M.HARD_HB_MIN" sqlTabName="MICM210M" uid="{294a6e8a-bc7e-48d1-b7e9-80aab40ec046}"/>
+    <RecordField colName="HARD_HB_MAX" fieldIdRef="57" fieldType="TABLE_COLUMN" name="MICM210M.HARD_HB_MAX" sqlTabName="MICM210M" uid="{5d8bbc65-f9a1-4ef7-a616-bf88944a706e}"/>
+    <RecordField colName="BEND_TEST1" fieldIdRef="58" fieldType="TABLE_COLUMN" name="MICM210M.BEND_TEST1" sqlTabName="MICM210M" uid="{06c7255c-ec89-4b24-9036-a2e21ba4fc02}"/>
+    <RecordField colName="BEND_TEST2" fieldIdRef="59" fieldType="TABLE_COLUMN" name="MICM210M.BEND_TEST2" sqlTabName="MICM210M" uid="{05b2f10d-4e8b-4c53-8295-442f387251b8}"/>
+    <RecordField colName="HARD_HRC_MIN" fieldIdRef="60" fieldType="TABLE_COLUMN" name="MICM210M.HARD_HRC_MIN" sqlTabName="MICM210M" uid="{e8a2c774-2569-4fd9-b0a7-5086f873fca2}"/>
+    <RecordField colName="HARD_HRC_MAX" fieldIdRef="61" fieldType="TABLE_COLUMN" name="MICM210M.HARD_HRC_MAX" sqlTabName="MICM210M" uid="{fb38f7d8-2923-4c4e-a201-a1759f7338b8}"/>
+    <RecordField colName="YIELD_RATIO_MIN" fieldIdRef="62" fieldType="TABLE_COLUMN" name="MICM210M.YIELD_RATIO_MIN" sqlTabName="MICM210M" uid="{2b3c1be6-9b1f-4446-ac0d-dbcc82900572}"/>
+    <RecordField colName="YIELD_RATIO_MAX" fieldIdRef="63" fieldType="TABLE_COLUMN" name="MICM210M.YIELD_RATIO_MAX" sqlTabName="MICM210M" uid="{5a6d62c7-4e1d-4130-8215-89aebfa312b2}"/>
+    <RecordField colName="CHARPY_UNIT" fieldIdRef="64" fieldType="TABLE_COLUMN" name="MICM210M.CHARPY_UNIT" sqlTabName="MICM210M" uid="{a69643b6-348c-441b-9c52-6b5fc32c6131}"/>
+    <RecordField colName="CHARPY_MIN" fieldIdRef="65" fieldType="TABLE_COLUMN" name="MICM210M.CHARPY_MIN" sqlTabName="MICM210M" uid="{0a4d21db-93de-4aa2-8f00-b1de44308d0e}"/>
+    <RecordField colName="CHARPY_AVE_MIN" fieldIdRef="66" fieldType="TABLE_COLUMN" name="MICM210M.CHARPY_AVE_MIN" sqlTabName="MICM210M" uid="{c0ee13ba-9ea7-46ec-bf0d-938e6c326258}"/>
+    <RecordField colName="C1_ELONGATION_UNIT" fieldIdRef="67" fieldType="TABLE_COLUMN" name="MICM210M.C1_ELONGATION_UNIT" sqlTabName="MICM210M" uid="{a2115d1f-f5d7-466c-bfea-b5fff7ff60e1}"/>
+    <RecordField colName="C1_ELONGATION_MIN" fieldIdRef="68" fieldType="TABLE_COLUMN" name="MICM210M.C1_ELONGATION_MIN" sqlTabName="MICM210M" uid="{deb94a87-0925-40e9-9c06-cfb629586ae7}"/>
+    <RecordField colName="C2_ELONGATION_UNIT" fieldIdRef="69" fieldType="TABLE_COLUMN" name="MICM210M.C2_ELONGATION_UNIT" sqlTabName="MICM210M" uid="{962a1e0d-05ab-4c78-b020-4a748920c88c}"/>
+    <RecordField colName="C2_ELONGATION_MIN" fieldIdRef="70" fieldType="TABLE_COLUMN" name="MICM210M.C2_ELONGATION_MIN" sqlTabName="MICM210M" uid="{d928af41-bf12-44d6-961f-1484309becb8}"/>
+    <RecordField colName="C3_ELONGATION_UNIT" fieldIdRef="71" fieldType="TABLE_COLUMN" name="MICM210M.C3_ELONGATION_UNIT" sqlTabName="MICM210M" uid="{a2545efd-bdeb-475c-81a4-6985bf72fd6e}"/>
+    <RecordField colName="C3_ELONGATION_MIN" fieldIdRef="72" fieldType="TABLE_COLUMN" name="MICM210M.C3_ELONGATION_MIN" sqlTabName="MICM210M" uid="{c82fff8f-0a37-4cac-96c3-edc2f8bdc266}"/>
+    <RecordField colName="THICK_PERCENT_MIN" fieldIdRef="73" fieldType="TABLE_COLUMN" name="MICM210M.THICK_PERCENT_MIN" sqlTabName="MICM210M" uid="{3c005744-4362-4306-99f4-aee2e09090e9}"/>
+    <RecordField colName="THICK_PERCENT_MAX" fieldIdRef="74" fieldType="TABLE_COLUMN" name="MICM210M.THICK_PERCENT_MAX" sqlTabName="MICM210M" uid="{24157890-9ded-4a78-9688-bfb2a1a3efa3}"/>
+  </Record>
+  <Form gridHeight="36" gridWidth="72" name="micm220f_f" text="標準規範資料維護作業">
+    <Grid gridHeight="34" gridWidth="69" name="micm220f_gr" posX="2" posY="0">
+      <Group gridHeight="4" gridWidth="60" name="micm220f_group1" posX="2" posY="1" style="" text="">
+        <Initializer style="mic_style.4st"/>
+        <Label gridHeight="1" gridWidth="6" name="label1" posX="1" posY="1" text="產品規範"/>
+        <ButtonEdit action="spec_find" case="upper" colName="SPEC" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="15" image="zoom" name="MICM210M.SPEC" notNull="true" posX="8" posY="1" required="true" sqlTabName="MICM210M" tabIndex="-1" title="edit1" widget="ButtonEdit"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="8" justify="left" lstrcomment="true" name="label2" posX="28" posY="1" sizePolicy="initial" text="規範鋼種"/>
+        <ButtonEdit action="steel_grade_jis_find" colName="STEEL_GRADE_JIS" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" image="zoom" name="MICM210M.STEEL_GRADE_JIS" notNull="false" posX="37" posY="1" required="false" sqlTabName="MICM210M" tabIndex="-1" title="edit1" widget="ButtonEdit"/>
+        <Label gridHeight="1" gridWidth="6" name="label3" posX="1" posY="2" text="成品厚度"/>
+        <Edit colName="THICK_MIN" fieldId="3" fieldType="TABLE_COLUMN" format="##&amp;.&amp;&amp;" gridHeight="1" gridWidth="7" name="MICM210M.THICK_MIN" posX="8" posY="2" sqlTabName="MICM210M" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Edit colName="THICK_MAX" fieldId="4" fieldType="TABLE_COLUMN" format="##&amp;.&amp;&amp;" gridHeight="1" gridWidth="7" name="MICM210M.THICK_MAX" posX="16" posY="2" sqlTabName="MICM210M" tabIndex="-1" title="edit2" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="8" justify="left" lstrcomment="true" name="label4" posX="28" posY="2" text="註解"/>
+        <Edit colName="OTHER" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="MICM210M.OTHER" posX="37" posY="2" sqlTabName="MICM210M" tabIndex="-1" title="edit1" widget="Edit"/>
+      </Group>
+      <Group fontPitch="variable" gridHeight="10" gridWidth="60" name="micm220f_group2" posX="2" posY="6" text="化學成分">
+        <Label gridHeight="1" gridWidth="3" name="label6" posX="2" posY="2" text="C"/>
+        <Edit century="R" colName="C_MIN" defaultValue="0" fieldId="6" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.C_MIN" posX="6" posY="2" sqlTabName="MICM210M" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Edit colName="C_MAX" fieldId="7" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.C_MAX" posX="12" posY="2" sqlTabName="MICM210M" tabIndex="-1" title="edit2" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="4" name="label7" posX="22" posY="2" text="Si"/>
+        <Edit colName="SI_MIN" fieldId="8" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.SI_MIN" posX="27" posY="2" sqlTabName="MICM210M" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Edit colName="SI_MAX" fieldId="9" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.SI_MAX" posX="33" posY="2" sqlTabName="MICM210M" tabIndex="-1" title="edit2" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="4" name="label8" posX="42" posY="2" text="Mn"/>
+        <Edit colName="MN_MIN" fieldId="10" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.MN_MIN" posX="47" posY="2" sqlTabName="MICM210M" tabIndex="-1" title="edit3" widget="Edit"/>
+        <Edit colName="MN_MAX" fieldId="11" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.MN_MAX" posX="53" posY="2" sqlTabName="MICM210M" tabIndex="-1" title="edit4" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="3" name="label9" posX="2" posY="3" text="P"/>
+        <Edit colName="P_MIN" fieldId="12" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.P_MIN" posX="6" posY="3" sqlTabName="MICM210M" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Edit colName="P_MAX" fieldId="13" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.P_MAX" posX="12" posY="3" sqlTabName="MICM210M" tabIndex="-1" title="edit2" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="4" name="label10" posX="22" posY="3" text="S"/>
+        <Edit colName="S_MIN" fieldId="14" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.S_MIN" posX="27" posY="3" sqlTabName="MICM210M" tabIndex="-1" title="edit3" widget="Edit"/>
+        <Edit century="R" colName="S_MAX" fieldId="15" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.S_MAX" posX="33" posY="3" sqlTabName="MICM210M" tabIndex="-1" title="edit4" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="4" name="label11" posX="42" posY="3" text="Ni"/>
+        <Edit colName="NI_MIN" fieldId="16" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.NI_MIN" posX="47" posY="3" sqlTabName="MICM210M" tabIndex="-1" title="edit5" widget="Edit"/>
+        <Edit colName="NI_MAX" fieldId="17" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.NI_MAX" posX="53" posY="3" sqlTabName="MICM210M" tabIndex="-1" title="edit6" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="3" name="label12" posX="2" posY="4" text="Cr"/>
+        <Edit colName="CR_MIN" fieldId="18" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.CR_MIN" posX="6" posY="4" sqlTabName="MICM210M" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Edit colName="CR_MAX" fieldId="19" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.CR_MAX" posX="12" posY="4" sqlTabName="MICM210M" tabIndex="-1" title="edit2" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="4" name="label13" posX="22" posY="4" text="Mo"/>
+        <Edit colName="MO_MIN" fieldId="20" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.MO_MIN" posX="27" posY="4" sqlTabName="MICM210M" tabIndex="-1" title="edit3" widget="Edit"/>
+        <Edit colName="MO_MAX" fieldId="21" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.MO_MAX" posX="33" posY="4" sqlTabName="MICM210M" tabIndex="-1" title="edit4" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="4" name="label14" posX="42" posY="4" text="N"/>
+        <Edit colName="N_MIN" fieldId="22" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.N_MIN" posX="47" posY="4" sqlTabName="MICM210M" tabIndex="-1" title="edit5" widget="Edit"/>
+        <Edit colName="N_MAX" fieldId="23" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.N_MAX" posX="53" posY="4" sqlTabName="MICM210M" tabIndex="-1" title="edit6" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="3" name="label15" posX="2" posY="5" text="Al"/>
+        <Edit colName="AL_MIN" fieldId="24" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.AL_MIN" posX="6" posY="5" sqlTabName="MICM210M" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Edit colName="AL_MAX" fieldId="25" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.AL_MAX" posX="12" posY="5" sqlTabName="MICM210M" tabIndex="-1" title="edit2" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="4" name="label16" posX="22" posY="5" text="Cu"/>
+        <Edit colName="CU_MIN" fieldId="26" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.CU_MIN" posX="27" posY="5" sqlTabName="MICM210M" tabIndex="-1" title="edit3" widget="Edit"/>
+        <Edit colName="CU_MAX" fieldId="27" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.CU_MAX" posX="33" posY="5" sqlTabName="MICM210M" tabIndex="-1" title="edit4" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="4" name="label17" posX="42" posY="5" text="Ti"/>
+        <Edit colName="TI_MIN" fieldId="28" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" name="MICM210M.TI_MIN" posX="47" posY="5" sqlTabName="MICM210M" tabIndex="-1" title="edit5" widget="Edit"/>
+        <Edit colName="TI_MAX" fieldId="29" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" name="MICM210M.TI_MAX" posX="53" posY="5" sqlTabName="MICM210M" tabIndex="-1" title="edit6" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="3" name="label18" posX="2" posY="6" text="Nb"/>
+        <Edit colName="NB_MIN" fieldId="30" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" name="MICM210M.NB_MIN" posX="6" posY="6" sqlTabName="MICM210M" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Edit colName="NB_MAX" fieldId="31" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" name="MICM210M.NB_MAX" posX="12" posY="6" sqlTabName="MICM210M" tabIndex="-1" title="edit2" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="4" name="label19" posX="22" posY="6" text="V"/>
+        <Edit colName="V_MIN" fieldId="32" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" name="MICM210M.V_MIN" posX="27" posY="6" sqlTabName="MICM210M" tabIndex="-1" title="edit3" widget="Edit"/>
+        <Edit colName="V_MAX" fieldId="33" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" name="MICM210M.V_MAX" posX="33" posY="6" sqlTabName="MICM210M" tabIndex="-1" title="edit4" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="4" name="label20" posX="42" posY="6" text="CE"/>
+        <Edit colName="CE_MIN" fieldId="34" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.CE_MIN" posX="47" posY="6" sqlTabName="MICM210M" tabIndex="-1" title="edit5" widget="Edit"/>
+        <Edit colName="CE_MAX" fieldId="35" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.CE_MAX" posX="53" posY="6" sqlTabName="MICM210M" tabIndex="-1" title="edit6" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="3" name="label21" posX="2" posY="7" text="Pcm"/>
+        <Edit colName="WC_MIN" fieldId="36" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.WC_MIN" posX="6" posY="7" sqlTabName="MICM210M" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Edit colName="WC_MAX" fieldId="37" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.WC_MAX" posX="12" posY="7" sqlTabName="MICM210M" tabIndex="-1" title="edit2" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="4" name="label22" posX="22" posY="7" text="Co"/>
+        <Edit colName="CO_MIN" fieldId="38" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.CO_MIN" posX="27" posY="7" sqlTabName="MICM210M" tabIndex="-1" title="edit3" widget="Edit"/>
+        <Edit colName="CO_MAX" fieldId="39" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.CO_MAX" posX="33" posY="7" sqlTabName="MICM210M" tabIndex="-1" title="edit4" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="4" name="label23" posX="42" posY="7" text="B"/>
+        <Edit colName="B_MIN" fieldId="40" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.B_MIN" posX="47" posY="7" sqlTabName="MICM210M" tabIndex="-1" title="edit5" widget="Edit"/>
+        <Edit colName="B_MAX" fieldId="41" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.B_MAX" posX="53" posY="7" sqlTabName="MICM210M" tabIndex="-1" title="edit6" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="3" name="label24" posX="2" posY="8" text="Kfa"/>
+        <Edit colName="KFA_MIN" fieldId="42" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.KFA_MIN" posX="6" posY="8" sqlTabName="MICM210M" tabIndex="-1" title="edit7" widget="Edit"/>
+        <Edit colName="KFA_MAX" fieldId="43" fieldType="TABLE_COLUMN" format="#&amp;.&amp;&amp;" gridHeight="1" gridWidth="5" name="MICM210M.KFA_MAX" posX="12" posY="8" sqlTabName="MICM210M" tabIndex="-1" title="edit8" widget="Edit"/>
+      </Group>
+      <Group gridHeight="8" gridWidth="63" name="micm220f_group3" posX="2" posY="17" text="機械性質(一)">
+        <Label gridHeight="1" gridWidth="8" name="label26" posX="1" posY="2" text="0.2%降伏強度"/>
+        <Edit colName="YS_02_MIN" fieldId="44" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="MICM210M.YS_02_MIN" posX="10" posY="2" sqlTabName="MICM210M" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Edit colName="YS_02_MAX" fieldId="45" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" name="MICM210M.YS_02_MAX" posX="19" posY="2" sqlTabName="MICM210M" tabIndex="-1" title="edit2" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="8" name="label27" posX="33" posY="2" text="1.0%降伏強度"/>
+        <Edit colName="YS_10_MIN" fieldId="46" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" name="MICM210M.YS_10_MIN" posX="42" posY="2" sqlTabName="MICM210M" tabIndex="-1" title="edit3" widget="Edit"/>
+        <Edit colName="YS_10_MAX" fieldId="47" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" name="MICM210M.YS_10_MAX" posX="50" posY="2" sqlTabName="MICM210M" tabIndex="-1" title="edit4" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="8" name="label28" posX="1" posY="3" text="抗拉強度"/>
+        <Edit colName="TS_MIN" fieldId="48" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="MICM210M.TS_MIN" posX="10" posY="3" sqlTabName="MICM210M" tabIndex="-1" title="edit5" widget="Edit"/>
+        <Edit colName="TS_MAX" fieldId="49" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" name="MICM210M.TS_MAX" posX="19" posY="3" sqlTabName="MICM210M" tabIndex="-1" title="edit6" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="8" name="label29" posX="33" posY="3" text="延伸率"/>
+        <Edit colName="ELONGATION_MIN" fieldId="50" fieldType="TABLE_COLUMN" format="#&amp;" gridHeight="1" gridWidth="7" name="MICM210M.ELONGATION_MIN" posX="42" posY="3" sqlTabName="MICM210M" tabIndex="-1" title="edit7" widget="Edit"/>
+        <Edit colName="ELONGATION_MAX" fieldId="51" fieldType="TABLE_COLUMN" format="#&amp;" gridHeight="1" gridWidth="7" name="MICM210M.ELONGATION_MAX" posX="50" posY="3" sqlTabName="MICM210M" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="8" name="label30" posX="1" posY="4" text="HRb 硬度"/>
+        <Edit colName="HARD_HRB_MIN" fieldId="52" fieldType="TABLE_COLUMN" format="##&amp;" gridHeight="1" gridWidth="8" name="MICM210M.HARD_HRB_MIN" posX="10" posY="4" sqlTabName="MICM210M" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Edit colName="HARD_HRB_MAX" fieldId="53" fieldType="TABLE_COLUMN" format="##&amp;" gridHeight="1" gridWidth="7" name="MICM210M.HARD_HRB_MAX" posX="19" posY="4" sqlTabName="MICM210M" tabIndex="-1" title="edit2" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="8" name="label31" posX="33" posY="4" text="Hv  硬度"/>
+        <Edit colName="HARD_HV_MIN" fieldId="54" fieldType="TABLE_COLUMN" format="##&amp;" gridHeight="1" gridWidth="7" name="MICM210M.HARD_HV_MIN" posX="42" posY="4" sqlTabName="MICM210M" tabIndex="-1" title="edit3" widget="Edit"/>
+        <Edit colName="HARD_HV_MAX" fieldId="55" fieldType="TABLE_COLUMN" format="##&amp;" gridHeight="1" gridWidth="7" name="MICM210M.HARD_HV_MAX" posX="50" posY="4" sqlTabName="MICM210M" tabIndex="-1" title="edit4" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="8" name="label32" posX="1" posY="5" text="HB  硬度"/>
+        <Edit colName="HARD_HB_MIN" fieldId="56" fieldType="TABLE_COLUMN" format="##&amp;" gridHeight="1" gridWidth="8" name="MICM210M.HARD_HB_MIN" posX="10" posY="5" sqlTabName="MICM210M" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Edit colName="HARD_HB_MAX" fieldId="57" fieldType="TABLE_COLUMN" format="##&amp;" gridHeight="1" gridWidth="7" name="MICM210M.HARD_HB_MAX" posX="19" posY="5" sqlTabName="MICM210M" tabIndex="-1" title="edit2" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="8" name="label33" posX="33" posY="5" text="彎曲試驗"/>
+        <Edit colName="BEND_TEST1" fieldId="58" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" name="MICM210M.BEND_TEST1" posX="42" posY="5" sqlTabName="MICM210M" tabIndex="-1" title="edit3" widget="Edit"/>
+        <Edit colName="BEND_TEST2" fieldId="59" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" name="MICM210M.BEND_TEST2" posX="50" posY="5" sqlTabName="MICM210M" tabIndex="-1" title="edit4" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="8" name="label34" posX="1" posY="6" text="HRC 硬度"/>
+        <Edit colName="HARD_HRC_MIN" fieldId="60" fieldType="TABLE_COLUMN" format="##&amp;" gridHeight="1" gridWidth="8" name="MICM210M.HARD_HRC_MIN" posX="10" posY="6" sqlTabName="MICM210M" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Edit colName="HARD_HRC_MAX" fieldId="61" fieldType="TABLE_COLUMN" format="##&amp;" gridHeight="1" gridWidth="7" name="MICM210M.HARD_HRC_MAX" posX="19" posY="6" sqlTabName="MICM210M" tabIndex="-1" title="edit2" widget="Edit"/>
+      </Group>
+      <Group gridHeight="6" gridWidth="63" name="micm220f_group4" posX="2" posY="26" text="機械性質(二)">
+        <Label gridHeight="1" gridWidth="9" name="label36" posX="1" posY="2" text="降伏比"/>
+        <Edit colName="YIELD_RATIO_MIN" fieldId="62" fieldType="TABLE_COLUMN" format="##&amp;" gridHeight="1" gridWidth="6" name="MICM210M.YIELD_RATIO_MIN" posX="11" posY="2" sqlTabName="MICM210M" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Edit colName="YIELD_RATIO_MAX" fieldId="63" fieldType="TABLE_COLUMN" format="##&amp;" gridHeight="1" gridWidth="7" name="MICM210M.YIELD_RATIO_MAX" posX="22" posY="2" sqlTabName="MICM210M" tabIndex="-1" title="edit2" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="9" name="label37" posX="32" posY="2" text="衝擊試驗"/>
+        <Edit colName="CHARPY_UNIT" fieldId="64" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" name="MICM210M.CHARPY_UNIT" posX="42" posY="2" sqlTabName="MICM210M" tabIndex="-1" title="edit3" widget="Edit"/>
+        <Edit colName="CHARPY_MIN" fieldId="65" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" name="MICM210M.CHARPY_MIN" posX="48" posY="2" sqlTabName="MICM210M" tabIndex="-1" title="edit4" widget="Edit"/>
+        <Edit colName="CHARPY_AVE_MIN" fieldId="66" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" name="MICM210M.CHARPY_AVE_MIN" posX="54" posY="2" sqlTabName="MICM210M" tabIndex="-1" title="edit5" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="9" name="label38" posX="1" posY="3" text="碳鋼延伸率(1)"/>
+        <Edit colName="C1_ELONGATION_UNIT" fieldId="67" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" name="MICM210M.C1_ELONGATION_UNIT" posX="11" posY="3" sqlTabName="MICM210M" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="3" name="label39" posX="18" posY="3" text="mm"/>
+        <Edit colName="C1_ELONGATION_MIN" fieldId="68" fieldType="TABLE_COLUMN" format="#&amp;" gridHeight="1" gridWidth="7" name="MICM210M.C1_ELONGATION_MIN" posX="22" posY="3" sqlTabName="MICM210M" tabIndex="-1" title="edit2" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="9" name="label40" posX="32" posY="3" text="碳鋼延伸率(2)"/>
+        <Edit colName="C2_ELONGATION_UNIT" fieldId="69" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" name="MICM210M.C2_ELONGATION_UNIT" posX="42" posY="3" sqlTabName="MICM210M" tabIndex="-1" title="edit3" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="3" name="label41" posX="48" posY="3" text="mm"/>
+        <Edit colName="C2_ELONGATION_MIN" fieldId="70" fieldType="TABLE_COLUMN" format="#&amp;" gridHeight="1" gridWidth="5" name="MICM210M.C2_ELONGATION_MIN" posX="54" posY="3" sqlTabName="MICM210M" tabIndex="-1" title="edit4" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="9" name="label42" posX="1" posY="4" text="碳鋼延伸率(3)"/>
+        <Edit colName="C3_ELONGATION_UNIT" fieldId="71" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" name="MICM210M.C3_ELONGATION_UNIT" posX="11" posY="4" sqlTabName="MICM210M" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="3" name="label43" posX="18" posY="4" text="mm"/>
+        <Edit colName="C3_ELONGATION_MIN" fieldId="72" fieldType="TABLE_COLUMN" format="#&amp;" gridHeight="1" gridWidth="7" name="MICM210M.C3_ELONGATION_MIN" posX="22" posY="4" sqlTabName="MICM210M" tabIndex="-1" title="edit2" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="9" name="label44" posX="32" posY="4" text="斷面縮率"/>
+        <Edit colName="THICK_PERCENT_MIN" fieldId="73" fieldType="TABLE_COLUMN" format="###&amp;" gridHeight="1" gridWidth="5" name="MICM210M.THICK_PERCENT_MIN" posX="42" posY="4" sqlTabName="MICM210M" tabIndex="-1" title="edit3" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="3" name="label45" posX="48" posY="4" text="mm"/>
+        <Edit colName="THICK_PERCENT_MAX" fieldId="74" fieldType="TABLE_COLUMN" format="###&amp;" gridHeight="1" gridWidth="5" name="MICM210M.THICK_PERCENT_MAX" posX="54" posY="4" sqlTabName="MICM210M" tabIndex="-1" title="edit4" widget="Edit"/>
+      </Group>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAyADkAMQBjAGEAZgAyADcALQBiADQAOAA0AC0ANAA4AGQAZAAtAGEAMABhADEALQA2AGEAOQBkAGMANgAxADMAZgBlADgAMgB9AAAAAAAAAAAAAAAAAAAAAD90euFHrhR7AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm fileVersion="31400" gstVersion="31408" name="managedform" uid="{cb34f5b5-284b-49ed-9fe3-0c8b59374204}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="schd_seq_r" uid="{584c86e3-0034-48ea-ab65-969a1a021c6e}">
+    <RecordField fieldIdRef="1" length="4" name="schd_no_fd" uid="{cb46c14c-7735-4194-b90f-940e81045f15}"/>
+    <RecordField fieldIdRef="2" name="coil_num_fd" uid="{5559c08d-0dce-4d6b-9119-32ee9a2b0164}"/>
+    <RecordField fieldIdRef="3" name="init_no_fd" uid="{3e7013d4-9c92-45ca-8caf-dc6240b9f523}"/>
+  </Record>
+  <Form fourSTFile="../../Library/cps_style.4st" gridHeight="10" gridWidth="30" name="winSendSch" text="排程序號設定" windowStyle="miniWin">
+    <Grid gridHeight="7" gridWidth="17" hidden="false" name="schd_gp" posX="1" posY="0" style="normal">
+      <Label gridHeight="1" gridWidth="6" name="label3" posX="1" posY="1" text="排程批號:"/>
+      <Edit fieldId="1" format="X-XX-X" gridHeight="1" gridWidth="6" length="4" name="schd_no_fd" picture="XXXX" posX="8" posY="1" repeat="false" tabIndex="-1" title="edit1" verify="false" widget="Edit"/>
+      <Label gridHeight="1" gridWidth="6" name="label4" posX="1" posY="2" text="鋼捲數量:"/>
+      <Edit fieldId="2" gridHeight="1" gridWidth="6" name="coil_num_fd" picture="###" posX="8" posY="2" repeat="false" tabIndex="-1" title="edit2" widget="Edit"/>
+      <Label gridHeight="1" gridWidth="6" name="label5" posX="1" posY="3" text="序號初值:"/>
+      <Edit fieldId="3" gridHeight="1" gridWidth="6" name="init_no_fd" picture="###" posX="8" posY="3" repeat="false" tabIndex="-1" title="edit1" verify="false" widget="Edit"/>
+      <Button gridHeight="1" gridWidth="7" name="ACCEPT" posX="1" posY="5" tabIndex="-1" text="確認送出"/>
+      <Button gridHeight="1" gridWidth="7" name="cancel" posX="9" posY="5" tabIndex="-1" text="取消"/>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA1ADgANABjADgANgBlADMALQAwADAAMwA0AC0ANAA4AGUAYQAtAGEAYgA2ADUALQA5ADYAOQBhADEAYQAwADIAMQBjADYAZQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

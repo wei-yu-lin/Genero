@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="rdbmic36" fileVersion="31400" gstVersion="31408" name="managedform" uid="{8122c233-51ba-4821-a42d-4bcc09c2f950}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="v_micm251f" uid="{859b4f9e-992b-4301-a5fe-4ce4295f958e}">
+    <RecordField colName="MH01" fieldIdRef="1" fieldType="TABLE_COLUMN" name="MICM240M.MH01" sqlTabName="MICM240M" uid="{b5b22307-de79-4d5a-adbf-3b913513fd11}"/>
+    <RecordField colName="MH02" fieldIdRef="2" fieldType="TABLE_COLUMN" name="MICM240M.MH02" sqlTabName="MICM240M" uid="{ff45c468-591c-4445-9342-cebdce269a98}"/>
+    <RecordField colName="MH03" fieldIdRef="3" fieldType="TABLE_COLUMN" name="MICM240M.MH03" sqlTabName="MICM240M" uid="{a89addb2-2ad0-4295-b408-c576d74df0e9}"/>
+    <RecordField colName="MH04" fieldIdRef="4" fieldType="TABLE_COLUMN" name="MICM240M.MH04" sqlTabName="MICM240M" uid="{8d5405d3-546e-443c-90bf-e429b97d2b63}"/>
+    <RecordField colName="MH05" fieldIdRef="5" fieldType="TABLE_COLUMN" name="MICM240M.MH05" sqlTabName="MICM240M" uid="{0a8d3bdd-aa1e-4890-88bf-91823be095ef}"/>
+    <RecordField colName="MH06" fieldIdRef="6" fieldType="TABLE_COLUMN" name="MICM240M.MH06" sqlTabName="MICM240M" uid="{217d6bdf-bb65-4be3-ab4e-ecea442fe0ec}"/>
+    <RecordField colName="MH07" fieldIdRef="7" fieldType="TABLE_COLUMN" name="MICM240M.MH07" sqlTabName="MICM240M" uid="{3a37c7c6-68ca-4d76-9216-6635bf8c557b}"/>
+    <RecordField colName="MH08" fieldIdRef="8" fieldType="TABLE_COLUMN" name="MICM240M.MH08" sqlTabName="MICM240M" uid="{a66cf7b8-1de0-4490-b1b8-b23f60da64a7}"/>
+    <RecordField colName="MH09" fieldIdRef="9" fieldType="TABLE_COLUMN" name="MICM240M.MH09" sqlTabName="MICM240M" uid="{9b51da0d-ccb9-4f52-9a02-37d0abdb2756}"/>
+    <RecordField colName="MH10" fieldIdRef="10" fieldType="TABLE_COLUMN" name="MICM240M.MH10" sqlTabName="MICM240M" uid="{5d9f2b37-d543-4192-8f15-082736640e99}"/>
+    <RecordField colName="MH11" fieldIdRef="11" fieldType="TABLE_COLUMN" name="MICM240M.MH11" sqlTabName="MICM240M" uid="{4cfb4c87-e2bf-41a3-a1a2-95cc61a14d16}"/>
+    <RecordField colName="MH12" fieldIdRef="12" fieldType="TABLE_COLUMN" name="MICM240M.MH12" sqlTabName="MICM240M" uid="{2ba57593-4611-45b0-8dba-852f0d1aef4f}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="123" name="form" text="品證書列印資料設定(二)">
+    <Grid gridHeight="18" gridWidth="121" name="Grid1" posX="2" posY="0">
+      <Group gridHeight="7" gridWidth="120" name="Group1" posX="1" posY="5" style="ch" text="機械性質">
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ms01_num" posX="8" posY="4" text="01"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate1" posX="11" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ms02_num" posX="14" posY="4" text="02"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate2" posX="17" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ms03_num" posX="20" posY="4" text="03"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate3" posX="23" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ms04_num" posX="26" posY="4" text="04"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate4" posX="29" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ms05_num" posX="32" posY="4" text="05"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate5" posX="35" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ms06_num" posX="38" posY="4" text="06"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate6" posX="41" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ms07_num" posX="44" posY="4" text="07"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate7" posX="48" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ms08_num" posX="51" posY="4" text="08"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate8" posX="54" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ms09_num" posX="57" posY="4" text="09"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate9" posX="60" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ms10_num" posX="63" posY="4" text="10"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate10" posX="66" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ms11_num" posX="69" posY="4" text="11"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate11" posX="72" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ms12_num" posX="75" posY="4" text="12"/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ms01" posX="8" posY="5" style="csnn" text="0.2%/Y.P."/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateC" posX="11" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ms02" posX="14" posY="5" style="csnn" text="1.0%Y.S."/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateSi" posX="17" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ms03" posX="20" posY="5" style="csnn" text="T.S."/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateMn" posX="23" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ms04" posX="26" posY="5" style="csnn" text="EL(%)"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateP" posX="29" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ms05" posX="32" posY="5" style="csnn" text="Hard(HRB)"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateS" posX="35" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ms06" posX="38" posY="5" style="csnn" text="Hard(HV)"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateNi" posX="41" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ms07" posX="44" posY="5" style="csnn" text="BendTest"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateCr" posX="48" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ms08" posX="51" posY="5" style="csnn" text="YieldRatio"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateMo" posX="54" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ms09" posX="57" posY="5" style="csnn" text="ImpacTest"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateCu" posX="60" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ms10" posX="63" posY="5" style="csnn" text="Hard(HB)"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateN" posX="66" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ms11" posX="69" posY="5" style="csnn" text="Hard(HRC)"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateO" posX="72" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ms12" posX="75" posY="5" style="csnn" text="Percentages of AreaReduction"/>
+      </Group>
+      <Group gridHeight="6" gridWidth="120" name="Group2" posX="1" posY="12" style="ch" text="選項">
+        <Edit colName="MH01" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" name="MICM240M.MH01" posX="2" posY="1" sqlTabName="MICM240M" tabIndex="-1" title="MH01" widget="Edit"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateMH01" posX="5" posY="1" sizePolicy="fixed" text=""/>
+        <Edit colName="MH02" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" name="MICM240M.MH02" posX="8" posY="1" sqlTabName="MICM240M" tabIndex="-1" title="MH02" widget="Edit"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateMH02" posX="11" posY="1" sizePolicy="fixed" text=""/>
+        <Edit colName="MH03" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" name="MICM240M.MH03" posX="14" posY="1" sqlTabName="MICM240M" tabIndex="-1" title="MH03" widget="Edit"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateMH03" posX="17" posY="1" sizePolicy="fixed" text=""/>
+        <Edit colName="MH04" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" name="MICM240M.MH04" posX="20" posY="1" sqlTabName="MICM240M" tabIndex="-1" title="MH04" widget="Edit"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateMH04" posX="23" posY="1" sizePolicy="fixed" text=""/>
+        <Edit colName="MH05" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" name="MICM240M.MH05" posX="26" posY="1" sqlTabName="MICM240M" tabIndex="-1" title="MH05" widget="Edit"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateMH05" posX="29" posY="1" sizePolicy="fixed" text=""/>
+        <Edit colName="MH06" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" name="MICM240M.MH06" posX="32" posY="1" sqlTabName="MICM240M" tabIndex="-1" title="MH06" widget="Edit"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateMH06" posX="35" posY="1" sizePolicy="fixed" text=""/>
+        <Edit colName="MH07" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" name="MICM240M.MH07" posX="38" posY="1" sqlTabName="MICM240M" tabIndex="-1" title="MH07" widget="Edit"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateMH07" posX="41" posY="1" sizePolicy="fixed" text=""/>
+        <Edit colName="MH08" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" name="MICM240M.MH08" posX="44" posY="1" sqlTabName="MICM240M" tabIndex="-1" title="MH08" widget="Edit"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateMH08" posX="47" posY="1" sizePolicy="fixed" text=""/>
+        <Edit colName="MH09" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" name="MICM240M.MH09" posX="50" posY="1" sqlTabName="MICM240M" tabIndex="-1" title="MH09" widget="Edit"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateMH09" posX="53" posY="1" sizePolicy="fixed" text=""/>
+        <Edit colName="MH10" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" name="MICM240M.MH10" posX="56" posY="1" sqlTabName="MICM240M" tabIndex="-1" title="MH10" widget="Edit"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateMH10" posX="59" posY="1" sizePolicy="fixed" text=""/>
+        <Edit colName="MH11" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" name="MICM240M.MH11" posX="62" posY="1" sqlTabName="MICM240M" tabIndex="-1" title="MH11" widget="Edit"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateMH11" posX="65" posY="1" sizePolicy="fixed" text=""/>
+        <Edit colName="MH12" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" name="MICM240M.MH12" posX="68" posY="1" sqlTabName="MICM240M" tabIndex="-1" title="MH12" widget="Edit"/>
+      </Group>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA4ADUAOQBiADQAZgA5AGUALQA5ADkAMgBiAC0ANAAzADAAMQAtAGEANQBmAGUALQA0AGMAZQA0ADIAOQA1AGYAOQA1ADgAZQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

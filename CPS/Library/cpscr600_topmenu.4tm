@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TopMenu>
+  <TopMenuGroup name = "exit"  text="離開">
+    <!--TopMenuCommand name="reload" text="重新選擇產線" image="exchange.png" /-->
+	<!--TopMenuCommand name="logout" text="登出帳號" image="fa-sign-in" /-->
+    <TopMenuCommand name="exit" text="離開CRM#6 排程作業" image="quit" />
+  </TopMenuGroup>
+
+</TopMenu>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="Big5"?>
+<ToolBar style="normal" name="sys_ToolBar">  
+  <ToolBarItem name="_add" text="新增" image="new"/>
+  <ToolBarSeparator/>
+  <ToolBarItem name="_query" text="查詢" image="find"/>
+  <ToolBarSeparator/>
+  <ToolBarItem name="_prev" text="前一筆" image="gorev"/>
+  <ToolBarSeparator/>
+  <ToolBarItem name="_next" text="後一筆" image="goforw"/>
+  <ToolBarSeparator/>
+  <ToolBarItem name="_first" text="第一筆" image="gorev"/>
+  <ToolBarSeparator/>
+  <ToolBarItem name="_last" text="最後筆" image="goforw"/>
+  <ToolBarSeparator/>
+  <ToolBarItem name="_del" text="刪除" image="eraser"/>
+  <ToolBarSeparator/>
+  <ToolBarItem name="_upd" text="修改" image="prop"/>
+  <ToolBarSeparator/>
+  <ToolBarItem name="_save" text="存檔" image="disk"/>
+  <ToolBarSeparator/>
+  <ToolBarItem name="_back" text="返回" image="new"/>
+  <ToolBarSeparator/>
+  <ToolBarItem name="exit" text="離開" image="quit"/>
+  <ToolBarSeparator/>
+  <ToolBarItem name="_help" text="說明" image="quest"/>
+  <ToolBarSeparator/>
+</ToolBar>

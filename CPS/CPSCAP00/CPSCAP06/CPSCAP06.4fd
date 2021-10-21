@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm fileVersion="31400" gstVersion="31408" name="managedform" uid="{9369f823-e234-411a-b0a5-6c9e9f2c075f}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="SchdSeq_r" uid="{eb303b4e-5e05-4115-85bc-8c8642cfc4ca}">
+    <RecordField fieldIdRef="1" name="SCHD_SEQ" uid="{b641d532-7cfd-4afd-9204-86ec9cfeab94}"/>
+    <RecordField fieldIdRef="2" name="COIL_NO" uid="{9ad799bb-75ce-42c4-85ea-28141180f2ff}"/>
+    <RecordField fieldIdRef="3" name="STEEL_GRADE" uid="{fe21581a-3978-400b-ab96-dbe8838463cf}"/>
+    <RecordField fieldIdRef="4" name="COIL_WIDTH" uid="{6dde26f9-bd22-46d6-a018-626a889af45d}"/>
+    <RecordField fieldIdRef="5" name="COIL_THICK" uid="{742a5fcb-aa7a-4a65-9e99-60dca475e9ed}"/>
+    <RecordField fieldIdRef="6" name="COIL_WEIGHT" uid="{8300a999-c864-4237-8fc5-d6c94fe0cfca}"/>
+    <RecordField fieldIdRef="7" name="REDUCTION" uid="{7c08b4f2-c49b-490c-829f-172bcf1e3d91}"/>
+    <RecordField fieldIdRef="8" name="PRODUCTION_CODE" uid="{e348a5b5-8010-4a0c-bc9f-206d499a0744}"/>
+    <RecordField fieldIdRef="9" name="IC_CODE" uid="{ddedd95a-9ab4-400a-b06e-d67a98c19eb9}"/>
+    <RecordField fieldIdRef="10" name="CLASS_CODE" uid="{2a88fd8c-2b78-4501-80a9-87461b8ee016}"/>
+    <RecordField fieldIdRef="11" name="CURR_STATION" uid="{b377dca8-1f16-4517-881a-97b289f15284}"/>
+    <RecordField fieldIdRef="12" name="STATE" uid="{4bb2af04-3eed-4f05-8724-88579385abd6}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="112" name="form" text="Form">
+    <Grid gridHeight="12" gridWidth="110" name="grid1" posX="2" posY="2">
+      <Table gridHeight="9" gridWidth="109" name="table1" posX="1" posY="1" totalRows="5">
+        <Edit fieldId="1" gridHeight="1" gridWidth="8" name="SCHD_SEQ" posX="0" posY="0" tabIndex="-1" title="軋延序號" widget="Edit"/>
+        <Edit fieldId="2" gridHeight="1" gridWidth="8" name="COIL_NO" posX="8" posY="0" tabIndex="-1" title="鋼捲編號" widget="Edit"/>
+        <Edit fieldId="3" gridHeight="1" gridWidth="8" name="STEEL_GRADE" posX="16" posY="0" tabIndex="-1" title="鋼種" widget="Edit"/>
+        <Edit fieldId="4" gridHeight="1" gridWidth="8" name="COIL_WIDTH" posX="24" posY="0" tabIndex="-1" title="寬度" widget="Edit"/>
+        <Edit fieldId="5" gridHeight="1" gridWidth="8" name="COIL_THICK" posX="32" posY="0" tabIndex="-1" title="厚度" widget="Edit"/>
+        <Edit fieldId="6" gridHeight="1" gridWidth="8" name="COIL_WEIGHT" posX="40" posY="0" tabIndex="-1" title="重量" widget="Edit"/>
+        <Edit fieldId="7" gridHeight="1" gridWidth="8" name="REDUCTION" posX="48" posY="0" tabIndex="-1" title="排軋" widget="Edit"/>
+        <Edit fieldId="8" gridHeight="1" gridWidth="8" name="PRODUCTION_CODE" posX="56" posY="0" tabIndex="-1" title="產品" widget="Edit"/>
+        <Edit fieldId="9" gridHeight="1" gridWidth="8" name="IC_CODE" posX="64" posY="0" tabIndex="-1" title="狀態" widget="Edit"/>
+        <Edit fieldId="10" gridHeight="1" gridWidth="8" name="CLASS_CODE" posX="72" posY="0" tabIndex="-1" title="判級" widget="Edit"/>
+        <Edit fieldId="11" gridHeight="1" gridWidth="8" name="CURR_STATION" posX="80" posY="0" tabIndex="-1" title="目前製程" widget="Edit"/>
+        <Edit fieldId="12" gridHeight="1" gridWidth="8" name="STATE" posX="88" posY="0" tabIndex="-1" title="L2" widget="Edit"/>
+      </Table>
+      <Button gridHeight="1" gridWidth="7" name="schd_del_bt" posX="1" posY="10" tabIndex="-1" text="刪除"/>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBlAGIAMwAwADMAYgA0AGUALQA1AGUAMAA1AC0ANAAxADEANQAtADgANQBiAGMALQA4AGMAOAA2ADQAMgBjAGYAYwA0AGMAYQB9AAAAAAAAAAAAAAAAAAAAAD9wYk3S8an8AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

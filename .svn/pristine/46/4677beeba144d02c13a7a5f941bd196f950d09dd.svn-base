@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="yud221" fileVersion="31400" gstVersion="31408" name="managedform" uid="{fc9ed982-48d2-4f66-8b2a-ec727948f4d7}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record masterTable="sectabref" name="winInsUpd_r" uid="{18b35934-d514-422d-8536-2c152e4d5f63}">
+    <RecordField colName="sys" fieldIdRef="1" fieldType="TABLE_COLUMN" name="sectabref.sys" sqlTabName="sectabref" uid="{2e0a9c9a-ef82-42f2-bd96-42bddddd7c65}"/>
+    <RecordField colName="prog_name" fieldIdRef="2" fieldType="TABLE_COLUMN" name="sectabref.prog_name" sqlTabName="sectabref" uid="{5841c6b1-bc8b-44a5-bc52-167a9d517850}"/>
+    <RecordField colName="prog_desc" fieldIdRef="3" fieldType="TABLE_COLUMN" name="sectabref.prog_desc" sqlTabName="sectabref" uid="{c685590d-ed69-42bb-aae7-e1edb54534af}"/>
+    <RecordField colName="table_ref" fieldIdRef="4" fieldType="TABLE_COLUMN" name="sectabref.table_ref" sqlTabName="sectabref" uid="{1bd8b54b-80fd-4d6f-96db-84e37867134f}"/>
+    <RecordField colName="upd_code" fieldIdRef="5" fieldType="TABLE_COLUMN" name="sectabref.upd_code" sqlTabName="sectabref" uid="{936e86bc-f85d-483b-908a-1cfbc6bd380c}"/>
+    <RecordField colName="calledby" fieldIdRef="6" fieldType="TABLE_COLUMN" name="sectabref.calledby" sqlTabName="sectabref" uid="{a772950e-f3ec-4be6-89f8-03dbc5d017f5}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="80" name="form" text="新增/修改關聯檔">
+    <Grid gridHeight="5" gridWidth="61" name="yud2211" posX="3" posY="2">
+      <Label gridHeight="1" gridWidth="9" name="sectabref_sys_label1" posX="1" posY="1">
+        <Initializer text="dbschema:sectabref.sys/@label"/>
+      </Label>
+      <Edit colName="sys" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="3" name="sectabref.sys" posX="11" posY="1" scroll="true" sqlTabName="sectabref" tabIndex="-1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="9" name="sectabref_prog_name_label1" posX="42" posY="1">
+        <Initializer text="dbschema:sectabref.prog_name/@label"/>
+      </Label>
+      <Edit colName="prog_name" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="sectabref.prog_name" posX="52" posY="1" scroll="true" sqlTabName="sectabref" tabIndex="-1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="9" name="sectabref_prog_desc_label1" posX="1" posY="2">
+        <Initializer text="dbschema:sectabref.prog_desc/@label"/>
+      </Label>
+      <Edit colName="prog_desc" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" name="sectabref.prog_desc" posX="11" posY="2" scroll="true" sqlTabName="sectabref" tabIndex="-1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="9" name="sectabref_table_ref_label1" posX="42" posY="2">
+        <Initializer text="dbschema:sectabref.table_ref/@label"/>
+      </Label>
+      <Edit colName="table_ref" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="sectabref.table_ref" posX="52" posY="2" scroll="true" sqlTabName="sectabref" tabIndex="-1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="9" name="sectabref_upd_code_label1" posX="1" posY="3">
+        <Initializer text="dbschema:sectabref.upd_code/@label"/>
+      </Label>
+      <Edit colName="upd_code" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="1" name="sectabref.upd_code" posX="11" posY="3" scroll="true" sqlTabName="sectabref" tabIndex="-1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+      <Label gridHeight="1" gridWidth="9" name="sectabref_calledby_label1" posX="42" posY="3">
+        <Initializer text="dbschema:sectabref.calledby/@label"/>
+      </Label>
+      <Edit colName="calledby" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="sectabref.calledby" posX="52" posY="3" scroll="true" sqlTabName="sectabref" tabIndex="-1" widget="Edit">
+        <Initializer title="dbschema:$(sqlTabName).$(colName)/@label"/>
+      </Edit>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAxADgAYgAzADUAOQAzADQALQBkADUAMQA0AC0ANAAyADIAZAAtADgANQAzADYALQAyAGMAMQA1ADIAZQA0AGQANQBmADYAMwB9AAAAAAAAAAAAAAAAAAAAAD9ok3S8an76AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

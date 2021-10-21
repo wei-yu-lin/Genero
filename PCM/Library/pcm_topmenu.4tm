@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="big5"?>
+<TopMenu>
+    <TopMenuGroup name = "pcms000m" text="產能規劃" style="mystyle">
+        <TopMenuCommand name="pcms020f" text="主檔明細" image="notecheck.png"></TopMenuCommand>
+        <TopMenuSeparator/>
+        <TopMenuCommand name="pcmsxxxf" text="whatever" image="notecheck.png"></TopMenuCommand>
+    </TopMenuGroup>
+   
+    <TopMenuGroup name = "exit"  text="離開">
+        <TopMenuCommand name="reload" text="重新登入" image="exchange.png"></TopMenuCommand>
+        <TopMenuCommand name="exit" text="離開" image="home.png"></TopMenuCommand>
+    </TopMenuGroup>    
+</TopMenu>

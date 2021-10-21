@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm fileVersion="31400" gstVersion="31408" name="managedform" uid="{9a5ac7b6-8185-440e-b4e6-5f658ce3a9fa}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="record1" uid="{89dd41e8-78e9-41f7-8c45-a24251f1e5b3}">
+    <RecordField fieldIdRef="1" name="test_fd" uid="{54658513-9cad-4764-98e1-bf7b82802b80}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="80" name="form" text="Form">
+    <Grid gridHeight="8" gridWidth="30" name="grid1" posX="7" posY="3">
+      <Edit fieldId="1" gridHeight="1" gridWidth="9" name="test_fd" posX="2" posY="1" tabIndex="-1" title="edit1" widget="Edit"/>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA4ADkAZABkADQAMQBlADgALQA3ADgAZQA5AC0ANAAxAGYANwAtADgAYwA0ADUALQBhADIANAAyADUAMQBmADEAZQA1AGIAMwB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

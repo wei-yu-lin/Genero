@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="orapcm" fileVersion="31400" gstVersion="31408" name="managedform" uid="{760d35b4-6da9-4e44-a19c-1289f04af56b}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record active="false" name="PDI_r" uid="{f38d3171-d1c3-48a3-9a34-3378d6a3c424}">
+    <RecordField fieldIdRef="1" name="COIL_NO_SCH02" uid="{f3282b4e-a507-45c8-9f2b-1a217ed4fc01}"/>
+    <RecordField fieldIdRef="2" name="COIL_STATUS_SCH02" uid="{1cb13b48-4cbb-4a31-b0a9-0dcd887c0dda}"/>
+    <RecordField fieldIdRef="3" name="STEEL_GRADE_SCH02" uid="{68e52ed9-74e4-4d62-95c0-4dbe1e78658e}"/>
+    <RecordField fieldIdRef="5" name="ENTRY_WIDTH_SCH02" uid="{7e122e80-e822-4387-8eea-dea0912936ad}"/>
+    <RecordField fieldIdRef="6" name="ENTRY_THICKNESS_SCH02" uid="{c8a0ff33-9fe9-4cc4-a5f7-7391877f5d35}"/>
+    <RecordField fieldIdRef="7" name="TARGET_THICKNESS_SCH02" uid="{a8ab480e-98d8-4d5c-a31b-61156f0a50af}"/>
+    <RecordField fieldIdRef="8" name="ENTRY_OUTER_DIAMETER_SCH02" uid="{75265a90-e3b7-42f5-b537-2545ff82fe5b}"/>
+    <RecordField fieldIdRef="26" name="ENTRY_INNER_DIAMETER_SCH02" uid="{860eab80-9882-4475-9950-ee3d42e11c16}"/>
+    <RecordField fieldIdRef="27" name="EXIT_INNER_DIAMETER_SCH02" uid="{632712e0-7c5a-45d8-8446-9247ce696dda}"/>
+    <RecordField fieldIdRef="9" name="ENTRY_WEIGHT_SCH02" uid="{22e85343-94e7-4a60-802d-c1ca5ec4fb4a}"/>
+    <RecordField fieldIdRef="13" name="CLASS_CODE_SCH02" uid="{a1d7f8fc-63e2-475f-a2e1-fdea01d9e9ee}"/>
+    <RecordField fieldIdRef="28" name="INSPECTION_CODE_SCH02" uid="{ca18e219-09be-462a-be5e-0176a8661291}"/>
+    <RecordField fieldIdRef="21" name="DEFECT_CODE01_SCH02" uid="{63ff80c4-d8a3-4c91-b8cf-8275d4a8711e}"/>
+    <RecordField fieldIdRef="22" name="DEFECT_CODE02_SCH02" uid="{60a2b684-7fbd-45d1-9f64-b6681bcc9120}"/>
+    <RecordField fieldIdRef="23" name="DEFECT_CODE03_SCH02" uid="{4746630b-bb08-4151-9556-7ad623ceba24}"/>
+    <RecordField fieldIdRef="24" name="DEFECT_CODE04_SCH02" uid="{196cc710-5dfc-4249-b27f-53094a5a1389}"/>
+    <RecordField fieldIdRef="25" name="DEFECT_CODE05_SCH02" uid="{7b7db8d9-5b5a-48d3-ac1a-1a714756b1a2}"/>
+    <RecordField fieldIdRef="29" name="SAMPLING_CODE_SCH02" uid="{1e17b0e6-c896-4c5b-9ea2-23e93e5f4b72}"/>
+    <RecordField fieldIdRef="11" name="PAPER_CODE_SCH02" uid="{58dfef1a-6c36-49ab-8ddf-f286da819e46}"/>
+    <RecordField fieldIdRef="12" name="EXIT_SLEEVE_THICKNESS_SCH02" uid="{ebd908b3-fa10-4e4f-a104-460502b6354d}"/>
+    <RecordField fieldIdRef="30" name="RETRIEVAL_AREA_SCH02" uid="{70817b37-ceb8-42f2-8d97-613877850fb5}"/>
+    <RecordField fieldIdRef="14" name="PRODUCTION_CODE_SCH02" uid="{b496f4be-f875-4937-8484-59383102c48e}"/>
+    <RecordField fieldIdRef="18" name="APN_NO_SCH02" uid="{f23177c8-63fd-4f6c-aa1b-5501d576cabe}"/>
+    <RecordField fieldIdRef="31" name="UPD_DATE_SCH02" uid="{d3ad395a-dc43-4e87-b7db-d9cf1ac927bb}"/>
+    <RecordField fieldIdRef="32" name="UPD_TIME_SCH02" uid="{44dfc517-7eb9-4c56-a604-00a066482622}"/>
+    <RecordField fieldIdRef="33" name="USER_NAME_SCH02" uid="{c13ce0a3-f939-4a20-9a46-904029f7e32f}"/>
+    <RecordField fieldIdRef="34" name="PROG_NAME_SCH02" uid="{07c67948-613e-4c98-a07b-adb7e02e1f84}"/>
+    <RecordField fieldIdRef="4" name="FACTORY_SCH02" uid="{9cd2e18c-6b65-4e2a-bd68-dc24ec1004c1}"/>
+    <RecordField fieldIdRef="10" length="5" name="QC_COMMENT_SCH02" uid="{dbba6489-0997-433b-acc6-a9bc276b1aa5}"/>
+    <RecordField fieldIdRef="16" name="ORDER_NO_ITEM_SCH02" uid="{7377c141-441e-4dfc-8d57-77a144f8b3e4}"/>
+    <RecordField fieldIdRef="17" name="DELIVERY_DATE_SCH02" uid="{b84b79a2-3d7a-4b20-938b-ebc44f1af1eb}"/>
+    <RecordField fieldIdRef="15" name="REDUCTION_SCH02" uid="{cc3ec34a-04ca-40ff-87ec-40f2d87220d3}"/>
+    <RecordField fieldIdRef="39" name="CU_SCH02" uid="{56aaef3b-b41e-4631-aaad-5f1d2a48022c}"/>
+    <RecordField fieldIdRef="40" name="ZN_SCH02" uid="{6fd80156-9210-4324-b262-b1be0517150e}"/>
+    <RecordField fieldIdRef="41" name="PB_SCH02" uid="{7df47605-9692-48b6-8bdd-7c9438882b1b}"/>
+    <RecordField fieldIdRef="42" name="P_SCH02" uid="{1f2595ff-ee74-4841-a5c5-070156e746dc}"/>
+    <RecordField fieldIdRef="43" name="SN_SCH02" uid="{a9885af7-dbea-4d36-824f-214022c05d22}"/>
+    <RecordField fieldIdRef="44" name="AL_SCH02" uid="{206781e8-ab31-42fb-821d-90584ea2712b}"/>
+    <RecordField fieldIdRef="45" name="MN_SCH02" uid="{968f66bd-1b07-4fe1-b0fc-334bea190eb9}"/>
+    <RecordField fieldIdRef="46" name="NI_SCH02" uid="{81fd11ed-6ea8-454c-b4bb-8117fd043050}"/>
+    <RecordField fieldIdRef="47" name="CR_SCH02" uid="{2a053185-953a-4a5d-a86d-60782dc65ce2}"/>
+    <RecordField fieldIdRef="48" name="TI_SCH02" uid="{b180ae78-b1cf-4cc5-9738-f060ac8d7374}"/>
+    <RecordField fieldIdRef="49" name="ZR_SCH02" uid="{9147bce8-fdf7-4746-84ee-72597d1378f9}"/>
+    <RecordField fieldIdRef="50" name="SI_SCH02" uid="{33100875-07bc-4b44-b3f2-f9a193a115d2}"/>
+    <RecordField fieldIdRef="51" name="CO_SCH02" uid="{9559f7d7-f362-4a59-9263-9e13a0992637}"/>
+    <RecordField fieldIdRef="52" name="S_SCH02" uid="{95bb7628-7b1f-4c25-9d31-cd413782b052}"/>
+    <RecordField fieldIdRef="53" name="SE_SCH02" uid="{676fc332-f4b2-4fd1-b878-40aab16033f8}"/>
+    <RecordField fieldIdRef="54" name="C_SCH02" uid="{8371bfee-93bb-4d00-8e7d-2767474c0306}"/>
+    <RecordField fieldIdRef="55" name="B_SCH02" uid="{0fbb48d2-d781-4380-9d0f-65f9805ec22b}"/>
+    <RecordField fieldIdRef="56" name="MO_SCH02" uid="{9c455cd4-3b64-4c4a-a812-a1d08f81e048}"/>
+    <RecordField fieldIdRef="57" name="NB_SCH02" uid="{f62f3fa3-c9cb-4539-a618-6f219eec6281}"/>
+    <RecordField fieldIdRef="58" name="V_SCH02" uid="{92d33543-0182-4dfb-bb12-dca8bd96ad50}"/>
+    <RecordField fieldIdRef="59" name="W_SCH02" uid="{771fcc47-b73f-4d11-a317-63f39dd1391e}"/>
+  </Record>
+  <Record name="coil_list_tb" uid="{419f7812-057c-4160-aae8-842ef934ad66}">
+    <RecordField fieldIdRef="36" name="SCHD_ORDER_SCH02_col" uid="{4536372f-6c9f-4ff1-98a8-0b50092783b5}"/>
+    <RecordField fieldIdRef="35" name="COIL_LIST_SCH02_col" uid="{115b827c-5d62-4f82-bbf6-9e35b1f35ca9}"/>
+    <RecordField fieldIdRef="60" name="SCHD_COIL_NO_SCH02_col" uid="{a8e8efed-583d-44df-8bf1-c671e5aac543}"/>
+  </Record>
+  <Record name="pb" uid="{66e974aa-944b-4fff-be25-763f33f48f42}">
+    <RecordField fieldIdRef="37" name="schdList_pb" uid="{9662c9d0-8c18-4ed3-8161-5323e7378b95}"/>
+  </Record>
+  <Record name="controller" uid="{baa77aa2-7cd3-468f-82f5-86892ff1bd72}">
+    <RecordField fieldIdRef="38" length="11" name="SelCoil_SCH02_fd" sqlType="CHAR" uid="{c40c100b-587b-43ab-94ce-e460b52c1098}"/>
+  </Record>
+  <Record name="PDI_EXT_r" uid="{74f4be79-bdaf-42b8-850c-bb4b44d201d4}">
+    <RecordField fieldIdRef="19" name="ORDER_THICK_SCH02" uid="{dc405db6-717e-4f08-b300-597c47b6a9e6}"/>
+    <RecordField fieldIdRef="20" name="PROD_SCH02" uid="{3f1fc500-8999-406b-a7db-a4fb8483f3c3}"/>
+  </Record>
+  <Form fourSTFile="../../Library/cps_style.4st" gridHeight="30" gridWidth="156" minHeight="30" minWidth="150" name="form" spacing="compact" text="#CRM6 生產排程選取作業">
+    <Grid gridHeight="30" gridWidth="154" name="CR6SCH02_grid" posX="1" posY="0">
+      <Table fontPitch="fixed" gridHeight="24" gridWidth="28" height="24" name="table1" posX="3" posY="1" style="clean" totalRows="5" unhidableColumns="false" unitHeight="lines" unitWidth="points" unsortableColumns="true" wantFixedPageSize="true" width="20">
+        <Edit fieldId="36" gridHeight="1" gridWidth="6" justify="center" name="SCHD_ORDER_SCH02_col" posX="0" posY="0" tabIndex="-1" title="排軋順序" widget="Edit"/>
+        <Edit fieldId="35" gridHeight="1" gridWidth="6" justify="left" name="COIL_LIST_SCH02_col" posX="6" posY="0" tabIndex="-1" title="鋼捲號碼" widget="Edit"/>
+        <Phantom fieldId="60" name="SCHD_COIL_NO_SCH02_col" widget="Phantom"/>
+      </Table>
+      <Group gridChildrenInParent="true" gridHeight="7" gridWidth="18" name="group1" posX="51" posY="1" style="normal" text="基本">
+        <Label gridHeight="1" gridWidth="6" name="label3" posX="1" posY="1" text="鋼捲編號"/>
+        <Edit fieldId="1" gridHeight="1" gridWidth="9" name="COIL_NO_SCH02" noEntry="true" posX="8" posY="1" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="6" name="label1" posX="1" posY="2" text="生產狀態"/>
+        <Edit fieldId="2" gridHeight="1" gridWidth="9" name="COIL_STATUS_SCH02" noEntry="false" posX="8" posY="2" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="6" name="label2" posX="1" posY="3" text="鋼種編號"/>
+        <Edit fieldId="3" gridHeight="1" gridWidth="9" name="STEEL_GRADE_SCH02" noEntry="false" posX="8" posY="3" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Label fontPitch="variable" gridHeight="1" gridWidth="6" justify="center" name="label4" posX="1" posY="4" sizePolicy="initial" text="廠    區"/>
+        <Edit fieldId="4" gridHeight="1" gridWidth="9" name="FACTORY_SCH02" noEntry="false" posX="8" posY="4" tabIndex="-1" title="edit1" widget="Edit"/>
+      </Group>
+      <Group fontPitch="variable" gridChildrenInParent="true" gridHeight="7" gridWidth="18" name="group2" posX="69" posY="1" text="入料">
+        <Label gridHeight="1" gridWidth="6" name="label5" posX="1" posY="1" text="入料寬度"/>
+        <Edit fieldId="5" gridHeight="1" gridWidth="5" name="ENTRY_WIDTH_SCH02" noEntry="false" posX="8" posY="1" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="3" name="label12" posX="14" posY="1" text="mm"/>
+        <Label gridHeight="1" gridWidth="6" name="label6" posX="1" posY="2" text="入料厚度"/>
+        <Edit fieldId="6" gridHeight="1" gridWidth="5" name="ENTRY_THICKNESS_SCH02" noEntry="false" posX="8" posY="2" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="3" name="label13" posX="14" posY="2" text="mm"/>
+        <Label gridHeight="1" gridWidth="6" name="label7" posX="1" posY="3" text="目標厚度"/>
+        <Edit fieldId="7" gridHeight="1" gridWidth="5" name="TARGET_THICKNESS_SCH02" noEntry="false" posX="8" posY="3" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="3" name="label14" posX="14" posY="3" text="mm"/>
+        <Label gridHeight="1" gridWidth="6" name="label8" posX="1" posY="4" text="入料外徑"/>
+        <Edit fieldId="8" gridHeight="1" gridWidth="5" name="ENTRY_OUTER_DIAMETER_SCH02" noEntry="false" posX="8" posY="4" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="3" name="label15" posX="14" posY="4" text="mm"/>
+        <Label gridHeight="1" gridWidth="6" name="label9" posX="1" posY="5" text="入料重量"/>
+        <Edit fieldId="9" gridHeight="1" gridWidth="5" name="ENTRY_WEIGHT_SCH02" noEntry="false" posX="8" posY="5" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="3" name="label16" posX="14" posY="5" text="kg"/>
+      </Group>
+      <Group gridHeight="7" gridWidth="20" name="group3" posX="87" posY="1" text="出料">
+        <Label gridHeight="1" gridWidth="8" name="label11" posX="1" posY="1" text="出料襯紙類別"/>
+        <Edit fieldId="11" gridHeight="1" gridWidth="9" justify="right" name="PAPER_CODE_SCH02" noEntry="false" posX="10" posY="1" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="8" name="label17" posX="1" posY="2" text="出料套筒厚度"/>
+        <Edit fieldId="12" gridHeight="1" gridWidth="9" name="EXIT_SLEEVE_THICKNESS_SCH02" noEntry="false" posX="10" posY="2" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="8" name="label18" posX="1" posY="3" text="品管判級碼"/>
+        <Edit fieldId="13" gridHeight="1" gridWidth="9" justify="right" name="CLASS_CODE_SCH02" noEntry="false" posX="10" posY="3" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="8" name="label19" posX="1" posY="4" text="生產型態碼"/>
+        <Edit fieldId="14" gridHeight="1" gridWidth="9" justify="right" name="PRODUCTION_CODE_SCH02" noEntry="false" posX="10" posY="4" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="8" justify="center" name="label20" posX="1" posY="5" text="軋     下     率"/>
+        <Edit fieldId="15" gridHeight="1" gridWidth="9" name="REDUCTION_SCH02" noEntry="false" posX="10" posY="5" tabIndex="-1" title="edit1" widget="Edit"/>
+      </Group>
+      <Button gridHeight="1" gridWidth="5" image="rewind" name="prev_coil_bt" posX="32" posY="2" tabIndex="-1" text="上一筆"/>
+      <Button gridHeight="1" gridWidth="5" image="forwind" name="next_coil_bt" posX="38" posY="2" tabIndex="-1" text="下一筆"/>
+      <Group gridChildrenInParent="true" gridHeight="4" gridWidth="18" name="group9" posX="32" posY="4" text="查詢鋼捲">
+        <Label gridHeight="1" gridWidth="6" name="label40" posX="1" posY="1" text="鋼捲編號"/>
+        <Edit fieldId="38" fontPitch="fixed" gridHeight="1" gridWidth="11" length="11" name="SelCoil_SCH02_fd" posX="1" posY="2" sqlType="CHAR" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Button gridHeight="1" gridWidth="4" name="CR6SCH02_F1" posX="13" posY="2" tabIndex="-1" text="確定"/>
+      </Group>
+      <Group gridHeight="7" gridWidth="18" name="group4" posX="51" posY="9" text="訂單">
+        <Label gridHeight="1" gridWidth="6" name="label21" posX="1" posY="1" text="訂單編號"/>
+        <Edit fieldId="16" gridHeight="1" gridWidth="9" name="ORDER_NO_ITEM_SCH02" noEntry="false" posX="8" posY="1" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="6" name="label22" posX="1" posY="2" text="訂單交期"/>
+        <Edit fieldId="17" gridHeight="1" gridWidth="9" name="DELIVERY_DATE_SCH02" noEntry="false" posX="8" posY="2" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="6" name="label23" posX="1" posY="3" text="訂單用途"/>
+        <Edit fieldId="18" gridHeight="1" gridWidth="9" name="APN_NO_SCH02" noEntry="false" posX="8" posY="3" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="6" name="label24" posX="1" posY="4" text="訂單厚度"/>
+        <Edit fieldId="19" gridHeight="1" gridWidth="9" name="ORDER_THICK_SCH02" noEntry="false" posX="8" posY="4" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="6" justify="center" name="label25" posX="1" posY="5" text="產  品"/>
+        <Edit fieldId="20" gridHeight="1" gridWidth="9" name="PROD_SCH02" noEntry="false" posX="8" posY="5" tabIndex="-1" title="edit1" widget="Edit"/>
+      </Group>
+      <Group gridHeight="7" gridWidth="23" hidden="false" name="group6" posX="69" posY="9" text="缺陷代碼">
+        <Label gridHeight="1" gridWidth="8" name="label26" posX="1" posY="1" text="缺陷代碼一"/>
+        <Edit fieldId="21" fontPitch="fixed" gridHeight="1" gridWidth="12" name="DEFECT_CODE01_SCH02" noEntry="false" picture="" posX="10" posY="1" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="8" name="label27" posX="1" posY="2" text="缺陷代碼二"/>
+        <Edit fieldId="22" fontPitch="fixed" gridHeight="1" gridWidth="12" name="DEFECT_CODE02_SCH02" noEntry="false" posX="10" posY="2" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="8" name="label28" posX="1" posY="3" text="缺陷代碼三"/>
+        <Edit fieldId="23" gridHeight="1" gridWidth="12" name="DEFECT_CODE03_SCH02" noEntry="false" posX="10" posY="3" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="8" name="label29" posX="1" posY="4" text="缺陷代碼四"/>
+        <Edit fieldId="24" gridHeight="1" gridWidth="12" name="DEFECT_CODE04_SCH02" noEntry="false" posX="10" posY="4" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="8" name="label30" posX="1" posY="5" text="缺陷代碼五"/>
+        <Edit fieldId="25" gridHeight="1" gridWidth="12" name="DEFECT_CODE05_SCH02" noEntry="false" posX="10" posY="5" tabIndex="-1" title="edit1" widget="Edit"/>
+      </Group>
+      <Group gridHeight="7" gridWidth="18" name="group8" posX="92" posY="9" text="維護">
+        <Label gridHeight="1" gridWidth="6" name="label36" posX="1" posY="1" text="維護日期"/>
+        <Edit fieldId="31" format="" gridHeight="1" gridWidth="9" name="UPD_DATE_SCH02" noEntry="true" picture="" posX="8" posY="1" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="6" name="label37" posX="1" posY="2" text="維護時間"/>
+        <Edit fieldId="32" gridHeight="1" gridWidth="9" name="UPD_TIME_SCH02" noEntry="true" posX="8" posY="2" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="6" name="label38" posX="1" posY="3" text="維護人員"/>
+        <Edit fieldId="33" gridHeight="1" gridWidth="9" name="USER_NAME_SCH02" noEntry="true" posX="8" posY="3" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="6" name="label39" posX="1" posY="4" text="維護程式"/>
+        <Edit fieldId="34" gridHeight="1" gridWidth="9" name="PROG_NAME_SCH02" noEntry="true" posX="8" posY="4" tabIndex="-1" title="edit1" widget="Edit"/>
+      </Group>
+      <Group gridChildrenInParent="false" gridHeight="3" gridWidth="59" name="group5" posX="51" posY="17" text="品管">
+        <Label gridHeight="1" gridWidth="6" name="label10" posX="1" posY="1" text="品管備註"/>
+        <Edit fieldId="10" gridHeight="1" gridWidth="35" length="5" name="QC_COMMENT_SCH02" noEntry="false" posX="8" posY="1" tabIndex="-1" title="edit1" widget="Edit"/>
+      </Group>
+      <Button disclosureIndicator="false" gridHeight="1" gridWidth="7" name="CR6SCH02_F2" posX="51" posY="21" tabIndex="-1" text="修改PDI"/>
+      <Button gridHeight="1" gridWidth="7" name="ModOK_bt" posX="59" posY="21" tabIndex="-1" text="確認修改"/>
+      <Button gridHeight="1" gridWidth="7" name="ModCxl_bt" posX="67" posY="21" tabIndex="-1" text="取消修改"/>
+      <Group gridHeight="7" gridWidth="18" hidden="true" name="group7" posX="92" posY="21" text="其他">
+        <Label gridHeight="1" gridWidth="6" name="label31" posX="1" posY="1" text="入料內徑"/>
+        <Edit fieldId="26" gridHeight="1" gridWidth="9" name="ENTRY_INNER_DIAMETER_SCH02" posX="8" posY="1" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="6" name="label32" posX="1" posY="2" text="出料內徑"/>
+        <Edit fieldId="27" gridHeight="1" gridWidth="9" name="EXIT_INNER_DIAMETER_SCH02" posX="8" posY="2" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="6" name="label33" posX="1" posY="3" text="檢驗碼"/>
+        <Edit fieldId="28" gridHeight="1" gridWidth="9" name="INSPECTION_CODE_SCH02" posX="8" posY="3" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="6" name="label35" posX="1" posY="4" text="訂單區域"/>
+        <Edit fieldId="30" gridHeight="1" gridWidth="9" name="RETRIEVAL_AREA_SCH02" posX="8" posY="4" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="7" name="label34" posX="1" posY="5" text="鋼捲夾層紙"/>
+        <Edit fieldId="29" gridHeight="1" gridWidth="8" name="SAMPLING_CODE_SCH02" posX="9" posY="5" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Phantom fieldId="39" name="CU_SCH02" widget="Phantom"/>
+        <Phantom fieldId="40" name="ZN_SCH02" widget="Phantom"/>
+        <Phantom fieldId="41" name="PB_SCH02" widget="Phantom"/>
+        <Phantom fieldId="42" name="P_SCH02" widget="Phantom"/>
+        <Phantom fieldId="43" name="SN_SCH02" widget="Phantom"/>
+        <Phantom fieldId="44" name="AL_SCH02" widget="Phantom"/>
+        <Phantom fieldId="45" name="MN_SCH02" widget="Phantom"/>
+        <Phantom fieldId="46" name="NI_SCH02" widget="Phantom"/>
+        <Phantom fieldId="47" name="CR_SCH02" widget="Phantom"/>
+        <Phantom fieldId="48" name="TI_SCH02" widget="Phantom"/>
+        <Phantom fieldId="49" name="ZR_SCH02" widget="Phantom"/>
+        <Phantom fieldId="50" name="SI_SCH02" widget="Phantom"/>
+        <Phantom fieldId="51" name="CO_SCH02" widget="Phantom"/>
+        <Phantom fieldId="52" name="S_SCH02" widget="Phantom"/>
+        <Phantom fieldId="53" name="SE_SCH02" widget="Phantom"/>
+        <Phantom fieldId="54" name="C_SCH02" widget="Phantom"/>
+        <Phantom fieldId="55" name="B_SCH02" widget="Phantom"/>
+        <Phantom fieldId="56" name="MO_SCH02" widget="Phantom"/>
+        <Phantom fieldId="57" name="NB_SCH02" widget="Phantom"/>
+        <Phantom fieldId="58" name="V_SCH02" widget="Phantom"/>
+        <Phantom fieldId="59" name="W_SCH02" widget="Phantom"/>
+      </Group>
+      <Button gridHeight="1" gridWidth="7" name="CR6SCH02_F3" posX="51" posY="23" tabIndex="-1" text="刪除PDI"/>
+      <ProgressBar fieldId="37" gridHeight="1" gridWidth="28" hidden="false" name="schdList_pb" posX="3" posY="25" title="progressbar1" widget="ProgressBar"/>
+      <Label gridHeight="1" gridWidth="132" name="label41" posX="1" posY="28" text=""/>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBiAGEAYQA3ADcAYQBhADIALQA3AGMAZAAzAC0ANAA2ADgAZgAtADgAMgBmADUALQA4ADYAOAA5ADIAZgBmADEAYgBkADcAMgB9wGPgAAAAAABAgjAAAAAAAD+OuFHrhR68AQAAAEwAewBmADMAOABkADMAMQA3ADEALQBkADEAYwAzAC0ANAA4AGEAMwAtADkAYQAzADQALQAzADMANwA4AGQANgBhADMAYwA0ADIANAB9wINIAAAAAADAYaAAAAAAAD+crAgxJul+AQAAAEwAewA2ADYAZQA5ADcANABhAGEALQA5ADQANABiAC0ANABmAGYAZgAtAGIAZQAyADUALQA3ADYAMwBmADMAMwBmADQAOABmADQAMgB9wCQAAAAAAABAe3AAAAAAAAAAAAAAAAAAAQAAAEwAewA0ADEAOQBmADcAOAAxADIALQAwADUANwBjAC0ANAAxADYAMAAtAGEAYQBlADgALQA4ADQAMgBlAGYAOQAzADQAYQBkADYANgB9QCQAAAAAAABAJAAAAAAAAD+Kn752yLQ8AQAAAEwAewA3ADQAZgA0AGIAZQA3ADkALQBiAGQAYQBmAC0ANAAyAGIAOAAtADgANQAwAGMALQBiAGIANABiADQANABkADIAMAAxAGQANAB9wHeQAAAAAABAXgAAAAAAAD+Yk3S8an7+AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

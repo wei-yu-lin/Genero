@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="rdbmic36" fileVersion="31400" gstVersion="31408" name="managedform" uid="{e050ba52-1e8d-48d6-8222-5f0ccfa84f62}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="micm145m_rec" uid="{5f98ef24-3e2e-49f6-97d9-4962b727a5fc}">
+    <RecordField colName="STEEL_GRADE_JIS" fieldIdRef="1" fieldType="TABLE_COLUMN" name="MICM145M.STEEL_GRADE_JIS" sqlTabName="MICM145M" uid="{517dc6d4-0bb9-4436-9eb4-47884313abe9}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="80" name="micm145f" text="規範鋼種查詢作業">
+    <Grid gridHeight="17" gridWidth="66" name="micm145q_gr" posX="2" posY="2">
+      <Group gridHeight="14" gridWidth="55" name="micm145q_group" posX="3" posY="2" text="">
+        <Table aggregateText="" gridHeight="8" gridWidth="42" name="micm145m_rec" posX="6" posY="2" totalRows="6">
+          <Edit case="upper" colName="STEEL_GRADE_JIS" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="38" name="MICM145M.STEEL_GRADE_JIS" posX="0" posY="0" sqlTabName="MICM145M" tabIndex="-1" title="外購鋼種" widget="Edit"/>
+        </Table>
+        <Button gridHeight="1" gridWidth="6" name="accept" posX="16" posY="11" tabIndex="-1" text="確定"/>
+        <Button gridHeight="1" gridWidth="6" name="cancel" posX="31" posY="11" tabIndex="-1" text="取消"/>
+      </Group>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA1AGYAOQA4AGUAZgAyADQALQAzAGUAMgBlAC0ANAA5AGYANgAtADkANwBkADkALQA0ADkANgAyAGIANwAyADcAYQA1AGYAYwB9AAAAAAAAAAAAAAAAAAAAAD9gYk3S8an8AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

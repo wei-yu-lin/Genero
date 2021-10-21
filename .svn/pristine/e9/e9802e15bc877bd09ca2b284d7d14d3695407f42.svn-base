@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="rdbmic36" fileVersion="31400" gstVersion="31408" name="managedform" uid="{3263f5af-1d88-41f5-b12b-57aeeceeaf58}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="v_micm250f" uid="{859b4f9e-992b-4301-a5fe-4ce4295f958e}">
+    <RecordField colName="PR_CODE" fieldIdRef="1" fieldType="TABLE_COLUMN" name="MICM240M.PR_CODE" sqlTabName="MICM240M" uid="{21c9917b-0c07-451f-a203-5a2152ef5f1a}"/>
+    <RecordField colName="REMARK" fieldIdRef="2" fieldType="TABLE_COLUMN" name="MICM240M.REMARK" sqlTabName="MICM240M" uid="{a98adc35-8caa-49ce-bd5c-61a3e872c1f9}"/>
+    <RecordField colName="CH01" fieldIdRef="3" fieldType="TABLE_COLUMN" name="MICM240M.CH01" sqlTabName="MICM240M"/>
+    <RecordField colName="CH02" fieldIdRef="4" fieldType="TABLE_COLUMN" name="MICM240M.CH02" sqlTabName="MICM240M"/>
+    <RecordField colName="CH03" fieldIdRef="5" fieldType="TABLE_COLUMN" name="MICM240M.CH03" sqlTabName="MICM240M"/>
+    <RecordField colName="CH04" fieldIdRef="6" fieldType="TABLE_COLUMN" name="MICM240M.CH04" sqlTabName="MICM240M"/>
+    <RecordField colName="CH05" fieldIdRef="7" fieldType="TABLE_COLUMN" name="MICM240M.CH05" sqlTabName="MICM240M"/>
+    <RecordField colName="CH06" fieldIdRef="8" fieldType="TABLE_COLUMN" name="MICM240M.CH06" sqlTabName="MICM240M"/>
+    <RecordField colName="CH07" fieldIdRef="9" fieldType="TABLE_COLUMN" name="MICM240M.CH07" sqlTabName="MICM240M"/>
+    <RecordField colName="CH08" fieldIdRef="10" fieldType="TABLE_COLUMN" name="MICM240M.CH08" sqlTabName="MICM240M"/>
+    <RecordField colName="CH09" fieldIdRef="11" fieldType="TABLE_COLUMN" name="MICM240M.CH09" sqlTabName="MICM240M"/>
+    <RecordField colName="CH10" fieldIdRef="12" fieldType="TABLE_COLUMN" name="MICM240M.CH10" sqlTabName="MICM240M"/>
+    <RecordField colName="CH11" fieldIdRef="13" fieldType="TABLE_COLUMN" name="MICM240M.CH11" sqlTabName="MICM240M"/>
+    <RecordField colName="CH12" fieldIdRef="14" fieldType="TABLE_COLUMN" name="MICM240M.CH12" sqlTabName="MICM240M"/>
+    <RecordField colName="CH13" fieldIdRef="15" fieldType="TABLE_COLUMN" name="MICM240M.CH13" sqlTabName="MICM240M"/>
+    <RecordField colName="CH14" fieldIdRef="16" fieldType="TABLE_COLUMN" name="MICM240M.CH14" sqlTabName="MICM240M"/>
+    <RecordField colName="CH15" fieldIdRef="17" fieldType="TABLE_COLUMN" name="MICM240M.CH15" sqlTabName="MICM240M"/>
+    
+  </Record>
+  <Form gridHeight="25" gridWidth="122" name="form" text="品證書列印資料設定(一)">
+    <Grid gridHeight="18" gridWidth="120" name="Grid1" posX="2" posY="0" >
+      <Label gridHeight="1" gridWidth="8" justify="left" name="Label1" posX="2" posY="1" text="列印控制碼"/>
+      <Edit colName="PR_CODE" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" name="MICM240M.PR_CODE" posX="11" posY="1" sqlTabName="MICM240M" tabIndex="-1" title="列印控制碼" widget="Edit"/>
+      <Label gridHeight="1" gridWidth="4" justify="left" name="Label2" posX="25" posY="1" text="說明"/>
+      <Edit colName="REMARK" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="60" name="MICM240M.REMARK" posX="35" posY="1" sqlTabName="MICM240M" tabIndex="-1" title="說明" widget="Edit"/>
+      <Label fontPitch="fixed" gridHeight="2" gridWidth="2" name="poser_y" posX="1" posY="2" sizePolicy="fixed" text=""/>
+      <Group gridHeight="3" gridWidth="120" name="Group1" style="ch" posX="1" posY="5" text="化學成分">
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs01_num" posX="8" posY="4" text="01"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate1" posX="11" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs02_num" posX="14" posY="4" text="02"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate2" posX="17" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs03_num" posX="20" posY="4" text="03"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate3" posX="23" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs04_num" posX="26" posY="4" text="04"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate4" posX="29" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs05_num" posX="32" posY="4" text="05"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate5" posX="35" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs06_num" posX="38" posY="4" text="06"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate6" posX="41" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs07_num" posX="44" posY="4" text="07"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate7" posX="48" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs08_num" posX="51" posY="4" text="08"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate8" posX="54" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs09_num" posX="57" posY="4" text="09"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate9" posX="60" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs10_num" posX="63" posY="4" text="10"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate10" posX="66" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs11_num" posX="69" posY="4" text="11"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate11" posX="72" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs12_num" posX="75" posY="4" text="12"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate12" posX="78" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs13_num" posX="81" posY="4" text="13"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate13" posX="84" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs14_num" posX="87" posY="4" text="14"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate14" posX="90" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs15_num" posX="93" posY="4" text="15"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate15" posX="96" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs16_num" posX="99" posY="4" text="16"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate16" posX="102" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs17_num" posX="105" posY="4" text="17"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate17" posX="108" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs18_num" posX="111" posY="4" text="18"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate18" posX="114" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs19_num" posX="117" posY="4" text="19"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate19" posX="120" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs20_num" posX="123" posY="4" text="20"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate20" posX="126" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs21_num" posX="129" posY="4" text="21"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate21" posX="132" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs22_num" posX="135" posY="4" text="22"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperate22" posX="138" posY="4" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs23_num" posX="141" posY="4" text="23"/>
+
+
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs01" posX="8" posY="5" text="C" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateC" posX="11" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs02" posX="14" posY="5" text="Si" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateSi" posX="17" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs03" posX="20" posY="5" text="Mn" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateMn" posX="23" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs04" posX="26" posY="5" text="P" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateP" posX="29" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs05" posX="32" posY="5" text="S" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateS" posX="35" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs06" posX="38" posY="5" text="Ni" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateNi" posX="41" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs07" posX="44" posY="5" text="Cr" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateCr" posX="48" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs08" posX="51" posY="5" text="Mo" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateMo" posX="54" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs09" posX="57" posY="5" text="Cu" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateCu" posX="60" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs10" posX="63" posY="5" text="N" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateN" posX="66" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs11" posX="69" posY="5" text="O" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateO" posX="72" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs12" posX="75" posY="5" text="Ti" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateTi" posX="78" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs13" posX="81" posY="5" text="B" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateB" posX="84" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs14" posX="87" posY="5" text="Nb" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateNb" posX="90" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs15" posX="93" posY="5" text="Al" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateAl" posX="96" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs16" posX="99" posY="5" text="V" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateV" posX="102" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs17" posX="105" posY="5" text="Sn" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateSn" posX="108" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs18" posX="111" posY="5" text="Co" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateCo" posX="114" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs19" posX="117" posY="5" text="Pb" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperatePb" posX="120" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs20" posX="123" posY="5" text="Ca" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateCa" posX="126" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs21" posX="129" posY="5" text="CE" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateCE" posX="132" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs22" posX="135" posY="5" text="Pcm" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperatePcm" posX="138" posY="5" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="cs23" posX="141" posY="5" text="Kfa" style="csnn"/>
+      </Group>
+
+      <Group gridHeight="6" gridWidth="120" name="Group2" style="ch" posX="1" posY="12" text="列印選項">
+        <Edit colName="CH01" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" name="MICM240M.CH01" posX="2" posY="1" sqlTabName="MICM240M" tabIndex="-1" title="CH01" widget="Edit"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateCH01" posX="5" posY="1" sizePolicy="fixed" text=""/>
+        <Edit colName="CH02" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" name="MICM240M.CH02" posX="8" posY="1" sqlTabName="MICM240M" tabIndex="-1" title="CH02" widget="Edit"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateCH02" posX="11" posY="1" sizePolicy="fixed" text=""/>
+        <Edit colName="CH03" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" name="MICM240M.CH03" posX="14" posY="1" sqlTabName="MICM240M" tabIndex="-1" title="CH03" widget="Edit"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateCH03" posX="17" posY="1" sizePolicy="fixed" text=""/>
+        <Edit colName="CH04" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" name="MICM240M.CH04" posX="20" posY="1" sqlTabName="MICM240M" tabIndex="-1" title="CH04" widget="Edit"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateCH04" posX="23" posY="1" sizePolicy="fixed" text=""/>
+        <Edit colName="CH05" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" name="MICM240M.CH05" posX="26" posY="1" sqlTabName="MICM240M" tabIndex="-1" title="CH05" widget="Edit"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateCH05" posX="29" posY="1" sizePolicy="fixed" text=""/>
+        <Edit colName="CH06" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" name="MICM240M.CH06" posX="32" posY="1" sqlTabName="MICM240M" tabIndex="-1" title="CH06" widget="Edit"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateCH06" posX="35" posY="1" sizePolicy="fixed" text=""/>
+        <Edit colName="CH07" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" name="MICM240M.CH07" posX="38" posY="1" sqlTabName="MICM240M" tabIndex="-1" title="CH07" widget="Edit"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateCH07" posX="41" posY="1" sizePolicy="fixed" text=""/>
+        <Edit colName="CH08" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" name="MICM240M.CH08" posX="44" posY="1" sqlTabName="MICM240M" tabIndex="-1" title="CH08" widget="Edit"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateCH08" posX="47" posY="1" sizePolicy="fixed" text=""/>
+        <Edit colName="CH09" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" name="MICM240M.CH09" posX="50" posY="1" sqlTabName="MICM240M" tabIndex="-1" title="CH09" widget="Edit"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateCH09" posX="53" posY="1" sizePolicy="fixed" text=""/>
+        <Edit colName="CH10" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" name="MICM240M.CH10" posX="56" posY="1" sqlTabName="MICM240M" tabIndex="-1" title="CH10" widget="Edit"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateCH10" posX="59" posY="1" sizePolicy="fixed" text=""/>
+        <Edit colName="CH11" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" name="MICM240M.CH11" posX="62" posY="1" sqlTabName="MICM240M" tabIndex="-1" title="CH11" widget="Edit"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateCH11" posX="65" posY="1" sizePolicy="fixed" text=""/>
+        <Edit colName="CH12" fieldId="14" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" name="MICM240M.CH12" posX="68" posY="1" sqlTabName="MICM240M" tabIndex="-1" title="CH12" widget="Edit"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateCH12" posX="71" posY="1" sizePolicy="fixed" text=""/>
+        <Edit colName="CH13" fieldId="15" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" name="MICM240M.CH13" posX="74" posY="1" sqlTabName="MICM240M" tabIndex="-1" title="CH13" widget="Edit"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateCH13" posX="77" posY="1" sizePolicy="fixed" text=""/>
+        <Edit colName="CH14" fieldId="16" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" name="MICM240M.CH14" posX="80" posY="1" sqlTabName="MICM240M" tabIndex="-1" title="CH14" widget="Edit"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperateCH14" posX="83" posY="1" sizePolicy="fixed" text=""/>
+        <Edit colName="CH15" fieldId="17" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="2" name="MICM240M.CH15" posX="86" posY="1" sqlTabName="MICM240M" tabIndex="-1" title="CH15" widget="Edit"/>
+        
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ch01_desc" posX="2" posY="2" text="" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperatech01_desc" posX="5" posY="2" sizePolicy="fixed" text="" />
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ch02_desc" posX="8" posY="2" text="" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperatech02_desc" posX="11" posY="2" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ch03_desc" posX="14" posY="2" text="" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperatech03_desc" posX="17" posY="2" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ch04_desc" posX="20" posY="2" text="" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperatech04_desc" posX="23" posY="2" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ch05_desc" posX="26" posY="2" text="" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperatech05_desc" posX="29" posY="2" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ch06_desc" posX="32" posY="2" text="" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperatech06_desc" posX="35" posY="2" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ch07_desc" posX="38" posY="2" text="" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperatech07_desc" posX="41" posY="2" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ch08_desc" posX="44" posY="2" text="" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperatech08_desc" posX="47" posY="2" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ch09_desc" posX="50" posY="2" text="" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperatech09_desc" posX="53" posY="2" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ch10_desc" posX="56" posY="2" text="" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperatech10_desc" posX="59" posY="2" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ch11_desc" posX="62" posY="2" text="" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperatech11_desc" posX="65" posY="2" sizePolicy="fixed" text="" />
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ch12_desc" posX="68" posY="2" text="" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperatech12_desc" posX="71" posY="2" sizePolicy="fixed" text="" />
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ch13_desc" posX="74" posY="2" text="" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperatech13_desc" posX="77" posY="2" sizePolicy="fixed" text="" />
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ch14_desc" posX="80" posY="2" text="" style="csnn"/>
+        <Label fontPitch="fixed" gridHeight="1" gridWidth="2" name="seperatech14_desc" posX="83" posY="2" sizePolicy="fixed" text=""/>
+        <Label gridHeight="1" gridWidth="2" justify="center" name="ch15_desc" posX="86" posY="2" text="" style="csnn"/>
+        
+      </Group>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA4ADUAOQBiADQAZgA5AGUALQA5ADkAMgBiAC0ANAAzADAAMQAtAGEANQBmAGUALQA0AGMAZQA0ADIAOQA1AGYAOQA1ADgAZQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="winSelSchdCoil.tmp" build="3.20.08" spacing="compact" text="查詢鋼捲" style="miniWin" width="19" height="4">
+  <LStr text="查詢鋼捲"/>
+  <Grid name="grid1" width="19" height="4" fontPitch="variable">
+    <Label name="label2" width="4" text="排軋序號" posY="1" posX="1" gridWidth="4">
+      <LStr text="排軋序號"/>
+    </Label>
+    <FormField name="formonly.schd_no_fd" colName="schd_no_fd" fieldId="0" sqlTabName="formonly" tabIndex="1">
+      <Edit width="4" posY="1" posX="6" gridWidth="4"/>
+    </FormField>
+    <Label name="label1" width="4" text="鋼捲編號" posY="2" posX="1" gridWidth="4">
+      <LStr text="鋼捲編號"/>
+    </Label>
+    <FormField name="formonly.coil_no_fd" colName="coil_no_fd" fieldId="1" sqlTabName="formonly" tabIndex="2">
+      <Edit width="11" posY="2" posX="6" gridWidth="11"/>
+    </FormField>
+    <Button name="accept" width="8" text="確認" posY="3" posX="1" gridWidth="8" tabIndex="3">
+      <LStr text="確認"/>
+    </Button>
+    <Button name="cancel" width="8" text="取消" posY="3" posX="10" gridWidth="8" tabIndex="4">
+      <LStr text="取消"/>
+    </Button>
+  </Grid>
+  <RecordView tabName="formonly">
+    <Link colName="schd_no_fd" fieldIdRef="0"/>
+    <Link colName="coil_no_fd" fieldIdRef="1"/>
+  </RecordView>
+  <RecordView tabName="record1">
+    <Link colName="coil_no_fd" fieldIdRef="1"/>
+    <Link colName="schd_no_fd" fieldIdRef="0"/>
+  </RecordView>
+</Form>

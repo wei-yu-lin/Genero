@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="CPSCAP06.tmp" build="3.20.08" text="Form" width="110" height="12">
+  <LStr text="Form"/>
+  <Grid name="grid1" width="110" height="12">
+    <Table pageSize="5" name="table1" width="109" posY="1" posX="1" gridWidth="109" gridHeight="9" tabName="schdseq_r">
+      <TableColumn name="formonly.schd_seq" colName="schd_seq" fieldId="0" sqlTabName="formonly" text="軋延序號" tabIndex="1">
+        <Edit width="8"/>
+        <LStr text="軋延序號"/>
+      </TableColumn>
+      <TableColumn name="formonly.coil_no" colName="coil_no" fieldId="1" sqlTabName="formonly" text="鋼捲編號" tabIndex="2">
+        <Edit width="8"/>
+        <LStr text="鋼捲編號"/>
+      </TableColumn>
+      <TableColumn name="formonly.steel_grade" colName="steel_grade" fieldId="2" sqlTabName="formonly" text="鋼種" tabIndex="3">
+        <Edit width="8"/>
+        <LStr text="鋼種"/>
+      </TableColumn>
+      <TableColumn name="formonly.coil_width" colName="coil_width" fieldId="3" sqlTabName="formonly" text="寬度" tabIndex="4">
+        <Edit width="8"/>
+        <LStr text="寬度"/>
+      </TableColumn>
+      <TableColumn name="formonly.coil_thick" colName="coil_thick" fieldId="4" sqlTabName="formonly" text="厚度" tabIndex="5">
+        <Edit width="8"/>
+        <LStr text="厚度"/>
+      </TableColumn>
+      <TableColumn name="formonly.coil_weight" colName="coil_weight" fieldId="5" sqlTabName="formonly" text="重量" tabIndex="6">
+        <Edit width="8"/>
+        <LStr text="重量"/>
+      </TableColumn>
+      <TableColumn name="formonly.reduction" colName="reduction" fieldId="6" sqlTabName="formonly" text="排軋" tabIndex="7">
+        <Edit width="8"/>
+        <LStr text="排軋"/>
+      </TableColumn>
+      <TableColumn name="formonly.production_code" colName="production_code" fieldId="7" sqlTabName="formonly" text="產品" tabIndex="8">
+        <Edit width="8"/>
+        <LStr text="產品"/>
+      </TableColumn>
+      <TableColumn name="formonly.ic_code" colName="ic_code" fieldId="8" sqlTabName="formonly" text="狀態" tabIndex="9">
+        <Edit width="8"/>
+        <LStr text="狀態"/>
+      </TableColumn>
+      <TableColumn name="formonly.class_code" colName="class_code" fieldId="9" sqlTabName="formonly" text="判級" tabIndex="10">
+        <Edit width="8"/>
+        <LStr text="判級"/>
+      </TableColumn>
+      <TableColumn name="formonly.curr_station" colName="curr_station" fieldId="10" sqlTabName="formonly" text="目前製程" tabIndex="11">
+        <Edit width="8"/>
+        <LStr text="目前製程"/>
+      </TableColumn>
+      <TableColumn name="formonly.state" colName="state" fieldId="11" sqlTabName="formonly" text="L2" tabIndex="12">
+        <Edit width="8"/>
+        <LStr text="L2"/>
+      </TableColumn>
+    </Table>
+    <Button name="schd_del_bt" width="7" text="刪除" posY="10" posX="1" gridWidth="7" tabIndex="13">
+      <LStr text="刪除"/>
+    </Button>
+  </Grid>
+  <RecordView tabName="formonly">
+    <Link colName="schd_seq" fieldIdRef="0"/>
+    <Link colName="coil_no" fieldIdRef="1"/>
+    <Link colName="steel_grade" fieldIdRef="2"/>
+    <Link colName="coil_width" fieldIdRef="3"/>
+    <Link colName="coil_thick" fieldIdRef="4"/>
+    <Link colName="coil_weight" fieldIdRef="5"/>
+    <Link colName="reduction" fieldIdRef="6"/>
+    <Link colName="production_code" fieldIdRef="7"/>
+    <Link colName="ic_code" fieldIdRef="8"/>
+    <Link colName="class_code" fieldIdRef="9"/>
+    <Link colName="curr_station" fieldIdRef="10"/>
+    <Link colName="state" fieldIdRef="11"/>
+  </RecordView>
+</Form>

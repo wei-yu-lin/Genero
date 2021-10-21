@@ -1,0 +1,1320 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Schema gstVersion="31408" id="{6006820a-8afc-4e4d-bb8a-1f10f60ce4b9}" version="4.0">
+  <AGSettings version="1.1">
+    <DynamicProperties version="2">
+      <DynamicProperty description="Associated label when generating form" initialValue="" isDefaultInherited="false" isHidden="false" label="Label" name="label" readOnly="false" type="TEXT"/>
+      <DynamicProperty description="Associated widget" editorInfo="contains:ButtonEdit|CheckBox|ComboBox|DateEdit|DateTimeEdit|Edit|FFImage|FFLabel|Field|Phantom|ProgressBar|RadioGroup|Slider|SpinEdit|TextEdit|TimeEdit" initialValue="Edit" isDefaultInherited="false" isHidden="false" label="Widget" name="widget" readOnly="false" type="ENUM"/>
+      <DynamicPropertyGroup collapsed="false" description="Formfied properties" label="Formfield" name="formfieldGroup" properties="label;widget"/>
+    </DynamicProperties>
+    <NodeInfos version="1">
+      <NodeInfo mimeType="db/column" properties="widget;label"/>
+    </NodeInfos>
+  </AGSettings>
+  <ExtractionSettings last="Oracle">
+    <ExtractionOptions casens="LowerCase" cvmeth="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" ignerr="true" systab="false" type="Oracle"/>
+  </ExtractionSettings>
+  <Table active="true" name="apym010m" status="U" uuid="db/table1">
+    <Column fglLength="5119" fglType="5" name="zmill_thick_1_min" notNull="false" order="1" status="U" uuid="db/column1"/>
+    <Column fglLength="5119" fglType="5" name="zmill_thick_1_max" notNull="false" order="2" status="U" uuid="db/column2"/>
+    <Column fglLength="2" fglType="1" name="target_width_min" notNull="false" order="3" status="U" uuid="db/column3"/>
+    <Column fglLength="2" fglType="1" name="target_width_max" notNull="false" order="4" status="U" uuid="db/column4"/>
+    <Column fglLength="5119" fglType="5" name="strip_thick" notNull="false" order="5" status="U" uuid="db/column5"/>
+    <Column fglLength="5119" fglType="5" name="strip_thick_min" notNull="false" order="6" status="U" uuid="db/column6"/>
+    <Column fglLength="5119" fglType="5" name="strip_thick_max" notNull="false" order="7" status="U" uuid="db/column7"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="8" status="U" uuid="db/column8"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="9" status="U" uuid="db/column9"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="10" status="U" uuid="db/column10"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="11" status="U" uuid="db/column11"/>
+    <Column fglLength="4" fglType="0" name="apy_code" notNull="false" order="12" status="U" uuid="db/column12"/>
+    <Index indexColumns="apy_code, zmill_thick_1_min, target_width_min" indexConstraint="uniqueIndex" name="apym010m_index_0" status="U" uuid="db/index1"/>
+  </Table>
+  <Table active="true" name="apym020m" status="U" uuid="db/table2">
+    <Column fglLength="5119" fglType="5" name="zmill_thick_2_min" notNull="false" order="1" status="U" uuid="db/column13"/>
+    <Column fglLength="5119" fglType="5" name="zmill_thick_2_max" notNull="false" order="2" status="U" uuid="db/column14"/>
+    <Column fglLength="2" fglType="1" name="target_width_min" notNull="false" order="3" status="U" uuid="db/column15"/>
+    <Column fglLength="2" fglType="1" name="target_width_max" notNull="false" order="4" status="U" uuid="db/column16"/>
+    <Column fglLength="5119" fglType="5" name="zmill_thick_1" notNull="false" order="5" status="U" uuid="db/column17"/>
+    <Column fglLength="5119" fglType="5" name="strip_thick" notNull="false" order="6" status="U" uuid="db/column18"/>
+    <Column fglLength="5119" fglType="5" name="strip_thick_min" notNull="false" order="7" status="U" uuid="db/column19"/>
+    <Column fglLength="5119" fglType="5" name="strip_thick_max" notNull="false" order="8" status="U" uuid="db/column20"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="9" status="U" uuid="db/column21"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="10" status="U" uuid="db/column22"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="11" status="U" uuid="db/column23"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="12" status="U" uuid="db/column24"/>
+    <Column fglLength="5119" fglType="5" name="zmill_thick_1_min" notNull="false" order="13" status="U" uuid="db/column25"/>
+    <Column fglLength="5119" fglType="5" name="zmill_thick_1_max" notNull="false" order="14" status="U" uuid="db/column26"/>
+    <Column fglLength="4" fglType="0" name="apy_code" notNull="false" order="15" status="U" uuid="db/column27"/>
+    <Index indexColumns="apy_code, zmill_thick_2_min, target_width_min" indexConstraint="uniqueIndex" name="apym020m_index_0" status="U" uuid="db/index2"/>
+  </Table>
+  <Table active="true" name="apym030m" status="U" uuid="db/table3">
+    <Column fglLength="2" fglType="1" name="plate_width_min" notNull="false" order="1" status="U" uuid="db/column28"/>
+    <Column fglLength="2" fglType="1" name="plate_width_max" notNull="false" order="2" status="U" uuid="db/column29"/>
+    <Column fglLength="5119" fglType="5" name="plate_thick_min" notNull="false" order="3" status="U" uuid="db/column30"/>
+    <Column fglLength="5119" fglType="5" name="plate_thick_max" notNull="false" order="4" status="U" uuid="db/column31"/>
+    <Column fglLength="2" fglType="1" name="slab_thick_min" notNull="false" order="5" status="U" uuid="db/column32"/>
+    <Column fglLength="2" fglType="1" name="slab_thick_max" notNull="false" order="6" status="U" uuid="db/column33"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="7" status="U" uuid="db/column34"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="8" status="U" uuid="db/column35"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="9" status="U" uuid="db/column36"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="10" status="U" uuid="db/column37"/>
+    <Column fglLength="4" fglType="0" name="sapy_code" notNull="false" order="11" status="U" uuid="db/column38"/>
+    <Index indexColumns="sapy_code, plate_width_min, plate_thick_min" indexConstraint="uniqueIndex" name="apym030m_index_0" status="U" uuid="db/index3"/>
+  </Table>
+  <Table active="true" name="apym040m" status="U" uuid="db/table4">
+    <Column fglLength="2" fglType="1" name="strip_width_min" notNull="false" order="1" status="U" uuid="db/column39"/>
+    <Column fglLength="2" fglType="1" name="strip_width_max" notNull="false" order="2" status="U" uuid="db/column40"/>
+    <Column fglLength="5119" fglType="5" name="strip_thick_min" notNull="false" order="3" status="U" uuid="db/column41"/>
+    <Column fglLength="5119" fglType="5" name="strip_thick_max" notNull="false" order="4" status="U" uuid="db/column42"/>
+    <Column fglLength="2" fglType="1" name="slab_thick_min" notNull="false" order="5" status="U" uuid="db/column43"/>
+    <Column fglLength="2" fglType="1" name="slab_thick_max" notNull="false" order="6" status="U" uuid="db/column44"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="7" status="U" uuid="db/column45"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="8" status="U" uuid="db/column46"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="9" status="U" uuid="db/column47"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="10" status="U" uuid="db/column48"/>
+    <Column fglLength="4" fglType="0" name="sapy_code" notNull="false" order="11" status="U" uuid="db/column49"/>
+    <Index indexColumns="sapy_code, strip_width_min, strip_thick_min" indexConstraint="uniqueIndex" name="apym040m_index_0" status="U" uuid="db/index4"/>
+  </Table>
+  <Table active="true" name="apym045m" status="U" uuid="db/table5">
+    <Column fglLength="2" fglType="1" name="strip_width_min" notNull="false" order="1" status="U" uuid="db/column50"/>
+    <Column fglLength="2" fglType="1" name="strip_width_max" notNull="false" order="2" status="U" uuid="db/column51"/>
+    <Column fglLength="5119" fglType="5" name="strip_thick_min" notNull="false" order="3" status="U" uuid="db/column52"/>
+    <Column fglLength="5119" fglType="5" name="strip_thick_max" notNull="false" order="4" status="U" uuid="db/column53"/>
+    <Column fglLength="2" fglType="1" name="slab_thick_min" notNull="false" order="5" status="U" uuid="db/column54"/>
+    <Column fglLength="2" fglType="1" name="slab_thick_max" notNull="false" order="6" status="U" uuid="db/column55"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="7" status="U" uuid="db/column56"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="8" status="U" uuid="db/column57"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="9" status="U" uuid="db/column58"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="10" status="U" uuid="db/column59"/>
+    <Column fglLength="4" fglType="0" name="sapy_code" notNull="false" order="11" status="U" uuid="db/column60"/>
+    <Index indexColumns="sapy_code, strip_width_min, strip_thick_min" indexConstraint="uniqueIndex" name="apym045m_index_0" status="U" uuid="db/index5"/>
+  </Table>
+  <Table active="true" name="apym050m" status="U" uuid="db/table6">
+    <Column fglLength="2" fglType="1" name="slab_thick_min" notNull="false" order="1" status="U" uuid="db/column61"/>
+    <Column fglLength="2" fglType="1" name="slab_thick_max" notNull="false" order="2" status="U" uuid="db/column62"/>
+    <Column fglLength="2" fglType="1" name="strip_width_min" notNull="false" order="3" status="U" uuid="db/column63"/>
+    <Column fglLength="2" fglType="1" name="strip_width_max" notNull="false" order="4" status="U" uuid="db/column64"/>
+    <Column fglLength="5119" fglType="5" name="strip_thick_min" notNull="false" order="5" status="U" uuid="db/column65"/>
+    <Column fglLength="5119" fglType="5" name="strip_thick_max" notNull="false" order="6" status="U" uuid="db/column66"/>
+    <Column fglLength="5119" fglType="5" name="transfer_thick" notNull="false" order="7" status="U" uuid="db/column67"/>
+    <Column fglLength="5119" fglType="5" name="transfer_thick_min" notNull="false" order="8" status="U" uuid="db/column68"/>
+    <Column fglLength="5119" fglType="5" name="transfer_thick_max" notNull="false" order="9" status="U" uuid="db/column69"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="10" status="U" uuid="db/column70"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="11" status="U" uuid="db/column71"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="12" status="U" uuid="db/column72"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="13" status="U" uuid="db/column73"/>
+    <Column fglLength="4" fglType="0" name="rapy_code" notNull="false" order="14" status="U" uuid="db/column74"/>
+    <Index indexColumns="rapy_code, slab_thick_min, strip_width_min, strip_thick_min" indexConstraint="uniqueIndex" name="apym050m_index_0" status="U" uuid="db/index6"/>
+  </Table>
+  <Table active="true" name="apym060m" status="U" uuid="db/table7">
+    <Column fglLength="7" fglType="0" name="proc_code" notNull="false" order="1" status="U" uuid="db/column75"/>
+    <Column fglLength="2" fglType="1" name="seq_no" notNull="false" order="2" status="U" uuid="db/column76"/>
+    <Column fglLength="40" fglType="0" name="description" notNull="false" order="3" status="U" uuid="db/column77"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="4" status="U" uuid="db/column78"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="5" status="U" uuid="db/column79"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="6" status="U" uuid="db/column80"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="7" status="U" uuid="db/column81"/>
+    <Index indexColumns="proc_code" indexConstraint="uniqueIndex" name="apym060m_index_0" status="U" uuid="db/index7"/>
+    <Index indexColumns="seq_no" indexConstraint="index" name="apym060m_index_1" status="U" uuid="db/index8"/>
+  </Table>
+  <Table active="true" name="apym065m" status="U" uuid="db/table8">
+    <Column fglLength="7" fglType="0" name="o_proc_code" notNull="false" order="1" status="U" uuid="db/column82"/>
+    <Column fglLength="7" fglType="0" name="n_proc_code" notNull="false" order="2" status="U" uuid="db/column83"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="3" status="U" uuid="db/column84"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="4" status="U" uuid="db/column85"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="5" status="U" uuid="db/column86"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="6" status="U" uuid="db/column87"/>
+    <Index indexColumns="o_proc_code" indexConstraint="uniqueIndex" name="apym065m_proc_code" status="U" uuid="db/index9"/>
+  </Table>
+  <Table active="true" name="apym070m" status="U" uuid="db/table9">
+    <Column fglLength="5119" fglType="5" name="ord_thick_min" notNull="false" order="1" status="U" uuid="db/column88"/>
+    <Column fglLength="5119" fglType="5" name="ord_thick_max" notNull="false" order="2" status="U" uuid="db/column89"/>
+    <Column fglLength="2" fglType="1" name="cutting_wid_aim" notNull="false" order="3" status="U" uuid="db/column90"/>
+    <Column fglLength="2" fglType="1" name="cutting_wid_min" notNull="false" order="4" status="U" uuid="db/column91"/>
+    <Column fglLength="2" fglType="1" name="cutting_wid_max" notNull="false" order="5" status="U" uuid="db/column92"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="6" status="U" uuid="db/column93"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="7" status="U" uuid="db/column94"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="8" status="U" uuid="db/column95"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="9" status="U" uuid="db/column96"/>
+    <Column fglLength="2" fglType="1" name="ord_width_min" notNull="false" order="10" status="U" uuid="db/column97"/>
+    <Column fglLength="2" fglType="1" name="ord_width_max" notNull="false" order="11" status="U" uuid="db/column98"/>
+    <Index indexColumns="ord_thick_min, ord_width_min" indexConstraint="uniqueIndex" name="apym070m_index_0" status="U" uuid="db/index10"/>
+  </Table>
+  <Table active="true" name="apym080m" status="U" uuid="db/table10">
+    <Column fglLength="5119" fglType="5" name="strip_thick_min" notNull="false" order="1" status="U" uuid="db/column99"/>
+    <Column fglLength="5119" fglType="5" name="strip_thick_max" notNull="false" order="2" status="U" uuid="db/column100"/>
+    <Column fglLength="2" fglType="1" name="precutting_wid_aim" notNull="false" order="3" status="U" uuid="db/column101"/>
+    <Column fglLength="2" fglType="1" name="precutting_wid_min" notNull="false" order="4" status="U" uuid="db/column102"/>
+    <Column fglLength="2" fglType="1" name="precutting_wid_max" notNull="false" order="5" status="U" uuid="db/column103"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="6" status="U" uuid="db/column104"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="7" status="U" uuid="db/column105"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="8" status="U" uuid="db/column106"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="9" status="U" uuid="db/column107"/>
+    <Column fglLength="2" fglType="1" name="strip_width_min" notNull="false" order="10" status="U" uuid="db/column108"/>
+    <Column fglLength="2" fglType="1" name="strip_width_max" notNull="false" order="11" status="U" uuid="db/column109"/>
+    <Index indexColumns="strip_thick_min, strip_width_min" indexConstraint="uniqueIndex" name="apym080m_index_0" status="U" uuid="db/index11"/>
+  </Table>
+  <Table active="true" name="apym090m" status="U" uuid="db/table11">
+    <Column fglLength="1" fglType="0" name="product_code" notNull="false" order="1" status="U" uuid="db/column110"/>
+    <Column fglLength="4" fglType="0" name="steel_grade_2_5" notNull="false" order="2" status="U" uuid="db/column111"/>
+    <Column fglLength="1" fglType="0" name="edge_code" notNull="false" order="3" status="U" uuid="db/column112"/>
+    <Column fglLength="5119" fglType="5" name="ord_thick_min" notNull="false" order="4" status="U" uuid="db/column113"/>
+    <Column fglLength="5119" fglType="5" name="ord_thick_max" notNull="false" order="5" status="U" uuid="db/column114"/>
+    <Column fglLength="2" fglType="1" name="ord_width_min" notNull="false" order="6" status="U" uuid="db/column115"/>
+    <Column fglLength="2" fglType="1" name="ord_width_max" notNull="false" order="7" status="U" uuid="db/column116"/>
+    <Column fglLength="2" fglType="1" name="hsm_width_aim_rep" notNull="false" order="8" status="U" uuid="db/column117"/>
+    <Column fglLength="2" fglType="1" name="hsm_width_min_rep" notNull="false" order="9" status="U" uuid="db/column118"/>
+    <Column fglLength="2" fglType="1" name="hsm_width_max_rep" notNull="false" order="10" status="U" uuid="db/column119"/>
+    <Column fglLength="5119" fglType="5" name="hap_rub_rep" notNull="false" order="11" status="U" uuid="db/column120"/>
+    <Column fglLength="5119" fglType="5" name="zmill_thick_rep" notNull="false" order="12" status="U" uuid="db/column121"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="13" status="U" uuid="db/column122"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="14" status="U" uuid="db/column123"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="15" status="U" uuid="db/column124"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="16" status="U" uuid="db/column125"/>
+    <Column fglLength="5119" fglType="5" name="hap_rub_rep_lz" notNull="false" order="17" status="U" uuid="db/column126"/>
+    <Index indexColumns="product_code, steel_grade_2_5, edge_code, ord_thick_min, ord_width_min" indexConstraint="uniqueIndex" name="apym090m_index_0" status="U" uuid="db/index12"/>
+  </Table>
+  <Table active="true" name="apym095m" status="U" uuid="db/table12">
+    <Column fglLength="5119" fglType="5" name="hap_thick_1_min" notNull="false" order="1" status="U" uuid="db/column127"/>
+    <Column fglLength="5119" fglType="5" name="hap_thick_1_max" notNull="false" order="2" status="U" uuid="db/column128"/>
+    <Column fglLength="2" fglType="1" name="target_width_min" notNull="false" order="3" status="U" uuid="db/column129"/>
+    <Column fglLength="2" fglType="1" name="target_width_max" notNull="false" order="4" status="U" uuid="db/column130"/>
+    <Column fglLength="5119" fglType="5" name="strip_thick" notNull="false" order="5" status="U" uuid="db/column131"/>
+    <Column fglLength="5119" fglType="5" name="strip_thick_min" notNull="false" order="6" status="U" uuid="db/column132"/>
+    <Column fglLength="5119" fglType="5" name="strip_thick_max" notNull="false" order="7" status="U" uuid="db/column133"/>
+    <Column fglLength="4" fglType="0" name="apy_code" notNull="false" order="8" status="U" uuid="db/column134"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="9" status="U" uuid="db/column135"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="10" status="U" uuid="db/column136"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="11" status="U" uuid="db/column137"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="12" status="U" uuid="db/column138"/>
+    <Index indexColumns="apy_code, hap_thick_1_min, target_width_min" indexConstraint="uniqueIndex" name="apym095m_index_0" status="U" uuid="db/index13"/>
+  </Table>
+  <Table active="true" name="apym100m" status="U" uuid="db/table13">
+    <Column fglLength="2" fglType="1" name="oem_wid_min" notNull="false" order="1" status="U" uuid="db/column139"/>
+    <Column fglLength="2" fglType="1" name="oem_wid_max" notNull="false" order="2" status="U" uuid="db/column140"/>
+    <Column fglLength="5119" fglType="5" name="oem_thick_min" notNull="false" order="3" status="U" uuid="db/column141"/>
+    <Column fglLength="5119" fglType="5" name="oem_thick_max" notNull="false" order="4" status="U" uuid="db/column142"/>
+    <Column fglLength="1" fglType="0" name="oem_kind" notNull="false" order="5" status="U" uuid="db/column143"/>
+    <Column fglLength="5119" fglType="5" name="oem_thick_aim_rep" notNull="false" order="6" status="U" uuid="db/column144"/>
+    <Column fglLength="5119" fglType="5" name="oem_thick_min_rep" notNull="false" order="7" status="U" uuid="db/column145"/>
+    <Column fglLength="5119" fglType="5" name="oem_thick_max_rep" notNull="false" order="8" status="U" uuid="db/column146"/>
+    <Column fglLength="2" fglType="1" name="oem_wid_aim_rep" notNull="false" order="9" status="U" uuid="db/column147"/>
+    <Column fglLength="2" fglType="1" name="oem_wid_min_rep" notNull="false" order="10" status="U" uuid="db/column148"/>
+    <Column fglLength="2" fglType="1" name="oem_wid_max_rep" notNull="false" order="11" status="U" uuid="db/column149"/>
+    <Column fglLength="4" fglType="2" name="oem_len_aim_rep" notNull="false" order="12" status="U" uuid="db/column150"/>
+    <Column fglLength="4" fglType="2" name="oem_len_min_rep" notNull="false" order="13" status="U" uuid="db/column151"/>
+    <Column fglLength="4" fglType="2" name="oem_len_max_rep" notNull="false" order="14" status="U" uuid="db/column152"/>
+  </Table>
+  <Table active="true" name="apym120m" status="U" uuid="db/table14">
+    <Column fglLength="4" fglType="0" name="steel_grade_2_5" notNull="false" order="1" status="U" uuid="db/column153"/>
+    <Column fglLength="2" fglType="1" name="strip_wid" notNull="false" order="2" status="U" uuid="db/column154"/>
+    <Column fglLength="2" fglType="1" name="new_strip_wid" notNull="false" order="3" status="U" uuid="db/column155"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="4" status="U" uuid="db/column156"/>
+    <Column fglLength="10" fglType="0" name="prog_last_maint" notNull="false" order="5" status="U" uuid="db/column157"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="6" status="U" uuid="db/column158"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="7" status="U" uuid="db/column159"/>
+    <Index indexColumns="steel_grade_2_5, strip_wid" indexConstraint="uniqueIndex" name="apym120m_index_0" status="U" uuid="db/index14"/>
+  </Table>
+  <Table active="true" name="apym125m" status="U" uuid="db/table15">
+    <Column fglLength="4" fglType="0" name="steel_grade" notNull="false" order="1" status="U" uuid="db/column160"/>
+    <Column fglLength="5119" fglType="5" name="pass_min" notNull="false" order="2" status="U" uuid="db/column161"/>
+    <Column fglLength="5119" fglType="5" name="pass_max" notNull="false" order="3" status="U" uuid="db/column162"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="4" status="U" uuid="db/column163"/>
+    <Column fglLength="10" fglType="0" name="prog_last_maint" notNull="false" order="5" status="U" uuid="db/column164"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="6" status="U" uuid="db/column165"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="7" status="U" uuid="db/column166"/>
+  </Table>
+  <Table active="true" name="micm010m" status="U" uuid="db/table16">
+    <Column fglLength="6" fglType="0" name="mic_no" notNull="false" order="1" status="U" uuid="db/column167"/>
+    <Column fglLength="8" fglType="0" name="date_issued" notNull="false" order="2" status="U" uuid="db/column168"/>
+    <Column fglLength="3" fglType="0" name="revision" notNull="false" order="3" status="U" uuid="db/column169"/>
+    <Column fglLength="1" fglType="0" name="product_code" notNull="false" order="4" status="U" uuid="db/column170"/>
+    <Column fglLength="4" fglType="0" name="formability" notNull="false" order="5" status="U" uuid="db/column171"/>
+    <Column fglLength="4" fglType="0" name="surface_quality" notNull="false" order="6" status="U" uuid="db/column172"/>
+    <Column fglLength="4" fglType="0" name="application_code" notNull="false" order="7" status="U" uuid="db/column173"/>
+    <Column fglLength="3" fglType="0" name="grain_size" notNull="false" order="8" status="U" uuid="db/column174"/>
+    <Column fglLength="1" fglType="0" name="edge_code" notNull="false" order="9" status="U" uuid="db/column175"/>
+    <Column fglLength="4" fglType="0" name="dimension_code" notNull="false" order="10" status="U" uuid="db/column176"/>
+    <Column fglLength="40" fglType="0" name="mic_remark" notNull="false" order="11" status="U" uuid="db/column177"/>
+    <Column fglLength="6" fglType="0" name="heat_route_code" notNull="false" order="12" status="U" uuid="db/column178"/>
+    <Column fglLength="1" fglType="0" name="slab_quality_int" notNull="false" order="13" status="U" uuid="db/column179"/>
+    <Column fglLength="1" fglType="0" name="slab_quality_out" notNull="false" order="14" status="U" uuid="db/column180"/>
+    <Column fglLength="2" fglType="1" name="rf_charging_temp" notNull="false" order="15" status="U" uuid="db/column181"/>
+    <Column fglLength="6" fglType="0" name="hr_temp_code" notNull="false" order="16" status="U" uuid="db/column182"/>
+    <Column fglLength="2" fglType="0" name="hrb_crown_code" notNull="false" order="17" status="U" uuid="db/column183"/>
+    <Column fglLength="1" fglType="0" name="hrb_flat_code" notNull="false" order="18" status="U" uuid="db/column184"/>
+    <Column fglLength="2" fglType="1" name="desc_coo_mode" notNull="false" order="19" status="U" uuid="db/column185"/>
+    <Column fglLength="6" fglType="0" name="lam_coo_code" notNull="false" order="20" status="U" uuid="db/column186"/>
+    <Column fglLength="2" fglType="1" name="anneal_prog_no" notNull="false" order="21" status="U" uuid="db/column187"/>
+    <Column fglLength="2" fglType="1" name="hapl_soak_time" notNull="false" order="22" status="U" uuid="db/column188"/>
+    <Column fglLength="5119" fglType="5" name="skin_pass_elongation" notNull="false" order="23" status="U" uuid="db/column189"/>
+    <Column fglLength="2" fglType="1" name="zmill_reduct_min" notNull="false" order="24" status="U" uuid="db/column190"/>
+    <Column fglLength="2" fglType="1" name="zmill_reduct_max" notNull="false" order="25" status="U" uuid="db/column191"/>
+    <Column fglLength="2" fglType="0" name="zmill_flatness" notNull="false" order="26" status="U" uuid="db/column192"/>
+    <Column fglLength="2" fglType="1" name="capl_soak_time" notNull="false" order="27" status="U" uuid="db/column193"/>
+    <Column fglLength="1" fglType="0" name="spm_run_mode" notNull="false" order="28" status="U" uuid="db/column194"/>
+    <Column fglLength="5119" fglType="5" name="spm_elongation" notNull="false" order="29" status="U" uuid="db/column195"/>
+    <Column fglLength="4" fglType="2" name="spm_roll_force" notNull="false" order="30" status="U" uuid="db/column196"/>
+    <Column fglLength="1" fglType="0" name="spm_roughness" notNull="false" order="31" status="U" uuid="db/column197"/>
+    <Column fglLength="5119" fglType="5" name="tll_elongation" notNull="false" order="32" status="U" uuid="db/column198"/>
+    <Column fglLength="2" fglType="1" name="hr_qc_code" notNull="false" order="33" status="U" uuid="db/column199"/>
+    <Column fglLength="4" fglType="0" name="inspection_code" notNull="false" order="34" status="U" uuid="db/column200"/>
+    <Column fglLength="5" fglType="0" name="sampling_code" notNull="false" order="35" status="U" uuid="db/column201"/>
+    <Column fglLength="4" fglType="0" name="recoiling_code" notNull="false" order="36" status="U" uuid="db/column202"/>
+    <Column fglLength="5" fglType="0" name="mpl_mark_code" notNull="false" order="37" status="U" uuid="db/column203"/>
+    <Column fglLength="5" fglType="0" name="mpl_pack_code" notNull="false" order="38" status="U" uuid="db/column204"/>
+    <Column fglLength="5" fglType="0" name="mpl_load_code" notNull="false" order="39" status="U" uuid="db/column205"/>
+    <Column fglLength="4" fglType="0" name="test_code1" notNull="false" order="40" status="U" uuid="db/column206"/>
+    <Column fglLength="4" fglType="0" name="test_code2" notNull="false" order="41" status="U" uuid="db/column207"/>
+    <Column fglLength="4" fglType="0" name="test_code3" notNull="false" order="42" status="U" uuid="db/column208"/>
+    <Column fglLength="4" fglType="0" name="test_code4" notNull="false" order="43" status="U" uuid="db/column209"/>
+    <Column fglLength="4" fglType="0" name="test_code5" notNull="false" order="44" status="U" uuid="db/column210"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="45" status="U" uuid="db/column211"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="46" status="U" uuid="db/column212"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="47" status="U" uuid="db/column213"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="48" status="U" uuid="db/column214"/>
+    <Column fglLength="10" fglType="0" name="steel_grade1" notNull="false" order="49" status="U" uuid="db/column215"/>
+    <Column fglLength="10" fglType="0" name="steel_grade2" notNull="false" order="50" status="U" uuid="db/column216"/>
+    <Column fglLength="10" fglType="0" name="steel_grade3" notNull="false" order="51" status="U" uuid="db/column217"/>
+    <Column fglLength="10" fglType="0" name="steel_grade4" notNull="false" order="52" status="U" uuid="db/column218"/>
+    <Column fglLength="10" fglType="0" name="steel_grade5" notNull="false" order="53" status="U" uuid="db/column219"/>
+    <Column fglLength="10" fglType="0" name="steel_grade6" notNull="false" order="54" status="U" uuid="db/column220"/>
+    <Column fglLength="10" fglType="0" name="steel_grade7" notNull="false" order="55" status="U" uuid="db/column221"/>
+    <Column fglLength="10" fglType="0" name="steel_grade8" notNull="false" order="56" status="U" uuid="db/column222"/>
+    <Column fglLength="10" fglType="0" name="steel_grade9" notNull="false" order="57" status="U" uuid="db/column223"/>
+    <Column fglLength="10" fglType="0" name="steel_grade10" notNull="false" order="58" status="U" uuid="db/column224"/>
+    <Column fglLength="10" fglType="0" name="steel_grade11" notNull="false" order="59" status="U" uuid="db/column225"/>
+    <Column fglLength="10" fglType="0" name="steel_grade12" notNull="false" order="60" status="U" uuid="db/column226"/>
+    <Column fglLength="10" fglType="0" name="steel_grade13" notNull="false" order="61" status="U" uuid="db/column227"/>
+    <Column fglLength="10" fglType="0" name="steel_grade14" notNull="false" order="62" status="U" uuid="db/column228"/>
+    <Column fglLength="10" fglType="0" name="steel_grade15" notNull="false" order="63" status="U" uuid="db/column229"/>
+    <Column fglLength="10" fglType="0" name="steel_grade16" notNull="false" order="64" status="U" uuid="db/column230"/>
+    <Column fglLength="10" fglType="0" name="steel_grade17" notNull="false" order="65" status="U" uuid="db/column231"/>
+    <Column fglLength="10" fglType="0" name="steel_grade18" notNull="false" order="66" status="U" uuid="db/column232"/>
+    <Column fglLength="10" fglType="0" name="steel_grade19" notNull="false" order="67" status="U" uuid="db/column233"/>
+    <Column fglLength="10" fglType="0" name="steel_grade20" notNull="false" order="68" status="U" uuid="db/column234"/>
+    <Column fglLength="2" fglType="0" name="slab_require_code" notNull="false" order="69" status="U" uuid="db/column235"/>
+    <Column fglLength="5" fglType="0" name="mpl_mark_code2" notNull="false" order="70" status="U" uuid="db/column236"/>
+    <Column fglLength="5" fglType="0" name="mpl_pack_code2" notNull="false" order="71" status="U" uuid="db/column237"/>
+    <Column fglLength="4" fglType="0" name="apy_code" notNull="false" order="72" status="U" uuid="db/column238"/>
+    <Column fglLength="4" fglType="0" name="sapy_code" notNull="false" order="73" status="U" uuid="db/column239"/>
+    <Column fglLength="4" fglType="0" name="rapy_code" notNull="false" order="74" status="U" uuid="db/column240"/>
+    <Column fglLength="4" fglType="0" name="hap_anneal_code" notNull="false" order="75" status="U" uuid="db/column241"/>
+    <Column fglLength="4" fglType="0" name="cap_anneal_code" notNull="false" order="76" status="U" uuid="db/column242"/>
+    <Column fglLength="4" fglType="0" name="bal_anneal_code" notNull="false" order="77" status="U" uuid="db/column243"/>
+    <Column fglLength="4" fglType="0" name="proc_code" notNull="false" order="78" status="U" uuid="db/column244"/>
+    <Column fglLength="4" fglType="0" name="pr_code" notNull="false" order="79" status="U" uuid="db/column245"/>
+    <Column fglLength="1" fglType="201" name="pd" notNull="false" order="80" status="U" uuid="db/column246"/>
+    <Column fglLength="4" fglType="0" name="capy_code" notNull="false" order="81" status="U" uuid="db/column247"/>
+    <Index indexColumns="mic_no" indexConstraint="uniqueIndex" name="micm010m_index_0" status="U" uuid="db/index15"/>
+  </Table>
+  <Table active="true" name="micm012m" status="U" uuid="db/table17">
+    <Column fglLength="5119" fglType="5" name="ord_thick_min" notNull="false" order="1" status="U" uuid="db/column248"/>
+    <Column fglLength="5119" fglType="5" name="ord_thick_max" notNull="false" order="2" status="U" uuid="db/column249"/>
+    <Column fglLength="7" fglType="0" name="process_code" notNull="false" order="3" status="U" uuid="db/column250"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="4" status="U" uuid="db/column251"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="5" status="U" uuid="db/column252"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="6" status="U" uuid="db/column253"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="7" status="U" uuid="db/column254"/>
+    <Column fglLength="2" fglType="1" name="ord_width_min" notNull="false" order="8" status="U" uuid="db/column255"/>
+    <Column fglLength="2" fglType="1" name="ord_width_max" notNull="false" order="9" status="U" uuid="db/column256"/>
+    <Column fglLength="4" fglType="0" name="proc_code" notNull="false" order="10" status="U" uuid="db/column257"/>
+    <Index indexColumns="proc_code, ord_thick_min, ord_width_min" indexConstraint="uniqueIndex" name="micm012m_index_0" status="U" uuid="db/index16"/>
+  </Table>
+  <Table active="true" name="micm015m" status="U" uuid="db/table18">
+    <Column fglLength="6" fglType="0" name="mic_no" notNull="false" order="1" status="U" uuid="db/column258"/>
+    <Column fglLength="2" fglType="1" name="seq" notNull="false" order="2" status="U" uuid="db/column259"/>
+    <Column fglLength="60" fglType="0" name="ms_remark" notNull="false" order="3" status="U" uuid="db/column260"/>
+    <Column fglLength="7" fglType="0" name="date_last_maint" notNull="false" order="4" status="U" uuid="db/column261"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="5" status="U" uuid="db/column262"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="6" status="U" uuid="db/column263"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="7" status="U" uuid="db/column264"/>
+    <Column fglLength="60" fglType="0" name="ms_remark_b5" notNull="false" order="8" status="U" uuid="db/column265"/>
+    <Index indexColumns="mic_no, seq" indexConstraint="uniqueIndex" name="micm015m_index_0" status="U" uuid="db/index17"/>
+  </Table>
+  <Table active="true" name="micm015m_b5" status="U" uuid="db/table19">
+    <Column fglLength="6" fglType="0" name="mic_no" notNull="false" order="1" status="U" uuid="db/column266"/>
+    <Column fglLength="2" fglType="1" name="seq" notNull="false" order="2" status="U" uuid="db/column267"/>
+    <Column fglLength="60" fglType="0" name="ms_remark" notNull="false" order="3" status="U" uuid="db/column268"/>
+    <Index indexColumns="mic_no, seq" indexConstraint="uniqueIndex" name="micm015m_b5_index_0" status="U" uuid="db/index18"/>
+  </Table>
+  <Table active="true" name="micm018m" status="U" uuid="db/table20">
+    <Column fglLength="6" fglType="0" name="mic_no" notNull="false" order="1" status="U" uuid="db/column269"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="2" status="U" uuid="db/column270"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="3" status="U" uuid="db/column271"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="4" status="U" uuid="db/column272"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="5" status="U" uuid="db/column273"/>
+    <Index indexColumns="mic_no" indexConstraint="uniqueIndex" name="micm018m_index_0" status="U" uuid="db/index19"/>
+  </Table>
+  <Table active="true" name="micm020m" status="U" uuid="db/table21">
+    <Column fglLength="6" fglType="0" name="cust_no" notNull="false" order="1" status="U" uuid="db/column274"/>
+    <Column fglLength="8" fglType="0" name="psr_no" notNull="false" order="2" status="U" uuid="db/column275"/>
+    <Column fglLength="4" fglType="0" name="apn_no" notNull="false" order="3" status="U" uuid="db/column276"/>
+    <Column fglLength="6" fglType="0" name="mic_no" notNull="false" order="4" status="U" uuid="db/column277"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="5" status="U" uuid="db/column278"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="6" status="U" uuid="db/column279"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="7" status="U" uuid="db/column280"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="8" status="U" uuid="db/column281"/>
+    <Index indexColumns="cust_no, psr_no, apn_no" indexConstraint="uniqueIndex" name="micm020m_index_0" status="U" uuid="db/index20"/>
+  </Table>
+  <Table active="true" name="micm030m" status="U" uuid="db/table22">
+    <Column fglLength="6" fglType="0" name="mic_no" notNull="false" order="1" status="U" uuid="db/column282"/>
+    <Column fglLength="5119" fglType="5" name="gauge_min" notNull="false" order="2" status="U" uuid="db/column283"/>
+    <Column fglLength="5119" fglType="5" name="gauge_max" notNull="false" order="3" status="U" uuid="db/column284"/>
+    <Column fglLength="2" fglType="1" name="ys_yp_min" notNull="false" order="4" status="U" uuid="db/column285"/>
+    <Column fglLength="2" fglType="1" name="ys_yp_max" notNull="false" order="5" status="U" uuid="db/column286"/>
+    <Column fglLength="2" fglType="1" name="ys_02_min" notNull="false" order="6" status="U" uuid="db/column287"/>
+    <Column fglLength="2" fglType="1" name="ys_02_max" notNull="false" order="7" status="U" uuid="db/column288"/>
+    <Column fglLength="2" fglType="1" name="ys_10_min" notNull="false" order="8" status="U" uuid="db/column289"/>
+    <Column fglLength="2" fglType="1" name="ys_10_max" notNull="false" order="9" status="U" uuid="db/column290"/>
+    <Column fglLength="2" fglType="1" name="ts_min" notNull="false" order="10" status="U" uuid="db/column291"/>
+    <Column fglLength="2" fglType="1" name="ts_max" notNull="false" order="11" status="U" uuid="db/column292"/>
+    <Column fglLength="2" fglType="1" name="elongation" notNull="false" order="12" status="U" uuid="db/column293"/>
+    <Column fglLength="2" fglType="1" name="hard_hrb_min" notNull="false" order="13" status="U" uuid="db/column294"/>
+    <Column fglLength="2" fglType="1" name="hard_hrb_max" notNull="false" order="14" status="U" uuid="db/column295"/>
+    <Column fglLength="2" fglType="1" name="hard_hb_min" notNull="false" order="15" status="U" uuid="db/column296"/>
+    <Column fglLength="2" fglType="1" name="hard_hb_max" notNull="false" order="16" status="U" uuid="db/column297"/>
+    <Column fglLength="2" fglType="1" name="hard_hv_min" notNull="false" order="17" status="U" uuid="db/column298"/>
+    <Column fglLength="2" fglType="1" name="hard_hv_max" notNull="false" order="18" status="U" uuid="db/column299"/>
+    <Column fglLength="2" fglType="1" name="bend_angle" notNull="false" order="19" status="U" uuid="db/column300"/>
+    <Column fglLength="5119" fglType="5" name="bend_radius" notNull="false" order="20" status="U" uuid="db/column301"/>
+    <Column fglLength="5119" fglType="5" name="erichsen_min" notNull="false" order="21" status="U" uuid="db/column302"/>
+    <Column fglLength="5119" fglType="5" name="erichsen_max" notNull="false" order="22" status="U" uuid="db/column303"/>
+    <Column fglLength="5119" fglType="5" name="n_val" notNull="false" order="23" status="U" uuid="db/column304"/>
+    <Column fglLength="5119" fglType="5" name="r_val" notNull="false" order="24" status="U" uuid="db/column305"/>
+    <Column fglLength="5119" fglType="5" name="delta_val" notNull="false" order="25" status="U" uuid="db/column306"/>
+    <Column fglLength="40" fglType="0" name="other" notNull="false" order="26" status="U" uuid="db/column307"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="27" status="U" uuid="db/column308"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="28" status="U" uuid="db/column309"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="29" status="U" uuid="db/column310"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="30" status="U" uuid="db/column311"/>
+    <Column fglLength="2" fglType="1" name="hard_hrc_min" notNull="false" order="31" status="U" uuid="db/column312"/>
+    <Column fglLength="2" fglType="1" name="hard_hrc_max" notNull="false" order="32" status="U" uuid="db/column313"/>
+    <Index indexColumns="mic_no, gauge_min" indexConstraint="uniqueIndex" name="micm030m_index_0" status="U" uuid="db/index21"/>
+  </Table>
+  <Table active="true" name="micm040m" status="U" uuid="db/table23">
+    <Column fglLength="2" fglType="1" name="hr_qc_code" notNull="false" order="1" status="U" uuid="db/column314"/>
+    <Column fglLength="2" fglType="1" name="telescope" notNull="false" order="2" status="U" uuid="db/column315"/>
+    <Column fglLength="2" fglType="1" name="protruding" notNull="false" order="3" status="U" uuid="db/column316"/>
+    <Column fglLength="2" fglType="1" name="camber" notNull="false" order="4" status="U" uuid="db/column317"/>
+    <Column fglLength="2" fglType="1" name="strip_wedge" notNull="false" order="5" status="U" uuid="db/column318"/>
+    <Column fglLength="3" fglType="0" name="dam_edge_i" notNull="false" order="6" status="U" uuid="db/column319"/>
+    <Column fglLength="3" fglType="0" name="dam_edge_o" notNull="false" order="7" status="U" uuid="db/column320"/>
+    <Column fglLength="3" fglType="0" name="edge_crack" notNull="false" order="8" status="U" uuid="db/column321"/>
+    <Column fglLength="70" fglType="0" name="other" notNull="false" order="9" status="U" uuid="db/column322"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="10" status="U" uuid="db/column323"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="11" status="U" uuid="db/column324"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="12" status="U" uuid="db/column325"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="13" status="U" uuid="db/column326"/>
+    <Index indexColumns="hr_qc_code" indexConstraint="uniqueIndex" name="micm040m_index_0" status="U" uuid="db/index22"/>
+  </Table>
+  <Table active="true" name="micm050m" status="U" uuid="db/table24">
+    <Column fglLength="4" fglType="0" name="dimension_code" notNull="false" order="1" status="U" uuid="db/column327"/>
+    <Column fglLength="4" fglType="2" name="len_min" notNull="false" order="2" status="U" uuid="db/column328"/>
+    <Column fglLength="4" fglType="2" name="len_max" notNull="false" order="3" status="U" uuid="db/column329"/>
+    <Column fglLength="2" fglType="1" name="wid_min" notNull="false" order="4" status="U" uuid="db/column330"/>
+    <Column fglLength="2" fglType="1" name="wid_max" notNull="false" order="5" status="U" uuid="db/column331"/>
+    <Column fglLength="5119" fglType="5" name="thick_min" notNull="false" order="6" status="U" uuid="db/column332"/>
+    <Column fglLength="5119" fglType="5" name="thick_max" notNull="false" order="7" status="U" uuid="db/column333"/>
+    <Column fglLength="2" fglType="1" name="crown_min" notNull="false" order="8" status="U" uuid="db/column334"/>
+    <Column fglLength="2" fglType="1" name="crown_max" notNull="false" order="9" status="U" uuid="db/column335"/>
+    <Column fglLength="5119" fglType="5" name="flatness" notNull="false" order="10" status="U" uuid="db/column336"/>
+    <Column fglLength="5119" fglType="5" name="tol_len_min" notNull="false" order="11" status="U" uuid="db/column337"/>
+    <Column fglLength="5119" fglType="5" name="tol_len_max" notNull="false" order="12" status="U" uuid="db/column338"/>
+    <Column fglLength="5119" fglType="5" name="tol_wid_min" notNull="false" order="13" status="U" uuid="db/column339"/>
+    <Column fglLength="5119" fglType="5" name="tol_wid_max" notNull="false" order="14" status="U" uuid="db/column340"/>
+    <Column fglLength="5119" fglType="5" name="tol_thick_min" notNull="false" order="15" status="U" uuid="db/column341"/>
+    <Column fglLength="5119" fglType="5" name="tol_thick_max" notNull="false" order="16" status="U" uuid="db/column342"/>
+    <Column fglLength="2" fglType="1" name="tol_crown" notNull="false" order="17" status="U" uuid="db/column343"/>
+    <Column fglLength="5119" fglType="5" name="ship_len_add" notNull="false" order="18" status="U" uuid="db/column344"/>
+    <Column fglLength="5119" fglType="5" name="ship_wid_add" notNull="false" order="19" status="U" uuid="db/column345"/>
+    <Column fglLength="5119" fglType="5" name="ship_thick_add" notNull="false" order="20" status="U" uuid="db/column346"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="21" status="U" uuid="db/column347"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="22" status="U" uuid="db/column348"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="23" status="U" uuid="db/column349"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="24" status="U" uuid="db/column350"/>
+    <Index indexColumns="dimension_code, len_min, wid_min, thick_min" indexConstraint="uniqueIndex" name="micm050m_index_0" status="U" uuid="db/index23"/>
+  </Table>
+  <Table active="true" name="micm060m" status="U" uuid="db/table25">
+    <Column fglLength="2" fglType="0" name="code_type" notNull="false" order="1" status="U" uuid="db/column351"/>
+    <Column fglLength="10" fglType="0" name="code" notNull="false" order="2" status="U" uuid="db/column352"/>
+    <Column fglLength="30" fglType="0" name="remark" notNull="false" order="3" status="U" uuid="db/column353"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="4" status="U" uuid="db/column354"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="5" status="U" uuid="db/column355"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="6" status="U" uuid="db/column356"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="7" status="U" uuid="db/column357"/>
+    <Index indexColumns="code_type, code" indexConstraint="uniqueIndex" name="micm060m_index_0" status="U" uuid="db/index24"/>
+  </Table>
+  <Table active="true" name="micm070m" status="U" uuid="db/table26">
+    <Column fglLength="10" fglType="0" name="steel_grade_2_6" notNull="false" order="1" status="U" uuid="db/column358"/>
+    <Column fglLength="5119" fglType="5" name="c" notNull="false" order="2" status="U" uuid="db/column359"/>
+    <Column fglLength="5119" fglType="5" name="si" notNull="false" order="3" status="U" uuid="db/column360"/>
+    <Column fglLength="5119" fglType="5" name="mn" notNull="false" order="4" status="U" uuid="db/column361"/>
+    <Column fglLength="5119" fglType="5" name="p" notNull="false" order="5" status="U" uuid="db/column362"/>
+    <Column fglLength="5119" fglType="5" name="s" notNull="false" order="6" status="U" uuid="db/column363"/>
+    <Column fglLength="5119" fglType="5" name="ni" notNull="false" order="7" status="U" uuid="db/column364"/>
+    <Column fglLength="5119" fglType="5" name="cr" notNull="false" order="8" status="U" uuid="db/column365"/>
+    <Column fglLength="5119" fglType="5" name="mo" notNull="false" order="9" status="U" uuid="db/column366"/>
+    <Column fglLength="5119" fglType="5" name="cu" notNull="false" order="10" status="U" uuid="db/column367"/>
+    <Column fglLength="5119" fglType="5" name="n" notNull="false" order="11" status="U" uuid="db/column368"/>
+    <Column fglLength="5119" fglType="5" name="al" notNull="false" order="12" status="U" uuid="db/column369"/>
+    <Column fglLength="5119" fglType="5" name="o" notNull="false" order="13" status="U" uuid="db/column370"/>
+    <Column fglLength="5119" fglType="5" name="ti" notNull="false" order="14" status="U" uuid="db/column371"/>
+    <Column fglLength="5119" fglType="5" name="b" notNull="false" order="15" status="U" uuid="db/column372"/>
+    <Column fglLength="5119" fglType="5" name="nb" notNull="false" order="16" status="U" uuid="db/column373"/>
+    <Column fglLength="5119" fglType="5" name="r" notNull="false" order="17" status="U" uuid="db/column374"/>
+    <Column fglLength="15" fglType="0" name="aim_remark" notNull="false" order="18" status="U" uuid="db/column375"/>
+    <Column fglLength="5119" fglType="5" name="mr_c_min" notNull="false" order="19" status="U" uuid="db/column376"/>
+    <Column fglLength="5119" fglType="5" name="mr_c_max" notNull="false" order="20" status="U" uuid="db/column377"/>
+    <Column fglLength="5119" fglType="5" name="mr_si_min" notNull="false" order="21" status="U" uuid="db/column378"/>
+    <Column fglLength="5119" fglType="5" name="mr_si_max" notNull="false" order="22" status="U" uuid="db/column379"/>
+    <Column fglLength="5119" fglType="5" name="mr_mn_min" notNull="false" order="23" status="U" uuid="db/column380"/>
+    <Column fglLength="5119" fglType="5" name="mr_mn_max" notNull="false" order="24" status="U" uuid="db/column381"/>
+    <Column fglLength="5119" fglType="5" name="mr_p_min" notNull="false" order="25" status="U" uuid="db/column382"/>
+    <Column fglLength="5119" fglType="5" name="mr_p_max" notNull="false" order="26" status="U" uuid="db/column383"/>
+    <Column fglLength="5119" fglType="5" name="mr_s_min" notNull="false" order="27" status="U" uuid="db/column384"/>
+    <Column fglLength="5119" fglType="5" name="mr_s_max" notNull="false" order="28" status="U" uuid="db/column385"/>
+    <Column fglLength="5119" fglType="5" name="mr_ni_min" notNull="false" order="29" status="U" uuid="db/column386"/>
+    <Column fglLength="5119" fglType="5" name="mr_ni_max" notNull="false" order="30" status="U" uuid="db/column387"/>
+    <Column fglLength="5119" fglType="5" name="mr_cr_min" notNull="false" order="31" status="U" uuid="db/column388"/>
+    <Column fglLength="5119" fglType="5" name="mr_cr_max" notNull="false" order="32" status="U" uuid="db/column389"/>
+    <Column fglLength="5119" fglType="5" name="mr_mo_min" notNull="false" order="33" status="U" uuid="db/column390"/>
+    <Column fglLength="5119" fglType="5" name="mr_mo_max" notNull="false" order="34" status="U" uuid="db/column391"/>
+    <Column fglLength="5119" fglType="5" name="mr_cu_min" notNull="false" order="35" status="U" uuid="db/column392"/>
+    <Column fglLength="5119" fglType="5" name="mr_cu_max" notNull="false" order="36" status="U" uuid="db/column393"/>
+    <Column fglLength="5119" fglType="5" name="mr_n_min" notNull="false" order="37" status="U" uuid="db/column394"/>
+    <Column fglLength="5119" fglType="5" name="mr_n_max" notNull="false" order="38" status="U" uuid="db/column395"/>
+    <Column fglLength="5119" fglType="5" name="mr_al_min" notNull="false" order="39" status="U" uuid="db/column396"/>
+    <Column fglLength="5119" fglType="5" name="mr_al_max" notNull="false" order="40" status="U" uuid="db/column397"/>
+    <Column fglLength="5119" fglType="5" name="mr_o_min" notNull="false" order="41" status="U" uuid="db/column398"/>
+    <Column fglLength="5119" fglType="5" name="mr_o_max" notNull="false" order="42" status="U" uuid="db/column399"/>
+    <Column fglLength="5119" fglType="5" name="mr_ti_min" notNull="false" order="43" status="U" uuid="db/column400"/>
+    <Column fglLength="5119" fglType="5" name="mr_ti_max" notNull="false" order="44" status="U" uuid="db/column401"/>
+    <Column fglLength="5119" fglType="5" name="mr_b_min" notNull="false" order="45" status="U" uuid="db/column402"/>
+    <Column fglLength="5119" fglType="5" name="mr_b_max" notNull="false" order="46" status="U" uuid="db/column403"/>
+    <Column fglLength="5119" fglType="5" name="mr_nb_min" notNull="false" order="47" status="U" uuid="db/column404"/>
+    <Column fglLength="5119" fglType="5" name="mr_nb_max" notNull="false" order="48" status="U" uuid="db/column405"/>
+    <Column fglLength="5119" fglType="5" name="mr_r_min" notNull="false" order="49" status="U" uuid="db/column406"/>
+    <Column fglLength="5119" fglType="5" name="mr_r_max" notNull="false" order="50" status="U" uuid="db/column407"/>
+    <Column fglLength="15" fglType="0" name="mr_remark" notNull="false" order="51" status="U" uuid="db/column408"/>
+    <Column fglLength="5119" fglType="5" name="rr_c_min" notNull="false" order="52" status="U" uuid="db/column409"/>
+    <Column fglLength="5119" fglType="5" name="rr_c_max" notNull="false" order="53" status="U" uuid="db/column410"/>
+    <Column fglLength="5119" fglType="5" name="rr_si_min" notNull="false" order="54" status="U" uuid="db/column411"/>
+    <Column fglLength="5119" fglType="5" name="rr_si_max" notNull="false" order="55" status="U" uuid="db/column412"/>
+    <Column fglLength="5119" fglType="5" name="rr_mn_min" notNull="false" order="56" status="U" uuid="db/column413"/>
+    <Column fglLength="5119" fglType="5" name="rr_mn_max" notNull="false" order="57" status="U" uuid="db/column414"/>
+    <Column fglLength="5119" fglType="5" name="rr_p_min" notNull="false" order="58" status="U" uuid="db/column415"/>
+    <Column fglLength="5119" fglType="5" name="rr_p_max" notNull="false" order="59" status="U" uuid="db/column416"/>
+    <Column fglLength="5119" fglType="5" name="rr_s_min" notNull="false" order="60" status="U" uuid="db/column417"/>
+    <Column fglLength="5119" fglType="5" name="rr_s_max" notNull="false" order="61" status="U" uuid="db/column418"/>
+    <Column fglLength="5119" fglType="5" name="rr_ni_min" notNull="false" order="62" status="U" uuid="db/column419"/>
+    <Column fglLength="5119" fglType="5" name="rr_ni_max" notNull="false" order="63" status="U" uuid="db/column420"/>
+    <Column fglLength="5119" fglType="5" name="rr_cr_min" notNull="false" order="64" status="U" uuid="db/column421"/>
+    <Column fglLength="5119" fglType="5" name="rr_cr_max" notNull="false" order="65" status="U" uuid="db/column422"/>
+    <Column fglLength="5119" fglType="5" name="rr_mo_min" notNull="false" order="66" status="U" uuid="db/column423"/>
+    <Column fglLength="5119" fglType="5" name="rr_mo_max" notNull="false" order="67" status="U" uuid="db/column424"/>
+    <Column fglLength="5119" fglType="5" name="rr_cu_min" notNull="false" order="68" status="U" uuid="db/column425"/>
+    <Column fglLength="5119" fglType="5" name="rr_cu_max" notNull="false" order="69" status="U" uuid="db/column426"/>
+    <Column fglLength="5119" fglType="5" name="rr_n_min" notNull="false" order="70" status="U" uuid="db/column427"/>
+    <Column fglLength="5119" fglType="5" name="rr_n_max" notNull="false" order="71" status="U" uuid="db/column428"/>
+    <Column fglLength="5119" fglType="5" name="rr_al_min" notNull="false" order="72" status="U" uuid="db/column429"/>
+    <Column fglLength="5119" fglType="5" name="rr_al_max" notNull="false" order="73" status="U" uuid="db/column430"/>
+    <Column fglLength="5119" fglType="5" name="rr_o_min" notNull="false" order="74" status="U" uuid="db/column431"/>
+    <Column fglLength="5119" fglType="5" name="rr_o_max" notNull="false" order="75" status="U" uuid="db/column432"/>
+    <Column fglLength="5119" fglType="5" name="rr_ti_min" notNull="false" order="76" status="U" uuid="db/column433"/>
+    <Column fglLength="5119" fglType="5" name="rr_ti_max" notNull="false" order="77" status="U" uuid="db/column434"/>
+    <Column fglLength="5119" fglType="5" name="rr_b_min" notNull="false" order="78" status="U" uuid="db/column435"/>
+    <Column fglLength="5119" fglType="5" name="rr_b_max" notNull="false" order="79" status="U" uuid="db/column436"/>
+    <Column fglLength="5119" fglType="5" name="rr_nb_min" notNull="false" order="80" status="U" uuid="db/column437"/>
+    <Column fglLength="5119" fglType="5" name="rr_nb_max" notNull="false" order="81" status="U" uuid="db/column438"/>
+    <Column fglLength="5119" fglType="5" name="rr_r_min" notNull="false" order="82" status="U" uuid="db/column439"/>
+    <Column fglLength="5119" fglType="5" name="rr_r_max" notNull="false" order="83" status="U" uuid="db/column440"/>
+    <Column fglLength="15" fglType="0" name="rr_remark" notNull="false" order="84" status="U" uuid="db/column441"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="85" status="U" uuid="db/column442"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="86" status="U" uuid="db/column443"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="87" status="U" uuid="db/column444"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="88" status="U" uuid="db/column445"/>
+    <Column fglLength="5119" fglType="5" name="se" notNull="false" order="89" status="U" uuid="db/column446"/>
+    <Column fglLength="5119" fglType="5" name="pb" notNull="false" order="90" status="U" uuid="db/column447"/>
+    <Column fglLength="5119" fglType="5" name="v" notNull="false" order="91" status="U" uuid="db/column448"/>
+    <Column fglLength="5119" fglType="5" name="w" notNull="false" order="92" status="U" uuid="db/column449"/>
+    <Column fglLength="5119" fglType="5" name="h" notNull="false" order="93" status="U" uuid="db/column450"/>
+    <Column fglLength="5119" fglType="5" name="mr_se_min" notNull="false" order="94" status="U" uuid="db/column451"/>
+    <Column fglLength="5119" fglType="5" name="mr_se_max" notNull="false" order="95" status="U" uuid="db/column452"/>
+    <Column fglLength="5119" fglType="5" name="mr_pb_min" notNull="false" order="96" status="U" uuid="db/column453"/>
+    <Column fglLength="5119" fglType="5" name="mr_pb_max" notNull="false" order="97" status="U" uuid="db/column454"/>
+    <Column fglLength="5119" fglType="5" name="mr_v_min" notNull="false" order="98" status="U" uuid="db/column455"/>
+    <Column fglLength="5119" fglType="5" name="mr_v_max" notNull="false" order="99" status="U" uuid="db/column456"/>
+    <Column fglLength="5119" fglType="5" name="mr_w_min" notNull="false" order="100" status="U" uuid="db/column457"/>
+    <Column fglLength="5119" fglType="5" name="mr_w_max" notNull="false" order="101" status="U" uuid="db/column458"/>
+    <Column fglLength="5119" fglType="5" name="mr_h_min" notNull="false" order="102" status="U" uuid="db/column459"/>
+    <Column fglLength="5119" fglType="5" name="mr_h_max" notNull="false" order="103" status="U" uuid="db/column460"/>
+    <Column fglLength="5119" fglType="5" name="rr_se_min" notNull="false" order="104" status="U" uuid="db/column461"/>
+    <Column fglLength="5119" fglType="5" name="rr_se_max" notNull="false" order="105" status="U" uuid="db/column462"/>
+    <Column fglLength="5119" fglType="5" name="rr_pb_min" notNull="false" order="106" status="U" uuid="db/column463"/>
+    <Column fglLength="5119" fglType="5" name="rr_pb_max" notNull="false" order="107" status="U" uuid="db/column464"/>
+    <Column fglLength="5119" fglType="5" name="rr_v_min" notNull="false" order="108" status="U" uuid="db/column465"/>
+    <Column fglLength="5119" fglType="5" name="rr_v_max" notNull="false" order="109" status="U" uuid="db/column466"/>
+    <Column fglLength="5119" fglType="5" name="rr_w_min" notNull="false" order="110" status="U" uuid="db/column467"/>
+    <Column fglLength="5119" fglType="5" name="rr_w_max" notNull="false" order="111" status="U" uuid="db/column468"/>
+    <Column fglLength="5119" fglType="5" name="rr_h_min" notNull="false" order="112" status="U" uuid="db/column469"/>
+    <Column fglLength="5119" fglType="5" name="rr_h_max" notNull="false" order="113" status="U" uuid="db/column470"/>
+    <Column fglLength="5119" fglType="5" name="sn" notNull="false" order="114" status="U" uuid="db/column471"/>
+    <Column fglLength="5119" fglType="5" name="mr_sn_min" notNull="false" order="115" status="U" uuid="db/column472"/>
+    <Column fglLength="5119" fglType="5" name="mr_sn_max" notNull="false" order="116" status="U" uuid="db/column473"/>
+    <Column fglLength="5119" fglType="5" name="rr_sn_min" notNull="false" order="117" status="U" uuid="db/column474"/>
+    <Column fglLength="5119" fglType="5" name="rr_sn_max" notNull="false" order="118" status="U" uuid="db/column475"/>
+    <Column fglLength="5119" fglType="5" name="co" notNull="false" order="119" status="U" uuid="db/column476"/>
+    <Column fglLength="5119" fglType="5" name="mr_co_min" notNull="false" order="120" status="U" uuid="db/column477"/>
+    <Column fglLength="5119" fglType="5" name="mr_co_max" notNull="false" order="121" status="U" uuid="db/column478"/>
+    <Column fglLength="5119" fglType="5" name="rr_co_min" notNull="false" order="122" status="U" uuid="db/column479"/>
+    <Column fglLength="5119" fglType="5" name="rr_co_max" notNull="false" order="123" status="U" uuid="db/column480"/>
+    <Column fglLength="5119" fglType="5" name="ta" notNull="false" order="124" status="U" uuid="db/column481"/>
+    <Column fglLength="5119" fglType="5" name="mr_ta_min" notNull="false" order="125" status="U" uuid="db/column482"/>
+    <Column fglLength="5119" fglType="5" name="mr_ta_max" notNull="false" order="126" status="U" uuid="db/column483"/>
+    <Column fglLength="5119" fglType="5" name="rr_ta_min" notNull="false" order="127" status="U" uuid="db/column484"/>
+    <Column fglLength="5119" fglType="5" name="rr_ta_max" notNull="false" order="128" status="U" uuid="db/column485"/>
+    <Column fglLength="5119" fglType="5" name="zn" notNull="false" order="129" status="U" uuid="db/column486"/>
+    <Column fglLength="5119" fglType="5" name="mr_zn_min" notNull="false" order="130" status="U" uuid="db/column487"/>
+    <Column fglLength="5119" fglType="5" name="mr_zn_max" notNull="false" order="131" status="U" uuid="db/column488"/>
+    <Column fglLength="5119" fglType="5" name="rr_zn_min" notNull="false" order="132" status="U" uuid="db/column489"/>
+    <Column fglLength="5119" fglType="5" name="rr_zn_max" notNull="false" order="133" status="U" uuid="db/column490"/>
+    <Column fglLength="5119" fglType="5" name="zr" notNull="false" order="134" status="U" uuid="db/column491"/>
+    <Column fglLength="5119" fglType="5" name="mr_zr_min" notNull="false" order="135" status="U" uuid="db/column492"/>
+    <Column fglLength="5119" fglType="5" name="mr_zr_max" notNull="false" order="136" status="U" uuid="db/column493"/>
+    <Column fglLength="5119" fglType="5" name="rr_zr_min" notNull="false" order="137" status="U" uuid="db/column494"/>
+    <Column fglLength="5119" fglType="5" name="rr_zr_max" notNull="false" order="138" status="U" uuid="db/column495"/>
+    <Column fglLength="5119" fglType="5" name="ca" notNull="false" order="139" status="U" uuid="db/column496"/>
+    <Column fglLength="5119" fglType="5" name="mr_ca_min" notNull="false" order="140" status="U" uuid="db/column497"/>
+    <Column fglLength="5119" fglType="5" name="mr_ca_max" notNull="false" order="141" status="U" uuid="db/column498"/>
+    <Column fglLength="5119" fglType="5" name="rr_ca_min" notNull="false" order="142" status="U" uuid="db/column499"/>
+    <Column fglLength="5119" fglType="5" name="rr_ca_max" notNull="false" order="143" status="U" uuid="db/column500"/>
+    <Column fglLength="5119" fglType="5" name="mg" notNull="false" order="144" status="U" uuid="db/column501"/>
+    <Column fglLength="5119" fglType="5" name="mr_mg_min" notNull="false" order="145" status="U" uuid="db/column502"/>
+    <Column fglLength="5119" fglType="5" name="mr_mg_max" notNull="false" order="146" status="U" uuid="db/column503"/>
+    <Column fglLength="5119" fglType="5" name="rr_mg_min" notNull="false" order="147" status="U" uuid="db/column504"/>
+    <Column fglLength="5119" fglType="5" name="rr_mg_max" notNull="false" order="148" status="U" uuid="db/column505"/>
+    <Column fglLength="5119" fglType="5" name="ce" notNull="false" order="149" status="U" uuid="db/column506"/>
+    <Column fglLength="5119" fglType="5" name="mr_ce_min" notNull="false" order="150" status="U" uuid="db/column507"/>
+    <Column fglLength="5119" fglType="5" name="mr_ce_max" notNull="false" order="151" status="U" uuid="db/column508"/>
+    <Column fglLength="5119" fglType="5" name="rr_ce_min" notNull="false" order="152" status="U" uuid="db/column509"/>
+    <Column fglLength="5119" fglType="5" name="rr_ce_max" notNull="false" order="153" status="U" uuid="db/column510"/>
+    <Column fglLength="5119" fglType="5" name="bi" notNull="false" order="154" status="U" uuid="db/column511"/>
+    <Column fglLength="5119" fglType="5" name="mr_bi_min" notNull="false" order="155" status="U" uuid="db/column512"/>
+    <Column fglLength="5119" fglType="5" name="mr_bi_max" notNull="false" order="156" status="U" uuid="db/column513"/>
+    <Column fglLength="5119" fglType="5" name="rr_bi_min" notNull="false" order="157" status="U" uuid="db/column514"/>
+    <Column fglLength="5119" fglType="5" name="rr_bi_max" notNull="false" order="158" status="U" uuid="db/column515"/>
+    <Column fglLength="5119" fglType="5" name="sb" notNull="false" order="159" status="U" uuid="db/column516"/>
+    <Column fglLength="5119" fglType="5" name="mr_sb_min" notNull="false" order="160" status="U" uuid="db/column517"/>
+    <Column fglLength="5119" fglType="5" name="mr_sb_max" notNull="false" order="161" status="U" uuid="db/column518"/>
+    <Column fglLength="5119" fglType="5" name="rr_sb_min" notNull="false" order="162" status="U" uuid="db/column519"/>
+    <Column fglLength="5119" fglType="5" name="rr_sb_max" notNull="false" order="163" status="U" uuid="db/column520"/>
+    <Column fglLength="5119" fglType="5" name="as_1" notNull="false" order="164" status="U" uuid="db/column521"/>
+    <Column fglLength="5119" fglType="5" name="mr_as_1_min" notNull="false" order="165" status="U" uuid="db/column522"/>
+    <Column fglLength="5119" fglType="5" name="mr_as_1_max" notNull="false" order="166" status="U" uuid="db/column523"/>
+    <Column fglLength="5119" fglType="5" name="rr_as_1_min" notNull="false" order="167" status="U" uuid="db/column524"/>
+    <Column fglLength="5119" fglType="5" name="rr_as_1_max" notNull="false" order="168" status="U" uuid="db/column525"/>
+    <Column fglLength="5119" fglType="5" name="f" notNull="false" order="169" status="U" uuid="db/column526"/>
+    <Column fglLength="5119" fglType="5" name="mr_f_min" notNull="false" order="170" status="U" uuid="db/column527"/>
+    <Column fglLength="5119" fglType="5" name="mr_f_max" notNull="false" order="171" status="U" uuid="db/column528"/>
+    <Column fglLength="5119" fglType="5" name="rr_f_min" notNull="false" order="172" status="U" uuid="db/column529"/>
+    <Column fglLength="5119" fglType="5" name="rr_f_max" notNull="false" order="173" status="U" uuid="db/column530"/>
+    <Column fglLength="5119" fglType="5" name="acl" notNull="false" order="174" status="U" uuid="db/column531"/>
+    <Column fglLength="5119" fglType="5" name="mr_acl_min" notNull="false" order="175" status="U" uuid="db/column532"/>
+    <Column fglLength="5119" fglType="5" name="mr_acl_max" notNull="false" order="176" status="U" uuid="db/column533"/>
+    <Column fglLength="5119" fglType="5" name="rr_acl_min" notNull="false" order="177" status="U" uuid="db/column534"/>
+    <Column fglLength="5119" fglType="5" name="rr_acl_max" notNull="false" order="178" status="U" uuid="db/column535"/>
+    <Column fglLength="5119" fglType="5" name="md30" notNull="false" order="179" status="U" uuid="db/column536"/>
+    <Column fglLength="5119" fglType="5" name="mr_md30_min" notNull="false" order="180" status="U" uuid="db/column537"/>
+    <Column fglLength="5119" fglType="5" name="mr_md30_max" notNull="false" order="181" status="U" uuid="db/column538"/>
+    <Column fglLength="5119" fglType="5" name="rr_md30_min" notNull="false" order="182" status="U" uuid="db/column539"/>
+    <Column fglLength="5119" fglType="5" name="rr_md30_max" notNull="false" order="183" status="U" uuid="db/column540"/>
+    <Column fglLength="5119" fglType="5" name="arl" notNull="false" order="184" status="U" uuid="db/column541"/>
+    <Column fglLength="5119" fglType="5" name="mr_arl_min" notNull="false" order="185" status="U" uuid="db/column542"/>
+    <Column fglLength="5119" fglType="5" name="mr_arl_max" notNull="false" order="186" status="U" uuid="db/column543"/>
+    <Column fglLength="5119" fglType="5" name="rr_arl_min" notNull="false" order="187" status="U" uuid="db/column544"/>
+    <Column fglLength="5119" fglType="5" name="rr_arl_max" notNull="false" order="188" status="U" uuid="db/column545"/>
+    <Column fglLength="5119" fglType="5" name="wt" notNull="false" order="189" status="U" uuid="db/column546"/>
+    <Column fglLength="5119" fglType="5" name="mr_wt_min" notNull="false" order="190" status="U" uuid="db/column547"/>
+    <Column fglLength="5119" fglType="5" name="mr_wt_max" notNull="false" order="191" status="U" uuid="db/column548"/>
+    <Column fglLength="5119" fglType="5" name="rr_wt_min" notNull="false" order="192" status="U" uuid="db/column549"/>
+    <Column fglLength="5119" fglType="5" name="rr_wt_max" notNull="false" order="193" status="U" uuid="db/column550"/>
+    <Column fglLength="5119" fglType="5" name="ni_cr_cu" notNull="false" order="194" status="U" uuid="db/column551"/>
+    <Column fglLength="5119" fglType="5" name="mr_ni_cr_cu_min" notNull="false" order="195" status="U" uuid="db/column552"/>
+    <Column fglLength="5119" fglType="5" name="mr_ni_cr_cu_max" notNull="false" order="196" status="U" uuid="db/column553"/>
+    <Column fglLength="5119" fglType="5" name="rr_ni_cr_cu_min" notNull="false" order="197" status="U" uuid="db/column554"/>
+    <Column fglLength="5119" fglType="5" name="rr_ni_cr_cu_max" notNull="false" order="198" status="U" uuid="db/column555"/>
+    <Column fglLength="5119" fglType="5" name="k" notNull="false" order="199" status="U" uuid="db/column556"/>
+    <Column fglLength="5119" fglType="5" name="mr_k_min" notNull="false" order="200" status="U" uuid="db/column557"/>
+    <Column fglLength="5119" fglType="5" name="mr_k_max" notNull="false" order="201" status="U" uuid="db/column558"/>
+    <Column fglLength="5119" fglType="5" name="rr_k_min" notNull="false" order="202" status="U" uuid="db/column559"/>
+    <Column fglLength="5119" fglType="5" name="rr_k_max" notNull="false" order="203" status="U" uuid="db/column560"/>
+    <Column fglLength="5119" fglType="5" name="c_n" notNull="false" order="204" status="U" uuid="db/column561"/>
+    <Column fglLength="5119" fglType="5" name="mr_c_n_min" notNull="false" order="205" status="U" uuid="db/column562"/>
+    <Column fglLength="5119" fglType="5" name="mr_c_n_max" notNull="false" order="206" status="U" uuid="db/column563"/>
+    <Column fglLength="5119" fglType="5" name="rr_c_n_min" notNull="false" order="207" status="U" uuid="db/column564"/>
+    <Column fglLength="5119" fglType="5" name="rr_c_n_max" notNull="false" order="208" status="U" uuid="db/column565"/>
+    <Column fglLength="5119" fglType="5" name="wc" notNull="false" order="209" status="U" uuid="db/column566"/>
+    <Column fglLength="5119" fglType="5" name="mr_wc_min" notNull="false" order="210" status="U" uuid="db/column567"/>
+    <Column fglLength="5119" fglType="5" name="mr_wc_max" notNull="false" order="211" status="U" uuid="db/column568"/>
+    <Column fglLength="5119" fglType="5" name="rr_wc_min" notNull="false" order="212" status="U" uuid="db/column569"/>
+    <Column fglLength="5119" fglType="5" name="rr_wc_max" notNull="false" order="213" status="U" uuid="db/column570"/>
+    <Column fglLength="5119" fglType="5" name="kfa" notNull="false" order="214" status="U" uuid="db/column571"/>
+    <Column fglLength="5119" fglType="5" name="mr_kfa_min" notNull="false" order="215" status="U" uuid="db/column572"/>
+    <Column fglLength="5119" fglType="5" name="mr_kfa_max" notNull="false" order="216" status="U" uuid="db/column573"/>
+    <Column fglLength="5119" fglType="5" name="rr_kfa_min" notNull="false" order="217" status="U" uuid="db/column574"/>
+    <Column fglLength="5119" fglType="5" name="rr_kfa_max" notNull="false" order="218" status="U" uuid="db/column575"/>
+    <Column fglLength="5119" fglType="5" name="crni" notNull="false" order="219" status="U" uuid="db/column576"/>
+    <Column fglLength="5119" fglType="5" name="mr_crni_min" notNull="false" order="220" status="U" uuid="db/column577"/>
+    <Column fglLength="5119" fglType="5" name="mr_crni_max" notNull="false" order="221" status="U" uuid="db/column578"/>
+    <Column fglLength="5119" fglType="5" name="rr_crni_min" notNull="false" order="222" status="U" uuid="db/column579"/>
+    <Column fglLength="5119" fglType="5" name="rr_crni_max" notNull="false" order="223" status="U" uuid="db/column580"/>
+    <Column fglLength="5119" fglType="5" name="ceq" notNull="false" order="224" status="U" uuid="db/column581"/>
+    <Column fglLength="5119" fglType="5" name="mr_ceq_min" notNull="false" order="225" status="U" uuid="db/column582"/>
+    <Column fglLength="5119" fglType="5" name="mr_ceq_max" notNull="false" order="226" status="U" uuid="db/column583"/>
+    <Column fglLength="5119" fglType="5" name="rr_ceq_min" notNull="false" order="227" status="U" uuid="db/column584"/>
+    <Column fglLength="5119" fglType="5" name="rr_ceq_max" notNull="false" order="228" status="U" uuid="db/column585"/>
+    <Column fglLength="5119" fglType="5" name="pren" notNull="false" order="229" status="U" uuid="db/column586"/>
+    <Column fglLength="5119" fglType="5" name="mr_pren_min" notNull="false" order="230" status="U" uuid="db/column587"/>
+    <Column fglLength="5119" fglType="5" name="mr_pren_max" notNull="false" order="231" status="U" uuid="db/column588"/>
+    <Column fglLength="5119" fglType="5" name="rr_pren_min" notNull="false" order="232" status="U" uuid="db/column589"/>
+    <Column fglLength="5119" fglType="5" name="rr_pren_max" notNull="false" order="233" status="U" uuid="db/column590"/>
+    <Column fglLength="5119" fglType="5" name="nb_ti" notNull="false" order="234" status="U" uuid="db/column591"/>
+    <Column fglLength="5119" fglType="5" name="mr_nb_ti_min" notNull="false" order="235" status="U" uuid="db/column592"/>
+    <Column fglLength="5119" fglType="5" name="mr_nb_ti_max" notNull="false" order="236" status="U" uuid="db/column593"/>
+    <Column fglLength="5119" fglType="5" name="rr_nb_ti_min" notNull="false" order="237" status="U" uuid="db/column594"/>
+    <Column fglLength="5119" fglType="5" name="rr_nb_ti_max" notNull="false" order="238" status="U" uuid="db/column595"/>
+    <Column fglLength="5119" fglType="5" name="nb47_ti" notNull="false" order="239" status="U" uuid="db/column596"/>
+    <Column fglLength="5119" fglType="5" name="mr_nb47_ti_min" notNull="false" order="240" status="U" uuid="db/column597"/>
+    <Column fglLength="5119" fglType="5" name="mr_nb47_ti_max" notNull="false" order="241" status="U" uuid="db/column598"/>
+    <Column fglLength="5119" fglType="5" name="rr_nb47_ti_min" notNull="false" order="242" status="U" uuid="db/column599"/>
+    <Column fglLength="5119" fglType="5" name="rr_nb47_ti_max" notNull="false" order="243" status="U" uuid="db/column600"/>
+    <Column fglLength="5119" fglType="5" name="nb_v_ti" notNull="false" order="244" status="U" uuid="db/column601"/>
+    <Column fglLength="5119" fglType="5" name="mr_nb_v_ti_min" notNull="false" order="245" status="U" uuid="db/column602"/>
+    <Column fglLength="5119" fglType="5" name="mr_nb_v_ti_max" notNull="false" order="246" status="U" uuid="db/column603"/>
+    <Column fglLength="5119" fglType="5" name="rr_nb_v_ti_min" notNull="false" order="247" status="U" uuid="db/column604"/>
+    <Column fglLength="5119" fglType="5" name="rr_nb_v_ti_max" notNull="false" order="248" status="U" uuid="db/column605"/>
+    <Column fglLength="5119" fglType="5" name="nb_v" notNull="false" order="249" status="U" uuid="db/column606"/>
+    <Column fglLength="5119" fglType="5" name="mr_nb_v_min" notNull="false" order="250" status="U" uuid="db/column607"/>
+    <Column fglLength="5119" fglType="5" name="mr_nb_v_max" notNull="false" order="251" status="U" uuid="db/column608"/>
+    <Column fglLength="5119" fglType="5" name="rr_nb_v_min" notNull="false" order="252" status="U" uuid="db/column609"/>
+    <Column fglLength="5119" fglType="5" name="rr_nb_v_max" notNull="false" order="253" status="U" uuid="db/column610"/>
+    <Column fglLength="5119" fglType="5" name="ni_cr_mo_cu" notNull="false" order="254" status="U" uuid="db/column611"/>
+    <Column fglLength="5119" fglType="5" name="mr_ni_cr_mo_cu_min" notNull="false" order="255" status="U" uuid="db/column612"/>
+    <Column fglLength="5119" fglType="5" name="mr_ni_cr_mo_cu_max" notNull="false" order="256" status="U" uuid="db/column613"/>
+    <Column fglLength="5119" fglType="5" name="rr_ni_cr_mo_cu_min" notNull="false" order="257" status="U" uuid="db/column614"/>
+    <Column fglLength="5119" fglType="5" name="rr_ni_cr_mo_cu_max" notNull="false" order="258" status="U" uuid="db/column615"/>
+    <Column fglLength="5119" fglType="5" name="ni_mo_cu" notNull="false" order="259" status="U" uuid="db/column616"/>
+    <Column fglLength="5119" fglType="5" name="mr_ni_mo_cu_min" notNull="false" order="260" status="U" uuid="db/column617"/>
+    <Column fglLength="5119" fglType="5" name="mr_ni_mo_cu_max" notNull="false" order="261" status="U" uuid="db/column618"/>
+    <Column fglLength="5119" fglType="5" name="rr_ni_mo_cu_min" notNull="false" order="262" status="U" uuid="db/column619"/>
+    <Column fglLength="5119" fglType="5" name="rr_ni_mo_cu_max" notNull="false" order="263" status="U" uuid="db/column620"/>
+    <Column fglLength="5119" fglType="5" name="ni_cr_mo_cu_v" notNull="false" order="264" status="U" uuid="db/column621"/>
+    <Column fglLength="5119" fglType="5" name="mr_ni_cr_mo_cu_v_min" notNull="false" order="265" status="U" uuid="db/column622"/>
+    <Column fglLength="5119" fglType="5" name="mr_ni_cr_mo_cu_v_max" notNull="false" order="266" status="U" uuid="db/column623"/>
+    <Column fglLength="5119" fglType="5" name="rr_ni_cr_mo_cu_v_min" notNull="false" order="267" status="U" uuid="db/column624"/>
+    <Column fglLength="5119" fglType="5" name="rr_ni_cr_mo_cu_v_max" notNull="false" order="268" status="U" uuid="db/column625"/>
+    <Column fglLength="5119" fglType="5" name="cr_mo" notNull="false" order="269" status="U" uuid="db/column626"/>
+    <Column fglLength="5119" fglType="5" name="mr_cr_mo_min" notNull="false" order="270" status="U" uuid="db/column627"/>
+    <Column fglLength="5119" fglType="5" name="mr_cr_mo_max" notNull="false" order="271" status="U" uuid="db/column628"/>
+    <Column fglLength="5119" fglType="5" name="rr_cr_mo_min" notNull="false" order="272" status="U" uuid="db/column629"/>
+    <Column fglLength="5119" fglType="5" name="rr_cr_mo_max" notNull="false" order="273" status="U" uuid="db/column630"/>
+    <Column fglLength="5119" fglType="5" name="mn_c" notNull="false" order="274" status="U" uuid="db/column631"/>
+    <Column fglLength="5119" fglType="5" name="mr_mn_c_min" notNull="false" order="275" status="U" uuid="db/column632"/>
+    <Column fglLength="5119" fglType="5" name="mr_mn_c_max" notNull="false" order="276" status="U" uuid="db/column633"/>
+    <Column fglLength="5119" fglType="5" name="rr_mn_c_min" notNull="false" order="277" status="U" uuid="db/column634"/>
+    <Column fglLength="5119" fglType="5" name="rr_mn_c_max" notNull="false" order="278" status="U" uuid="db/column635"/>
+    <Column fglLength="5119" fglType="5" name="p_s" notNull="false" order="279" status="U" uuid="db/column636"/>
+    <Column fglLength="5119" fglType="5" name="mr_p_s_min" notNull="false" order="280" status="U" uuid="db/column637"/>
+    <Column fglLength="5119" fglType="5" name="mr_p_s_max" notNull="false" order="281" status="U" uuid="db/column638"/>
+    <Column fglLength="5119" fglType="5" name="rr_p_s_min" notNull="false" order="282" status="U" uuid="db/column639"/>
+    <Column fglLength="5119" fglType="5" name="rr_p_s_max" notNull="false" order="283" status="U" uuid="db/column640"/>
+    <Column fglLength="5119" fglType="5" name="ti_n" notNull="false" order="284" status="U" uuid="db/column641"/>
+    <Column fglLength="5119" fglType="5" name="mr_ti_n_min" notNull="false" order="285" status="U" uuid="db/column642"/>
+    <Column fglLength="5119" fglType="5" name="mr_ti_n_max" notNull="false" order="286" status="U" uuid="db/column643"/>
+    <Column fglLength="5119" fglType="5" name="rr_ti_n_min" notNull="false" order="287" status="U" uuid="db/column644"/>
+    <Column fglLength="5119" fglType="5" name="rr_ti_n_max" notNull="false" order="288" status="U" uuid="db/column645"/>
+    <Column fglLength="5119" fglType="5" name="ni_cr" notNull="false" order="289" status="U" uuid="db/column646"/>
+    <Column fglLength="5119" fglType="5" name="mr_ni_cr_min" notNull="false" order="290" status="U" uuid="db/column647"/>
+    <Column fglLength="5119" fglType="5" name="mr_ni_cr_max" notNull="false" order="291" status="U" uuid="db/column648"/>
+    <Column fglLength="5119" fglType="5" name="rr_ni_cr_min" notNull="false" order="292" status="U" uuid="db/column649"/>
+    <Column fglLength="5119" fglType="5" name="rr_ni_cr_max" notNull="false" order="293" status="U" uuid="db/column650"/>
+    <Index indexColumns="steel_grade_2_6" indexConstraint="uniqueIndex" name="micm070m_index_0" status="U" uuid="db/index25"/>
+  </Table>
+  <Table active="true" name="micm070m_bak" status="U" uuid="db/table27">
+    <Column fglLength="5" fglType="0" name="steel_grade_2_6" notNull="false" order="1" status="U" uuid="db/column651"/>
+    <Column fglLength="5119" fglType="5" name="c" notNull="false" order="2" status="U" uuid="db/column652"/>
+    <Column fglLength="5119" fglType="5" name="si" notNull="false" order="3" status="U" uuid="db/column653"/>
+    <Column fglLength="5119" fglType="5" name="mn" notNull="false" order="4" status="U" uuid="db/column654"/>
+    <Column fglLength="5119" fglType="5" name="p" notNull="false" order="5" status="U" uuid="db/column655"/>
+    <Column fglLength="5119" fglType="5" name="s" notNull="false" order="6" status="U" uuid="db/column656"/>
+    <Column fglLength="5119" fglType="5" name="ni" notNull="false" order="7" status="U" uuid="db/column657"/>
+    <Column fglLength="5119" fglType="5" name="cr" notNull="false" order="8" status="U" uuid="db/column658"/>
+    <Column fglLength="5119" fglType="5" name="mo" notNull="false" order="9" status="U" uuid="db/column659"/>
+    <Column fglLength="5119" fglType="5" name="cu" notNull="false" order="10" status="U" uuid="db/column660"/>
+    <Column fglLength="5119" fglType="5" name="n" notNull="false" order="11" status="U" uuid="db/column661"/>
+    <Column fglLength="15" fglType="0" name="aim_remark" notNull="false" order="12" status="U" uuid="db/column662"/>
+    <Column fglLength="5119" fglType="5" name="mr_c_min" notNull="false" order="13" status="U" uuid="db/column663"/>
+    <Column fglLength="5119" fglType="5" name="mr_c_max" notNull="false" order="14" status="U" uuid="db/column664"/>
+    <Column fglLength="5119" fglType="5" name="mr_si_min" notNull="false" order="15" status="U" uuid="db/column665"/>
+    <Column fglLength="5119" fglType="5" name="mr_si_max" notNull="false" order="16" status="U" uuid="db/column666"/>
+    <Column fglLength="5119" fglType="5" name="mr_mn_min" notNull="false" order="17" status="U" uuid="db/column667"/>
+    <Column fglLength="5119" fglType="5" name="mr_mn_max" notNull="false" order="18" status="U" uuid="db/column668"/>
+    <Column fglLength="5119" fglType="5" name="mr_p_min" notNull="false" order="19" status="U" uuid="db/column669"/>
+    <Column fglLength="5119" fglType="5" name="mr_p_max" notNull="false" order="20" status="U" uuid="db/column670"/>
+    <Column fglLength="5119" fglType="5" name="mr_s_min" notNull="false" order="21" status="U" uuid="db/column671"/>
+    <Column fglLength="5119" fglType="5" name="mr_s_max" notNull="false" order="22" status="U" uuid="db/column672"/>
+    <Column fglLength="5119" fglType="5" name="mr_ni_min" notNull="false" order="23" status="U" uuid="db/column673"/>
+    <Column fglLength="5119" fglType="5" name="mr_ni_max" notNull="false" order="24" status="U" uuid="db/column674"/>
+    <Column fglLength="5119" fglType="5" name="mr_cr_min" notNull="false" order="25" status="U" uuid="db/column675"/>
+    <Column fglLength="5119" fglType="5" name="mr_cr_max" notNull="false" order="26" status="U" uuid="db/column676"/>
+    <Column fglLength="5119" fglType="5" name="mr_mo_min" notNull="false" order="27" status="U" uuid="db/column677"/>
+    <Column fglLength="5119" fglType="5" name="mr_mo_max" notNull="false" order="28" status="U" uuid="db/column678"/>
+    <Column fglLength="5119" fglType="5" name="mr_cu_min" notNull="false" order="29" status="U" uuid="db/column679"/>
+    <Column fglLength="5119" fglType="5" name="mr_cu_max" notNull="false" order="30" status="U" uuid="db/column680"/>
+    <Column fglLength="5119" fglType="5" name="mr_n_min" notNull="false" order="31" status="U" uuid="db/column681"/>
+    <Column fglLength="5119" fglType="5" name="mr_n_max" notNull="false" order="32" status="U" uuid="db/column682"/>
+    <Column fglLength="15" fglType="0" name="mr_remark" notNull="false" order="33" status="U" uuid="db/column683"/>
+    <Column fglLength="5119" fglType="5" name="rr_c_min" notNull="false" order="34" status="U" uuid="db/column684"/>
+    <Column fglLength="5119" fglType="5" name="rr_c_max" notNull="false" order="35" status="U" uuid="db/column685"/>
+    <Column fglLength="5119" fglType="5" name="rr_si_min" notNull="false" order="36" status="U" uuid="db/column686"/>
+    <Column fglLength="5119" fglType="5" name="rr_si_max" notNull="false" order="37" status="U" uuid="db/column687"/>
+    <Column fglLength="5119" fglType="5" name="rr_mn_min" notNull="false" order="38" status="U" uuid="db/column688"/>
+    <Column fglLength="5119" fglType="5" name="rr_mn_max" notNull="false" order="39" status="U" uuid="db/column689"/>
+    <Column fglLength="5119" fglType="5" name="rr_p_min" notNull="false" order="40" status="U" uuid="db/column690"/>
+    <Column fglLength="5119" fglType="5" name="rr_p_max" notNull="false" order="41" status="U" uuid="db/column691"/>
+    <Column fglLength="5119" fglType="5" name="rr_s_min" notNull="false" order="42" status="U" uuid="db/column692"/>
+    <Column fglLength="5119" fglType="5" name="rr_s_max" notNull="false" order="43" status="U" uuid="db/column693"/>
+    <Column fglLength="5119" fglType="5" name="rr_ni_min" notNull="false" order="44" status="U" uuid="db/column694"/>
+    <Column fglLength="5119" fglType="5" name="rr_ni_max" notNull="false" order="45" status="U" uuid="db/column695"/>
+    <Column fglLength="5119" fglType="5" name="rr_cr_min" notNull="false" order="46" status="U" uuid="db/column696"/>
+    <Column fglLength="5119" fglType="5" name="rr_cr_max" notNull="false" order="47" status="U" uuid="db/column697"/>
+    <Column fglLength="5119" fglType="5" name="rr_mo_min" notNull="false" order="48" status="U" uuid="db/column698"/>
+    <Column fglLength="5119" fglType="5" name="rr_mo_max" notNull="false" order="49" status="U" uuid="db/column699"/>
+    <Column fglLength="5119" fglType="5" name="rr_cu_min" notNull="false" order="50" status="U" uuid="db/column700"/>
+    <Column fglLength="5119" fglType="5" name="rr_cu_max" notNull="false" order="51" status="U" uuid="db/column701"/>
+    <Column fglLength="5119" fglType="5" name="rr_n_min" notNull="false" order="52" status="U" uuid="db/column702"/>
+    <Column fglLength="5119" fglType="5" name="rr_n_max" notNull="false" order="53" status="U" uuid="db/column703"/>
+    <Column fglLength="15" fglType="0" name="rr_remark" notNull="false" order="54" status="U" uuid="db/column704"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="55" status="U" uuid="db/column705"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="56" status="U" uuid="db/column706"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="57" status="U" uuid="db/column707"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="58" status="U" uuid="db/column708"/>
+    <Column fglLength="5119" fglType="5" name="al" notNull="false" order="59" status="U" uuid="db/column709"/>
+    <Column fglLength="5119" fglType="5" name="mr_al_min" notNull="false" order="60" status="U" uuid="db/column710"/>
+    <Column fglLength="5119" fglType="5" name="mr_al_max" notNull="false" order="61" status="U" uuid="db/column711"/>
+    <Column fglLength="5119" fglType="5" name="rr_al_min" notNull="false" order="62" status="U" uuid="db/column712"/>
+    <Column fglLength="5119" fglType="5" name="rr_al_max" notNull="false" order="63" status="U" uuid="db/column713"/>
+    <Index indexColumns="steel_grade_2_6" indexConstraint="uniqueIndex" name="micm070m_bak_index_0" status="U" uuid="db/index26"/>
+  </Table>
+  <Table active="true" name="micm080m" status="U" uuid="db/table28">
+    <Column fglLength="6" fglType="0" name="hr_temp_code" notNull="false" order="1" status="U" uuid="db/column714"/>
+    <Column fglLength="5119" fglType="5" name="thick_min" notNull="false" order="2" status="U" uuid="db/column715"/>
+    <Column fglLength="5119" fglType="5" name="thick_max" notNull="false" order="3" status="U" uuid="db/column716"/>
+    <Column fglLength="2" fglType="1" name="dis_cha_temp_tar" notNull="false" order="4" status="U" uuid="db/column717"/>
+    <Column fglLength="2" fglType="1" name="dis_cha_temp_min" notNull="false" order="5" status="U" uuid="db/column718"/>
+    <Column fglLength="2" fglType="1" name="dis_cha_temp_max" notNull="false" order="6" status="U" uuid="db/column719"/>
+    <Column fglLength="2" fglType="1" name="rm_temp_tar" notNull="false" order="7" status="U" uuid="db/column720"/>
+    <Column fglLength="2" fglType="1" name="rm_temp_min" notNull="false" order="8" status="U" uuid="db/column721"/>
+    <Column fglLength="2" fglType="1" name="rm_temp_max" notNull="false" order="9" status="U" uuid="db/column722"/>
+    <Column fglLength="2" fglType="1" name="fin_temp_tar" notNull="false" order="10" status="U" uuid="db/column723"/>
+    <Column fglLength="2" fglType="1" name="fin_temp_min" notNull="false" order="11" status="U" uuid="db/column724"/>
+    <Column fglLength="2" fglType="1" name="fin_temp_max" notNull="false" order="12" status="U" uuid="db/column725"/>
+    <Column fglLength="2" fglType="1" name="coi_temp_tar" notNull="false" order="13" status="U" uuid="db/column726"/>
+    <Column fglLength="2" fglType="1" name="coi_temp_min" notNull="false" order="14" status="U" uuid="db/column727"/>
+    <Column fglLength="2" fglType="1" name="coi_temp_max" notNull="false" order="15" status="U" uuid="db/column728"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="16" status="U" uuid="db/column729"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="17" status="U" uuid="db/column730"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="18" status="U" uuid="db/column731"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="19" status="U" uuid="db/column732"/>
+    <Column fglLength="2" fglType="1" name="width_min" notNull="false" order="20" status="U" uuid="db/column733"/>
+    <Column fglLength="2" fglType="1" name="width_max" notNull="false" order="21" status="U" uuid="db/column734"/>
+    <Index indexColumns="hr_temp_code, thick_min" indexConstraint="index" name="micm080m_index_0" status="U" uuid="db/index27"/>
+    <Index indexColumns="hr_temp_code, thick_min, width_min" indexConstraint="uniqueIndex" name="micm080m_index_1" status="U" uuid="db/index28"/>
+  </Table>
+  <Table active="true" name="micm090m" status="U" uuid="db/table29">
+    <Column fglLength="6" fglType="0" name="lam_coo_code" notNull="false" order="1" status="U" uuid="db/column735"/>
+    <Column fglLength="5119" fglType="5" name="thick_min" notNull="false" order="2" status="U" uuid="db/column736"/>
+    <Column fglLength="5119" fglType="5" name="thick_max" notNull="false" order="3" status="U" uuid="db/column737"/>
+    <Column fglLength="2" fglType="1" name="coo_tgpp" notNull="false" order="4" status="U" uuid="db/column738"/>
+    <Column fglLength="5119" fglType="5" name="uc_len_strip_hd" notNull="false" order="5" status="U" uuid="db/column739"/>
+    <Column fglLength="5119" fglType="5" name="uc_len_strip_tl" notNull="false" order="6" status="U" uuid="db/column740"/>
+    <Column fglLength="2" fglType="1" name="coi_temp_strip_hd" notNull="false" order="7" status="U" uuid="db/column741"/>
+    <Column fglLength="2" fglType="1" name="coi_temp_filet_hd" notNull="false" order="8" status="U" uuid="db/column742"/>
+    <Column fglLength="2" fglType="1" name="coi_temp_filet_tl" notNull="false" order="9" status="U" uuid="db/column743"/>
+    <Column fglLength="2" fglType="1" name="coi_temp_strip_tl" notNull="false" order="10" status="U" uuid="db/column744"/>
+    <Column fglLength="2" fglType="1" name="len_filet_hd" notNull="false" order="11" status="U" uuid="db/column745"/>
+    <Column fglLength="2" fglType="1" name="len_filet_tl" notNull="false" order="12" status="U" uuid="db/column746"/>
+    <Column fglLength="2" fglType="1" name="grad_strip_hd" notNull="false" order="13" status="U" uuid="db/column747"/>
+    <Column fglLength="2" fglType="1" name="grad_strip_tl" notNull="false" order="14" status="U" uuid="db/column748"/>
+    <Column fglLength="4" fglType="2" name="strip_temp_grad" notNull="false" order="15" status="U" uuid="db/column749"/>
+    <Column fglLength="2" fglType="1" name="coo_strategy" notNull="false" order="16" status="U" uuid="db/column750"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="17" status="U" uuid="db/column751"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="18" status="U" uuid="db/column752"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="19" status="U" uuid="db/column753"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="20" status="U" uuid="db/column754"/>
+    <Column fglLength="2" fglType="1" name="width_min" notNull="false" order="21" status="U" uuid="db/column755"/>
+    <Column fglLength="2" fglType="1" name="width_max" notNull="false" order="22" status="U" uuid="db/column756"/>
+    <Index indexColumns="lam_coo_code, thick_min" indexConstraint="index" name="micm090m_index_0" status="U" uuid="db/index29"/>
+    <Index indexColumns="lam_coo_code" indexConstraint="index" name="micm090m_index_1" status="U" uuid="db/index30"/>
+    <Index indexColumns="lam_coo_code, thick_min, width_min" indexConstraint="uniqueIndex" name="micm090m_index_2" status="U" uuid="db/index31"/>
+  </Table>
+  <Table active="true" name="micm100m" status="U" uuid="db/table30">
+    <Column fglLength="1" fglType="0" name="hrb_flat_code" notNull="false" order="1" status="U" uuid="db/column757"/>
+    <Column fglLength="5119" fglType="5" name="hrb_thick_min" notNull="false" order="2" status="U" uuid="db/column758"/>
+    <Column fglLength="5119" fglType="5" name="hrb_thick_max" notNull="false" order="3" status="U" uuid="db/column759"/>
+    <Column fglLength="2" fglType="1" name="hrb_flat_tar" notNull="false" order="4" status="U" uuid="db/column760"/>
+    <Column fglLength="2" fglType="1" name="hrb_flat_min" notNull="false" order="5" status="U" uuid="db/column761"/>
+    <Column fglLength="2" fglType="1" name="hrb_flat_max" notNull="false" order="6" status="U" uuid="db/column762"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="7" status="U" uuid="db/column763"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="8" status="U" uuid="db/column764"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="9" status="U" uuid="db/column765"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="10" status="U" uuid="db/column766"/>
+    <Column fglLength="2" fglType="1" name="hrb_width_min" notNull="false" order="11" status="U" uuid="db/column767"/>
+    <Column fglLength="2" fglType="1" name="hrb_width_max" notNull="false" order="12" status="U" uuid="db/column768"/>
+    <Index indexColumns="hrb_flat_code, hrb_thick_min" indexConstraint="index" name="micm100m_index_0" status="U" uuid="db/index32"/>
+    <Index indexColumns="hrb_flat_code, hrb_thick_min, hrb_width_min" indexConstraint="uniqueIndex" name="micm100m_index_1" status="U" uuid="db/index33"/>
+  </Table>
+  <Table active="true" name="micm110m" status="U" uuid="db/table31">
+    <Column fglLength="2" fglType="0" name="hrb_crown_code" notNull="false" order="1" status="U" uuid="db/column769"/>
+    <Column fglLength="5119" fglType="5" name="hrb_thick_min" notNull="false" order="2" status="U" uuid="db/column770"/>
+    <Column fglLength="5119" fglType="5" name="hrb_thick_max" notNull="false" order="3" status="U" uuid="db/column771"/>
+    <Column fglLength="2" fglType="1" name="hrb_crown_tar" notNull="false" order="4" status="U" uuid="db/column772"/>
+    <Column fglLength="2" fglType="1" name="hrb_crown_min" notNull="false" order="5" status="U" uuid="db/column773"/>
+    <Column fglLength="2" fglType="1" name="hrb_crown_max" notNull="false" order="6" status="U" uuid="db/column774"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="7" status="U" uuid="db/column775"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="8" status="U" uuid="db/column776"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="9" status="U" uuid="db/column777"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="10" status="U" uuid="db/column778"/>
+    <Column fglLength="2" fglType="1" name="hrb_width_min" notNull="false" order="11" status="U" uuid="db/column779"/>
+    <Column fglLength="2" fglType="1" name="hrb_width_max" notNull="false" order="12" status="U" uuid="db/column780"/>
+    <Index indexColumns="hrb_crown_code, hrb_thick_min" indexConstraint="index" name="micm110m_index_0" status="U" uuid="db/index34"/>
+    <Index indexColumns="hrb_crown_code, hrb_thick_min, hrb_width_min" indexConstraint="uniqueIndex" name="micm110m_index_1" status="U" uuid="db/index35"/>
+  </Table>
+  <Table active="true" name="micm120m" status="U" uuid="db/table32">
+    <Column fglLength="8" fglType="0" name="file_name" notNull="false" order="1" status="U" uuid="db/column781"/>
+    <Column fglLength="40" fglType="0" name="file_title" notNull="false" order="2" status="U" uuid="db/column782"/>
+    <Column fglLength="2" fglType="1" name="page_width" notNull="false" order="3" status="U" uuid="db/column783"/>
+    <Column fglLength="1" fglType="0" name="print_code" notNull="false" order="4" status="U" uuid="db/column784"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="5" status="U" uuid="db/column785"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="6" status="U" uuid="db/column786"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="7" status="U" uuid="db/column787"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="8" status="U" uuid="db/column788"/>
+    <Index indexColumns="file_name" indexConstraint="uniqueIndex" name="micm120m_index_0" status="U" uuid="db/index36"/>
+  </Table>
+  <Table active="true" name="micm130m" status="U" uuid="db/table33">
+    <Column fglLength="8" fglType="0" name="file_name" notNull="false" order="1" status="U" uuid="db/column789"/>
+    <Column fglLength="2" fglType="1" name="seq_no" notNull="false" order="2" status="U" uuid="db/column790"/>
+    <Column fglLength="60" fglType="0" name="command_line" notNull="false" order="3" status="U" uuid="db/column791"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="4" status="U" uuid="db/column792"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="5" status="U" uuid="db/column793"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="6" status="U" uuid="db/column794"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="7" status="U" uuid="db/column795"/>
+    <Index indexColumns="file_name, seq_no" indexConstraint="index" name="micm130m_index_0" status="U" uuid="db/index37"/>
+  </Table>
+  <Table active="true" name="micm140m" status="U" uuid="db/table34">
+    <Column fglLength="15" fglType="0" name="spec" notNull="false" order="1" status="U" uuid="db/column796"/>
+    <Column fglLength="40" fglType="0" name="spec_desc" notNull="false" order="2" status="U" uuid="db/column797"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="3" status="U" uuid="db/column798"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="4" status="U" uuid="db/column799"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="5" status="U" uuid="db/column800"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="6" status="U" uuid="db/column801"/>
+    <Index indexColumns="spec" indexConstraint="uniqueIndex" name="micm140m_index_0" status="U" uuid="db/index38"/>
+  </Table>
+  <Table active="true" name="micm145m" status="U" uuid="db/table35">
+    <Column fglLength="15" fglType="0" name="spec" notNull="false" order="1" status="U" uuid="db/column802"/>
+    <Column fglLength="15" fglType="0" name="steel_grade_jis" notNull="false" order="2" status="U" uuid="db/column803"/>
+    <Column fglLength="5" fglType="0" name="psr_no_2_6" notNull="false" order="3" status="U" uuid="db/column804"/>
+    <Column fglLength="11" fglType="0" name="invoice_abbr" notNull="false" order="4" status="U" uuid="db/column805"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="5" status="U" uuid="db/column806"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="6" status="U" uuid="db/column807"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="7" status="U" uuid="db/column808"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="8" status="U" uuid="db/column809"/>
+    <Index indexColumns="spec, steel_grade_jis" indexConstraint="uniqueIndex" name="micm145m_index_0" status="U" uuid="db/index39"/>
+  </Table>
+  <Table active="true" name="micm150m" status="U" uuid="db/table36">
+    <Column fglLength="10" fglType="0" name="steel_grade" notNull="false" order="1" status="U" uuid="db/column810"/>
+    <Column fglLength="15" fglType="0" name="spec" notNull="false" order="2" status="U" uuid="db/column811"/>
+    <Column fglLength="15" fglType="0" name="steel_code" notNull="false" order="3" status="U" uuid="db/column812"/>
+    <Column fglLength="30" fglType="0" name="remark" notNull="false" order="4" status="U" uuid="db/column813"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="5" status="U" uuid="db/column814"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="6" status="U" uuid="db/column815"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="7" status="U" uuid="db/column816"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="8" status="U" uuid="db/column817"/>
+    <Index indexColumns="steel_grade" indexConstraint="index" name="micm150m_index_0" status="U" uuid="db/index40"/>
+    <Index indexColumns="spec, steel_code" indexConstraint="index" name="micm150m_index_1" status="U" uuid="db/index41"/>
+  </Table>
+  <Table active="true" name="micm160m" status="U" uuid="db/table37">
+    <Column fglLength="4" fglType="0" name="sleeve_code" notNull="false" order="1" status="U" uuid="db/column818"/>
+    <Column fglLength="2" fglType="1" name="coil_in_diam" notNull="false" order="2" status="U" uuid="db/column819"/>
+    <Column fglLength="5119" fglType="5" name="coil_thick_min" notNull="false" order="3" status="U" uuid="db/column820"/>
+    <Column fglLength="5119" fglType="5" name="coil_thick_max" notNull="false" order="4" status="U" uuid="db/column821"/>
+    <Column fglLength="2" fglType="1" name="coil_width_min" notNull="false" order="5" status="U" uuid="db/column822"/>
+    <Column fglLength="2" fglType="1" name="coil_width_max" notNull="false" order="6" status="U" uuid="db/column823"/>
+    <Column fglLength="2" fglType="1" name="sleeve_thick" notNull="false" order="7" status="U" uuid="db/column824"/>
+    <Column fglLength="2" fglType="1" name="sleeve_length" notNull="false" order="8" status="U" uuid="db/column825"/>
+    <Column fglLength="2" fglType="1" name="sleeve_weight" notNull="false" order="9" status="U" uuid="db/column826"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="10" status="U" uuid="db/column827"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="11" status="U" uuid="db/column828"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="12" status="U" uuid="db/column829"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="13" status="U" uuid="db/column830"/>
+    <Index indexColumns="sleeve_code" indexConstraint="index" name="micm160m_index_0" status="U" uuid="db/index42"/>
+    <Index indexColumns="coil_in_diam, coil_thick_min, coil_width_min" indexConstraint="uniqueIndex" name="micm160m_index_1" status="U" uuid="db/index43"/>
+  </Table>
+  <Table active="true" name="micm170m" status="U" uuid="db/table38">
+    <Column fglLength="1" fglType="0" name="padding_code" notNull="false" order="1" status="U" uuid="db/column831"/>
+    <Column fglLength="2" fglType="1" name="coil_width_min" notNull="false" order="2" status="U" uuid="db/column832"/>
+    <Column fglLength="2" fglType="1" name="coil_width_max" notNull="false" order="3" status="U" uuid="db/column833"/>
+    <Column fglLength="2" fglType="1" name="padding_width" notNull="false" order="4" status="U" uuid="db/column834"/>
+    <Column fglLength="2" fglType="1" name="padding_weight" notNull="false" order="5" status="U" uuid="db/column835"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="6" status="U" uuid="db/column836"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="7" status="U" uuid="db/column837"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="8" status="U" uuid="db/column838"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="9" status="U" uuid="db/column839"/>
+    <Index indexColumns="padding_code" indexConstraint="index" name="micm170m_index_0" status="U" uuid="db/index44"/>
+    <Index indexColumns="coil_width_min" indexConstraint="index" name="micm170m_index_1" status="U" uuid="db/index45"/>
+  </Table>
+  <Table active="true" name="micm180m" status="U" uuid="db/table39">
+    <Column fglLength="4" fglType="0" name="sleeve_code" notNull="false" order="1" status="U" uuid="db/column840"/>
+    <Column fglLength="2" fglType="1" name="coil_in_diam" notNull="false" order="2" status="U" uuid="db/column841"/>
+    <Column fglLength="5119" fglType="5" name="coil_thick_min" notNull="false" order="3" status="U" uuid="db/column842"/>
+    <Column fglLength="5119" fglType="5" name="coil_thick_max" notNull="false" order="4" status="U" uuid="db/column843"/>
+    <Column fglLength="2" fglType="1" name="coil_width_min" notNull="false" order="5" status="U" uuid="db/column844"/>
+    <Column fglLength="2" fglType="1" name="coil_width_max" notNull="false" order="6" status="U" uuid="db/column845"/>
+    <Column fglLength="2" fglType="1" name="sleeve_thick" notNull="false" order="7" status="U" uuid="db/column846"/>
+    <Column fglLength="2" fglType="1" name="sleeve_length" notNull="false" order="8" status="U" uuid="db/column847"/>
+    <Column fglLength="2" fglType="1" name="sleeve_weight" notNull="false" order="9" status="U" uuid="db/column848"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="10" status="U" uuid="db/column849"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="11" status="U" uuid="db/column850"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="12" status="U" uuid="db/column851"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="13" status="U" uuid="db/column852"/>
+    <Index indexColumns="sleeve_code" indexConstraint="index" name="micm180m_index_0" status="U" uuid="db/index46"/>
+    <Index indexColumns="coil_in_diam, coil_thick_min, coil_width_min, sleeve_thick" indexConstraint="uniqueIndex" name="micm180m_index_1" status="U" uuid="db/index47"/>
+  </Table>
+  <Table active="true" name="micm190m" status="U" uuid="db/table40">
+    <Column fglLength="10" fglType="0" name="grade_code" notNull="false" order="1" status="U" uuid="db/column853"/>
+    <Column fglLength="5119" fglType="5" name="density" notNull="false" order="2" status="U" uuid="db/column854"/>
+    <Column fglLength="1" fglType="0" name="serial_code" notNull="false" order="3" status="U" uuid="db/column855"/>
+    <Column fglLength="1" fglType="0" name="alloy_code" notNull="false" order="4" status="U" uuid="db/column856"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="5" status="U" uuid="db/column857"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="6" status="U" uuid="db/column858"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="7" status="U" uuid="db/column859"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="8" status="U" uuid="db/column860"/>
+    <Index indexColumns="grade_code" indexConstraint="uniqueIndex" name="micm190m_index_0" status="U" uuid="db/index48"/>
+  </Table>
+  <Table active="true" name="micm200m" status="U" uuid="db/table41">
+    <Column fglLength="6" fglType="0" name="product" notNull="false" order="1" status="U" uuid="db/column861"/>
+    <Column fglLength="10" fglType="0" name="grade_code" notNull="false" order="2" status="U" uuid="db/column862"/>
+    <Column fglLength="15" fglType="0" name="steel_code" notNull="false" order="3" status="U" uuid="db/column863"/>
+    <Column fglLength="20" fglType="0" name="mark_form" notNull="false" order="4" status="U" uuid="db/column864"/>
+    <Column fglLength="30" fglType="0" name="remark" notNull="false" order="5" status="U" uuid="db/column865"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="6" status="U" uuid="db/column866"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="7" status="U" uuid="db/column867"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="8" status="U" uuid="db/column868"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="9" status="U" uuid="db/column869"/>
+    <Index indexColumns="product, grade_code" indexConstraint="uniqueIndex" name="micm200m_index_0" status="U" uuid="db/index49"/>
+  </Table>
+  <Table active="true" name="micm210m" status="U" uuid="db/table42">
+    <Column fglLength="15" fglType="0" name="spec" notNull="false" order="1" status="U" uuid="db/column870"/>
+    <Column fglLength="15" fglType="0" name="steel_grade_jis" notNull="false" order="2" status="U" uuid="db/column871"/>
+    <Column fglLength="5119" fglType="5" name="thick_min" notNull="false" order="3" status="U" uuid="db/column872"/>
+    <Column fglLength="5119" fglType="5" name="thick_max" notNull="false" order="4" status="U" uuid="db/column873"/>
+    <Column fglLength="5119" fglType="5" name="c_min" notNull="false" order="5" status="U" uuid="db/column874"/>
+    <Column fglLength="5119" fglType="5" name="c_max" notNull="false" order="6" status="U" uuid="db/column875"/>
+    <Column fglLength="5119" fglType="5" name="si_min" notNull="false" order="7" status="U" uuid="db/column876"/>
+    <Column fglLength="5119" fglType="5" name="si_max" notNull="false" order="8" status="U" uuid="db/column877"/>
+    <Column fglLength="5119" fglType="5" name="mn_min" notNull="false" order="9" status="U" uuid="db/column878"/>
+    <Column fglLength="5119" fglType="5" name="mn_max" notNull="false" order="10" status="U" uuid="db/column879"/>
+    <Column fglLength="5119" fglType="5" name="p_min" notNull="false" order="11" status="U" uuid="db/column880"/>
+    <Column fglLength="5119" fglType="5" name="p_max" notNull="false" order="12" status="U" uuid="db/column881"/>
+    <Column fglLength="5119" fglType="5" name="s_min" notNull="false" order="13" status="U" uuid="db/column882"/>
+    <Column fglLength="5119" fglType="5" name="s_max" notNull="false" order="14" status="U" uuid="db/column883"/>
+    <Column fglLength="5119" fglType="5" name="ni_min" notNull="false" order="15" status="U" uuid="db/column884"/>
+    <Column fglLength="5119" fglType="5" name="ni_max" notNull="false" order="16" status="U" uuid="db/column885"/>
+    <Column fglLength="5119" fglType="5" name="cr_min" notNull="false" order="17" status="U" uuid="db/column886"/>
+    <Column fglLength="5119" fglType="5" name="cr_max" notNull="false" order="18" status="U" uuid="db/column887"/>
+    <Column fglLength="5119" fglType="5" name="mo_min" notNull="false" order="19" status="U" uuid="db/column888"/>
+    <Column fglLength="5119" fglType="5" name="mo_max" notNull="false" order="20" status="U" uuid="db/column889"/>
+    <Column fglLength="5119" fglType="5" name="n_min" notNull="false" order="21" status="U" uuid="db/column890"/>
+    <Column fglLength="5119" fglType="5" name="n_max" notNull="false" order="22" status="U" uuid="db/column891"/>
+    <Column fglLength="5119" fglType="5" name="al_min" notNull="false" order="23" status="U" uuid="db/column892"/>
+    <Column fglLength="5119" fglType="5" name="al_max" notNull="false" order="24" status="U" uuid="db/column893"/>
+    <Column fglLength="5119" fglType="5" name="cu_min" notNull="false" order="25" status="U" uuid="db/column894"/>
+    <Column fglLength="5119" fglType="5" name="cu_max" notNull="false" order="26" status="U" uuid="db/column895"/>
+    <Column fglLength="6" fglType="0" name="ti_min" notNull="false" order="27" status="U" uuid="db/column896"/>
+    <Column fglLength="6" fglType="0" name="ti_max" notNull="false" order="28" status="U" uuid="db/column897"/>
+    <Column fglLength="6" fglType="0" name="nb_min" notNull="false" order="29" status="U" uuid="db/column898"/>
+    <Column fglLength="6" fglType="0" name="nb_max" notNull="false" order="30" status="U" uuid="db/column899"/>
+    <Column fglLength="6" fglType="0" name="v_min" notNull="false" order="31" status="U" uuid="db/column900"/>
+    <Column fglLength="6" fglType="0" name="v_max" notNull="false" order="32" status="U" uuid="db/column901"/>
+    <Column fglLength="30" fglType="0" name="other" notNull="false" order="33" status="U" uuid="db/column902"/>
+    <Column fglLength="6" fglType="0" name="ys_02_min" notNull="false" order="34" status="U" uuid="db/column903"/>
+    <Column fglLength="6" fglType="0" name="ys_02_max" notNull="false" order="35" status="U" uuid="db/column904"/>
+    <Column fglLength="6" fglType="0" name="ys_10_min" notNull="false" order="36" status="U" uuid="db/column905"/>
+    <Column fglLength="6" fglType="0" name="ys_10_max" notNull="false" order="37" status="U" uuid="db/column906"/>
+    <Column fglLength="6" fglType="0" name="ts_min" notNull="false" order="38" status="U" uuid="db/column907"/>
+    <Column fglLength="6" fglType="0" name="ts_max" notNull="false" order="39" status="U" uuid="db/column908"/>
+    <Column fglLength="2" fglType="1" name="elongation_min" notNull="false" order="40" status="U" uuid="db/column909"/>
+    <Column fglLength="2" fglType="1" name="elongation_max" notNull="false" order="41" status="U" uuid="db/column910"/>
+    <Column fglLength="2" fglType="1" name="hard_hrb_min" notNull="false" order="42" status="U" uuid="db/column911"/>
+    <Column fglLength="2" fglType="1" name="hard_hrb_max" notNull="false" order="43" status="U" uuid="db/column912"/>
+    <Column fglLength="2" fglType="1" name="hard_hv_min" notNull="false" order="44" status="U" uuid="db/column913"/>
+    <Column fglLength="2" fglType="1" name="hard_hv_max" notNull="false" order="45" status="U" uuid="db/column914"/>
+    <Column fglLength="2" fglType="1" name="hard_hb_min" notNull="false" order="46" status="U" uuid="db/column915"/>
+    <Column fglLength="2" fglType="1" name="hard_hb_max" notNull="false" order="47" status="U" uuid="db/column916"/>
+    <Column fglLength="6" fglType="0" name="bend_test1" notNull="false" order="48" status="U" uuid="db/column917"/>
+    <Column fglLength="6" fglType="0" name="bend_test2" notNull="false" order="49" status="U" uuid="db/column918"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="50" status="U" uuid="db/column919"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="51" status="U" uuid="db/column920"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="52" status="U" uuid="db/column921"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="53" status="U" uuid="db/column922"/>
+    <Column fglLength="5119" fglType="5" name="ce_min" notNull="false" order="54" status="U" uuid="db/column923"/>
+    <Column fglLength="5119" fglType="5" name="ce_max" notNull="false" order="55" status="U" uuid="db/column924"/>
+    <Column fglLength="5119" fglType="5" name="wc_min" notNull="false" order="56" status="U" uuid="db/column925"/>
+    <Column fglLength="5119" fglType="5" name="wc_max" notNull="false" order="57" status="U" uuid="db/column926"/>
+    <Column fglLength="4" fglType="0" name="charpy_unit" notNull="false" order="58" status="U" uuid="db/column927"/>
+    <Column fglLength="6" fglType="0" name="charpy_min" notNull="false" order="59" status="U" uuid="db/column928"/>
+    <Column fglLength="2" fglType="1" name="yield_ratio_min" notNull="false" order="60" status="U" uuid="db/column929"/>
+    <Column fglLength="2" fglType="1" name="yield_ratio_max" notNull="false" order="61" status="U" uuid="db/column930"/>
+    <Column fglLength="6" fglType="0" name="charpy_ave_min" notNull="false" order="62" status="U" uuid="db/column931"/>
+    <Column fglLength="3" fglType="0" name="elongation_unit" notNull="false" order="63" status="U" uuid="db/column932"/>
+    <Column fglLength="3" fglType="0" name="c1_elongation_unit" notNull="false" order="64" status="U" uuid="db/column933"/>
+    <Column fglLength="3" fglType="0" name="c2_elongation_unit" notNull="false" order="65" status="U" uuid="db/column934"/>
+    <Column fglLength="3" fglType="0" name="c3_elongation_unit" notNull="false" order="66" status="U" uuid="db/column935"/>
+    <Column fglLength="2" fglType="1" name="c1_elongation_min" notNull="false" order="67" status="U" uuid="db/column936"/>
+    <Column fglLength="2" fglType="1" name="c2_elongation_min" notNull="false" order="68" status="U" uuid="db/column937"/>
+    <Column fglLength="2" fglType="1" name="c3_elongation_min" notNull="false" order="69" status="U" uuid="db/column938"/>
+    <Column fglLength="5119" fglType="5" name="co_min" notNull="false" order="70" status="U" uuid="db/column939"/>
+    <Column fglLength="5119" fglType="5" name="co_max" notNull="false" order="71" status="U" uuid="db/column940"/>
+    <Column fglLength="5119" fglType="5" name="b_min" notNull="false" order="72" status="U" uuid="db/column941"/>
+    <Column fglLength="5119" fglType="5" name="b_max" notNull="false" order="73" status="U" uuid="db/column942"/>
+    <Column fglLength="5119" fglType="5" name="kfa_min" notNull="false" order="74" status="U" uuid="db/column943"/>
+    <Column fglLength="5119" fglType="5" name="kfa_max" notNull="false" order="75" status="U" uuid="db/column944"/>
+    <Column fglLength="2" fglType="1" name="hard_hrc_min" notNull="false" order="76" status="U" uuid="db/column945"/>
+    <Column fglLength="2" fglType="1" name="hard_hrc_max" notNull="false" order="77" status="U" uuid="db/column946"/>
+    <Column fglLength="2" fglType="1" name="thick_percent_min" notNull="false" order="78" status="U" uuid="db/column947"/>
+    <Column fglLength="2" fglType="1" name="thick_percent_max" notNull="false" order="79" status="U" uuid="db/column948"/>
+    <Index indexColumns="spec, steel_grade_jis, thick_min" indexConstraint="uniqueIndex" name="micm210m_index_0" status="U" uuid="db/index50"/>
+  </Table>
+  <Table active="true" name="micm220m" status="U" uuid="db/table43">
+    <Column fglLength="2" fglType="0" name="slab_require_code" notNull="false" order="1" status="U" uuid="db/column949"/>
+    <Column fglLength="2" fglType="1" name="camber" notNull="false" order="2" status="U" uuid="db/column950"/>
+    <Column fglLength="2" fglType="1" name="concavity_w" notNull="false" order="3" status="U" uuid="db/column951"/>
+    <Column fglLength="2" fglType="1" name="concavity_n" notNull="false" order="4" status="U" uuid="db/column952"/>
+    <Column fglLength="2" fglType="1" name="smiley" notNull="false" order="5" status="U" uuid="db/column953"/>
+    <Column fglLength="2" fglType="1" name="grumpy" notNull="false" order="6" status="U" uuid="db/column954"/>
+    <Column fglLength="2" fglType="1" name="gross_bow" notNull="false" order="7" status="U" uuid="db/column955"/>
+    <Column fglLength="2" fglType="1" name="bulging_w" notNull="false" order="8" status="U" uuid="db/column956"/>
+    <Column fglLength="2" fglType="1" name="bulging_n" notNull="false" order="9" status="U" uuid="db/column957"/>
+    <Column fglLength="2" fglType="1" name="out_of_square_a" notNull="false" order="10" status="U" uuid="db/column958"/>
+    <Column fglLength="2" fglType="1" name="out_of_square_b" notNull="false" order="11" status="U" uuid="db/column959"/>
+    <Column fglLength="2" fglType="1" name="out_of_square_c" notNull="false" order="12" status="U" uuid="db/column960"/>
+    <Column fglLength="2" fglType="1" name="out_of_square_d" notNull="false" order="13" status="U" uuid="db/column961"/>
+    <Column fglLength="2" fglType="1" name="gutter" notNull="false" order="14" status="U" uuid="db/column962"/>
+    <Column fglLength="2" fglType="1" name="symmetri_of_cut_end" notNull="false" order="15" status="U" uuid="db/column963"/>
+    <Column fglLength="2" fglType="1" name="wedge" notNull="false" order="16" status="U" uuid="db/column964"/>
+    <Column fglLength="2" fglType="1" name="taper" notNull="false" order="17" status="U" uuid="db/column965"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="18" status="U" uuid="db/column966"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="19" status="U" uuid="db/column967"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="20" status="U" uuid="db/column968"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="21" status="U" uuid="db/column969"/>
+    <Index indexColumns="slab_require_code" indexConstraint="uniqueIndex" name="micm220m_index_0" status="U" uuid="db/index51"/>
+  </Table>
+  <Table active="true" name="micm230m" status="U" uuid="db/table44">
+    <Column fglLength="4" fglType="0" name="anneal_code" notNull="false" order="1" status="U" uuid="db/column970"/>
+    <Column fglLength="2" fglType="1" name="anneal_temp" notNull="false" order="2" status="U" uuid="db/column971"/>
+    <Column fglLength="60" fglType="0" name="remark" notNull="false" order="3" status="U" uuid="db/column972"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="4" status="U" uuid="db/column973"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="5" status="U" uuid="db/column974"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="6" status="U" uuid="db/column975"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="7" status="U" uuid="db/column976"/>
+    <Index indexColumns="anneal_code" indexConstraint="uniqueIndex" name="micm230m_index_0" status="U" uuid="db/index52"/>
+  </Table>
+  <Table active="true" name="micm240m" status="U" uuid="db/table45">
+    <Column fglLength="4" fglType="0" name="pr_code" notNull="false" order="1" status="U" uuid="db/column977"/>
+    <Column fglLength="2" fglType="1" name="ch01" notNull="false" order="2" status="U" uuid="db/column978"/>
+    <Column fglLength="2" fglType="1" name="ch02" notNull="false" order="3" status="U" uuid="db/column979"/>
+    <Column fglLength="2" fglType="1" name="ch03" notNull="false" order="4" status="U" uuid="db/column980"/>
+    <Column fglLength="2" fglType="1" name="ch04" notNull="false" order="5" status="U" uuid="db/column981"/>
+    <Column fglLength="2" fglType="1" name="ch05" notNull="false" order="6" status="U" uuid="db/column982"/>
+    <Column fglLength="2" fglType="1" name="ch06" notNull="false" order="7" status="U" uuid="db/column983"/>
+    <Column fglLength="2" fglType="1" name="ch07" notNull="false" order="8" status="U" uuid="db/column984"/>
+    <Column fglLength="2" fglType="1" name="ch08" notNull="false" order="9" status="U" uuid="db/column985"/>
+    <Column fglLength="2" fglType="1" name="ch09" notNull="false" order="10" status="U" uuid="db/column986"/>
+    <Column fglLength="2" fglType="1" name="ch10" notNull="false" order="11" status="U" uuid="db/column987"/>
+    <Column fglLength="2" fglType="1" name="ch11" notNull="false" order="12" status="U" uuid="db/column988"/>
+    <Column fglLength="2" fglType="1" name="ch12" notNull="false" order="13" status="U" uuid="db/column989"/>
+    <Column fglLength="2" fglType="1" name="ch13" notNull="false" order="14" status="U" uuid="db/column990"/>
+    <Column fglLength="2" fglType="1" name="ch14" notNull="false" order="15" status="U" uuid="db/column991"/>
+    <Column fglLength="2" fglType="1" name="ch15" notNull="false" order="16" status="U" uuid="db/column992"/>
+    <Column fglLength="2" fglType="1" name="ch16" notNull="false" order="17" status="U" uuid="db/column993"/>
+    <Column fglLength="2" fglType="1" name="ch17" notNull="false" order="18" status="U" uuid="db/column994"/>
+    <Column fglLength="2" fglType="1" name="ch18" notNull="false" order="19" status="U" uuid="db/column995"/>
+    <Column fglLength="2" fglType="1" name="ch19" notNull="false" order="20" status="U" uuid="db/column996"/>
+    <Column fglLength="2" fglType="1" name="ch20" notNull="false" order="21" status="U" uuid="db/column997"/>
+    <Column fglLength="2" fglType="1" name="mh01" notNull="false" order="22" status="U" uuid="db/column998"/>
+    <Column fglLength="2" fglType="1" name="mh02" notNull="false" order="23" status="U" uuid="db/column999"/>
+    <Column fglLength="2" fglType="1" name="mh03" notNull="false" order="24" status="U" uuid="db/column1000"/>
+    <Column fglLength="2" fglType="1" name="mh04" notNull="false" order="25" status="U" uuid="db/column1001"/>
+    <Column fglLength="2" fglType="1" name="mh05" notNull="false" order="26" status="U" uuid="db/column1002"/>
+    <Column fglLength="2" fglType="1" name="mh06" notNull="false" order="27" status="U" uuid="db/column1003"/>
+    <Column fglLength="2" fglType="1" name="mh07" notNull="false" order="28" status="U" uuid="db/column1004"/>
+    <Column fglLength="2" fglType="1" name="mh08" notNull="false" order="29" status="U" uuid="db/column1005"/>
+    <Column fglLength="2" fglType="1" name="mh09" notNull="false" order="30" status="U" uuid="db/column1006"/>
+    <Column fglLength="2" fglType="1" name="mh10" notNull="false" order="31" status="U" uuid="db/column1007"/>
+    <Column fglLength="40" fglType="0" name="remark" notNull="false" order="32" status="U" uuid="db/column1008"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="33" status="U" uuid="db/column1009"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="34" status="U" uuid="db/column1010"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="35" status="U" uuid="db/column1011"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="36" status="U" uuid="db/column1012"/>
+    <Column fglLength="2" fglType="1" name="ch21" notNull="false" order="37" status="U" uuid="db/column1013"/>
+    <Column fglLength="2" fglType="1" name="ch22" notNull="false" order="38" status="U" uuid="db/column1014"/>
+    <Column fglLength="2" fglType="1" name="ch23" notNull="false" order="39" status="U" uuid="db/column1015"/>
+    <Column fglLength="2" fglType="1" name="mh11" notNull="false" order="40" status="U" uuid="db/column1016"/>
+    <Column fglLength="2" fglType="1" name="mh12" notNull="false" order="41" status="U" uuid="db/column1017"/>
+    <Index indexColumns="pr_code" indexConstraint="uniqueIndex" name="micm240m_index_0" status="U" uuid="db/index53"/>
+  </Table>
+  <Table active="true" name="micm250m" status="U" uuid="db/table46">
+    <Column fglLength="10" fglType="0" name="old_steel_grade" notNull="false" order="1" status="U" uuid="db/column1018"/>
+    <Column fglLength="10" fglType="0" name="new_steel_grade" notNull="false" order="2" status="U" uuid="db/column1019"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="3" status="U" uuid="db/column1020"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="4" status="U" uuid="db/column1021"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="5" status="U" uuid="db/column1022"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="6" status="U" uuid="db/column1023"/>
+    <Index indexColumns="old_steel_grade" indexConstraint="uniqueIndex" name="micm250m_index_0" status="U" uuid="db/index54"/>
+  </Table>
+  <Table active="true" name="micm260m" status="U" uuid="db/table47">
+    <Column fglLength="2" fglType="1" name="seq" notNull="false" order="1" status="U" uuid="db/column1024"/>
+    <Column fglLength="2" fglType="0" name="chem_name" notNull="false" order="2" status="U" uuid="db/column1025"/>
+    <Column fglLength="2" fglType="1" name="chem_dot" notNull="false" order="3" status="U" uuid="db/column1026"/>
+    <Index indexColumns="seq" indexConstraint="uniqueIndex" name="micm260m_index_0" status="U" uuid="db/index55"/>
+    <Index indexColumns="chem_name" indexConstraint="uniqueIndex" name="micm260m_index_1" status="U" uuid="db/index56"/>
+  </Table>
+  <Table active="true" name="micm280m" status="U" uuid="db/table48">
+    <Column fglLength="8" fglType="0" name="input_date" notNull="false" order="1" status="U" uuid="db/column1027"/>
+    <Column fglLength="150" fglType="0" name="remark" notNull="false" order="2" status="U" uuid="db/column1028"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="3" status="U" uuid="db/column1029"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="4" status="U" uuid="db/column1030"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="5" status="U" uuid="db/column1031"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="6" status="U" uuid="db/column1032"/>
+    <Index indexColumns="input_date" indexConstraint="uniqueIndex" name="micm280m_index_1" status="U" uuid="db/index57"/>
+  </Table>
+  <Table active="true" name="micm290m" status="U" uuid="db/table49">
+    <Column fglLength="1" fglType="0" name="product_code" notNull="false" order="1" status="U" uuid="db/column1033"/>
+    <Column fglLength="4" fglType="0" name="steel_grade_2_5" notNull="false" order="2" status="U" uuid="db/column1034"/>
+    <Column fglLength="4" fglType="2" name="inner_diam" notNull="false" order="3" status="U" uuid="db/column1035"/>
+    <Column fglLength="4" fglType="2" name="wt_min" notNull="false" order="4" status="U" uuid="db/column1036"/>
+    <Column fglLength="4" fglType="2" name="wt_max" notNull="false" order="5" status="U" uuid="db/column1037"/>
+    <Column fglLength="5119" fglType="5" name="thick_min" notNull="false" order="6" status="U" uuid="db/column1038"/>
+    <Column fglLength="5119" fglType="5" name="thick_max" notNull="false" order="7" status="U" uuid="db/column1039"/>
+    <Column fglLength="4" fglType="2" name="wid_min" notNull="false" order="8" status="U" uuid="db/column1040"/>
+    <Column fglLength="4" fglType="2" name="wid_max" notNull="false" order="9" status="U" uuid="db/column1041"/>
+    <Column fglLength="4" fglType="2" name="len_min" notNull="false" order="10" status="U" uuid="db/column1042"/>
+    <Column fglLength="4" fglType="2" name="len_max" notNull="false" order="11" status="U" uuid="db/column1043"/>
+    <Column fglLength="14" fglType="0" name="date_last_maint" notNull="false" order="12" status="U" uuid="db/column1044"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="13" status="U" uuid="db/column1045"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="14" status="U" uuid="db/column1046"/>
+    <Index indexColumns="product_code, steel_grade_2_5" indexConstraint="index" name="micm290m_index_0" status="U" uuid="db/index58"/>
+  </Table>
+  <Table active="true" name="micm300m" status="U" uuid="db/table50">
+    <Column fglLength="15" fglType="0" name="spec" notNull="false" order="1" status="U" uuid="db/column1047"/>
+    <Column fglLength="1" fglType="0" name="product_code" notNull="false" order="2" status="U" uuid="db/column1048"/>
+    <Column fglLength="15" fglType="0" name="steel_grade_jis" notNull="false" order="3" status="U" uuid="db/column1049"/>
+    <Column fglLength="14" fglType="0" name="date_last_maint" notNull="false" order="4" status="U" uuid="db/column1050"/>
+    <Column fglLength="8" fglType="0" name="user_last_maint" notNull="false" order="5" status="U" uuid="db/column1051"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="6" status="U" uuid="db/column1052"/>
+    <Column fglLength="30" fglType="0" name="remark" notNull="false" order="7" status="U" uuid="db/column1053"/>
+    <Index indexColumns="spec, product_code, steel_grade_jis" indexConstraint="uniqueIndex" name="micm300m_index_0" status="U" uuid="db/index59"/>
+  </Table>
+  <Table active="true" name="micm310m" status="U" uuid="db/table51">
+    <Column fglLength="4" fglType="0" name="line_marking" notNull="false" order="1" status="U" uuid="db/column1054"/>
+    <Column fglLength="1" fglType="0" name="lm_side" notNull="false" order="2" status="U" uuid="db/column1055"/>
+    <Column fglLength="1" fglType="0" name="lm_plane" notNull="false" order="3" status="U" uuid="db/column1056"/>
+    <Column fglLength="1" fglType="0" name="lm_heat_no" notNull="false" order="4" status="U" uuid="db/column1057"/>
+    <Column fglLength="1" fglType="0" name="lm_coil_no" notNull="false" order="5" status="U" uuid="db/column1058"/>
+    <Column fglLength="1" fglType="0" name="lm_spec" notNull="false" order="6" status="U" uuid="db/column1059"/>
+    <Column fglLength="1" fglType="0" name="lm_steel_grade" notNull="false" order="7" status="U" uuid="db/column1060"/>
+    <Column fglLength="1" fglType="0" name="lm_surface" notNull="false" order="8" status="U" uuid="db/column1061"/>
+    <Column fglLength="1" fglType="0" name="lm_dimemtion" notNull="false" order="9" status="U" uuid="db/column1062"/>
+    <Column fglLength="40" fglType="0" name="remark" notNull="false" order="10" status="U" uuid="db/column1063"/>
+    <Index indexColumns="line_marking" indexConstraint="uniqueIndex" name="micm310m_index_0" status="U" uuid="db/index60"/>
+  </Table>
+  <Table active="true" name="micm320m" status="U" uuid="db/table52">
+    <Column fglLength="4" fglType="0" name="p_cert_code" notNull="false" order="1" status="U" uuid="db/column1064"/>
+    <Column fglLength="2" fglType="0" name="allow_dev_code" notNull="false" order="2" status="U" uuid="db/column1065"/>
+    <Column fglLength="1" fglType="0" name="product_code" notNull="false" order="3" status="U" uuid="db/column1066"/>
+    <Column fglLength="1" fglType="0" name="steel_type" notNull="false" order="4" status="U" uuid="db/column1067"/>
+    <Column fglLength="4" fglType="0" name="allow_code" notNull="false" order="5" status="U" uuid="db/column1068"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="6" status="U" uuid="db/column1069"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="7" status="U" uuid="db/column1070"/>
+    <Column fglLength="10" fglType="0" name="user_last_maint" notNull="false" order="8" status="U" uuid="db/column1071"/>
+    <Column fglLength="20" fglType="0" name="prog_last_maint" notNull="false" order="9" status="U" uuid="db/column1072"/>
+    <Index indexColumns="p_cert_code, allow_dev_code, product_code, steel_type" indexConstraint="uniqueIndex" name="micm320m_index00" status="U" uuid="db/index61"/>
+  </Table>
+  <Table active="true" name="micm325m" status="U" uuid="db/table53">
+    <Column fglLength="4" fglType="0" name="allow_code" notNull="false" order="1" status="U" uuid="db/column1073"/>
+    <Column fglLength="5119" fglType="5" name="thick_min" notNull="false" order="2" status="U" uuid="db/column1074"/>
+    <Column fglLength="5119" fglType="5" name="thick_max" notNull="false" order="3" status="U" uuid="db/column1075"/>
+    <Column fglLength="2" fglType="1" name="width_min" notNull="false" order="4" status="U" uuid="db/column1076"/>
+    <Column fglLength="2" fglType="1" name="width_max" notNull="false" order="5" status="U" uuid="db/column1077"/>
+    <Column fglLength="5119" fglType="5" name="thick_tol_min" notNull="false" order="6" status="U" uuid="db/column1078"/>
+    <Column fglLength="5119" fglType="5" name="thick_tol_max" notNull="false" order="7" status="U" uuid="db/column1079"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="8" status="U" uuid="db/column1080"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="9" status="U" uuid="db/column1081"/>
+    <Column fglLength="10" fglType="0" name="user_last_maint" notNull="false" order="10" status="U" uuid="db/column1082"/>
+    <Column fglLength="20" fglType="0" name="prog_last_maint" notNull="false" order="11" status="U" uuid="db/column1083"/>
+    <Index indexColumns="allow_code, thick_min, thick_max, width_min, width_max" indexConstraint="uniqueIndex" name="micm325m_index00" status="U" uuid="db/index62"/>
+  </Table>
+  <Table active="true" name="micm330m" status="U" uuid="db/table54">
+    <Column fglLength="15" fglType="0" name="order_steel_grade" notNull="false" order="1" status="U" uuid="db/column1084"/>
+    <Column fglLength="13" fglType="0" name="dop_steel_grade" notNull="false" order="2" status="U" uuid="db/column1085"/>
+    <Column fglLength="4" fglType="2" name="c_ys_max" notNull="false" order="3" status="U" uuid="db/column1086"/>
+    <Column fglLength="4" fglType="2" name="c_ys_min" notNull="false" order="4" status="U" uuid="db/column1087"/>
+    <Column fglLength="4" fglType="2" name="c_ts_max" notNull="false" order="5" status="U" uuid="db/column1088"/>
+    <Column fglLength="4" fglType="2" name="c_ts_min" notNull="false" order="6" status="U" uuid="db/column1089"/>
+    <Column fglLength="4" fglType="2" name="c_el_max" notNull="false" order="7" status="U" uuid="db/column1090"/>
+    <Column fglLength="4" fglType="2" name="c_el_min" notNull="false" order="8" status="U" uuid="db/column1091"/>
+    <Column fglLength="4" fglType="2" name="h_ys_max" notNull="false" order="9" status="U" uuid="db/column1092"/>
+    <Column fglLength="4" fglType="2" name="h_ys_min" notNull="false" order="10" status="U" uuid="db/column1093"/>
+    <Column fglLength="4" fglType="2" name="h_ts_max" notNull="false" order="11" status="U" uuid="db/column1094"/>
+    <Column fglLength="4" fglType="2" name="h_ts_min" notNull="false" order="12" status="U" uuid="db/column1095"/>
+    <Column fglLength="4" fglType="2" name="h_el_max" notNull="false" order="13" status="U" uuid="db/column1096"/>
+    <Column fglLength="4" fglType="2" name="h_el_min" notNull="false" order="14" status="U" uuid="db/column1097"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="15" status="U" uuid="db/column1098"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="16" status="U" uuid="db/column1099"/>
+    <Column fglLength="7" fglType="0" name="user_last_maint" notNull="false" order="17" status="U" uuid="db/column1100"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="18" status="U" uuid="db/column1101"/>
+    <Index indexColumns="order_steel_grade" indexConstraint="uniqueIndex" name="micm330m_index" status="U" uuid="db/index63"/>
+  </Table>
+  <Table active="true" name="micm335m" status="U" uuid="db/table55">
+    <Column fglLength="5" fglType="0" name="steel_grade" notNull="false" order="1" status="U" uuid="db/column1102"/>
+    <Column fglLength="5" fglType="0" name="repalce_grade1" notNull="false" order="2" status="U" uuid="db/column1103"/>
+    <Column fglLength="5" fglType="0" name="repalce_grade2" notNull="false" order="3" status="U" uuid="db/column1104"/>
+    <Column fglLength="5" fglType="0" name="repalce_grade3" notNull="false" order="4" status="U" uuid="db/column1105"/>
+    <Column fglLength="5" fglType="0" name="repalce_grade4" notNull="false" order="5" status="U" uuid="db/column1106"/>
+    <Column fglLength="5" fglType="0" name="repalce_grade5" notNull="false" order="6" status="U" uuid="db/column1107"/>
+    <Column fglLength="5" fglType="0" name="repalce_grade6" notNull="false" order="7" status="U" uuid="db/column1108"/>
+    <Column fglLength="5" fglType="0" name="repalce_grade7" notNull="false" order="8" status="U" uuid="db/column1109"/>
+    <Column fglLength="5" fglType="0" name="repalce_grade8" notNull="false" order="9" status="U" uuid="db/column1110"/>
+    <Column fglLength="5" fglType="0" name="repalce_grade9" notNull="false" order="10" status="U" uuid="db/column1111"/>
+    <Column fglLength="5" fglType="0" name="repalce_grade10" notNull="false" order="11" status="U" uuid="db/column1112"/>
+    <Column fglLength="5" fglType="0" name="repalce_grade11" notNull="false" order="12" status="U" uuid="db/column1113"/>
+    <Column fglLength="5" fglType="0" name="repalce_grade12" notNull="false" order="13" status="U" uuid="db/column1114"/>
+    <Column fglLength="5" fglType="0" name="repalce_grade13" notNull="false" order="14" status="U" uuid="db/column1115"/>
+    <Column fglLength="5" fglType="0" name="repalce_grade14" notNull="false" order="15" status="U" uuid="db/column1116"/>
+    <Column fglLength="5" fglType="0" name="repalce_grade15" notNull="false" order="16" status="U" uuid="db/column1117"/>
+    <Column fglLength="5" fglType="0" name="repalce_grade16" notNull="false" order="17" status="U" uuid="db/column1118"/>
+    <Column fglLength="5" fglType="0" name="repalce_grade17" notNull="false" order="18" status="U" uuid="db/column1119"/>
+    <Column fglLength="5" fglType="0" name="repalce_grade18" notNull="false" order="19" status="U" uuid="db/column1120"/>
+    <Column fglLength="8" fglType="0" name="prog_last_maint" notNull="false" order="20" status="U" uuid="db/column1121"/>
+    <Column fglLength="8" fglType="0" name="date_last_maint" notNull="false" order="21" status="U" uuid="db/column1122"/>
+    <Column fglLength="6" fglType="0" name="time_last_maint" notNull="false" order="22" status="U" uuid="db/column1123"/>
+    <Column fglLength="7" fglType="0" name="user_last_maint" notNull="false" order="23" status="U" uuid="db/column1124"/>
+    <Index indexColumns="steel_grade" indexConstraint="uniqueIndex" name="micm335m_index" status="U" uuid="db/index64"/>
+  </Table>
+  <Table active="true" name="mics010m" status="U" uuid="db/table56">
+    <Column fglLength="8" fglType="0" name="prog_id" notNull="false" order="1" status="U" uuid="db/column1125"/>
+    <Column fglLength="30" fglType="0" name="prog_name" notNull="false" order="2" status="U" uuid="db/column1126"/>
+    <Column fglLength="1" fglType="0" name="func" notNull="false" order="3" status="U" uuid="db/column1127"/>
+    <Column fglLength="8" fglType="0" name="lang" notNull="false" order="4" status="U" uuid="db/column1128"/>
+  </Table>
+</Schema>

@@ -1,0 +1,308 @@
+# Property of Four Js*
+# (c) Copyright Four Js 1995, 2019. All Rights Reserved.
+# * Trademark of Four Js Development Tools Europe Ltd
+#   in the United States and elsewhere
+
+#-----------------------------------------------------------------------
+# Default FGLPROFILE file
+#
+# This file contains all possible entries that can be set. These entries
+# may differ depending the graphical client that is used to display the
+# application. Keep this file as default, do not edit it. If you want to
+# customize some settings, copy this file to an other directory and set
+# the FGLPROFILE environment variable. Please refer to the documentation
+# for more details about multiple levels of fglprofile files.
+#-----------------------------------------------------------------------
+
+########################################################################
+## VIRTUAL MACHINE - GLOBAL SETTINGS
+########################################################################
+
+# Initialise environment variables on mobile devices
+#mobile.environment.DBFORMAT        = ":,:.$"
+#mobile.environment.DBDATE          = "mdy4/"
+#mobile.environment.FGLIMAGEPATH    = ".:$FGLAPPDIR:$FGLDIR/lib/image2font.txt"
+
+# Specify a directory-name where to read program specific additional configuration
+# files. A program specific configuration file has the full path
+# <directory-name>/<program-name>. 
+# If the value starts with $environment-name then the value of the environment
+# variable will be applied.
+#fglrun.defaults = "/foo/bar"
+#fglrun.defaults = "$FOO/defaults"
+
+# Perform BEFORE FIELD and AFTER FIELD triggers of intermediate fields when
+# using the mouse. Intermediate fields are fields between the old field and the
+# new field. 
+# This parameter increases the compatibility to TUI programs.
+Dialog.fieldOrder = true
+
+# Disable throwing an error (-1326) on array index out of range.
+# When disabled the first element of the array will be returned.
+# This parameter might help to migrate from Informix 4GL. 
+#fglrun.arrayIgnoreRangeError = true
+
+# Map ANY ERROR (expression errors) to ERROR.
+# When enabled fglrun does not distinguish ANY ERROR and ERROR.
+# When not enabled fglrun ignores expression errors after WHENEVER ERROR.
+#fglrun.mapAnyErrorToError = true
+
+# Treat NULL values as zero when evaluating REPORT aggregates (MIN, MAX, SUM,
+# ...).  
+# When not set an aggregate returns NULL if a NULL value has been seen.
+#Report.aggregateZero= true
+
+########################################################################
+## VIRTUAL MACHINE - USER INTERFACE SETTINGS
+########################################################################
+
+# Choose universal rendering at client site.
+# Default value : unset or "native"
+# gui.rendering = "universal"
+
+# Render as close as possible like the text user interface.
+# gui.uiMode = "traditional"
+
+#-----------------------------------------------------------------------
+# Offset for SHIFT+FKEY codes. By default, when pressing shift+F1, the
+# key code 13 is sent to the program. You can change this by setting
+# this entry to a different offset.
+# Default value : 12
+#-----------------------------------------------------------------------
+# gui.key.add_function = 12
+
+#-----------------------------------------------------------------------
+# Front-end protocol format.
+# Possible values are:
+#   "default" : Compression is off (fast networks)
+#   "zlib"    : zlib compression (slow networks)
+# On fast networks or when fglrun and front-end are co-located on the
+# same machine, we recommend to disable compression (default).
+# Default value : "default"
+#-----------------------------------------------------------------------
+#gui.protocol.format="default"
+
+#-----------------------------------------------------------------------
+# Timeout delay the runtime system waits for a front-end ping when there
+# is no user activity. After this delay the program stops with an error.
+# A value of -1 disables this feature.
+# Default value : 600 seconds
+#-----------------------------------------------------------------------
+#gui.protocol.pingTimeout=600
+
+#-----------------------------------------------------------------------
+# Timeout delay to connect to the front-end.
+# Default value : 30 seconds
+# A value of -1 means an infinite timeout delay.
+#-----------------------------------------------------------------------
+#gui.connection.timeout=30
+
+#-----------------------------------------------------------------------
+# GUI server autostart command and configuration settings
+#-----------------------------------------------------------------------
+#gui.server.autostart.cmd="<command to start the front-end>"
+# Delay to wait for connection after starting the GUI server
+#gui.server.autostart.wait=2
+# Number of connection attemps
+#gui.server.autostart.repeat=10
+# Map of X11/WinTerm server identifier to FGL GUI server number
+#gui.server.autostart.wsmap.max=3
+#gui.server.autostart.wsmap.0.names = "fox:1.0,fox.mydomain.com:1.0"
+#gui.server.autostart.wsmap.1.names = "wolf:1.0,wolf.mydomain.com:1.0"
+#gui.server.autostart.wsmap.2.names = "wolf:2.0,wolf.mydomain.com:2.0"
+
+#-----------------------------------------------------------------------
+# Localized String resource files
+#-----------------------------------------------------------------------
+#fglrun.localization.warnKeyNotFound = true
+#fglrun.localization.file.count = 2
+#fglrun.localization.file.1.name = "filename1"
+#fglrun.localization.file.2.name = "filename2"
+
+#-----------------------------------------------------------------------
+# Default key labels
+# Uncomment these lines if you want to get default labels like in BDS.
+# Note that these will overwrite the texts defined in action defaults.
+#-----------------------------------------------------------------------
+
+#key.help.text      = "Help"
+#key.accept.text    = "OK"
+#key.interrupt.text = "Interrupt"
+#key.delete.text    = "Delete"
+#key.insert.text    = "Add"
+#key.append.text    = "Append"
+#key.return.text    = "Return"
+#key.escape.text    = "Escape"
+#key.prevpage.text  = "Prev Page"
+#key.nextpage.text  = "Next Page"
+#key.f1.text        = "F1"
+# ...
+#key.f42.text       = "F255"
+#key.control-a.text = "Control-a"
+# ...
+#key.control-z.text = "Control-z"
+
+########################################################################
+## VIRTUAL MACHINE - WINDOWS SPECIFIC
+########################################################################
+
+#-----------------------------------------------------------------------
+# Instructs the DVM to ignore the LOG OFF event on Windows platforms.
+# Should be set to true if the DVM is started from a remote Windows
+# environment (ex: TSE)
+# Default value : false
+#-----------------------------------------------------------------------
+#fglrun.ignoreLogoffEvent = false
+
+#-----------------------------------------------------------------------
+# Instructs the DVM to ignore the debugger event
+# On windows, pressing The CTRL-BREAK key will attach the 4GL debugger.
+# On Unix, the signal SIGTRAP will attach the 4GL debugger.
+# Should be set to true if the debugger event should be ignored.
+# Default value : false
+#-----------------------------------------------------------------------
+#fglrun.ignoreDebuggerEvent = false
+
+########################################################################
+## VIRTUAL MACHINE - DATABASE INTERFACE CONFIGURATION 
+########################################################################
+
+#-----------------------------------------------------------------------
+# Default database driver to be used when no driver is specified in
+# the dbi.database.<name>.driver entry or in connection string.
+# Default value : (none)
+#-----------------------------------------------------------------------
+#dbi.default.driver = "<drvname>"
+
+#-----------------------------------------------------------------------
+# Database connection parameters.
+# Default value : (none)
+#-----------------------------------------------------------------------
+#dbi.database.<name>.source = "<value>"
+#dbi.database.<name>.driver = "<value>"
+#dbi.database.<name>.username = "<value>"
+#dbi.database.<name>.password = "<value>"
+#dbi.database.<name>.ifxemul.<feature> = (true|false)
+
+dbi.database.rdbwip36.source = "RDBWIP36"
+dbi.database.rdbwip36.driver = "dbmodc3x"
+dbi.database.rdbwip36.username = "YUWIP00"
+dbi.database.rdbwip36.password = "WIP011336A"
+
+dbi.database.rdbmic36.source = "RDBMIC36"
+dbi.database.rdbmic36.driver = "dbmodc3x"
+dbi.database.rdbmic36.username = "YUMIC00"
+dbi.database.rdbmic36.password = "MIC062436A"
+
+dbi.database.rdbtqc36.source = "RDBTQC36"
+dbi.database.rdbtqc36.driver = "dbmodc3x"
+dbi.database.rdbtqc36.username = "YUTQc00"
+dbi.database.rdbtqc36.password = "TQC062436A"
+
+dbi.database.rdbpcm.source = "RDBPCM36"
+dbi.database.rdbpcm.driver = "dbmodc3x"
+dbi.database.rdbpcm.username = "yudba00"
+dbi.database.rdbpcm.password = "dba0802"
+
+dbi.database.rdbord.source = "RDBORD36"
+dbi.database.rdbord.driver = "dbmodc3x"
+dbi.database.rdbord.username = "yudba00"
+dbi.database.rdbord.password = "dba0802"
+
+dbi.database.yud221.source = "RP547B"
+dbi.database.yud221.driver = "dbmora_12"
+#dbi.database.yud221.driver = "dbmodc3x"
+dbi.database.yud221.username = "yud221"
+dbi.database.yud221.password = "yud221"
+
+dbi.database.oracps.source = "RP547B"
+dbi.database.oracps.driver = "dbmora_11"
+dbi.database.oracps.username = "YUCPS"
+dbi.database.oracps.password = "YUCPS"
+
+dbi.database.oracr2.source = "RP547B"
+dbi.database.oracr2.driver = "dbmora_11"
+dbi.database.oracr2.username = "YUCR2"
+dbi.database.oracr2.password = "YUCR2"
+
+dbi.database.orapcm.source = "RP547B"
+dbi.database.orapcm.driver = "dbmora_11"
+dbi.database.orapcm.username = "YUPCM"
+dbi.database.orapcm.password = "YUPCM"
+
+dbi.database.oramic.source = "RP547B"
+dbi.database.oramic.driver = "dbmora_11"
+dbi.database.oramic.username = "YUMIC"
+dbi.database.oramic.password = "YUMIC"
+
+dbi.database.orawip.source = "RP547B"
+dbi.database.orawip.driver = "dbmora_11"
+dbi.database.orawip.username = "YUWIP"
+dbi.database.orawip.password = "YUWIP"
+
+dbi.database.oraord.source = "RP547B"
+dbi.database.oraord.driver = "dbmora_11"
+dbi.database.oraord.username = "YUORD"
+dbi.database.oraord.password = "YUORD"
+
+dbi.database.orahpc.source = "RP547B"
+dbi.database.orahpc.driver = "dbmora_11"
+dbi.database.orahpc.username = "YUHPC"
+dbi.database.orahpc.password = "YUHPC"
+
+dbi.database.rdbcr2.source = "RDBCR236"
+dbi.database.rdbcr2.driver = "dbmodc3x"
+dbi.database.rdbcr2.username = "YUCPS00"
+dbi.database.rdbcr2.password = "CPS111036A"
+
+########################################################################
+## VIRTUAL MACHINE - LICENSE SERVER CONFIGURATION
+########################################################################
+
+#-----------------------------------------------------------------------
+# Name of the machine where the licence service runs. This entry is
+# mandatory if you want to use the license server.
+# Default value : (null)
+#-----------------------------------------------------------------------
+#flm.server = "<hostname>"
+
+#-----------------------------------------------------------------------
+# TCP service name (or port number) the license server is listening to.
+# Default value : 6399
+#-----------------------------------------------------------------------
+#flm.service = 7000
+
+#-----------------------------------------------------------------------
+# Number of iterations between two controls of the active user list.
+# WARNING: Only available on UNIX platforms.
+# Default value : See $FGLDIR/lock/data/fglcheck after installation.
+#-----------------------------------------------------------------------
+#flm.check = 10
+
+#-----------------------------------------------------------------------
+# Time limit for the ping to detect the licence server machine by a
+# client. When using a WAN (RTC or ISDN), you must increase this value.
+# Default value : 3000 ms
+#-----------------------------------------------------------------------
+#flm.ping = 5000
+
+#-----------------------------------------------------------------------
+# Command to be executed to get the list of processes running on the
+# machine.
+# WARNING: This entry is not used on Windows platforms.
+# Default value : "ps -ae"
+#-----------------------------------------------------------------------
+#flm.ps = "ps -ae"
+
+#-----------------------------------------------------------------------
+# This is the license number to be sent to the license server.
+# No default value.
+#-----------------------------------------------------------------------
+#flm.license.number = "XXX#XXXXXXXX"
+
+#-----------------------------------------------------------------------
+# This is the license key to be sent to the license server.
+# No default value.
+#-----------------------------------------------------------------------
+#flm.license.key = "XXXXXXXXXXXX"
+

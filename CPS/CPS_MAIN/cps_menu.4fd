@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm fileVersion="31400" gstVersion="31408" name="managedform" uid="{44ba463f-019a-44a8-8abb-d71e36637408}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="record1" uid="{f27034c1-52f8-40f1-bd20-53bfc1f84812}"/>
+  <Form fourSTFile="../Library/cps_style.4st" gridHeight="25" gridWidth="80" minHeight="30" minWidth="100" name="form" text="CPS 冷軋排程系統" windowStyle="menu">
+    <Grid gridHeight="13" gridWidth="37" name="grid1" posX="4" posY="3">
+      <Group gridHeight="8" gridWidth="20" name="group1" posX="1" posY="1" style="pp_line" text="冷軋產線">
+        <Button comment="" disclosureIndicator="true" fontPitch="variable" gridHeight="1" gridWidth="18" image="" lstrcomment="false" lstrtext="false" name="CPSCR6" posX="1" posY="1" sizePolicy="dynamic" style="pp_line" tabIndex="-1" text="CRM#6 排程作業"/>
+      </Group>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBmADIANwAwADMANABjADEALQA1ADIAZgA4AC0ANAAwAGYAMQAtAGIAZAAyADAALQA1ADMAYgBmAGMAMQBmADgANAA4ADEAMgB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="gfdModProd.20210716.tmp" build="3.20.08" minWidth="30" minHeight="10" text="修改製程" width="28" height="7">
+  <LStr text="修改製程"/>
+  <Grid name="grid1" width="28" height="7">
+    <Label name="label1" width="7" text="鋼捲編號:" posY="0" posX="1" gridWidth="7">
+      <LStr text="鋼捲編號:"/>
+    </Label>
+    <FormField name="formonly.coil_no_fd" colName="coil_no_fd" fieldId="0" sqlTabName="formonly" noEntry="1" tabIndex="1">
+      <Edit width="18" posY="0" posX="9" gridWidth="18"/>
+    </FormField>
+    <Label name="label3" width="7" text="實際製程:" sizePolicy="fixed" posY="1" posX="1" gridWidth="7">
+      <LStr text="實際製程:"/>
+    </Label>
+    <Label name="past_station_fd" width="2" text="" sizePolicy="dynamic" posY="1" posX="9" gridWidth="2">
+      <LStr text=""/>
+    </Label>
+    <FormField name="formonly.coming_station_fd" colName="coming_station_fd" sqlType="CHAR" fieldId="1" sqlTabName="formonly" tabIndex="2">
+      <Edit width="15" fontPitch="variable" sizePolicy="fixed" posY="1" posX="12" gridWidth="15"/>
+    </FormField>
+    <Label name="label4" width="7" text="標準製程:" sizePolicy="fixed" posY="2" posX="1" gridWidth="7">
+      <LStr text="標準製程:"/>
+    </Label>
+    <FormField name="formonly.plan_station_fd" colName="plan_station_fd" fieldId="2" sqlTabName="formonly" noEntry="1" tabIndex="3">
+      <Edit width="18" colorCondition="%V%d2%&gt;%C3" sizePolicy="fixed" posY="2" posX="9" gridWidth="18"/>
+    </FormField>
+    <Label name="label5" width="7" text="成品厚度:" sizePolicy="fixed" posY="3" posX="1" gridWidth="7">
+      <LStr text="成品厚度:"/>
+    </Label>
+    <FormField name="formonly.prod_thick_fd" colName="prod_thick_fd" fieldId="3" sqlTabName="formonly" noEntry="1" tabIndex="4">
+      <Edit width="4" shift="up" sizePolicy="fixed" posY="3" posX="9" gridWidth="4"/>
+    </FormField>
+    <Label name="label6" width="7" text="APN CODE:" sizePolicy="fixed" posY="4" posX="1" gridWidth="7">
+      <LStr text="APN CODE:"/>
+    </Label>
+    <FormField name="formonly.apn_code_fd" colName="apn_code_fd" fieldId="4" sqlTabName="formonly" noEntry="1" tabIndex="5">
+      <Edit width="4" justify="right" sizePolicy="fixed" posY="4" posX="9" gridWidth="4"/>
+    </FormField>
+    <Label name="label8" width="19" text="" posY="5" posX="1" gridWidth="19">
+      <LStr text=""/>
+    </Label>
+    <Button name="mod_rs_bt" width="8" text="Reset" sizePolicy="initial" posY="6" posX="1" gridWidth="8" tabIndex="6">
+      <LStr text="Reset"/>
+    </Button>
+    <Button name="mod_ok_bt" width="8" text="OK" sizePolicy="initial" posY="6" posX="10" gridWidth="8" tabIndex="7">
+      <LStr text="OK"/>
+    </Button>
+    <Button name="mod_cc_bt" width="8" text="Cancle" posY="6" posX="19" gridWidth="8" tabIndex="8">
+      <LStr text="Cancle"/>
+    </Button>
+  </Grid>
+  <RecordView tabName="formonly">
+    <Link colName="coil_no_fd" fieldIdRef="0"/>
+    <Link colName="coming_station_fd" fieldIdRef="1"/>
+    <Link colName="plan_station_fd" fieldIdRef="2"/>
+    <Link colName="prod_thick_fd" fieldIdRef="3"/>
+    <Link colName="apn_code_fd" fieldIdRef="4"/>
+  </RecordView>
+  <RecordView tabName="modify_proc_r">
+    <Link colName="coming_station_fd" fieldIdRef="1"/>
+    <Link colName="plan_station_fd" fieldIdRef="2"/>
+    <Link colName="prod_thick_fd" fieldIdRef="3"/>
+    <Link colName="apn_code_fd" fieldIdRef="4"/>
+    <Link colName="coil_no_fd" fieldIdRef="0"/>
+  </RecordView>
+</Form>

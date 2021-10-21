@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="rdbmic36" fileVersion="31400" gstVersion="31408" name="managedform" uid="{89716876-c6bb-4b87-9722-4fd49e7181bc}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="v_micm190f" uid="{d1a241ba-b410-4726-852e-ca7c0d17b139}">
+    <RecordField colName="SLEEVE_CODE" fieldIdRef="1" fieldType="TABLE_COLUMN" name="MICM180M.SLEEVE_CODE" sqlTabName="MICM180M" uid="{a051301b-de19-4706-800e-769ce77e99a3}"/>
+    <RecordField colName="COIL_IN_DIAM" fieldIdRef="2" fieldType="TABLE_COLUMN" name="MICM180M.COIL_IN_DIAM" sqlTabName="MICM180M" uid="{9c0ec211-7b7f-475c-90af-e69600c6b584}"/>
+    <RecordField colName="COIL_THICK_MIN" fieldIdRef="3" fieldType="TABLE_COLUMN" name="MICM180M.COIL_THICK_MIN" sqlTabName="MICM180M" uid="{08c58bdc-575a-43eb-bca3-f00a1aed3f57}"/>
+    <RecordField colName="COIL_THICK_MAX" fieldIdRef="4" fieldType="TABLE_COLUMN" name="MICM180M.COIL_THICK_MAX" sqlTabName="MICM180M" uid="{7544981f-6c79-4afe-9450-0023d87fcffe}"/>
+    <RecordField colName="COIL_WIDTH_MIN" fieldIdRef="5" fieldType="TABLE_COLUMN" name="MICM180M.COIL_WIDTH_MIN" sqlTabName="MICM180M" uid="{59718aa6-809a-4d6c-9e48-d982ac19d88c}"/>
+    <RecordField colName="COIL_WIDTH_MAX" fieldIdRef="6" fieldType="TABLE_COLUMN" name="MICM180M.COIL_WIDTH_MAX" sqlTabName="MICM180M" uid="{344ebaf3-4fad-4b8b-a493-7a402d17babc}"/>
+    <RecordField colName="SLEEVE_THICK" fieldIdRef="7" fieldType="TABLE_COLUMN" name="MICM180M.SLEEVE_THICK" sqlTabName="MICM180M" uid="{f6b27523-f63f-4e87-8910-abe20d4c2b34}"/>
+    <RecordField colName="SLEEVE_LENGTH" fieldIdRef="8" fieldType="TABLE_COLUMN" name="MICM180M.SLEEVE_LENGTH" sqlTabName="MICM180M" uid="{48edb7dc-ae0a-41c6-848d-5ba7c19e8876}"/>
+    <RecordField colName="SLEEVE_WEIGHT" fieldIdRef="9" fieldType="TABLE_COLUMN" name="MICM180M.SLEEVE_WEIGHT" sqlTabName="MICM180M" uid="{69e7d335-a427-407d-a672-eb8f18f5ca02}"/>
+    <RecordField defaultValue="N" fieldIdRef="10" name="del_rec" uid="{b822c680-58cc-4dbe-a3bf-b4e1200a43a0}"/>
+    <RecordField fieldIdRef="11" name="upd_flag" uid="{bd3a6ad8-6c2e-4ddc-bfdd-17f79b958e9e}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="133" name="micm190f_f" text="鋼套筒規格維護作業">
+    <Grid gridHeight="21" gridWidth="128" name="micm190f_g" posX="3" posY="1">
+      <Table gridHeight="18" gridWidth="120" name="micm190f_t" posX="4" posY="1" totalRows="15">
+        <Edit case="upper" colName="SLEEVE_CODE" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="4" justify="center" name="MICM180M.SLEEVE_CODE" posX="0" posY="0" sqlTabName="MICM180M" tabIndex="-1" title="套筒碼" widget="Edit"/>
+        <Edit century="R" colName="COIL_IN_DIAM" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="4" justify="center" name="MICM180M.COIL_IN_DIAM" posX="4" posY="0" scroll="true" sqlTabName="MICM180M" tabIndex="-1" title="內徑&#10;[mm]" widget="Edit"/>
+        <Edit colName="COIL_THICK_MIN" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" name="MICM180M.COIL_THICK_MIN" posX="8" posY="0" sqlTabName="MICM180M" tabIndex="-1" title="鋼帶厚度下限&#10;        [mm]" widget="Edit"/>
+        <Edit colName="COIL_THICK_MAX" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" name="MICM180M.COIL_THICK_MAX" posX="17" posY="0" sqlTabName="MICM180M" tabIndex="-1" title="鋼帶厚度上限&#10;        [mm]" widget="Edit"/>
+        <Edit colName="COIL_WIDTH_MIN" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" name="MICM180M.COIL_WIDTH_MIN" posX="26" posY="0" sqlTabName="MICM180M" tabIndex="-1" title="鋼帶寬度下限&#10;        [mm]" widget="Edit"/>
+        <Edit colName="COIL_WIDTH_MAX" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" name="MICM180M.COIL_WIDTH_MAX" posX="35" posY="0" sqlTabName="MICM180M" tabIndex="-1" title="鋼帶寬度上限&#10;        [mm]" widget="Edit"/>
+        <Edit colName="SLEEVE_THICK" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="MICM180M.SLEEVE_THICK" posX="44" posY="0" sqlTabName="MICM180M" tabIndex="-1" title="套筒厚度&#10;    [mm]" widget="Edit"/>
+        <Edit colName="SLEEVE_LENGTH" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="MICM180M.SLEEVE_LENGTH" posX="52" posY="0" sqlTabName="MICM180M" tabIndex="-1" title="套筒長度&#10;    [mm]" widget="Edit"/>
+        <Edit colName="SLEEVE_WEIGHT" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="MICM180M.SLEEVE_WEIGHT" posX="60" posY="0" sqlTabName="MICM180M" tabIndex="-1" title="套筒重量&#10;    [kg]" widget="Edit"/>
+        <CheckBox defaultValue="N" fieldId="10" gridHeight="1" gridWidth="3" name="del_rec" notNull="true" posX="68" posY="0" tabIndex="-1" text="" title="刪除" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit fieldId="11" gridHeight="1" gridWidth="2" hidden="true" name="upd_flag" posX="71" posY="0" tabIndex="-1" title="upd_flag" widget="Edit"/>
+      </Table>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBkADEAYQAyADQAMQBiAGEALQBiADQAMQAwAC0ANAA3ADIANgAtADgANQAyAGUALQBjAGEANwBjADAAZAAxADcAYgAxADMAOQB9AAAAAAAAAAAAAAAAAAAAAD+QYk3S8an+AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

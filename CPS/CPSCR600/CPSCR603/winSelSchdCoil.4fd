@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm fileVersion="31400" gstVersion="31408" name="managedform" uid="{7091e8c3-99a6-4af4-b06f-95498edb7bbb}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="record1" uid="{f927356e-7f47-4b58-bdfa-1e98d121e546}">
+    <RecordField fieldIdRef="1" name="coil_no_fd" uid="{64218840-a0d6-4baf-ac96-ca599e3483e7}"/>
+    <RecordField fieldIdRef="2" length="4" name="schd_no_fd" uid="{044a85d3-e133-40b2-be05-a6fa30c23e9c}"/>
+  </Record>
+  <Form fourSTFile="../../Library/cps_style.4st" gridHeight="5" gridWidth="21" name="winSelCoil" spacing="compact" style="miniWin" text="查詢鋼捲">
+    <Grid fontPitch="variable" gridHeight="4" gridWidth="20" name="grid1" posX="1" posY="0">
+      <Label gridHeight="1" gridWidth="4" name="label2" posX="1" posY="1" text="排軋序號"/>
+      <Edit fieldId="2" gridHeight="1" gridWidth="4" length="4" name="schd_no_fd" posX="6" posY="1" tabIndex="-1" title="edit1" widget="Edit"/>
+      <Label gridHeight="1" gridWidth="4" name="label1" posX="1" posY="2" text="鋼捲編號"/>
+      <Edit fieldId="1" gridHeight="1" gridWidth="11" name="coil_no_fd" posX="6" posY="2" tabIndex="-1" title="edit1" widget="Edit"/>
+      <Button gridHeight="1" gridWidth="8" name="accept" posX="1" posY="3" tabIndex="-1" text="確認"/>
+      <Button gridHeight="1" gridWidth="8" name="cancel" posX="10" posY="3" tabIndex="-1" text="取消"/>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBmADkAMgA3ADMANQA2AGUALQA3AGYANAA3AC0ANABiADUAOAAtAGIAZABmAGEALQAxAGUAOQA4AGQAMQAyADEAZQA1ADQANgB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

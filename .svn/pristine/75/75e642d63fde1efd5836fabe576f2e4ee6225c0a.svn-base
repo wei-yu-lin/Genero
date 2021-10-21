@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="oracr2" fileVersion="31400" gstVersion="31408" name="managedform" uid="{760d35b4-6da9-4e44-a19c-1289f04af56b}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="P322W_r" uid="{f38d3171-d1c3-48a3-9a34-3378d6a3c424}">
+    <RecordField fieldIdRef="1" fieldType="NON_DATABASE" length="11" name="COIL_NO_322" sqlType="CHAR" uid="{13168a81-acab-48f6-b770-84cd2ff34c05}"/>
+    <RecordField fieldIdRef="27" name="FLAG_322" uid="{9d9eab2b-8a7c-48fa-924c-9dd749f5c2fc}"/>
+    <RecordField fieldIdRef="30" name="BP_322" uid="{0d3220bd-3757-4183-a6b1-ae8c22179620}"/>
+    <RecordField fieldIdRef="32" name="FP_322" uid="{4352d5eb-fb11-43f7-a6da-482f6212afb6}"/>
+    <RecordField fieldIdRef="2" fieldType="NON_DATABASE" length="11" name="STEEL_GRADE_322" sqlType="CHAR" uid="{f3bdb1e5-b502-4af2-b2e3-088afb666986}"/>
+    <RecordField fieldIdRef="3" fieldType="NON_DATABASE" length="1" name="COIL_WIDTH_322" sqlType="CHAR" uid="{2e3038e1-f1b8-464e-b684-3bd85592fcdf}"/>
+    <RecordField fieldIdRef="4" fieldType="NON_DATABASE" length="1" name="ENTRY_THICK_322" sqlType="CHAR" uid="{de4502a1-47ef-4aaa-b972-f7e13cb735db}"/>
+    <RecordField fieldIdRef="5" fieldType="NON_DATABASE" length="1" name="OUT_THICK_322" sqlType="CHAR" uid="{52f077a4-789c-431e-8c26-b1d0d8be49f8}"/>
+    <RecordField colName="COIL_THICK" fieldIdRef="6" fieldType="NON_DATABASE" name="REDUCTION_322" sqlTabName="PCMB020M" uid="{70407d8d-26c7-4a4b-9dfd-ee76d83ad419}"/>
+    <RecordField fieldIdRef="7" fieldType="NON_DATABASE" name="COIL_WT_322" sqlType="INTEGER" uid="{72481006-ddbc-4162-8590-7e8d09a08564}"/>
+    <RecordField colName="PREV_STATION" fieldIdRef="8" fieldType="NON_DATABASE" name="PREV_STATION_322" sqlTabName="PCMB020M" uid="{84376935-466b-4863-9abd-dcc57e72b74b}"/>
+    <RecordField colName="NEXT_STATION" fieldIdRef="9" fieldType="NON_DATABASE" name="NEXT_STATION_322" sqlTabName="PCMB020M" uid="{bcf6be05-b41f-4019-996c-9fd2d08f841b}"/>
+    <RecordField colName="CB_FIRST_ORDER_ITEM" fieldIdRef="10" fieldType="NON_DATABASE" name="ORDER_NO_ITEM_322" sqlTabName="PCMB020M" uid="{6425ad7d-d66d-4e47-b4c2-4bd7a561f6c9}"/>
+    <RecordField colName="ORDER_NO" fieldIdRef="11" fieldType="NON_DATABASE" name="DUE_DATE_322" sqlTabName="ORDB011M" uid="{2014a791-39bc-4840-9ab8-118003e14e6f}"/>
+    <RecordField fieldIdRef="29" name="RUSH_CODE_PP_322" uid="{54282da9-26e3-4c22-b2ee-8f6643f91577}"/>
+    <RecordField fieldIdRef="39" name="CLASS_CODE_322" uid="{46acc1f6-cda3-4321-9247-aa66a42306a2}"/>
+    <RecordField fieldIdRef="40" name="IC_CODE_322" uid="{bcf8a89f-9902-4d71-88f4-73fa39b4f3fd}"/>
+    <RecordField fieldIdRef="12" length="4" name="APN_CODE_322" uid="{e99ee7ce-9507-4a17-a3b5-8c7bb61ba4ef}"/>
+    <RecordField fieldIdRef="44" name="SPARE_322" uid="{f6647fc3-b112-4b72-9fa4-0919a8edadb1}"/>
+    <RecordField fieldIdRef="43" name="APL_ROUTE_322" uid="{00f40d70-4d6c-42de-ab99-b98e612f0ae0}"/>
+  </Record>
+  <Record name="condition_r" uid="{f7e03d75-5ba9-4a7b-943c-b51cfde239df}">
+    <RecordField fieldIdRef="13" length="20" name="condition_cb" uid="{2c32190a-b6f1-44eb-a632-71cca2b7d328}"/>
+    <RecordField fieldIdRef="14" length="20" name="condition_sub_cb" uid="{630b5b24-b645-4c70-8248-113bd8411898}"/>
+    <RecordField fieldIdRef="36" name="select_pb" uid="{221e9c75-b907-40b7-9159-679f82565c2a}"/>
+  </Record>
+  <Record name="P321W_r" uid="{b6492894-996f-41f1-becd-303233ff9b5e}">
+    <RecordField colName="COIL_NO" fieldIdRef="15" fieldType="NON_DATABASE" name="coil_no_321" sqlTabName="PCMB020M" uid="{5f1785d4-0d20-4cbe-b951-08a525ebf3ea}"/>
+    <RecordField fieldIdRef="28" name="flag_321" uid="{8aa8293a-2050-4cf8-897e-cd3e49652a3c}"/>
+    <RecordField fieldIdRef="37" name="BP_321" uid="{9642fee9-de41-4185-95cd-0746efc67d96}"/>
+    <RecordField fieldIdRef="38" name="FP_321" uid="{e7bedb45-f235-45f0-b3a6-7f9c3cd2cc42}"/>
+    <RecordField colName="STEEL_GRADE" fieldIdRef="16" fieldType="NON_DATABASE" name="steel_grade_321" sqlTabName="PCMB020M" uid="{737d18dd-519b-43a0-bc72-b5b33c59de24}"/>
+    <RecordField colName="COIL_WIDTH" fieldIdRef="17" fieldType="NON_DATABASE" name="coil_width_321" sqlTabName="PCMB020M" uid="{2be3bce4-8301-4457-9f64-78237082da5b}"/>
+    <RecordField colName="COIL_THICK" fieldIdRef="18" fieldType="NON_DATABASE" name="entry_thick_321" sqlTabName="PCMB020M" uid="{6c4f7119-1c18-453e-831a-866296712bc1}"/>
+    <RecordField colName="COIL_THICK" fieldIdRef="19" fieldType="NON_DATABASE" name="out_thick_321" sqlTabName="PCMB020M" uid="{4ca1fd05-f877-46f2-8d4e-467ae26cb840}"/>
+    <RecordField colName="COIL_THICK" fieldIdRef="20" fieldType="NON_DATABASE" name="reduction_321" sqlTabName="PCMB020M" uid="{87cabe73-9e74-4d8a-8a23-68e9699481ee}"/>
+    <RecordField colName="COIL_WEIGHT" fieldIdRef="21" fieldType="NON_DATABASE" name="coil_wt_321" sqlTabName="PCMB020M" uid="{40579141-f5c7-4e2a-9b79-190dbc9b619c}"/>
+    <RecordField colName="PREV_STATION" fieldIdRef="22" fieldType="NON_DATABASE" name="prev_station_321" sqlTabName="PCMB020M" uid="{59800e09-ee69-4da8-a16f-2bfbf6ece8e3}"/>
+    <RecordField colName="NEXT_STATION" fieldIdRef="23" fieldType="NON_DATABASE" name="next_station_321" sqlTabName="PCMB020M" uid="{efeb156c-ffe2-4fb0-acad-a826c27d61b0}"/>
+    <RecordField colName="CB_FIRST_ORDER_ITEM" fieldIdRef="24" fieldType="NON_DATABASE" name="order_no_item_321" sqlTabName="PCMB020M" uid="{0e23dd29-35b9-443f-905f-f691267c4d76}"/>
+    <RecordField colName="ORDER_NO" fieldIdRef="25" fieldType="NON_DATABASE" name="due_date_321" sqlTabName="ORDB011M" uid="{70c67e01-c079-4e32-aa50-11a247e77d65}"/>
+    <RecordField fieldIdRef="31" name="RUSH_CODE_PP_321" uid="{1abbe2cd-870e-4fea-b421-d088ffbfd79d}"/>
+    <RecordField fieldIdRef="41" name="class_code_321" uid="{bcf9af54-98b7-4571-a4bc-9d5112c8b3bf}"/>
+    <RecordField fieldIdRef="42" name="ic_code_321" uid="{2e060983-b4b1-4f40-af99-052b73746a1d}"/>
+    <RecordField fieldIdRef="26" length="4" name="apn_code_321" uid="{502fa10b-184c-4935-9948-1c4e35d5e6eb}"/>
+    <RecordField fieldIdRef="45" name="SPARE_321" uid="{400fb9cb-f0fc-40da-8631-677a089274b9}"/>
+  </Record>
+  <Record name="schd_seq_r" uid="{29dbf99c-d7d1-4338-a7e8-d6428be2e8b4}">
+    <RecordField fieldIdRef="33" length="4" name="schd_no_fd" uid="{8d4703e9-5777-4a59-aa40-721f5df14da4}"/>
+    <RecordField fieldIdRef="34" name="coil_num_fd" uid="{d639d240-26b9-4b29-b4c3-051b10a77413}"/>
+    <RecordField fieldIdRef="35" name="init_no_fd" uid="{64828519-90cd-4a02-8bed-3335a2095794}"/>
+  </Record>
+  <Form fourSTFile="../../Library/cps_style.4st" gridHeight="40" gridWidth="219" minHeight="30" minWidth="150" name="form" spacing="compact" style="schd" text="#CRM6 生產排程選取作業">
+    <Grid fontPitch="fixed" gridHeight="40" gridWidth="138" name="CR6SCH01_grid" posX="1" posY="0">
+      <Label gridHeight="1" gridWidth="105" name="separate01" posX="1" posY="0" sizePolicy="fixed" text=""/>
+      <Group fontPitch="fixed" gridChildrenInParent="false" gridHeight="6" gridWidth="23" hidden="false" lstrcomment="false" lstrtext="false" name="group1" posX="1" posY="1" style="normal" text="條件選取">
+        <Label gridHeight="1" gridWidth="9" name="label1" posX="1" posY="1" sizePolicy="fixed" text="主條件選取"/>
+        <ComboBox case="lower" columnCount="1" fieldId="13" fontPitch="variable" gridHeight="1" gridWidth="20" items="" length="20" lstrcomment="false" lstrplaceholder="false" name="condition_cb" posX="1" posY="2" repeat="false" rowCount="3" sizePolicy="fixed" stepX="1" stepY="1" tabIndex="-1" title="combobox1" widget="ComboBox"/>
+        <Label gridHeight="1" gridWidth="9" name="label2" posX="1" posY="3" sizePolicy="fixed" text="副條件選取"/>
+        <ComboBox fieldId="14" fontPitch="fixed" gridHeight="1" gridWidth="20" items="" length="20" lstrcomment="false" lstrplaceholder="false" name="condition_sub_cb" notNull="false" posX="1" posY="4" sizePolicy="fixed" tabIndex="-1" title="combobox1" widget="ComboBox"/>
+      </Group>
+      <Group gridHeight="12" gridWidth="104" name="group2" posX="25" posY="1" style="normal" text="條件搜尋結果">
+        <Table fontPitch="fixed" gridHeight="10" gridWidth="102" hidden="false" lstraggregateText="false" lstrcomment="false" name="table1" posX="1" posY="1" style="foz" totalRows="5" unhidableColumns="false" unsortableColumns="true">
+          <Edit aggregate="false" aggregateName="aggregate1" century="R" fieldId="1" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" invisible="false" length="11" name="COIL_NO_322" notNull="true" posX="0" posY="0" scroll="true" sqlType="CHAR" tabIndex="-1" title="鋼捲編號" unmovable="false" widget="Edit"/>
+          <Edit colorCondition="%V%s@%=%C19" fieldId="27" gridHeight="1" gridWidth="4" hidden="true" justify="center" name="FLAG_322" posX="4" posY="0" tabIndex="-1" title="已被選入" widget="Edit"/>
+          <Edit fieldId="29" gridHeight="1" gridWidth="4" justify="center" name="RUSH_CODE_PP_322" posX="8" posY="0" tabIndex="-1" title="急單碼" widget="Edit"/>
+          <Edit fieldId="2" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" justify="center" length="11" name="STEEL_GRADE_322" posX="12" posY="0" sqlType="CHAR" tabIndex="-1" title="鋼種" widget="Edit"/>
+          <Edit fieldId="3" fieldType="NON_DATABASE" gridHeight="1" gridWidth="5" justify="right" length="1" name="COIL_WIDTH_322" posX="16" posY="0" sqlType="CHAR" tabIndex="-1" title="寬度" widget="Edit"/>
+          <Edit fieldId="4" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" justify="right" length="1" name="ENTRY_THICK_322" posX="21" posY="0" sqlType="CHAR" tabIndex="-1" title="入料" widget="Edit"/>
+          <Edit fieldId="5" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" justify="right" length="1" name="OUT_THICK_322" posX="25" posY="0" sqlType="CHAR" tabIndex="-1" title="出料" widget="Edit"/>
+          <Edit colName="COIL_THICK" color="black" colorCondition="%V%d78%&gt;%V%d40%&lt;%|%C3" comment="管制範圍40&lt;R&lt;78" completer="true" fieldId="6" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" hidden="false" justify="right" length="1" name="REDUCTION_322" posX="29" posY="0" sqlTabName="PCMB020M" sqlType="CHAR" tabIndex="-1" title="軋延" widget="Edit"/>
+          <Edit fieldId="7" fieldType="NON_DATABASE" gridHeight="1" gridWidth="5" justify="right" length="1" name="COIL_WT_322" posX="33" posY="0" sqlType="INTEGER" tabIndex="-1" title="重量" widget="Edit"/>
+          <Edit colName="PREV_STATION" fieldId="8" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" justify="center" length="1" name="PREV_STATION_322" posX="38" posY="0" sqlTabName="PCMB020M" sqlType="CHAR" tabIndex="-1" title="PRE" widget="Edit"/>
+          <Edit colName="NEXT_STATION" fieldId="9" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" justify="center" length="1" name="NEXT_STATION_322" posX="42" posY="0" sqlTabName="PCMB020M" sqlType="CHAR" tabIndex="-1" title="NEX" widget="Edit"/>
+          <Edit colName="CB_FIRST_ORDER_ITEM" fieldId="10" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" justify="center" length="1" name="ORDER_NO_ITEM_322" posX="46" posY="0" sqlTabName="PCMB020M" sqlType="CHAR" tabIndex="-1" title="訂單編號" widget="Edit"/>
+          <Edit colName="ORDER_NO" fieldId="11" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" justify="center" length="1" name="DUE_DATE_322" posX="50" posY="0" sqlTabName="ORDB011M" sqlType="CHAR" tabIndex="-1" title="交期" widget="Edit"/>
+          <Edit fieldId="12" gridHeight="1" gridWidth="4" justify="center" length="4" name="APN_CODE_322" posX="54" posY="0" tabIndex="-1" title="用途" widget="Edit"/>
+          <Edit fieldId="30" gridHeight="1" gridWidth="4" hidden="true" name="BP_322" posX="58" posY="0" tabIndex="-1" title="BP" widget="Edit"/>
+          <Edit fieldId="32" gridHeight="1" gridWidth="4" hidden="true" name="FP_322" posX="62" posY="0" tabIndex="-1" title="FP" widget="Edit"/>
+          <Edit fieldId="39" gridHeight="1" gridWidth="4" justify="center" name="CLASS_CODE_322" posX="66" posY="0" tabIndex="-1" title="等級" widget="Edit"/>
+          <Edit fieldId="40" gridHeight="1" gridWidth="4" justify="center" name="IC_CODE_322" posX="70" posY="0" tabIndex="-1" title="狀態碼" widget="Edit"/>
+          <Phantom fieldId="44" name="SPARE_322" widget="Phantom"/>
+          <Phantom fieldId="43" name="APL_ROUTE_322" widget="Phantom"/>
+        </Table>
+      </Group>
+      <ProgressBar fieldId="36" gridHeight="1" gridWidth="23" hidden="true" name="select_pb" posX="1" posY="7" title="progressbar1" widget="ProgressBar"/>
+      <Button gridHeight="1" gridWidth="23" name="CR6SCH01_F4" posX="1" posY="9" tabIndex="-1" text="修改製程"/>
+      <Button gridHeight="1" gridWidth="23" name="report_bt" posX="1" posY="10" tabIndex="-1" text="列印報表"/>
+      <Button gridHeight="1" gridWidth="7" image="fa-chevron-down" name="CR6SCH01_F1" posX="45" posY="13" tabIndex="-1" text="選入待排"/>
+      <Button gridHeight="1" gridWidth="7" image="fa-close" name="CR6SCH01_F2" posX="57" posY="13" tabIndex="-1" text="取消待排"/>
+      <Button gridHeight="1" gridWidth="7" image="fa-recycle" name="CR6SCH01_F3" posX="69" posY="13" tabIndex="-1" text="清空待排"/>
+      <Group gridHeight="9" gridWidth="23" hidden="false" name="schd_gp" posX="1" posY="14" style="normal" text="排程序號設定">
+        <Label gridHeight="1" gridWidth="6" name="label3" posX="1" posY="1" text="排程批號:"/>
+        <Edit fieldId="33" format="X-XX-X" gridHeight="1" gridWidth="6" length="4" name="schd_no_fd" posX="8" posY="1" tabIndex="-1" title="edit1" verify="false" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="6" name="label4" posX="1" posY="2" text="鋼捲數量:"/>
+        <Edit fieldId="34" gridHeight="1" gridWidth="6" name="coil_num_fd" posX="8" posY="2" tabIndex="-1" title="edit2" widget="Edit"/>
+        <Label gridHeight="1" gridWidth="6" name="label5" posX="1" posY="3" text="序號初值:"/>
+        <Edit fieldId="35" gridHeight="1" gridWidth="6" name="init_no_fd" posX="8" posY="3" tabIndex="-1" title="edit1" widget="Edit"/>
+        <Button gridHeight="1" gridWidth="7" name="CR6SCH01_F5" posX="1" posY="5" tabIndex="-1" text="送出排程"/>
+        <Button gridHeight="1" gridWidth="7" name="seq_cc_bt" posX="9" posY="5" tabIndex="-1" text="取消"/>
+      </Group>
+      <Group gridHeight="12" gridWidth="98" name="group3" posX="25" posY="14" style="normal" text="待排程鋼捲">
+        <Table gridHeight="10" gridWidth="96" hidden="false" name="table2" posX="1" posY="1" style="foz" totalRows="5" unhidableColumns="false" unsortableColumns="true">
+          <Edit colName="COIL_NO" fieldId="15" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" length="1" name="coil_no_321" posX="0" posY="0" sqlTabName="PCMB020M" sqlType="CHAR" tabIndex="-1" title="鋼捲編號" widget="Edit"/>
+          <Phantom fieldId="28" name="flag_321" widget="Phantom"/>
+          <Edit fieldId="31" gridHeight="1" gridWidth="4" justify="center" name="RUSH_CODE_PP_321" posX="4" posY="0" tabIndex="-1" title="急單碼" widget="Edit"/>
+          <Edit fieldId="37" gridHeight="1" gridWidth="4" hidden="true" name="BP_321" posX="8" posY="0" tabIndex="-1" title="BP" widget="Edit"/>
+          <Edit fieldId="38" gridHeight="1" gridWidth="4" hidden="true" name="FP_321" posX="12" posY="0" tabIndex="-1" title="FP" widget="Edit"/>
+          <Edit colName="STEEL_GRADE" fieldId="16" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" justify="center" length="1" name="steel_grade_321" posX="16" posY="0" sqlTabName="PCMB020M" sqlType="CHAR" tabIndex="-1" title="鋼種" widget="Edit"/>
+          <Edit colName="COIL_WIDTH" fieldId="17" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" justify="right" length="1" name="coil_width_321" posX="20" posY="0" sqlTabName="PCMB020M" sqlType="CHAR" tabIndex="-1" title="寬度" widget="Edit"/>
+          <Edit colName="COIL_THICK" fieldId="18" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" justify="right" length="1" name="entry_thick_321" posX="24" posY="0" sqlTabName="PCMB020M" sqlType="CHAR" tabIndex="-1" title="入料" widget="Edit"/>
+          <Edit colName="COIL_THICK" fieldId="19" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" justify="right" length="1" name="out_thick_321" posX="28" posY="0" sqlTabName="PCMB020M" sqlType="CHAR" tabIndex="-1" title="出料" widget="Edit"/>
+          <Edit colName="COIL_THICK" colorCondition="%V%d78%&gt;%V%d40%&lt;%|%C3" comment="管制範圍40&lt;R&lt;78" fieldId="20" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" length="1" name="reduction_321" posX="32" posY="0" sqlTabName="PCMB020M" sqlType="CHAR" tabIndex="-1" title="軋延" widget="Edit"/>
+          <Edit colName="COIL_WEIGHT" fieldId="21" fieldType="NON_DATABASE" gridHeight="1" gridWidth="5" justify="right" length="1" name="coil_wt_321" posX="36" posY="0" sqlTabName="PCMB020M" sqlType="CHAR" tabIndex="-1" title="重量" widget="Edit"/>
+          <Edit colName="PREV_STATION" fieldId="22" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" justify="center" length="1" name="prev_station_321" posX="41" posY="0" sqlTabName="PCMB020M" sqlType="CHAR" tabIndex="-1" title="PRE" widget="Edit"/>
+          <Edit colName="NEXT_STATION" fieldId="23" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" justify="center" length="1" name="next_station_321" posX="45" posY="0" sqlTabName="PCMB020M" sqlType="CHAR" tabIndex="-1" title="NEX" widget="Edit"/>
+          <Edit colName="CB_FIRST_ORDER_ITEM" fieldId="24" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" justify="center" length="1" name="order_no_item_321" posX="49" posY="0" sqlTabName="PCMB020M" sqlType="CHAR" tabIndex="-1" title="訂單編號" widget="Edit"/>
+          <Edit colName="ORDER_NO" fieldId="25" fieldType="NON_DATABASE" gridHeight="1" gridWidth="4" justify="center" length="1" name="due_date_321" posX="53" posY="0" sqlTabName="ORDB011M" sqlType="CHAR" tabIndex="-1" title="交期" widget="Edit"/>
+          <Edit fieldId="26" gridHeight="1" gridWidth="4" justify="center" length="4" name="apn_code_321" posX="57" posY="0" tabIndex="-1" title="用途" widget="Edit"/>
+          <Edit fieldId="41" gridHeight="1" gridWidth="4" justify="center" name="class_code_321" posX="61" posY="0" tabIndex="-1" title="等級" widget="Edit"/>
+          <Edit fieldId="42" gridHeight="1" gridWidth="4" justify="center" name="ic_code_321" posX="65" posY="0" tabIndex="-1" title="狀態碼" widget="Edit"/>
+          <Phantom fieldId="45" name="SPARE_321" widget="Phantom"/>
+        </Table>
+      </Group>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBiADYANAA5ADIAOAA5ADQALQA5ADkANgBmAC0ANAAxAGYAMQAtAGIAZQBjAGQALQAzADAAMwAyADMAMwBmAGYAOQBiADUAZQB9wGggAAAAAADACAAAAAAAAD+pmZmZmZmfAQAAAEwAewAyADkAZABiAGYAOQA5AGMALQBkADcAZAAxAC0ANAAzADMAOAAtAGEANwBlADgALQBkADYANAAyADgAYgBlADIAZQA4AGIANAB9QDsAAAAAAABAbaAAAAAAAD+fvnbItDleAQAAAEwAewBmADcAZQAwADMAZAA3ADUALQA1AGIAYQA5AC0ANABhADcAYgAtADkANAAzAGMALQBiADUAMQBjAGYAZABlADIAMwA5AGQAZgB9QDQAAAAAAABANAAAAAAAAD+g5WBBiTdPAQAAAEwAewBmADMAOABkADMAMQA3ADEALQBkADEAYwAzAC0ANAA4AGEAMwAtADkAYQAzADQALQAzADMANwA4AGQANgBhADMAYwA0ADIANAB9wHgAAAAAAADAHAAAAAAAAD+oEGJN0vGvAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

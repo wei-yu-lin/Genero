@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!--
+  FOURJS_START_COPYRIGHT(U,2000)
+  Property of Four Js*
+  (c) Copyright Four Js 2000, 2019. All Rights Reserved.
+  * Trademark of Four Js Development Tools Europe Ltd
+    in the United States and elsewhere
+  
+  Four Js and its suppliers do not warrant or guarantee that these samples
+  are accurate and suitable for your purposes. Their inclusion is purely for
+  information purposes only.
+  FOURJS_END_COPYRIGHT
+-->
+<APPLICATION Parent="ws.default"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:noNamespaceSchemaLocation="http://www.4js.com/ns/gas/3.00/cfextws.xsd">
+  <EXECUTION>
+    <PATH>C:\Users\yu65656\Desktop\Genero\YuERP\bin</PATH>
+    <MODULE>SYS_DELEGATE.42r</MODULE>
+    <!--ACCESS_CONTROL>
+      <ALLOW_FROM>127.0.0.1</ALLOW_FROM>
+      <ALLOW_FROM>::1</ALLOW_FROM>
+      <ALLOW_FROM>0:0:0:0:0:0:0:1</ALLOW_FROM>      
+    </ACCESS_CONTROL-->          
+  </EXECUTION>
+</APPLICATION>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="big5"?>
+<TopMenu>
+  <!--訂單稽核-->    
+  <TopMenuGroup text="產品放行" style="mystyle">
+    <TopMenuCommand name="tqcs010f" text="訂單稽核維護作業" image="notecheck.png" />
+  </TopMenuGroup>
+
+  <TopMenuGroup name = "exit"  text="離開">
+    <TopMenuCommand name="reload" text="重新登入" image="exchange.png" />
+    <TopMenuCommand name="exit" text="離開" image="home.png" />
+  </TopMenuGroup>
+
+</TopMenu>

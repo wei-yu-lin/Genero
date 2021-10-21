@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report:Report xmlns:rtl="http://www.4js.com/2004/RTL" xmlns:report="http://www.4js.com/2007/REPORT" xmlns="http://www.4js.com/2004/PXML" gstVersion="31408" version="6.00">
+    <report:Settings RWPageWidth="a4length" RWPageLength="a4width" RWLeftMargin="1.3cm" RWTopMargin="1.3cm" RWRightMargin="1.3cm" RWBottomMargin="1.3cm">
+        <report:FormatList>
+            <report:Format-SVG/>
+            <report:Format-PDF/>
+            <report:Format-image/>
+        </report:FormatList>
+    </report:Settings>
+    <report:Data RWDataLocation="CR6SCH01_report.rdd" RWFglReportName="SchdReport"/>
+    <report:Conflicts/>
+    <rtl:stylesheet>
+        <PXML>
+            <rtl:match name="Report" nameConstraint="Report" minOccurs="1" maxOccurs="1">
+                <MINIPAGE name="Page Root" width="max" length="max" alignment="near" layoutDirection="topToBottom" swapX="false" transformTransparently="false">
+                    <LAYOUTNODE name="Page Header" width="max" length="min" port="anyPageHeader">
+                        <MINIPAGE name="StripeLayouter3" width="min" length="max" layoutDirection="leftToRight">
+                            <WORDBOX name="Report Title" x="0" y="max*0.5" width="min" anchorX="0" anchorY="0.5" alignment="baseline" fontName="標楷體" fontSize="25" fidelity="true" baselineType="leftleft" port="firstPageHeader" floatingBehavior="enclosed" text="{{&quot;燁 聯 鋼 鐵 股 份 有 限 公 司&quot;}}"/>
+                            <PAGENOBOX name="PageNoBox" x="1.23857" y="max" anchorX="0" anchorY="1" alignment="baseline" baselineType="leftleft" floatingBehavior="enclosed" textAlignment="right"/>
+                            <WORDBOX name="Report Title1" x="27.25" y="max*0.5" width="min" anchorX="0" anchorY="0.5" alignment="baseline" fontName="標楷體" fontSize="25" fidelity="true" baselineType="leftleft" port="firstPageHeader" floatingBehavior="enclosed" text="{{&quot;待 生 產 排 程 表&quot;}}"/>
+                        </MINIPAGE>
+                        <MINIPAGE name="Table Header" class="grwTableHeader" width="min" length="max" layoutDirection="leftToRight">
+                            <WORDBOX name="鋼捲編號" y="0" width="55" length="15" alignment="near" fontName="標楷體" fidelity="true" baselineType="leftleft" port="anyPageHeader" textAlignment="center" text="{{&quot;鋼捲編號&quot;}}"/>
+                            <WORDBOX name="鋼種" y="max*0.07" width="55" length="15" alignment="near" fontName="標楷體" fidelity="true" baselineType="leftleft" port="anyPageHeader" textAlignment="center" text="{{&quot; 鋼  種 &quot;}}"/>
+                            <WORDBOX name="寬度" y="max*0.14" width="min" length="15" alignment="near" fontName="標楷體" fidelity="true" baselineType="leftleft" port="anyPageHeader" textAlignment="center" text="{{&quot; 寬  度 &quot;}}"/>
+                            <WORDBOX name="厚度" y="max*0.21" width="min" length="15" alignment="near" fontName="標楷體" fidelity="true" baselineType="leftleft" port="anyPageHeader" textAlignment="center" text="{{&quot; 厚  度 &quot;}}"/>
+                            <WORDBOX name="重量" y="max*0.28" width="min" length="15" alignment="near" fontName="標楷體" fidelity="true" baselineType="leftleft" port="anyPageHeader" textAlignment="center" text="{{&quot; 重  量 &quot;}}"/>
+                            <WORDBOX name="等級" y="max*0.35" width="10" length="15" alignment="near" fontName="標楷體" fidelity="true" swapX="false" transformTransparently="true" baselineType="leftleft" port="anyPageHeader" suppressRepetitions="true" showFirstRepetitionOnPage="false" textAlignment="center" text="{{&quot; 等  級 &quot;}}"/>
+                            <WORDBOX name="狀態" y="max*0.42" width="min" length="15" alignment="near" fontName="標楷體" fidelity="true" baselineType="leftleft" port="anyPageHeader" textAlignment="center" text="{{&quot; 狀  態 &quot;}}"/>
+                            <WORDBOX name="訂單編號" y="max*0.49" width="min" length="15" alignment="near" fontName="標楷體" fidelity="true" baselineType="leftleft" port="anyPageHeader" textAlignment="center" text="{{&quot;訂單編號&quot;}}"/>
+                            <WORDBOX name="交期" y="max*0.56" width="min" length="15" alignment="near" fontName="標楷體" fidelity="true" baselineType="leftleft" port="anyPageHeader" textAlignment="center" text="{{&quot; 交  期 &quot;}}"/>
+                        </MINIPAGE>
+                        <MINIPAGE name="Separator" width="1" length="max" bgColor="#000000" layoutDirection="leftToRight"/>
+                    </LAYOUTNODE>
+                    <rtl:match name="Group groupId" nameConstraint="Group" minOccurs="0" maxOccurs="unbounded">
+                        <rtl:match name="OnEveryRow" nameConstraint="OnEveryRow" minOccurs="0" maxOccurs="unbounded">
+                            <MINIPAGE name="Table Row" class="grwTableRow" width="min" length="max" alignment="near" layoutDirection="leftToRight">
+                                <rtl:input-variable name="item.focusRow.COIL_NO" type="FGLString" expectedLocation="expectedHere"/>
+                                <WORDBOX name="COIL_NO_val" y="0" width="75" length="15" alignment="center" fontName="標楷體" baselineType="leftleft" port="anyPageHeader" clip="true" textAlignment="center" text="{{item.focusRow.COIL_NO}}"/>
+                                <rtl:input-variable name="item.focusRow.STEEL_GRADE" type="FGLString" expectedLocation="expectedHere"/>
+                                <WORDBOX name="STEEL_GRADE_val" y="max*0.07" width="55" length="15" alignment="center" fontName="標楷體" baselineType="leftleft" port="anyPageHeader" textAlignment="center" text="{{item.focusRow.STEEL_GRADE}}"/>
+                                <rtl:input-variable name="item.focusRow.COIL_WIDTH" type="FGLNumeric" expectedLocation="expectedHere"/>
+                                <WORDBOX name="COIL_WIDTH_val" y="max*0.14" width="55" length="15" alignment="center" fontName="標楷體" baselineType="leftleft" port="anyPageHeader" textAlignment="center" text="{{item.focusRow.COIL_WIDTH}}"/>
+                                <rtl:input-variable name="item.focusRow.COIL_THICK" type="FGLNumeric" expectedLocation="expectedHere"/>
+                                <WORDBOX name="COIL_THICK_val" y="max*0.21" width="55" length="15" alignment="center" fontName="標楷體" baselineType="leftleft" port="anyPageHeader" textAlignment="center" text="{{item.focusRow.COIL_THICK}}"/>
+                                <rtl:input-variable name="item.focusRow.COIL_WT" type="FGLNumeric" expectedLocation="expectedHere"/>
+                                <WORDBOX name="COIL_WT_val" y="max*0.28" width="55" length="15" alignment="center" fontName="標楷體" baselineType="leftleft" port="anyPageHeader" textAlignment="center" text="{{item.focusRow.COIL_WT}}"/>
+                                <rtl:input-variable name="item.focusRow.CLASS_CODE" type="FGLString" expectedLocation="expectedHere"/>
+                                <WORDBOX name="CLASS_CODE_val" y="max*0.35" width="55" length="15" alignment="center" fontName="標楷體" baselineType="leftleft" port="anyPageHeader" textAlignment="center" text="{{item.focusRow.CLASS_CODE}}"/>
+                                <rtl:input-variable name="item.focusRow.IC_CODE" type="FGLString" expectedLocation="expectedHere"/>
+                                <WORDBOX name="IC_CODE_val" y="max*0.42" width="55" length="15" alignment="center" fontName="標楷體" baselineType="leftleft" port="anyPageHeader" textAlignment="center" text="{{item.focusRow.IC_CODE}}"/>
+                                <rtl:input-variable name="item.focusRow.ORDER_NO_ITEM" type="FGLString" expectedLocation="expectedHere"/>
+                                <WORDBOX name="ORDER_NO_ITEM_val" y="max*0.49" width="min" length="15" alignment="center" fontName="標楷體" fidelity="true" baselineType="leftleft" port="anyPageHeader" textAlignment="center" text="{{item.focusRow.ORDER_NO_ITEM}}"/>
+                                <rtl:input-variable name="item.focusRow.DUE_DATE" type="FGLString" expectedLocation="expectedHere"/>
+                                <WORDBOX name="DUE_DATE_val" y="max*0.56" width="min" length="15" alignment="center" fontName="標楷體" fidelity="true" baselineType="leftleft" port="anyPageHeader" textAlignment="center" text="{{item.focusRow.DUE_DATE}}"/>
+                            </MINIPAGE>
+                        </rtl:match>
+                    </rtl:match>
+                    <MINIPAGE name="Separator1" width="1" length="max" bgColor="#000000" layoutDirection="leftToRight"/>
+                    <LAYOUTNODE name="WT_total1" class="grwTableHeader" width="min" length="max" layoutDirection="leftToRight">
+                        <WORDBOX name="Total Lable" y="max*0.55" width="min" length="22" alignment="near" fontName="標楷體" fidelity="true" baselineType="leftleft" port="anyPageHeader" text="{{&quot;合記重量(頓)&quot;}}"/>
+                        <rtl:input-variable name="item.totalWT" type="FGLNumeric" expectedLocation="expectedBefore"/>
+                        <DECIMALFORMATBOX name="Total Weight1" y="max*0.77" width="min" length="22" alignment="near" fontName="標楷體" baselineType="leftleft" port="anyPageHeader" format="-,---,---,--&amp;.&amp;&amp;" value="{{item.totalWT/1000}}"/>
+                    </LAYOUTNODE>
+                </MINIPAGE>
+            </rtl:match>
+        </PXML>
+    </rtl:stylesheet>
+</report:Report>

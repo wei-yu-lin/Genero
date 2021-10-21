@@ -1,0 +1,34 @@
+GLOBALS "../Library/CR2_TypeRec.4gl"
+
+MAIN
+    DEFINE x CZFP322W
+    DEFINE y CZFP321W
+
+    
+END MAIN
+
+FUNCTION (src CZFP322W) to321W() RETURNS CZFP321W
+    DEFINE res CZFP321W
+
+    LET res.COIL_NO = src.COIL_NO
+    LET res.FLAG = src.FLAG
+    LET res.BP = src.BP
+    LET res.FP = src.FP
+    LET res.STEEL_GRADE = src.STEEL_GRADE
+    LET res.COIL_WIDTH = src.COIL_WIDTH
+    LET res.COIL_THICK = src.COIL_THICK
+    LET res.OUT_THICK = src.OUT_THICK
+    LET res.REDUCTION = src.REDUCTION
+    LET res.COIL_WT = src.COIL_WT
+    LET res.PREV_STATION = src.PREV_STATION
+    LET res.NEXT_STATION = src.NEXT_STATION
+    LET res.ORDER_NO_ITEM = src.ORDER_NO_ITEM
+    LET res.DUE_DATE = src.DUE_DATE
+    LET res.RUSH_CODE_PP = src.RUSH_CODE_PP
+    LET res.CLASS_CODE = src.CLASS_CODE
+    LET res.IC_CODE = src.IC_CODE
+    LET res.APN_CODE = src.APN_CODE
+    LET res.SPARE = src.SPARE
+
+    RETURN res
+END FUNCTION

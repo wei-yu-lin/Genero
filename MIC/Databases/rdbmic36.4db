@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Schema gstVersion="31408" id="{3ca2e689-6c86-49ad-b4e6-4f2b11202890}" version="4.0">
+  <AGSettings version="1.1">
+    <DynamicProperties version="2">
+      <DynamicProperty description="Associated label when generating form" initialValue="" isDefaultInherited="false" isHidden="false" label="標籤" name="label" readOnly="false" type="TEXT"/>
+      <DynamicProperty description="Associated widget" editorInfo="contains:ButtonEdit|CheckBox|ComboBox|DateEdit|DateTimeEdit|Edit|FFImage|FFLabel|Field|Phantom|ProgressBar|RadioGroup|Slider|SpinEdit|TextEdit|TimeEdit" initialValue="Edit" isDefaultInherited="false" isHidden="false" label="Widget" name="widget" readOnly="false" type="ENUM"/>
+      <DynamicPropertyGroup collapsed="false" description="Formfied properties" label="Formfield" name="formfieldGroup" properties="label;widget"/>
+    </DynamicProperties>
+    <NodeInfos version="1">
+      <NodeInfo mimeType="db/column" properties="widget;label"/>
+    </NodeInfos>
+  </AGSettings>
+  <ExtractionSettings/>
+  <Table active="true" name="APYM010M" status="U" uuid="db/table118">
+    <Column fglLength="8" fglType="3" name="ZMILL_THICK_1_MIN" notNull="false" order="1" status="U" uuid="db/column1678"/>
+    <Column fglLength="8" fglType="3" name="ZMILL_THICK_1_MAX" notNull="false" order="2" status="U" uuid="db/column1680"/>
+    <Column fglLength="2" fglType="1" name="TARGET_WIDTH_MIN" notNull="false" order="3" status="U" uuid="db/column1682"/>
+    <Column fglLength="2" fglType="1" name="TARGET_WIDTH_MAX" notNull="false" order="4" status="U" uuid="db/column1684"/>
+    <Column fglLength="8" fglType="3" name="STRIP_THICK" notNull="false" order="5" status="U" uuid="db/column1686"/>
+    <Column fglLength="8" fglType="3" name="STRIP_THICK_MIN" notNull="false" order="6" status="U" uuid="db/column1688"/>
+    <Column fglLength="8" fglType="3" name="STRIP_THICK_MAX" notNull="false" order="7" status="U" uuid="db/column1690"/>
+    <Column fglLength="8" fglType="0" name="DATE_LAST_MAINT" notNull="false" order="8" status="U" uuid="db/column1692"/>
+    <Column fglLength="6" fglType="0" name="TIME_LAST_MAINT" notNull="false" order="9" status="U" uuid="db/column1694"/>
+    <Column fglLength="8" fglType="0" name="USER_LAST_MAINT" notNull="false" order="10" status="U" uuid="db/column1696"/>
+    <Column fglLength="8" fglType="0" name="PROG_LAST_MAINT" notNull="false" order="11" status="U" uuid="db/column1698"/>
+    <Column fglLength="4" fglType="0" name="APY_CODE" notNull="false" order="12" status="U" uuid="db/column1700"/>
+  </Table>
+  <Table active="true" name="APYM060M" status="U" uuid="db/table120">
+    <Column fglLength="7" fglType="0" name="PROC_CODE" notNull="false" order="1" status="U" uuid="db/column1702"/>
+    <Column fglLength="2" fglType="1" name="SEQ_NO" notNull="false" order="2" status="U" uuid="db/column1704"/>
+    <Column fglLength="40" fglType="0" name="DESCRIPTION" notNull="false" order="3" status="U" uuid="db/column1706"/>
+    <Column fglLength="8" fglType="0" name="DATE_LAST_MAINT" notNull="false" order="4" status="U" uuid="db/column1708"/>
+    <Column fglLength="6" fglType="0" name="TIME_LAST_MAINT" notNull="false" order="5" status="U" uuid="db/column1710"/>
+    <Column fglLength="8" fglType="0" name="USER_LAST_MAINT" notNull="false" order="6" status="U" uuid="db/column1712"/>
+    <Column fglLength="8" fglType="0" name="PROG_LAST_MAINT" notNull="false" order="7" status="U" uuid="db/column1714"/>
+  </Table>
+  <Table active="true" name="APYM070M" status="U" uuid="db/table122">
+    <Column fglLength="8" fglType="3" name="ORD_THICK_MIN" notNull="false" order="1" status="U" uuid="db/column1716"/>
+    <Column fglLength="8" fglType="3" name="ORD_THICK_MAX" notNull="false" order="2" status="U" uuid="db/column1718"/>
+    <Column fglLength="2" fglType="1" name="CUTTING_WID_AIM" notNull="false" order="3" status="U" uuid="db/column1720"/>
+    <Column fglLength="2" fglType="1" name="CUTTING_WID_MIN" notNull="false" order="4" status="U" uuid="db/column1722"/>
+    <Column fglLength="2" fglType="1" name="CUTTING_WID_MAX" notNull="false" order="5" status="U" uuid="db/column1724"/>
+    <Column fglLength="8" fglType="0" name="DATE_LAST_MAINT" notNull="false" order="6" status="U" uuid="db/column1726"/>
+    <Column fglLength="6" fglType="0" name="TIME_LAST_MAINT" notNull="false" order="7" status="U" uuid="db/column1728"/>
+    <Column fglLength="8" fglType="0" name="USER_LAST_MAINT" notNull="false" order="8" status="U" uuid="db/column1730"/>
+    <Column fglLength="8" fglType="0" name="PROG_LAST_MAINT" notNull="false" order="9" status="U" uuid="db/column1732"/>
+    <Column fglLength="2" fglType="1" name="ORD_WIDTH_MIN" notNull="false" order="10" status="U" uuid="db/column1734"/>
+    <Column fglLength="2" fglType="1" name="ORD_WIDTH_MAX" notNull="false" order="11" status="U" uuid="db/column1736"/>
+  </Table>
+  <Table active="true" name="MICM010M" status="U" uuid="db/table124">
+    <Column fglLength="6" fglType="0" name="MIC_NO" notNull="false" order="1" status="U" uuid="db/column1738"/>
+    <Column fglLength="8" fglType="0" name="DATE_ISSUED" notNull="false" order="2" status="U" uuid="db/column1740"/>
+    <Column fglLength="3" fglType="0" name="REVISION" notNull="false" order="3" status="U" uuid="db/column1742"/>
+    <Column fglLength="1" fglType="0" name="PRODUCT_CODE" notNull="false" order="4" status="U" uuid="db/column1744"/>
+    <Column fglLength="4" fglType="0" name="FORMABILITY" notNull="false" order="5" status="U" uuid="db/column1746"/>
+    <Column fglLength="4" fglType="0" name="SURFACE_QUALITY" notNull="false" order="6" status="U" uuid="db/column1748"/>
+    <Column fglLength="4" fglType="0" name="APPLICATION_CODE" notNull="false" order="7" status="U" uuid="db/column1750"/>
+    <Column fglLength="3" fglType="0" name="GRAIN_SIZE" notNull="false" order="8" status="U" uuid="db/column1752"/>
+    <Column fglLength="1" fglType="0" name="EDGE_CODE" notNull="false" order="9" status="U" uuid="db/column1754"/>
+    <Column fglLength="4" fglType="0" name="DIMENSION_CODE" notNull="false" order="10" status="U" uuid="db/column1756"/>
+    <Column fglLength="40" fglType="0" name="MIC_REMARK" notNull="false" order="11" status="U" uuid="db/column1758"/>
+    <Column fglLength="8" fglType="3" name="SPM_ELONGATION" notNull="false" order="12" status="U" uuid="db/column1760"/>
+    <Column fglLength="4" fglType="0" name="INSPECTION_CODE" notNull="false" order="13" status="U" uuid="db/column1762"/>
+    <Column fglLength="5" fglType="0" name="SAMPLING_CODE" notNull="false" order="14" status="U" uuid="db/column1764"/>
+    <Column fglLength="5" fglType="0" name="MPL_MARK_CODE" notNull="false" order="15" status="U" uuid="db/column1766"/>
+    <Column fglLength="5" fglType="0" name="MPL_PACK_CODE" notNull="false" order="16" status="U" uuid="db/column1768"/>
+    <Column fglLength="5" fglType="0" name="MPL_LOAD_CODE" notNull="false" order="17" status="U" uuid="db/column1770"/>
+    <Column fglLength="4" fglType="0" name="TEST_CODE1" notNull="false" order="18" status="U" uuid="db/column1772"/>
+    <Column fglLength="4" fglType="0" name="TEST_CODE2" notNull="false" order="19" status="U" uuid="db/column1774"/>
+    <Column fglLength="4" fglType="0" name="TEST_CODE3" notNull="false" order="20" status="U" uuid="db/column1776"/>
+    <Column fglLength="4" fglType="0" name="TEST_CODE4" notNull="false" order="21" status="U" uuid="db/column1778"/>
+    <Column fglLength="4" fglType="0" name="TEST_CODE5" notNull="false" order="22" status="U" uuid="db/column1780"/>
+    <Column fglLength="8" fglType="0" name="DATE_LAST_MAINT" notNull="false" order="23" status="U" uuid="db/column1782"/>
+    <Column fglLength="6" fglType="0" name="TIME_LAST_MAINT" notNull="false" order="24" status="U" uuid="db/column1784"/>
+    <Column fglLength="8" fglType="0" name="USER_LAST_MAINT" notNull="false" order="25" status="U" uuid="db/column1786"/>
+    <Column fglLength="8" fglType="0" name="PROG_LAST_MAINT" notNull="false" order="26" status="U" uuid="db/column1788"/>
+  </Table>
+  <Table active="true" name="MICM012M" status="U" uuid="db/table126">
+    <Column fglLength="7" fglType="0" name="PROCESS_CODE" notNull="false" order="1" status="U" uuid="db/column1790"/>
+    <Column fglLength="8" fglType="3" name="ORD_THICK_MIN" notNull="false" order="2" status="U" uuid="db/column1792"/>
+    <Column fglLength="8" fglType="3" name="ORD_THICK_MAX" notNull="false" order="3" status="U" uuid="db/column1794"/>
+    <Column fglLength="2" fglType="1" name="ORD_WIDTH_MIN" notNull="false" order="4" status="U" uuid="db/column1796"/>
+    <Column fglLength="2" fglType="1" name="ORD_WIDTH_MAX" notNull="false" order="5" status="U" uuid="db/column1798"/>
+    <Column fglLength="4" fglType="0" name="PROC_CODE" notNull="false" order="6" status="U" uuid="db/column1800"/>
+    <Column fglLength="8" fglType="0" name="DATE_LAST_MAINT" notNull="false" order="7" status="U" uuid="db/column1802"/>
+    <Column fglLength="6" fglType="0" name="TIME_LAST_MAINT" notNull="false" order="8" status="U" uuid="db/column1804"/>
+    <Column fglLength="8" fglType="0" name="USER_LAST_MAINT" notNull="false" order="9" status="U" uuid="db/column1806"/>
+    <Column fglLength="8" fglType="0" name="PROG_LAST_MAINT" notNull="false" order="10" status="U" uuid="db/column1808"/>
+  </Table>
+  <Table active="true" name="MICM020M" status="U" uuid="db/table128">
+    <Column fglLength="6" fglType="0" name="CUST_NO" notNull="false" order="1" status="U" uuid="db/column1810"/>
+    <Column fglLength="8" fglType="0" name="PSR_NO" notNull="false" order="2" status="U" uuid="db/column1812"/>
+    <Column fglLength="4" fglType="0" name="APN_NO" notNull="false" order="3" status="U" uuid="db/column1814"/>
+    <Column fglLength="6" fglType="0" name="MIC_NO" notNull="false" order="4" status="U" uuid="db/column1816"/>
+    <Column fglLength="8" fglType="0" name="DATE_LAST_MAINT" notNull="false" order="5" status="U" uuid="db/column1818"/>
+    <Column fglLength="6" fglType="0" name="TIME_LAST_MAINT" notNull="false" order="6" status="U" uuid="db/column1820"/>
+    <Column fglLength="8" fglType="0" name="USER_LAST_MAINT" notNull="false" order="7" status="U" uuid="db/column1822"/>
+    <Column fglLength="8" fglType="0" name="PROG_LAST_MAINT" notNull="false" order="8" status="U" uuid="db/column1824"/>
+  </Table>
+  <Table active="true" name="MICM030M" status="U" uuid="db/table130">
+    <Column fglLength="6" fglType="0" name="MIC_NO" notNull="false" order="1" status="U" uuid="db/column1826"/>
+    <Column fglLength="8" fglType="3" name="GAUGE_MIN" notNull="false" order="2" status="U" uuid="db/column1828"/>
+    <Column fglLength="8" fglType="3" name="GAUGE_MAX" notNull="false" order="3" status="U" uuid="db/column1830"/>
+    <Column fglLength="2" fglType="1" name="YS_YP_MIN" notNull="false" order="4" status="U" uuid="db/column1832"/>
+    <Column fglLength="2" fglType="1" name="YS_YP_MAX" notNull="false" order="5" status="U" uuid="db/column1834"/>
+    <Column fglLength="2" fglType="1" name="YS_02_MIN" notNull="false" order="6" status="U" uuid="db/column1836"/>
+    <Column fglLength="2" fglType="1" name="YS_02_MAX" notNull="false" order="7" status="U" uuid="db/column1838"/>
+    <Column fglLength="2" fglType="1" name="YS_10_MIN" notNull="false" order="8" status="U" uuid="db/column1840"/>
+    <Column fglLength="2" fglType="1" name="YS_10_MAX" notNull="false" order="9" status="U" uuid="db/column1842"/>
+    <Column fglLength="2" fglType="1" name="TS_MIN" notNull="false" order="10" status="U" uuid="db/column1844"/>
+    <Column fglLength="2" fglType="1" name="TS_MAX" notNull="false" order="11" status="U" uuid="db/column1846"/>
+    <Column fglLength="2" fglType="1" name="ELONGATION" notNull="false" order="12" status="U" uuid="db/column1848"/>
+    <Column fglLength="2" fglType="1" name="HARD_HRB_MIN" notNull="false" order="13" status="U" uuid="db/column1850"/>
+    <Column fglLength="2" fglType="1" name="HARD_HRB_MAX" notNull="false" order="14" status="U" uuid="db/column1852"/>
+    <Column fglLength="2" fglType="1" name="HARD_HB_MIN" notNull="false" order="15" status="U" uuid="db/column1854"/>
+    <Column fglLength="2" fglType="1" name="HARD_HB_MAX" notNull="false" order="16" status="U" uuid="db/column1856"/>
+    <Column fglLength="2" fglType="1" name="HARD_HV_MIN" notNull="false" order="17" status="U" uuid="db/column1858"/>
+    <Column fglLength="2" fglType="1" name="HARD_HV_MAX" notNull="false" order="18" status="U" uuid="db/column1860"/>
+    <Column fglLength="2" fglType="1" name="BEND_ANGLE" notNull="false" order="19" status="U" uuid="db/column1862"/>
+    <Column fglLength="8" fglType="3" name="BEND_RADIUS" notNull="false" order="20" status="U" uuid="db/column1864"/>
+    <Column fglLength="8" fglType="3" name="ERICHSEN_MIN" notNull="false" order="21" status="U" uuid="db/column1866"/>
+    <Column fglLength="8" fglType="3" name="ERICHSEN_MAX" notNull="false" order="22" status="U" uuid="db/column1868"/>
+    <Column fglLength="8" fglType="3" name="N_VAL" notNull="false" order="23" status="U" uuid="db/column1870"/>
+    <Column fglLength="8" fglType="3" name="R_VAL" notNull="false" order="24" status="U" uuid="db/column1872"/>
+    <Column fglLength="8" fglType="3" name="DELTA_VAL" notNull="false" order="25" status="U" uuid="db/column1874"/>
+    <Column fglLength="40" fglType="0" name="OTHER" notNull="false" order="26" status="U" uuid="db/column1876"/>
+    <Column fglLength="8" fglType="0" name="DATE_LAST_MAINT" notNull="false" order="27" status="U" uuid="db/column1878"/>
+    <Column fglLength="6" fglType="0" name="TIME_LAST_MAINT" notNull="false" order="28" status="U" uuid="db/column1880"/>
+    <Column fglLength="8" fglType="0" name="USER_LAST_MAINT" notNull="false" order="29" status="U" uuid="db/column1882"/>
+    <Column fglLength="8" fglType="0" name="PROG_LAST_MAINT" notNull="false" order="30" status="U" uuid="db/column1884"/>
+    <Column fglLength="2" fglType="1" name="HARD_HRC_MIN" notNull="false" order="31" status="U" uuid="db/column1886"/>
+    <Column fglLength="2" fglType="1" name="HARD_HRC_MAX" notNull="false" order="32" status="U" uuid="db/column1888"/>
+  </Table>
+  <Table active="true" name="MICM050M" status="U" uuid="db/table132">
+    <Column fglLength="4" fglType="0" name="DIMENSION_CODE" notNull="false" order="1" status="U" uuid="db/column1890"/>
+    <Column fglLength="4" fglType="2" name="LEN_MIN" notNull="false" order="2" status="U" uuid="db/column1892"/>
+    <Column fglLength="4" fglType="2" name="LEN_MAX" notNull="false" order="3" status="U" uuid="db/column1894"/>
+    <Column fglLength="2" fglType="1" name="WID_MIN" notNull="false" order="4" status="U" uuid="db/column1896"/>
+    <Column fglLength="2" fglType="1" name="WID_MAX" notNull="false" order="5" status="U" uuid="db/column1898"/>
+    <Column fglLength="8" fglType="3" name="THICK_MIN" notNull="false" order="6" status="U" uuid="db/column1900"/>
+    <Column fglLength="8" fglType="3" name="THICK_MAX" notNull="false" order="7" status="U" uuid="db/column1902"/>
+    <Column fglLength="2" fglType="1" name="CROWN_MIN" notNull="false" order="8" status="U" uuid="db/column1904"/>
+    <Column fglLength="2" fglType="1" name="CROWN_MAX" notNull="false" order="9" status="U" uuid="db/column1906"/>
+    <Column fglLength="8" fglType="3" name="FLATNESS" notNull="false" order="10" status="U" uuid="db/column1908"/>
+    <Column fglLength="8" fglType="3" name="TOL_LEN_MIN" notNull="false" order="11" status="U" uuid="db/column1910"/>
+    <Column fglLength="8" fglType="3" name="TOL_LEN_MAX" notNull="false" order="12" status="U" uuid="db/column1912"/>
+    <Column fglLength="8" fglType="3" name="TOL_WID_MIN" notNull="false" order="13" status="U" uuid="db/column1914"/>
+    <Column fglLength="8" fglType="3" name="TOL_WID_MAX" notNull="false" order="14" status="U" uuid="db/column1916"/>
+    <Column fglLength="8" fglType="3" name="TOL_THICK_MIN" notNull="false" order="15" status="U" uuid="db/column1918"/>
+    <Column fglLength="8" fglType="3" name="TOL_THICK_MAX" notNull="false" order="16" status="U" uuid="db/column1920"/>
+    <Column fglLength="2" fglType="1" name="TOL_CROWN" notNull="false" order="17" status="U" uuid="db/column1922"/>
+    <Column fglLength="8" fglType="3" name="SHIP_LEN_ADD" notNull="false" order="18" status="U" uuid="db/column1924"/>
+    <Column fglLength="8" fglType="3" name="SHIP_WID_ADD" notNull="false" order="19" status="U" uuid="db/column1926"/>
+    <Column fglLength="8" fglType="3" name="SHIP_THICK_ADD" notNull="false" order="20" status="U" uuid="db/column1928"/>
+    <Column fglLength="8" fglType="0" name="DATE_LAST_MAINT" notNull="false" order="21" status="U" uuid="db/column1930"/>
+    <Column fglLength="6" fglType="0" name="TIME_LAST_MAINT" notNull="false" order="22" status="U" uuid="db/column1932"/>
+    <Column fglLength="8" fglType="0" name="USER_LAST_MAINT" notNull="false" order="23" status="U" uuid="db/column1934"/>
+    <Column fglLength="8" fglType="0" name="PROG_LAST_MAINT" notNull="false" order="24" status="U" uuid="db/column1936"/>
+  </Table>
+  <Table active="true" name="MICM060M" status="U" uuid="db/table134">
+    <Column fglLength="2" fglType="0" name="CODE_TYPE" notNull="false" order="1" status="U" uuid="db/column1938"/>
+    <Column fglLength="10" fglType="0" name="CODE" notNull="false" order="2" status="U" uuid="db/column1940"/>
+    <Column fglLength="30" fglType="0" name="REMARK" notNull="false" order="3" status="U" uuid="db/column1942"/>
+    <Column fglLength="8" fglType="0" name="DATE_LAST_MAINT" notNull="false" order="4" status="U" uuid="db/column1944"/>
+    <Column fglLength="6" fglType="0" name="TIME_LAST_MAINT" notNull="false" order="5" status="U" uuid="db/column1946"/>
+    <Column fglLength="8" fglType="0" name="USER_LAST_MAINT" notNull="false" order="6" status="U" uuid="db/column1948"/>
+    <Column fglLength="8" fglType="0" name="PROG_LAST_MAINT" notNull="false" order="7" status="U" uuid="db/column1950"/>
+  </Table>
+  <Table active="true" name="MICM140M" status="U" uuid="db/table136">
+    <Column fglLength="15" fglType="0" name="SPEC" notNull="false" order="1" status="U" uuid="db/column1952"/>
+    <Column fglLength="40" fglType="0" name="SPEC_DESC" notNull="false" order="2" status="U" uuid="db/column1954"/>
+    <Column fglLength="8" fglType="0" name="DATE_LAST_MAINT" notNull="false" order="3" status="U" uuid="db/column1956"/>
+    <Column fglLength="6" fglType="0" name="TIME_LAST_MAINT" notNull="false" order="4" status="U" uuid="db/column1958"/>
+    <Column fglLength="8" fglType="0" name="USER_LAST_MAINT" notNull="false" order="5" status="U" uuid="db/column1960"/>
+    <Column fglLength="8" fglType="0" name="PROG_LAST_MAINT" notNull="false" order="6" status="U" uuid="db/column1962"/>
+  </Table>
+  <Table active="true" name="MICM145M" status="U" uuid="db/table138">
+    <Column fglLength="15" fglType="0" name="SPEC" notNull="false" order="1" status="U" uuid="db/column1964"/>
+    <Column fglLength="15" fglType="0" name="STEEL_GRADE_JIS" notNull="false" order="2" status="U" uuid="db/column1966"/>
+    <Column fglLength="5" fglType="0" name="PSR_NO_2_6" notNull="false" order="3" status="U" uuid="db/column1968"/>
+    <Column fglLength="11" fglType="0" name="INVOICE_ABBR" notNull="false" order="4" status="U" uuid="db/column1970"/>
+    <Column fglLength="8" fglType="0" name="DATE_LAST_MAINT" notNull="false" order="5" status="U" uuid="db/column1972"/>
+    <Column fglLength="6" fglType="0" name="TIME_LAST_MAINT" notNull="false" order="6" status="U" uuid="db/column1974"/>
+    <Column fglLength="8" fglType="0" name="USER_LAST_MAINT" notNull="false" order="7" status="U" uuid="db/column1976"/>
+    <Column fglLength="8" fglType="0" name="PROG_LAST_MAINT" notNull="false" order="8" status="U" uuid="db/column1978"/>
+  </Table>
+  <Table active="true" name="MICM160M" status="U" uuid="db/table140">
+    <Column fglLength="4" fglType="0" name="SLEEVE_CODE" notNull="false" order="1" status="U" uuid="db/column1980"/>
+    <Column fglLength="2" fglType="1" name="COIL_IN_DIAM" notNull="false" order="2" status="U" uuid="db/column1982"/>
+    <Column fglLength="8" fglType="3" name="COIL_THICK_MIN" notNull="false" order="3" status="U" uuid="db/column1984"/>
+    <Column fglLength="8" fglType="3" name="COIL_THICK_MAX" notNull="false" order="4" status="U" uuid="db/column1986"/>
+    <Column fglLength="2" fglType="1" name="COIL_WIDTH_MIN" notNull="false" order="5" status="U" uuid="db/column1988"/>
+    <Column fglLength="2" fglType="1" name="COIL_WIDTH_MAX" notNull="false" order="6" status="U" uuid="db/column1990"/>
+    <Column fglLength="2" fglType="1" name="SLEEVE_THICK" notNull="false" order="7" status="U" uuid="db/column1992"/>
+    <Column fglLength="2" fglType="1" name="SLEEVE_LENGTH" notNull="false" order="8" status="U" uuid="db/column1994"/>
+    <Column fglLength="2" fglType="1" name="SLEEVE_WEIGHT" notNull="false" order="9" status="U" uuid="db/column1996"/>
+    <Column fglLength="8" fglType="0" name="DATE_LAST_MAINT" notNull="false" order="10" status="U" uuid="db/column1998"/>
+    <Column fglLength="6" fglType="0" name="TIME_LAST_MAINT" notNull="false" order="11" status="U" uuid="db/column2000"/>
+    <Column fglLength="8" fglType="0" name="USER_LAST_MAINT" notNull="false" order="12" status="U" uuid="db/column2002"/>
+    <Column fglLength="8" fglType="0" name="PROG_LAST_MAINT" notNull="false" order="13" status="U" uuid="db/column2004"/>
+  </Table>
+  <Table active="true" name="MICM170M" status="U" uuid="db/table142">
+    <Column fglLength="1" fglType="0" name="PADDING_CODE" notNull="false" order="1" status="U" uuid="db/column2006"/>
+    <Column fglLength="2" fglType="1" name="COIL_WIDTH_MIN" notNull="false" order="2" status="U" uuid="db/column2008"/>
+    <Column fglLength="2" fglType="1" name="COIL_WIDTH_MAX" notNull="false" order="3" status="U" uuid="db/column2010"/>
+    <Column fglLength="2" fglType="1" name="PADDING_WIDTH" notNull="false" order="4" status="U" uuid="db/column2012"/>
+    <Column fglLength="2" fglType="1" name="PADDING_WEIGHT" notNull="false" order="5" status="U" uuid="db/column2014"/>
+    <Column fglLength="8" fglType="0" name="DATE_LAST_MAINT" notNull="false" order="6" status="U" uuid="db/column2016"/>
+    <Column fglLength="6" fglType="0" name="TIME_LAST_MAINT" notNull="false" order="7" status="U" uuid="db/column2018"/>
+    <Column fglLength="8" fglType="0" name="USER_LAST_MAINT" notNull="false" order="8" status="U" uuid="db/column2020"/>
+    <Column fglLength="8" fglType="0" name="PROG_LAST_MAINT" notNull="false" order="9" status="U" uuid="db/column2022"/>
+  </Table>
+  <Table active="true" name="MICM180M" status="U" uuid="db/table144">
+    <Column fglLength="4" fglType="0" name="SLEEVE_CODE" notNull="false" order="1" status="U" uuid="db/column2024"/>
+    <Column fglLength="2" fglType="1" name="COIL_IN_DIAM" notNull="false" order="2" status="U" uuid="db/column2026"/>
+    <Column fglLength="8" fglType="3" name="COIL_THICK_MIN" notNull="false" order="3" status="U" uuid="db/column2028"/>
+    <Column fglLength="8" fglType="3" name="COIL_THICK_MAX" notNull="false" order="4" status="U" uuid="db/column2030"/>
+    <Column fglLength="2" fglType="1" name="COIL_WIDTH_MIN" notNull="false" order="5" status="U" uuid="db/column2032"/>
+    <Column fglLength="2" fglType="1" name="COIL_WIDTH_MAX" notNull="false" order="6" status="U" uuid="db/column2034"/>
+    <Column fglLength="2" fglType="1" name="SLEEVE_THICK" notNull="false" order="7" status="U" uuid="db/column2036"/>
+    <Column fglLength="2" fglType="1" name="SLEEVE_LENGTH" notNull="false" order="8" status="U" uuid="db/column2038"/>
+    <Column fglLength="2" fglType="1" name="SLEEVE_WEIGHT" notNull="false" order="9" status="U" uuid="db/column2040"/>
+    <Column fglLength="8" fglType="0" name="DATE_LAST_MAINT" notNull="false" order="10" status="U" uuid="db/column2042"/>
+    <Column fglLength="6" fglType="0" name="TIME_LAST_MAINT" notNull="false" order="11" status="U" uuid="db/column2044"/>
+    <Column fglLength="8" fglType="0" name="USER_LAST_MAINT" notNull="false" order="12" status="U" uuid="db/column2046"/>
+    <Column fglLength="8" fglType="0" name="PROG_LAST_MAINT" notNull="false" order="13" status="U" uuid="db/column2048"/>
+  </Table>
+  <Table active="true" name="MICM190M" status="U" uuid="db/table146">
+    <Column fglLength="10" fglType="0" name="GRADE_CODE" notNull="false" order="1" status="U" uuid="db/column2050"/>
+    <Column fglLength="8" fglType="3" name="DENSITY" notNull="false" order="2" status="U" uuid="db/column2052"/>
+    <Column fglLength="1" fglType="0" name="SERIAL_CODE" notNull="false" order="3" status="U" uuid="db/column2054"/>
+    <Column fglLength="1" fglType="0" name="ALLOY_CODE" notNull="false" order="4" status="U" uuid="db/column2056"/>
+    <Column fglLength="8" fglType="0" name="DATE_LAST_MAINT" notNull="false" order="5" status="U" uuid="db/column2058"/>
+    <Column fglLength="6" fglType="0" name="TIME_LAST_MAINT" notNull="false" order="6" status="U" uuid="db/column2060"/>
+    <Column fglLength="8" fglType="0" name="USER_LAST_MAINT" notNull="false" order="7" status="U" uuid="db/column2062"/>
+    <Column fglLength="8" fglType="0" name="PROG_LAST_MAINT" notNull="false" order="8" status="U" uuid="db/column2064"/>
+  </Table>
+  <Table active="true" name="MICM210M" status="U" uuid="db/table148">
+    <Column fglLength="15" fglType="0" name="SPEC" notNull="false" order="1" status="U" uuid="db/column2066"/>
+    <Column fglLength="15" fglType="0" name="STEEL_GRADE_JIS" notNull="false" order="2" status="U" uuid="db/column2068"/>
+    <Column fglLength="8" fglType="3" name="THICK_MIN" notNull="false" order="3" status="U" uuid="db/column2070"/>
+    <Column fglLength="8" fglType="3" name="THICK_MAX" notNull="false" order="4" status="U" uuid="db/column2072"/>
+    <Column fglLength="8" fglType="3" name="C_MIN" notNull="false" order="5" status="U" uuid="db/column2074"/>
+    <Column fglLength="8" fglType="3" name="C_MAX" notNull="false" order="6" status="U" uuid="db/column2076"/>
+    <Column fglLength="8" fglType="3" name="SI_MIN" notNull="false" order="7" status="U" uuid="db/column2078"/>
+    <Column fglLength="8" fglType="3" name="SI_MAX" notNull="false" order="8" status="U" uuid="db/column2080"/>
+    <Column fglLength="8" fglType="3" name="MN_MIN" notNull="false" order="9" status="U" uuid="db/column2082"/>
+    <Column fglLength="8" fglType="3" name="MN_MAX" notNull="false" order="10" status="U" uuid="db/column2084"/>
+    <Column fglLength="8" fglType="3" name="P_MIN" notNull="false" order="11" status="U" uuid="db/column2086"/>
+    <Column fglLength="8" fglType="3" name="P_MAX" notNull="false" order="12" status="U" uuid="db/column2088"/>
+    <Column fglLength="8" fglType="3" name="S_MIN" notNull="false" order="13" status="U" uuid="db/column2090"/>
+    <Column fglLength="8" fglType="3" name="S_MAX" notNull="false" order="14" status="U" uuid="db/column2092"/>
+    <Column fglLength="8" fglType="3" name="NI_MIN" notNull="false" order="15" status="U" uuid="db/column2094"/>
+    <Column fglLength="8" fglType="3" name="NI_MAX" notNull="false" order="16" status="U" uuid="db/column2096"/>
+    <Column fglLength="8" fglType="3" name="CR_MIN" notNull="false" order="17" status="U" uuid="db/column2098"/>
+    <Column fglLength="8" fglType="3" name="CR_MAX" notNull="false" order="18" status="U" uuid="db/column2100"/>
+    <Column fglLength="8" fglType="3" name="MO_MIN" notNull="false" order="19" status="U" uuid="db/column2102"/>
+    <Column fglLength="8" fglType="3" name="MO_MAX" notNull="false" order="20" status="U" uuid="db/column2104"/>
+    <Column fglLength="8" fglType="3" name="N_MIN" notNull="false" order="21" status="U" uuid="db/column2106"/>
+    <Column fglLength="8" fglType="3" name="N_MAX" notNull="false" order="22" status="U" uuid="db/column2108"/>
+    <Column fglLength="8" fglType="3" name="AL_MIN" notNull="false" order="23" status="U" uuid="db/column2110"/>
+    <Column fglLength="8" fglType="3" name="AL_MAX" notNull="false" order="24" status="U" uuid="db/column2112"/>
+    <Column fglLength="8" fglType="3" name="CU_MIN" notNull="false" order="25" status="U" uuid="db/column2114"/>
+    <Column fglLength="8" fglType="3" name="CU_MAX" notNull="false" order="26" status="U" uuid="db/column2116"/>
+    <Column fglLength="6" fglType="0" name="TI_MIN" notNull="false" order="27" status="U" uuid="db/column2118"/>
+    <Column fglLength="6" fglType="0" name="TI_MAX" notNull="false" order="28" status="U" uuid="db/column2120"/>
+    <Column fglLength="6" fglType="0" name="NB_MIN" notNull="false" order="29" status="U" uuid="db/column2122"/>
+    <Column fglLength="6" fglType="0" name="NB_MAX" notNull="false" order="30" status="U" uuid="db/column2124"/>
+    <Column fglLength="6" fglType="0" name="V_MIN" notNull="false" order="31" status="U" uuid="db/column2126"/>
+    <Column fglLength="6" fglType="0" name="V_MAX" notNull="false" order="32" status="U" uuid="db/column2128"/>
+    <Column fglLength="30" fglType="0" name="OTHER" notNull="false" order="33" status="U" uuid="db/column2130"/>
+    <Column fglLength="6" fglType="0" name="YS_02_MIN" notNull="false" order="34" status="U" uuid="db/column2132"/>
+    <Column fglLength="6" fglType="0" name="YS_02_MAX" notNull="false" order="35" status="U" uuid="db/column2134"/>
+    <Column fglLength="6" fglType="0" name="YS_10_MIN" notNull="false" order="36" status="U" uuid="db/column2136"/>
+    <Column fglLength="6" fglType="0" name="YS_10_MAX" notNull="false" order="37" status="U" uuid="db/column2138"/>
+    <Column fglLength="6" fglType="0" name="TS_MIN" notNull="false" order="38" status="U" uuid="db/column2140"/>
+    <Column fglLength="6" fglType="0" name="TS_MAX" notNull="false" order="39" status="U" uuid="db/column2142"/>
+    <Column fglLength="2" fglType="1" name="ELONGATION_MIN" notNull="false" order="40" status="U" uuid="db/column2144"/>
+    <Column fglLength="2" fglType="1" name="ELONGATION_MAX" notNull="false" order="41" status="U" uuid="db/column2146"/>
+    <Column fglLength="2" fglType="1" name="HARD_HRB_MIN" notNull="false" order="42" status="U" uuid="db/column2148"/>
+    <Column fglLength="2" fglType="1" name="HARD_HRB_MAX" notNull="false" order="43" status="U" uuid="db/column2150"/>
+    <Column fglLength="2" fglType="1" name="HARD_HV_MIN" notNull="false" order="44" status="U" uuid="db/column2152"/>
+    <Column fglLength="2" fglType="1" name="HARD_HV_MAX" notNull="false" order="45" status="U" uuid="db/column2154"/>
+    <Column fglLength="2" fglType="1" name="HARD_HB_MIN" notNull="false" order="46" status="U" uuid="db/column2156"/>
+    <Column fglLength="2" fglType="1" name="HARD_HB_MAX" notNull="false" order="47" status="U" uuid="db/column2158"/>
+    <Column fglLength="6" fglType="0" name="BEND_TEST1" notNull="false" order="48" status="U" uuid="db/column2160"/>
+    <Column fglLength="6" fglType="0" name="BEND_TEST2" notNull="false" order="49" status="U" uuid="db/column2162"/>
+    <Column fglLength="8" fglType="0" name="DATE_LAST_MAINT" notNull="false" order="50" status="U" uuid="db/column2164"/>
+    <Column fglLength="6" fglType="0" name="TIME_LAST_MAINT" notNull="false" order="51" status="U" uuid="db/column2166"/>
+    <Column fglLength="8" fglType="0" name="USER_LAST_MAINT" notNull="false" order="52" status="U" uuid="db/column2168"/>
+    <Column fglLength="8" fglType="0" name="PROG_LAST_MAINT" notNull="false" order="53" status="U" uuid="db/column2170"/>
+    <Column fglLength="8" fglType="3" name="CE_MIN" notNull="false" order="54" status="U" uuid="db/column2172"/>
+    <Column fglLength="8" fglType="3" name="CE_MAX" notNull="false" order="55" status="U" uuid="db/column2174"/>
+    <Column fglLength="8" fglType="3" name="WC_MIN" notNull="false" order="56" status="U" uuid="db/column2176"/>
+    <Column fglLength="8" fglType="3" name="WC_MAX" notNull="false" order="57" status="U" uuid="db/column2178"/>
+    <Column fglLength="4" fglType="0" name="CHARPY_UNIT" notNull="false" order="58" status="U" uuid="db/column2180"/>
+    <Column fglLength="6" fglType="0" name="CHARPY_MIN" notNull="false" order="59" status="U" uuid="db/column2182"/>
+    <Column fglLength="2" fglType="1" name="YIELD_RATIO_MIN" notNull="false" order="60" status="U" uuid="db/column2184"/>
+    <Column fglLength="2" fglType="1" name="YIELD_RATIO_MAX" notNull="false" order="61" status="U" uuid="db/column2186"/>
+    <Column fglLength="6" fglType="0" name="CHARPY_AVE_MIN" notNull="false" order="62" status="U" uuid="db/column2188"/>
+    <Column fglLength="3" fglType="0" name="ELONGATION_UNIT" notNull="false" order="63" status="U" uuid="db/column2190"/>
+    <Column fglLength="3" fglType="0" name="C1_ELONGATION_UNIT" notNull="false" order="64" status="U" uuid="db/column2192"/>
+    <Column fglLength="3" fglType="0" name="C2_ELONGATION_UNIT" notNull="false" order="65" status="U" uuid="db/column2194"/>
+    <Column fglLength="3" fglType="0" name="C3_ELONGATION_UNIT" notNull="false" order="66" status="U" uuid="db/column2196"/>
+    <Column fglLength="2" fglType="1" name="C1_ELONGATION_MIN" notNull="false" order="67" status="U" uuid="db/column2198"/>
+    <Column fglLength="2" fglType="1" name="C2_ELONGATION_MIN" notNull="false" order="68" status="U" uuid="db/column2200"/>
+    <Column fglLength="2" fglType="1" name="C3_ELONGATION_MIN" notNull="false" order="69" status="U" uuid="db/column2202"/>
+    <Column fglLength="8" fglType="3" name="CO_MIN" notNull="false" order="70" status="U" uuid="db/column2204"/>
+    <Column fglLength="8" fglType="3" name="CO_MAX" notNull="false" order="71" status="U" uuid="db/column2206"/>
+    <Column fglLength="8" fglType="3" name="B_MIN" notNull="false" order="72" status="U" uuid="db/column2208"/>
+    <Column fglLength="8" fglType="3" name="B_MAX" notNull="false" order="73" status="U" uuid="db/column2210"/>
+    <Column fglLength="8" fglType="3" name="KFA_MIN" notNull="false" order="74" status="U" uuid="db/column2212"/>
+    <Column fglLength="8" fglType="3" name="KFA_MAX" notNull="false" order="75" status="U" uuid="db/column2214"/>
+    <Column fglLength="2" fglType="1" name="HARD_HRC_MIN" notNull="false" order="76" status="U" uuid="db/column2216"/>
+    <Column fglLength="2" fglType="1" name="HARD_HRC_MAX" notNull="false" order="77" status="U" uuid="db/column2218"/>
+    <Column fglLength="2" fglType="1" name="THICK_PERCENT_MIN" notNull="false" order="78" status="U" uuid="db/column2220"/>
+    <Column fglLength="2" fglType="1" name="THICK_PERCENT_MAX" notNull="false" order="79" status="U" uuid="db/column2222"/>
+  </Table>
+  <Table active="true" name="MICM240M" status="U" uuid="db/table150">
+    <Column fglLength="4" fglType="0" name="PR_CODE" notNull="false" order="1" status="U" uuid="db/column2224"/>
+    <Column fglLength="2" fglType="1" name="CH01" notNull="false" order="2" status="U" uuid="db/column2226"/>
+    <Column fglLength="2" fglType="1" name="CH02" notNull="false" order="3" status="U" uuid="db/column2228"/>
+    <Column fglLength="2" fglType="1" name="CH03" notNull="false" order="4" status="U" uuid="db/column2230"/>
+    <Column fglLength="2" fglType="1" name="CH04" notNull="false" order="5" status="U" uuid="db/column2232"/>
+    <Column fglLength="2" fglType="1" name="CH05" notNull="false" order="6" status="U" uuid="db/column2234"/>
+    <Column fglLength="2" fglType="1" name="CH06" notNull="false" order="7" status="U" uuid="db/column2236"/>
+    <Column fglLength="2" fglType="1" name="CH07" notNull="false" order="8" status="U" uuid="db/column2238"/>
+    <Column fglLength="2" fglType="1" name="CH08" notNull="false" order="9" status="U" uuid="db/column2240"/>
+    <Column fglLength="2" fglType="1" name="CH09" notNull="false" order="10" status="U" uuid="db/column2242"/>
+    <Column fglLength="2" fglType="1" name="CH10" notNull="false" order="11" status="U" uuid="db/column2244"/>
+    <Column fglLength="2" fglType="1" name="CH11" notNull="false" order="12" status="U" uuid="db/column2246"/>
+    <Column fglLength="2" fglType="1" name="CH12" notNull="false" order="13" status="U" uuid="db/column2248"/>
+    <Column fglLength="2" fglType="1" name="CH13" notNull="false" order="14" status="U" uuid="db/column2250"/>
+    <Column fglLength="2" fglType="1" name="CH14" notNull="false" order="15" status="U" uuid="db/column2252"/>
+    <Column fglLength="2" fglType="1" name="CH15" notNull="false" order="16" status="U" uuid="db/column2254"/>
+    <Column fglLength="2" fglType="1" name="CH16" notNull="false" order="17" status="U" uuid="db/column2256"/>
+    <Column fglLength="2" fglType="1" name="CH17" notNull="false" order="18" status="U" uuid="db/column2258"/>
+    <Column fglLength="2" fglType="1" name="CH18" notNull="false" order="19" status="U" uuid="db/column2260"/>
+    <Column fglLength="2" fglType="1" name="CH19" notNull="false" order="20" status="U" uuid="db/column2262"/>
+    <Column fglLength="2" fglType="1" name="CH20" notNull="false" order="21" status="U" uuid="db/column2264"/>
+    <Column fglLength="2" fglType="1" name="MH01" notNull="false" order="22" status="U" uuid="db/column2266"/>
+    <Column fglLength="2" fglType="1" name="MH02" notNull="false" order="23" status="U" uuid="db/column2268"/>
+    <Column fglLength="2" fglType="1" name="MH03" notNull="false" order="24" status="U" uuid="db/column2270"/>
+    <Column fglLength="2" fglType="1" name="MH04" notNull="false" order="25" status="U" uuid="db/column2272"/>
+    <Column fglLength="2" fglType="1" name="MH05" notNull="false" order="26" status="U" uuid="db/column2274"/>
+    <Column fglLength="2" fglType="1" name="MH06" notNull="false" order="27" status="U" uuid="db/column2276"/>
+    <Column fglLength="2" fglType="1" name="MH07" notNull="false" order="28" status="U" uuid="db/column2278"/>
+    <Column fglLength="2" fglType="1" name="MH08" notNull="false" order="29" status="U" uuid="db/column2280"/>
+    <Column fglLength="2" fglType="1" name="MH09" notNull="false" order="30" status="U" uuid="db/column2282"/>
+    <Column fglLength="2" fglType="1" name="MH10" notNull="false" order="31" status="U" uuid="db/column2284"/>
+    <Column fglLength="40" fglType="0" name="REMARK" notNull="false" order="32" status="U" uuid="db/column2286"/>
+    <Column fglLength="8" fglType="0" name="DATE_LAST_MAINT" notNull="false" order="33" status="U" uuid="db/column2288"/>
+    <Column fglLength="6" fglType="0" name="TIME_LAST_MAINT" notNull="false" order="34" status="U" uuid="db/column2290"/>
+    <Column fglLength="8" fglType="0" name="USER_LAST_MAINT" notNull="false" order="35" status="U" uuid="db/column2292"/>
+    <Column fglLength="8" fglType="0" name="PROG_LAST_MAINT" notNull="false" order="36" status="U" uuid="db/column2294"/>
+    <Column fglLength="2" fglType="1" name="CH21" notNull="false" order="37" status="U" uuid="db/column2296"/>
+    <Column fglLength="2" fglType="1" name="CH22" notNull="false" order="38" status="U" uuid="db/column2298"/>
+    <Column fglLength="2" fglType="1" name="CH23" notNull="false" order="39" status="U" uuid="db/column2300"/>
+    <Column fglLength="2" fglType="1" name="MH11" notNull="false" order="40" status="U" uuid="db/column2302"/>
+    <Column fglLength="2" fglType="1" name="MH12" notNull="false" order="41" status="U" uuid="db/column2304"/>
+  </Table>
+  <Table active="true" name="MICM290M" status="U" uuid="db/table152">
+    <Column fglLength="1" fglType="0" name="PRODUCT_CODE" notNull="false" order="1" status="U" uuid="db/column2306"/>
+    <Column fglLength="4" fglType="0" name="STEEL_GRADE_2_5" notNull="false" order="2" status="U" uuid="db/column2308"/>
+    <Column fglLength="4" fglType="2" name="WT_MIN" notNull="false" order="3" status="U" uuid="db/column2310"/>
+    <Column fglLength="4" fglType="2" name="WT_MAX" notNull="false" order="4" status="U" uuid="db/column2312"/>
+    <Column fglLength="8" fglType="3" name="THICK_MIN" notNull="false" order="5" status="U" uuid="db/column2314"/>
+    <Column fglLength="8" fglType="3" name="THICK_MAX" notNull="false" order="6" status="U" uuid="db/column2316"/>
+    <Column fglLength="4" fglType="2" name="WID_MIN" notNull="false" order="7" status="U" uuid="db/column2318"/>
+    <Column fglLength="4" fglType="2" name="WID_MAX" notNull="false" order="8" status="U" uuid="db/column2320"/>
+    <Column fglLength="4" fglType="2" name="LEN_MIN" notNull="false" order="9" status="U" uuid="db/column2322"/>
+    <Column fglLength="4" fglType="2" name="LEN_MAX" notNull="false" order="10" status="U" uuid="db/column2324"/>
+    <Column fglLength="1" fglType="0" name="SANDBLASTING" notNull="false" order="11" status="U" uuid="db/column2326"/>
+    <Column fglLength="1" fglType="0" name="TITANIZING" notNull="false" order="12" status="U" uuid="db/column2328"/>
+    <Column fglLength="1" fglType="0" name="ANTI_FINGERPRINT" notNull="false" order="13" status="U" uuid="db/column2330"/>
+    <Column fglLength="23" fglType="0" name="DATE_LAST_MAINT" notNull="false" order="14" status="U" uuid="db/column2332"/>
+    <Column fglLength="8" fglType="0" name="USER_LAST_MAINT" notNull="false" order="15" status="U" uuid="db/column2334"/>
+    <Column fglLength="8" fglType="0" name="PROG_LAST_MAINT" notNull="false" order="16" status="U" uuid="db/column2336"/>
+  </Table>
+  <Table active="true" name="SECPRG" status="U" uuid="db/table154">
+    <Column fglLength="20" fglType="13" name="PRG_NO" notNull="false" order="1" status="U" uuid="db/column2338"/>
+    <Column fglLength="4" fglType="13" name="SYS_NO" notNull="false" order="2" status="U" uuid="db/column2340"/>
+    <Column fglLength="60" fglType="13" name="PRG_NAME" notNull="false" order="3" status="U" uuid="db/column2342"/>
+    <Column fglLength="3" fglType="13" name="SYS_ITEM_NO" notNull="false" order="4" status="U" uuid="db/column2344"/>
+    <Column fglLength="2" fglType="1" name="PRG_SEQ" notNull="false" order="5" status="U" uuid="db/column2346"/>
+  </Table>
+  <Table active="true" name="SECSYS" status="U" uuid="db/table156">
+    <Column fglLength="4" fglType="13" name="SYS_NO" notNull="false" order="1" status="U" uuid="db/column2348"/>
+    <Column fglLength="48" fglType="13" name="SYS_NAME" notNull="false" order="2" status="U" uuid="db/column2350"/>
+  </Table>
+  <Table active="true" name="SECUPRG" status="U" uuid="db/table158">
+    <Column fglLength="20" fglType="13" name="PRG_NO" notNull="false" order="1" status="U" uuid="db/column2352"/>
+    <Column fglLength="8" fglType="13" name="USER_ID" notNull="false" order="2" status="U" uuid="db/column2354"/>
+    <Column fglLength="1" fglType="13" name="PADD" notNull="false" order="3" status="U" uuid="db/column2356"/>
+    <Column fglLength="1" fglType="13" name="PDELETE" notNull="false" order="4" status="U" uuid="db/column2358"/>
+    <Column fglLength="1" fglType="13" name="PMODIFY" notNull="false" order="5" status="U" uuid="db/column2360"/>
+    <Column fglLength="1" fglType="13" name="PQUERY" notNull="false" order="6" status="U" uuid="db/column2362"/>
+    <Column fglLength="1" fglType="13" name="PPRINT" notNull="false" order="7" status="U" uuid="db/column2364"/>
+    <Column fglLength="1" fglType="13" name="PEXECUTE" notNull="false" order="8" status="U" uuid="db/column2366"/>
+  </Table>
+  <Table active="true" name="SECUSER" status="U" uuid="db/table160">
+    <Column fglLength="8" fglType="13" name="USER_ID" notNull="false" order="1" status="U" uuid="db/column2368"/>
+    <Column fglLength="20" fglType="13" name="USER_NAME" notNull="false" order="2" status="U" uuid="db/column2370"/>
+    <Column fglLength="15" fglType="13" name="PASSWORD" notNull="false" order="3" status="U" uuid="db/column2372"/>
+    <Column fglLength="1" fglType="13" name="U_TYPE" notNull="false" order="4" status="U" uuid="db/column2374"/>
+    <Column fglLength="30" fglType="13" name="U_STYLE" notNull="false" order="5" status="U" uuid="db/column2376"/>
+  </Table>
+  <Table active="true" name="MICM310M" status="A" uuid="db/table162">
+    <Column fglLength="4" fglType="0" name="LINE_MARKING" notNull="false" order="1" status="A" uuid="db/column2378"/>
+    <Column fglLength="1" fglType="0" name="LM_PLANE" notNull="false" order="2" status="A" uuid="db/column2380"/>
+    <Column fglLength="1" fglType="0" name="LM_HEAT_NO" notNull="false" order="3" status="A" uuid="db/column2382"/>
+    <Column fglLength="1" fglType="0" name="LM_COIL_NO" notNull="false" order="4" status="A" uuid="db/column2384"/>
+    <Column fglLength="1" fglType="0" name="LM_SPEC" notNull="false" order="5" status="A" uuid="db/column2386"/>
+    <Column fglLength="1" fglType="0" name="LM_STEEL_GRADE" notNull="false" order="6" status="A" uuid="db/column2388"/>
+    <Column fglLength="1" fglType="0" name="LM_SURFACE" notNull="false" order="7" status="A" uuid="db/column2390"/>
+    <Column fglLength="1" fglType="0" name="LM_DIMEMTION" notNull="false" order="8" status="A" uuid="db/column2392"/>
+    <Column fglLength="40" fglType="0" name="REMARK" notNull="false" order="9" status="A" uuid="db/column2394"/>
+    <Column fglLength="1" fglType="0" name="LM_SIDE" notNull="false" order="10" status="A" uuid="db/column3113"/>
+  </Table>
+  <Views ActiveView="視圖-1" showLabels="true">
+    <View Name="視圖-1">
+      <Layout>
+        <![CDATA[AAAAAgAAABYAZABiAC8AdABhAGIAbABlADEANAA0QK54AAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEAMwA0QKLAAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEANAAyQKwgAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEANAA4QLGUAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEANQA2QLZEAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEANgAwQLicAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEANQA0QLZDAAAAAABAYKAAAAAAAD+i8an752yPAQAAABYAZABiAC8AdABhAGIAbABlADEANAA2QLBoAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEAMgA0QIwgAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEAMwA4QKdwAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEAMgAyQILAAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEANQAwQLLAAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEAMgAwQHLAAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEAMQA4AAAAAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEAMwAyQKBoAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEANgAyQLTjAAAAAABANgAAAAAAAD+mhysCDEm/AQAAABYAZABiAC8AdABhAGIAbABlADEAMgA4QJdwAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEAMgA2QJLAAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEANQAyQLPsAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEANQA4QLdwAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEAMwA2QKUYAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEAMwAwQJwgAAAAAABANAAAAAAAAAAAAAAAAAAAAQAAABYAZABiAC8AdABhAGIAbABlADEANAAwQKnIAAAAAABANAAAAAAAAAAAAAAAAAAAAQ==]]>
+      </Layout>
+    </View>
+  </Views>
+</Schema>

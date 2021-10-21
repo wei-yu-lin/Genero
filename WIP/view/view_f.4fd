@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm fileVersion="31400" gstVersion="31408" name="managedform" uid="{feb6ff73-c0ac-4042-a1d5-a64c2344f60d}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="view_rec" uid="{69e64c62-4aa3-4976-959a-e0de6a1906b9}">
+    <RecordField fieldIdRef="1" name="m_coil_no" uid="{14f65527-ea6b-46a4-9d53-26356287bdbd}"/>
+    <RecordField fieldIdRef="2" name="schd_no" uid="{81c2fc4d-3c10-4265-aa94-4883f90bd850}"/>
+    <RecordField fieldIdRef="3" name="steel_grade" uid="{f9e00111-d2dc-448b-bd82-ed0d2a123e9c}"/>
+  </Record>
+  <Form fourSTFile="../../SYS/sys_style.4st" gridHeight="25" gridWidth="80" name="form" text="油拋線維護作業" windowStyle="bk1">
+    <Grid gridHeight="7" gridWidth="51" name="grid1" posX="11" posY="3">
+      <Label gridHeight="1" gridWidth="9" name="label1" posX="4" posY="1" style="bk1" text="母鋼捲編號"/>
+      <Edit case="upper" fieldId="1" gridHeight="1" gridWidth="14" name="m_coil_no" posX="16" posY="1" tabIndex="-1" title="edit1" widget="Edit"/>
+      <Label gridHeight="1" gridWidth="9" name="label2" posX="4" posY="3" text="排程編號"/>
+      <Edit fieldId="2" gridHeight="1" gridWidth="14" name="schd_no" posX="16" posY="3" tabIndex="-1" title="edit2" widget="Edit"/>
+      <Label gridHeight="1" gridWidth="9" name="label3" posX="4" posY="5" text="鋼種"/>
+      <Edit fieldId="3" gridHeight="1" gridWidth="14" name="steel_grade" posX="16" posY="5" tabIndex="-1" title="edit3" widget="Edit"/>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA2ADkAZQA2ADQAYwA2ADIALQA0AGEAYQAzAC0ANAA5ADcANgAtADkANQA5AGEALQBlADAAZABlADYAYQAxADkAMAA2AGIAOQB9AAAAAAAAAAAAAAAAAAAAAD98rAgxJul5AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

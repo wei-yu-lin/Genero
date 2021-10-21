@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="winSendSchd.tmp" build="3.20.08" text="排程序號設定" windowStyle="miniWin" width="17" height="7">
+  <LStr text="排程序號設定"/>
+  <Grid name="schd_gp" width="17" height="7" style="normal">
+    <Label name="label3" width="6" text="排程批號:" posY="1" posX="1" gridWidth="6">
+      <LStr text="排程批號:"/>
+    </Label>
+    <FormField name="formonly.schd_no_fd" colName="schd_no_fd" fieldId="0" sqlTabName="formonly" tabIndex="1">
+      <Edit width="6" format="X-XX-X" picture="XXXX" posY="1" posX="8" gridWidth="6"/>
+    </FormField>
+    <Label name="label4" width="6" text="鋼捲數量:" posY="2" posX="1" gridWidth="6">
+      <LStr text="鋼捲數量:"/>
+    </Label>
+    <FormField name="formonly.coil_num_fd" colName="coil_num_fd" fieldId="1" sqlTabName="formonly" tabIndex="2">
+      <Edit width="6" picture="###" posY="2" posX="8" gridWidth="6"/>
+    </FormField>
+    <Label name="label5" width="6" text="序號初值:" posY="3" posX="1" gridWidth="6">
+      <LStr text="序號初值:"/>
+    </Label>
+    <FormField name="formonly.init_no_fd" colName="init_no_fd" fieldId="2" sqlTabName="formonly" tabIndex="3">
+      <Edit width="6" picture="###" posY="3" posX="8" gridWidth="6"/>
+    </FormField>
+    <Button name="accept" width="7" text="確認送出" posY="5" posX="1" gridWidth="7" tabIndex="4">
+      <LStr text="確認送出"/>
+    </Button>
+    <Button name="cancel" width="7" text="取消" posY="5" posX="9" gridWidth="7" tabIndex="5">
+      <LStr text="取消"/>
+    </Button>
+  </Grid>
+  <RecordView tabName="formonly">
+    <Link colName="schd_no_fd" fieldIdRef="0"/>
+    <Link colName="coil_num_fd" fieldIdRef="1"/>
+    <Link colName="init_no_fd" fieldIdRef="2"/>
+  </RecordView>
+  <RecordView tabName="schd_seq_r">
+    <Link colName="schd_no_fd" fieldIdRef="0"/>
+    <Link colName="coil_num_fd" fieldIdRef="1"/>
+    <Link colName="init_no_fd" fieldIdRef="2"/>
+  </RecordView>
+</Form>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="rdbmic36" fileVersion="31400" gstVersion="31408" name="managedform" uid="{5beebbf4-7b6f-4e5e-b119-43255b587307}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="v_apym070f" uid="{74be689d-c0f6-4080-94db-92be745a82ef}">
+    <RecordField colName="ORD_THICK_MIN" fieldIdRef="1" fieldType="TABLE_COLUMN" name="APYM070M.ORD_THICK_MIN" sqlTabName="APYM070M" uid="{730eb539-7cbe-461c-9d70-4cf65bc05086}"/>
+    <RecordField colName="ORD_THICK_MAX" fieldIdRef="2" fieldType="TABLE_COLUMN" name="APYM070M.ORD_THICK_MAX" sqlTabName="APYM070M" uid="{f2e69bdf-880b-462a-961a-8688a03936e2}"/>
+    <RecordField colName="ORD_WIDTH_MIN" fieldIdRef="3" fieldType="TABLE_COLUMN" name="APYM070M.ORD_WIDTH_MIN" sqlTabName="APYM070M" uid="{0f7d997a-6c49-41f6-b6ed-f822618e7243}"/>
+    <RecordField colName="ORD_WIDTH_MAX" fieldIdRef="4" fieldType="TABLE_COLUMN" name="APYM070M.ORD_WIDTH_MAX" sqlTabName="APYM070M" uid="{a9a5cb3e-de2f-44ee-9f6e-ad71d58047c1}"/>
+    <RecordField colName="CUTTING_WID_AIM" fieldIdRef="5" fieldType="TABLE_COLUMN" name="APYM070M.CUTTING_WID_AIM" sqlTabName="APYM070M" uid="{7d1b6d2b-0817-4839-8bdf-647e11c015a7}"/>
+    <RecordField colName="CUTTING_WID_MIN" fieldIdRef="6" fieldType="TABLE_COLUMN" name="APYM070M.CUTTING_WID_MIN" sqlTabName="APYM070M" uid="{bbf1ea41-80c4-4395-9b07-6fdfe95dc86a}"/>
+    <RecordField colName="CUTTING_WID_MAX" fieldIdRef="7" fieldType="TABLE_COLUMN" name="APYM070M.CUTTING_WID_MAX" sqlTabName="APYM070M" uid="{359ecf9e-2def-4a59-9e18-60d9ff5e5259}"/>
+    <RecordField defaultValue="N" fieldIdRef="8" name="del_rec" uid="{65490f5d-85e1-47a4-bf7f-7b7d39da1f89}"/>
+    <RecordField fieldIdRef="9" name="upd_flag" uid="{908f1881-07e7-4638-8c04-75707e41d689}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="92" name="form" text="鋼捲最終裁邊寬度維護作業">
+    <Grid gridHeight="17" gridWidth="90" name="grid1" posX="1" posY="1">
+      <Table gridHeight="15" gridWidth="86" name="table1" posX="2" posY="1" totalRows="5">
+        <Edit colName="ORD_THICK_MIN" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" justify="center" name="APYM070M.ORD_THICK_MIN" posX="0" posY="0" sqlTabName="APYM070M" tabIndex="-1" title="訂單厚度&#10;下限" widget="Edit"/>
+        <Edit colName="ORD_THICK_MAX" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" justify="center" name="APYM070M.ORD_THICK_MAX" posX="8" posY="0" sqlTabName="APYM070M" tabIndex="-1" title="訂單厚度&#10;上限" widget="Edit"/>
+        <Edit colName="ORD_WIDTH_MIN" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" justify="center" name="APYM070M.ORD_WIDTH_MIN" posX="16" posY="0" sqlTabName="APYM070M" tabIndex="-1" title="訂單寬度&#10;下限" widget="Edit"/>
+        <Edit colName="ORD_WIDTH_MAX" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" justify="center" name="APYM070M.ORD_WIDTH_MAX" posX="24" posY="0" sqlTabName="APYM070M" tabIndex="-1" title="訂單寬度&#10;上限" widget="Edit"/>
+        <Edit colName="CUTTING_WID_AIM" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" justify="center" name="APYM070M.CUTTING_WID_AIM" posX="32" posY="0" sqlTabName="APYM070M" tabIndex="-1" title="最終裁邊寬度&#10;目標" widget="Edit"/>
+        <Edit colName="CUTTING_WID_MIN" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" justify="center" name="APYM070M.CUTTING_WID_MIN" posX="42" posY="0" sqlTabName="APYM070M" tabIndex="-1" title="最終裁邊寬度&#10;下限" widget="Edit"/>
+        <Edit colName="CUTTING_WID_MAX" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" justify="center" name="APYM070M.CUTTING_WID_MAX" posX="52" posY="0" sqlTabName="APYM070M" tabIndex="-1" title="最終裁邊寬度&#10;上限" widget="Edit"/>
+        <CheckBox defaultValue="N" fieldId="8" gridHeight="1" gridWidth="8" name="del_rec" notNull="true" posX="62" posY="0" tabIndex="-1" title="刪除" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit fieldId="9" gridHeight="1" gridWidth="5" hidden="true" name="upd_flag" posX="70" posY="0" tabIndex="-1" title="upd_flag" widget="Edit"/>
+      </Table>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA3ADQAYgBlADYAOAA5AGQALQBjADAAZgA2AC0ANAAwADgAMAAtADkANABkAGIALQA5ADIAYgBlADcANAA1AGEAOAAyAGUAZgB9AAAAAAAAAAAAAAAAAAAAAD+UeuFHrhR+AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

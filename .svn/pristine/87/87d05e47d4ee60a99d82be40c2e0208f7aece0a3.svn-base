@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="rdbpcm" fileVersion="31400" gstVersion="31408" name="managedform" uid="{760d35b4-6da9-4e44-a19c-1289f04af56b}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="CZFP322W_r" uid="{f38d3171-d1c3-48a3-9a34-3378d6a3c424}">
+    <RecordField colName="COIL_NO" fieldIdRef="1" fieldType="COLUMN_LIKE" name="COIL_NO" sqlTabName="PCMB020M" uid="{13168a81-acab-48f6-b770-84cd2ff34c05}"/>
+    <RecordField colName="STEEL_GRADE" fieldIdRef="2" fieldType="COLUMN_LIKE" name="STEEL_GRADE" sqlTabName="PCMB020M" uid="{f3bdb1e5-b502-4af2-b2e3-088afb666986}"/>
+    <RecordField colName="COIL_WIDTH" fieldIdRef="3" fieldType="COLUMN_LIKE" name="COIL_WIDTH" sqlTabName="PCMB020M" uid="{2e3038e1-f1b8-464e-b684-3bd85592fcdf}"/>
+    <RecordField colName="COIL_WEIGHT" fieldIdRef="7" fieldType="COLUMN_LIKE" name="COIL_WEIGHT" sqlTabName="PCMB020M" uid="{72481006-ddbc-4162-8590-7e8d09a08564}"/>
+    <RecordField colName="PREV_STATION" fieldIdRef="8" fieldType="COLUMN_LIKE" name="PREV_STATION" sqlTabName="PCMB020M" uid="{84376935-466b-4863-9abd-dcc57e72b74b}"/>
+    <RecordField colName="NEXT_STATION" fieldIdRef="9" fieldType="COLUMN_LIKE" name="NEXT_STATION" sqlTabName="PCMB020M" uid="{bcf6be05-b41f-4019-996c-9fd2d08f841b}"/>
+    <RecordField colName="CB_FIRST_ORDER_ITEM" fieldIdRef="10" fieldType="COLUMN_LIKE" name="CB_FIRST_ORDER_ITEM" sqlTabName="PCMB020M" uid="{6425ad7d-d66d-4e47-b4c2-4bd7a561f6c9}"/>
+    <RecordField colName="COIL_THICK" fieldIdRef="4" fieldType="COLUMN_LIKE" name="ENTRY_THICK" sqlTabName="PCMB020M" uid="{de4502a1-47ef-4aaa-b972-f7e13cb735db}"/>
+    <RecordField colName="COIL_THICK" fieldIdRef="5" fieldType="COLUMN_LIKE" name="OUT_THICK" sqlTabName="PCMB020M" uid="{52f077a4-789c-431e-8c26-b1d0d8be49f8}"/>
+    <RecordField colName="COIL_THICK" fieldIdRef="6" fieldType="COLUMN_LIKE" name="REDUCTION" sqlTabName="PCMB020M" uid="{70407d8d-26c7-4a4b-9dfd-ee76d83ad419}"/>
+    <RecordField colName="DELIVERY_DATE" fieldIdRef="11" fieldType="COLUMN_LIKE" name="DUE_DATE" sqlTabName="PCMB100M" uid="{2014a791-39bc-4840-9ab8-118003e14e6f}"/>
+    <RecordField fieldIdRef="12" length="4" name="APN_CODE" uid="{e99ee7ce-9507-4a17-a3b5-8c7bb61ba4ef}"/>
+  </Record>
+  <Record name="condition_r" uid="{f7e03d75-5ba9-4a7b-943c-b51cfde239df}">
+    <RecordField fieldIdRef="13" name="condition_cb" uid="{2c32190a-b6f1-44eb-a632-71cca2b7d328}"/>
+    <RecordField fieldIdRef="14" name="condition_sub_cb" uid="{630b5b24-b645-4c70-8248-113bd8411898}"/>
+  </Record>
+  <Record name="czfp321w_r" uid="{b6492894-996f-41f1-becd-303233ff9b5e}">
+    <RecordField colName="COIL_NO" fieldIdRef="15" fieldType="COLUMN_LIKE" name="coil_no1" sqlTabName="PCMB020M" uid="{5f1785d4-0d20-4cbe-b951-08a525ebf3ea}"/>
+    <RecordField colName="STEEL_GRADE" fieldIdRef="16" fieldType="COLUMN_LIKE" name="steel_grade1" sqlTabName="PCMB020M" uid="{737d18dd-519b-43a0-bc72-b5b33c59de24}"/>
+    <RecordField colName="COIL_WIDTH" fieldIdRef="17" fieldType="COLUMN_LIKE" name="coil_width1" sqlTabName="PCMB020M" uid="{2be3bce4-8301-4457-9f64-78237082da5b}"/>
+    <RecordField colName="COIL_WEIGHT" fieldIdRef="21" fieldType="COLUMN_LIKE" name="coil_weight1" sqlTabName="PCMB020M" uid="{40579141-f5c7-4e2a-9b79-190dbc9b619c}"/>
+    <RecordField colName="PREV_STATION" fieldIdRef="22" fieldType="COLUMN_LIKE" name="prev_station1" sqlTabName="PCMB020M" uid="{59800e09-ee69-4da8-a16f-2bfbf6ece8e3}"/>
+    <RecordField colName="NEXT_STATION" fieldIdRef="23" fieldType="COLUMN_LIKE" name="next_station1" sqlTabName="PCMB020M" uid="{efeb156c-ffe2-4fb0-acad-a826c27d61b0}"/>
+    <RecordField colName="CB_FIRST_ORDER_ITEM" fieldIdRef="24" fieldType="COLUMN_LIKE" name="cb_first_order_item1" sqlTabName="PCMB020M" uid="{0e23dd29-35b9-443f-905f-f691267c4d76}"/>
+    <RecordField colName="COIL_THICK" fieldIdRef="18" fieldType="COLUMN_LIKE" name="entry_thick1" sqlTabName="PCMB020M" uid="{6c4f7119-1c18-453e-831a-866296712bc1}"/>
+    <RecordField colName="COIL_THICK" fieldIdRef="19" fieldType="COLUMN_LIKE" name="out_thick1" sqlTabName="PCMB020M" uid="{4ca1fd05-f877-46f2-8d4e-467ae26cb840}"/>
+    <RecordField colName="COIL_THICK" fieldIdRef="20" fieldType="COLUMN_LIKE" name="reduction1" sqlTabName="PCMB020M" uid="{87cabe73-9e74-4d8a-8a23-68e9699481ee}"/>
+    <RecordField colName="DELIVERY_DATE" fieldIdRef="25" fieldType="COLUMN_LIKE" name="due_date1" sqlTabName="PCMB100M" uid="{70c67e01-c079-4e32-aa50-11a247e77d65}"/>
+    <RecordField fieldIdRef="26" length="4" name="apn_code1" uid="{502fa10b-184c-4935-9948-1c4e35d5e6eb}"/>
+  </Record>
+  <Form fourSTFile="../4st/cr6sch.4st" gridHeight="25" gridWidth="156" name="form" text="#CRM6 生產排程選取作業">
+    <Grid gridHeight="25" gridWidth="154" name="grid1" posX="1" posY="0">
+      <Group gridHeight="8" gridWidth="16" name="group1" posX="18" posY="1" text="條件選取">
+        <Label gridHeight="1" gridWidth="9" name="label1" posX="2" posY="1" text="主條件選取"/>
+        <ComboBox fieldId="13" gridHeight="1" gridWidth="13" items="" name="condition_cb" posX="2" posY="2" tabIndex="-1" title="combobox1" widget="ComboBox"/>
+        <Label gridHeight="1" gridWidth="9" name="label2" posX="2" posY="3" text="副條件選取"/>
+        <ComboBox fieldId="14" gridHeight="1" gridWidth="13" items="" name="condition_sub_cb" posX="2" posY="4" tabIndex="-1" title="combobox1" widget="ComboBox"/>
+      </Group>
+      <Label gridHeight="1" gridWidth="14" name="label3" posX="35" posY="1" text="鋼捲選擇池"/>
+      <Button gridHeight="1" gridWidth="13" name="CR6SCH01" posX="1" posY="2" tabIndex="-1" text="1. 生產排程選取作業"/>
+      <Table gridHeight="10" gridWidth="109" name="table1" posX="35" posY="2" totalRows="5" unhidableColumns="false">
+        <Edit colName="COIL_NO" fieldId="1" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="8" name="COIL_NO" posX="0" posY="0" sqlTabName="PCMB020M" tabIndex="-1" title="鋼捲編號" widget="Edit"/>
+        <Edit colName="STEEL_GRADE" fieldId="2" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="8" name="STEEL_GRADE" posX="8" posY="0" sqlTabName="PCMB020M" tabIndex="-1" title="鋼種" widget="Edit"/>
+        <Edit colName="COIL_WIDTH" fieldId="3" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="8" name="COIL_WIDTH" posX="16" posY="0" sqlTabName="PCMB020M" tabIndex="-1" title="寬度" widget="Edit"/>
+        <Edit colName="COIL_THICK" fieldId="4" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="8" name="ENTRY_THICK" posX="24" posY="0" sqlTabName="PCMB020M" tabIndex="-1" title="入料" widget="Edit"/>
+        <Edit colName="COIL_THICK" fieldId="5" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="8" name="OUT_THICK" posX="32" posY="0" sqlTabName="PCMB020M" tabIndex="-1" title="出料" widget="Edit"/>
+        <Edit colName="COIL_THICK" fieldId="6" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="8" name="REDUCTION" posX="40" posY="0" sqlTabName="PCMB020M" tabIndex="-1" title="軋延" widget="Edit"/>
+        <Edit colName="COIL_WEIGHT" fieldId="7" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="8" name="COIL_WEIGHT" posX="48" posY="0" sqlTabName="PCMB020M" tabIndex="-1" title="重量" widget="Edit"/>
+        <Edit colName="PREV_STATION" fieldId="8" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="8" name="PREV_STATION" posX="56" posY="0" sqlTabName="PCMB020M" tabIndex="-1" title="PRE" widget="Edit"/>
+        <Edit colName="NEXT_STATION" fieldId="9" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="8" name="NEXT_STATION" posX="64" posY="0" sqlTabName="PCMB020M" tabIndex="-1" title="NEX" widget="Edit"/>
+        <Edit colName="CB_FIRST_ORDER_ITEM" fieldId="10" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="8" name="CB_FIRST_ORDER_ITEM" posX="72" posY="0" sqlTabName="PCMB020M" tabIndex="-1" title="訂單編號" widget="Edit"/>
+        <Edit colName="DELIVERY_DATE" fieldId="11" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="8" name="DUE_DATE" posX="80" posY="0" sqlTabName="PCMB100M" tabIndex="-1" title="交期" widget="Edit"/>
+        <Edit fieldId="12" gridHeight="1" gridWidth="8" length="4" name="APN_CODE" posX="88" posY="0" tabIndex="-1" title="用途" widget="Edit"/>
+      </Table>
+      <Button gridHeight="1" gridWidth="8" name="CoarseToFine" posX="18" posY="10" tabIndex="-1" text="粗排到細排"/>
+      <Label gridHeight="1" gridWidth="14" name="label4" posX="35" posY="13" text="候選鋼捲"/>
+      <Table gridHeight="10" gridWidth="109" name="table2" posX="35" posY="14" totalRows="5" unhidableColumns="false">
+        <Edit colName="COIL_NO" fieldId="15" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="8" name="coil_no1" posX="0" posY="0" sqlTabName="PCMB020M" tabIndex="-1" title="鋼捲編號" widget="Edit"/>
+        <Edit colName="STEEL_GRADE" fieldId="16" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="8" name="steel_grade1" posX="8" posY="0" sqlTabName="PCMB020M" tabIndex="-1" title="鋼種" widget="Edit"/>
+        <Edit colName="COIL_WIDTH" fieldId="17" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="8" name="coil_width1" posX="16" posY="0" sqlTabName="PCMB020M" tabIndex="-1" title="寬度" widget="Edit"/>
+        <Edit colName="COIL_THICK" fieldId="18" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="8" name="entry_thick1" posX="24" posY="0" sqlTabName="PCMB020M" tabIndex="-1" title="入料" widget="Edit"/>
+        <Edit colName="COIL_THICK" fieldId="19" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="8" name="out_thick1" posX="32" posY="0" sqlTabName="PCMB020M" tabIndex="-1" title="出料" widget="Edit"/>
+        <Edit colName="COIL_THICK" fieldId="20" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="8" name="reduction1" posX="40" posY="0" sqlTabName="PCMB020M" tabIndex="-1" title="軋延" widget="Edit"/>
+        <Edit colName="COIL_WEIGHT" fieldId="21" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="8" name="coil_weight1" posX="48" posY="0" sqlTabName="PCMB020M" tabIndex="-1" title="重量" widget="Edit"/>
+        <Edit colName="PREV_STATION" fieldId="22" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="8" name="prev_station1" posX="56" posY="0" sqlTabName="PCMB020M" tabIndex="-1" title="PRE" widget="Edit"/>
+        <Edit colName="NEXT_STATION" fieldId="23" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="8" name="next_station1" posX="64" posY="0" sqlTabName="PCMB020M" tabIndex="-1" title="NEX" widget="Edit"/>
+        <Edit colName="CB_FIRST_ORDER_ITEM" fieldId="24" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="8" name="cb_first_order_item1" posX="72" posY="0" sqlTabName="PCMB020M" tabIndex="-1" title="訂單編號" widget="Edit"/>
+        <Edit colName="DELIVERY_DATE" fieldId="25" fieldType="COLUMN_LIKE" gridHeight="1" gridWidth="8" name="due_date1" posX="80" posY="0" sqlTabName="PCMB100M" tabIndex="-1" title="交期" widget="Edit"/>
+        <Edit fieldId="26" gridHeight="1" gridWidth="8" length="4" name="apn_code1" posX="88" posY="0" tabIndex="-1" title="用途" widget="Edit"/>
+      </Table>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBmADcAZQAwADMAZAA3ADUALQA1AGIAYQA5AC0ANABhADcAYgAtADkANAAzAGMALQBiADUAMQBjAGYAZABlADIAMwA5AGQAZgB9QDQAAAAAAABANAAAAAAAAD98rAgxJul5AQAAAEwAewBiADYANAA5ADIAOAA5ADQALQA5ADkANgBmAC0ANAAxAGYAMQAtAGIAZQBjAGQALQAzADAAMwAyADMAMwBmAGYAOQBiADUAZQB9wGQgAAAAAABAHAAAAAAAAD+Kn752yLQ8AQAAAEwAewBmADMAOABkADMAMQA3ADEALQBkADEAYwAzAC0ANAA4AGEAMwAtADkAYQAzADQALQAzADMANwA4AGQANgBhADMAYwA0ADIANAB9wHZQAAAAAABACAAAAAAAAD+GhysCDEm8AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

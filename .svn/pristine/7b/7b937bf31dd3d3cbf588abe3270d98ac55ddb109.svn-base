@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="rdbmic36" fileVersion="31400" gstVersion="31408" name="managedform" uid="{564edde4-d3f4-4af7-bf41-00bdfbd0fb3b}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="v_micm180f" uid="{e86b3b4c-e891-490d-b38b-00d8afda10e6}">
+    <RecordField colName="PADDING_CODE" fieldIdRef="2" fieldType="TABLE_COLUMN" name="MICM170M.PADDING_CODE" sqlTabName="MICM170M" uid="{a266c12b-b3e7-43b1-a79e-70c837ef93b7}"/>
+    <RecordField colName="COIL_WIDTH_MIN" fieldIdRef="1" fieldType="TABLE_COLUMN" name="MICM170M.COIL_WIDTH_MIN" sqlTabName="MICM170M" uid="{2a626b61-28c2-4516-acef-a55deebac075}"/>
+    <RecordField colName="COIL_WIDTH_MAX" fieldIdRef="3" fieldType="TABLE_COLUMN" name="MICM170M.COIL_WIDTH_MAX" sqlTabName="MICM170M" uid="{d9de6946-7398-497c-b744-34a01eb138fe}"/>
+    <RecordField colName="PADDING_WIDTH" fieldIdRef="4" fieldType="TABLE_COLUMN" name="MICM170M.PADDING_WIDTH" sqlTabName="MICM170M" uid="{bcdd716d-29b9-40bc-9a95-64dddf216fe7}"/>
+    <RecordField colName="PADDING_WEIGHT" fieldIdRef="5" fieldType="TABLE_COLUMN" name="MICM170M.PADDING_WEIGHT" sqlTabName="MICM170M" uid="{b0c52bf3-8ca3-46ba-be00-d549ef9b5c9a}"/>
+    <RecordField defaultValue="N" fieldIdRef="6" name="del_rec" uid="{4b874042-e864-4b42-8f36-34f92c3f2619}"/>
+    <RecordField fieldIdRef="7" name="upd_flag" uid="{5f340711-2cca-4f13-88e5-263711cc9ef1}"/>
+  </Record>
+  <Form gridHeight="21" gridWidth="72" name="micm180_f" text="內襯紙規格碼維護作業">
+    <Grid gridHeight="19" gridWidth="64" name="micm180f_g" posX="6" posY="1">
+      <Table gridHeight="17" gridWidth="56" name="micm180f_t" posX="5" posY="1" totalRows="15">
+        <Edit case="upper" colName="PADDING_CODE" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="MICM170M.PADDING_CODE" posX="0" posY="0" sqlTabName="MICM170M" tabIndex="-1" title="襯紙碼" widget="Edit"/>
+        <Edit colName="COIL_WIDTH_MIN" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="9" name="MICM170M.COIL_WIDTH_MIN" posX="8" posY="0" sqlTabName="MICM170M" tabIndex="-1" title="鋼帶寬度下限&#10;       [mm]" widget="Edit"/>
+        <Edit colName="COIL_WIDTH_MAX" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" name="MICM170M.COIL_WIDTH_MAX" posX="17" posY="0" sqlTabName="MICM170M" tabIndex="-1" title="鋼帶寬度上限&#10;       [mm]" widget="Edit"/>
+        <Edit colName="PADDING_WIDTH" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="7" name="MICM170M.PADDING_WIDTH" posX="27" posY="0" sqlTabName="MICM170M" tabIndex="-1" title="襯紙寬度&#10;   [mm]" widget="Edit"/>
+        <Edit colName="PADDING_WEIGHT" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="MICM170M.PADDING_WEIGHT" posX="34" posY="0" sqlTabName="MICM170M" tabIndex="-1" title="襯紙基重&#10;  [g/m2]" widget="Edit"/>
+        <CheckBox defaultValue="N" fieldId="6" gridHeight="1" gridWidth="3" name="del_rec" notNull="true" posX="42" posY="0" tabIndex="-1" text="" title="刪除" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit fieldId="7" gridHeight="1" gridWidth="3" hidden="true" name="upd_flag" posX="45" posY="0" tabIndex="-1" title="upd_flag" widget="Edit"/>
+      </Table>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBlADgANgBiADMAYgA0AGMALQBlADgAOQAxAC0ANAA5ADAAZAAtAGIAMwA4AGIALQAwADAAZAA4AGEAZgBkAGEAMQAwAGUANgB9AAAAAAAAAAAAAAAAAAAAAD9gYk3S8an8AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

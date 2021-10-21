@@ -1,0 +1,488 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="CPSCAP02.tmp" build="3.20.08" sqlDbName="orapcm" minWidth="150" minHeight="30" spacing="compact" text="#CRM6 生產排程選取作業" width="134" height="30">
+  <LStr text="#CRM6 生產排程選取作業"/>
+  <Grid name="capsch02_grid" width="134" height="30">
+    <Table pageSize="5" name="table1" fontPitch="fixed" style="clean" wantFixedPageSize="1" unsortableColumns="1" width="20pt" height="24ln" posY="1" posX="3" gridWidth="28" gridHeight="24" tabName="coil_list_tb">
+      <TableColumn name="formonly.schd_order_sch02_col" colName="schd_order_sch02_col" fieldId="0" sqlTabName="formonly" text="排軋順序" tabIndex="1">
+        <Edit width="6" justify="center"/>
+        <LStr text="排軋順序"/>
+      </TableColumn>
+      <TableColumn name="formonly.coil_list_sch02_col" colName="coil_list_sch02_col" fieldId="1" sqlTabName="formonly" text="鋼捲號碼" tabIndex="2">
+        <Edit width="6" justify="left"/>
+        <LStr text="鋼捲號碼"/>
+      </TableColumn>
+      <PhantomColumn name="formonly.schd_coil_no_sch02_col" colName="schd_coil_no_sch02_col" fieldId="2" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomColumn>
+    </Table>
+    <Group name="group1" text="基本" style="normal" gridChildrenInParent="1" posY="1" posX="51" gridWidth="18" gridHeight="7">
+      <LStr text="基本"/>
+      <Label name="label3" width="6" text="鋼捲編號" posY="1" posX="1" gridWidth="6">
+        <LStr text="鋼捲編號"/>
+      </Label>
+      <FormField name="formonly.coil_no_sch02" colName="coil_no_sch02" fieldId="3" sqlTabName="formonly" noEntry="1" tabIndex="3">
+        <Edit width="9" posY="1" posX="8" gridWidth="9"/>
+      </FormField>
+      <Label name="label1" width="6" text="生產狀態" posY="2" posX="1" gridWidth="6">
+        <LStr text="生產狀態"/>
+      </Label>
+      <FormField name="formonly.coil_status_sch02" colName="coil_status_sch02" fieldId="4" sqlTabName="formonly" tabIndex="4">
+        <Edit width="9" posY="2" posX="8" gridWidth="9"/>
+      </FormField>
+      <Label name="label2" width="6" text="鋼種編號" posY="3" posX="1" gridWidth="6">
+        <LStr text="鋼種編號"/>
+      </Label>
+      <FormField name="formonly.steel_grade_sch02" colName="steel_grade_sch02" fieldId="5" sqlTabName="formonly" tabIndex="5">
+        <Edit width="9" posY="3" posX="8" gridWidth="9"/>
+      </FormField>
+      <Label name="label4" width="6" text="廠    區" fontPitch="variable" justify="center" sizePolicy="initial" posY="4" posX="1" gridWidth="6">
+        <LStr text="廠    區"/>
+      </Label>
+      <FormField name="formonly.factory_sch02" colName="factory_sch02" fieldId="6" sqlTabName="formonly" tabIndex="6">
+        <Edit width="9" posY="4" posX="8" gridWidth="9"/>
+      </FormField>
+    </Group>
+    <Group name="group2" text="入料" fontPitch="variable" gridChildrenInParent="1" posY="1" posX="69" gridWidth="18" gridHeight="7">
+      <LStr text="入料"/>
+      <Label name="label5" width="6" text="入料寬度" posY="1" posX="1" gridWidth="6">
+        <LStr text="入料寬度"/>
+      </Label>
+      <FormField name="formonly.entry_width_sch02" colName="entry_width_sch02" fieldId="7" sqlTabName="formonly" tabIndex="7">
+        <Edit width="5" posY="1" posX="8" gridWidth="5"/>
+      </FormField>
+      <Label name="label12" width="3" text="mm" posY="1" posX="14" gridWidth="3">
+        <LStr text="mm"/>
+      </Label>
+      <Label name="label6" width="6" text="入料厚度" posY="2" posX="1" gridWidth="6">
+        <LStr text="入料厚度"/>
+      </Label>
+      <FormField name="formonly.entry_thickness_sch02" colName="entry_thickness_sch02" fieldId="8" sqlTabName="formonly" tabIndex="8">
+        <Edit width="5" posY="2" posX="8" gridWidth="5"/>
+      </FormField>
+      <Label name="label13" width="3" text="mm" posY="2" posX="14" gridWidth="3">
+        <LStr text="mm"/>
+      </Label>
+      <Label name="label7" width="6" text="目標厚度" posY="3" posX="1" gridWidth="6">
+        <LStr text="目標厚度"/>
+      </Label>
+      <FormField name="formonly.target_thickness_sch02" colName="target_thickness_sch02" fieldId="9" sqlTabName="formonly" tabIndex="9">
+        <Edit width="5" posY="3" posX="8" gridWidth="5"/>
+      </FormField>
+      <Label name="label14" width="3" text="mm" posY="3" posX="14" gridWidth="3">
+        <LStr text="mm"/>
+      </Label>
+      <Label name="label8" width="6" text="入料外徑" posY="4" posX="1" gridWidth="6">
+        <LStr text="入料外徑"/>
+      </Label>
+      <FormField name="formonly.entry_outer_diameter_sch02" colName="entry_outer_diameter_sch02" fieldId="10" sqlTabName="formonly" tabIndex="10">
+        <Edit width="5" posY="4" posX="8" gridWidth="5"/>
+      </FormField>
+      <Label name="label15" width="3" text="mm" posY="4" posX="14" gridWidth="3">
+        <LStr text="mm"/>
+      </Label>
+      <Label name="label9" width="6" text="入料重量" posY="5" posX="1" gridWidth="6">
+        <LStr text="入料重量"/>
+      </Label>
+      <FormField name="formonly.entry_weight_sch02" colName="entry_weight_sch02" fieldId="11" sqlTabName="formonly" tabIndex="11">
+        <Edit width="5" posY="5" posX="8" gridWidth="5"/>
+      </FormField>
+      <Label name="label16" width="3" text="kg" posY="5" posX="14" gridWidth="3">
+        <LStr text="kg"/>
+      </Label>
+    </Group>
+    <Group name="group3" text="出料" posY="1" posX="87" gridWidth="20" gridHeight="7">
+      <LStr text="出料"/>
+      <Label name="label11" width="8" text="出料襯紙類別" posY="1" posX="1" gridWidth="8">
+        <LStr text="出料襯紙類別"/>
+      </Label>
+      <FormField name="formonly.paper_code_sch02" colName="paper_code_sch02" fieldId="12" sqlTabName="formonly" tabIndex="12">
+        <Edit width="9" justify="right" posY="1" posX="10" gridWidth="9"/>
+      </FormField>
+      <Label name="label17" width="8" text="出料套筒厚度" posY="2" posX="1" gridWidth="8">
+        <LStr text="出料套筒厚度"/>
+      </Label>
+      <FormField name="formonly.exit_sleeve_thickness_sch02" colName="exit_sleeve_thickness_sch02" fieldId="13" sqlTabName="formonly" tabIndex="13">
+        <Edit width="9" posY="2" posX="10" gridWidth="9"/>
+      </FormField>
+      <Label name="label18" width="8" text="品管判級碼" posY="3" posX="1" gridWidth="8">
+        <LStr text="品管判級碼"/>
+      </Label>
+      <FormField name="formonly.class_code_sch02" colName="class_code_sch02" fieldId="14" sqlTabName="formonly" tabIndex="14">
+        <Edit width="9" justify="right" posY="3" posX="10" gridWidth="9"/>
+      </FormField>
+      <Label name="label19" width="8" text="生產型態碼" posY="4" posX="1" gridWidth="8">
+        <LStr text="生產型態碼"/>
+      </Label>
+      <FormField name="formonly.production_code_sch02" colName="production_code_sch02" fieldId="15" sqlTabName="formonly" tabIndex="15">
+        <Edit width="9" justify="right" posY="4" posX="10" gridWidth="9"/>
+      </FormField>
+      <Label name="label20" width="8" text="軋     下     率" justify="center" posY="5" posX="1" gridWidth="8">
+        <LStr text="軋     下     率"/>
+      </Label>
+      <FormField name="formonly.reduction_sch02" colName="reduction_sch02" fieldId="16" sqlTabName="formonly" tabIndex="16">
+        <Edit width="9" posY="5" posX="10" gridWidth="9"/>
+      </FormField>
+      <PhantomFormField name="formonly.cu_sch02" colName="cu_sch02" fieldId="38" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="formonly.zn_sch02" colName="zn_sch02" fieldId="39" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="formonly.pb_sch02" colName="pb_sch02" fieldId="40" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="formonly.p_sch02" colName="p_sch02" fieldId="41" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="formonly.sn_sch02" colName="sn_sch02" fieldId="42" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="formonly.al_sch02" colName="al_sch02" fieldId="43" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="formonly.mn_sch02" colName="mn_sch02" fieldId="44" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="formonly.ni_sch02" colName="ni_sch02" fieldId="45" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="formonly.cr_sch02" colName="cr_sch02" fieldId="46" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="formonly.ti_sch02" colName="ti_sch02" fieldId="47" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="formonly.zr_sch02" colName="zr_sch02" fieldId="48" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="formonly.si_sch02" colName="si_sch02" fieldId="49" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="formonly.co_sch02" colName="co_sch02" fieldId="50" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="formonly.s_sch02" colName="s_sch02" fieldId="51" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="formonly.se_sch02" colName="se_sch02" fieldId="52" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="formonly.c_sch02" colName="c_sch02" fieldId="53" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="formonly.b_sch02" colName="b_sch02" fieldId="54" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="formonly.mo_sch02" colName="mo_sch02" fieldId="55" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="formonly.nb_sch02" colName="nb_sch02" fieldId="56" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="formonly.v_sch02" colName="v_sch02" fieldId="57" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+      <PhantomFormField name="formonly.w_sch02" colName="w_sch02" fieldId="58" sqlTabName="formonly">
+        <PhantomEdit width="1"/>
+      </PhantomFormField>
+    </Group>
+    <Button name="prev_coil_bt" width="5" text="上一筆" image="rewind" posY="2" posX="32" gridWidth="5" tabIndex="17">
+      <LStr text="上一筆"/>
+    </Button>
+    <Button name="next_coil_bt" width="5" text="下一筆" image="forwind" posY="2" posX="38" gridWidth="5" tabIndex="18">
+      <LStr text="下一筆"/>
+    </Button>
+    <Group name="group9" text="查詢鋼捲" gridChildrenInParent="1" posY="4" posX="32" gridWidth="18" gridHeight="4">
+      <LStr text="查詢鋼捲"/>
+      <Label name="label40" width="6" text="鋼捲編號" posY="1" posX="1" gridWidth="6">
+        <LStr text="鋼捲編號"/>
+      </Label>
+      <FormField name="formonly.selcoil_sch02_fd" colName="selcoil_sch02_fd" sqlType="CHAR" fieldId="17" sqlTabName="formonly" tabIndex="19">
+        <Edit width="11" fontPitch="fixed" posY="2" posX="1" gridWidth="11"/>
+      </FormField>
+      <Button name="capsch02_f1" width="4" text="確定" posY="2" posX="13" gridWidth="4" tabIndex="20">
+        <LStr text="確定"/>
+      </Button>
+    </Group>
+    <Group name="group4" text="訂單" posY="9" posX="51" gridWidth="18" gridHeight="7">
+      <LStr text="訂單"/>
+      <Label name="label21" width="6" text="訂單編號" posY="1" posX="1" gridWidth="6">
+        <LStr text="訂單編號"/>
+      </Label>
+      <FormField name="formonly.order_no_item_sch02" colName="order_no_item_sch02" fieldId="18" sqlTabName="formonly" tabIndex="21">
+        <Edit width="9" posY="1" posX="8" gridWidth="9"/>
+      </FormField>
+      <Label name="label22" width="6" text="訂單交期" posY="2" posX="1" gridWidth="6">
+        <LStr text="訂單交期"/>
+      </Label>
+      <FormField name="formonly.delivery_date_sch02" colName="delivery_date_sch02" fieldId="19" sqlTabName="formonly" tabIndex="22">
+        <Edit width="9" posY="2" posX="8" gridWidth="9"/>
+      </FormField>
+      <Label name="label23" width="6" text="訂單用途" posY="3" posX="1" gridWidth="6">
+        <LStr text="訂單用途"/>
+      </Label>
+      <FormField name="formonly.apn_no_sch02" colName="apn_no_sch02" fieldId="20" sqlTabName="formonly" tabIndex="23">
+        <Edit width="9" posY="3" posX="8" gridWidth="9"/>
+      </FormField>
+      <Label name="label24" width="6" text="訂單厚度" posY="4" posX="1" gridWidth="6">
+        <LStr text="訂單厚度"/>
+      </Label>
+      <FormField name="formonly.order_thick_sch02" colName="order_thick_sch02" fieldId="21" sqlTabName="formonly" tabIndex="24">
+        <Edit width="9" posY="4" posX="8" gridWidth="9"/>
+      </FormField>
+      <Label name="label25" width="6" text="產  品" justify="center" posY="5" posX="1" gridWidth="6">
+        <LStr text="產  品"/>
+      </Label>
+      <FormField name="formonly.prod_sch02" colName="prod_sch02" fieldId="22" sqlTabName="formonly" tabIndex="25">
+        <Edit width="9" posY="5" posX="8" gridWidth="9"/>
+      </FormField>
+    </Group>
+    <Group name="group6" text="缺陷代碼" posY="9" posX="69" gridWidth="23" gridHeight="7">
+      <LStr text="缺陷代碼"/>
+      <Label name="label26" width="8" text="缺陷代碼一" posY="1" posX="1" gridWidth="8">
+        <LStr text="缺陷代碼一"/>
+      </Label>
+      <FormField name="formonly.defect_code01_sch02" colName="defect_code01_sch02" fieldId="23" sqlTabName="formonly" tabIndex="26">
+        <Edit width="12" fontPitch="fixed" picture="" posY="1" posX="10" gridWidth="12"/>
+      </FormField>
+      <Label name="label27" width="8" text="缺陷代碼二" posY="2" posX="1" gridWidth="8">
+        <LStr text="缺陷代碼二"/>
+      </Label>
+      <FormField name="formonly.defect_code02_sch02" colName="defect_code02_sch02" fieldId="24" sqlTabName="formonly" tabIndex="27">
+        <Edit width="12" fontPitch="fixed" posY="2" posX="10" gridWidth="12"/>
+      </FormField>
+      <Label name="label28" width="8" text="缺陷代碼三" posY="3" posX="1" gridWidth="8">
+        <LStr text="缺陷代碼三"/>
+      </Label>
+      <FormField name="formonly.defect_code03_sch02" colName="defect_code03_sch02" fieldId="25" sqlTabName="formonly" tabIndex="28">
+        <Edit width="12" posY="3" posX="10" gridWidth="12"/>
+      </FormField>
+      <Label name="label29" width="8" text="缺陷代碼四" posY="4" posX="1" gridWidth="8">
+        <LStr text="缺陷代碼四"/>
+      </Label>
+      <FormField name="formonly.defect_code04_sch02" colName="defect_code04_sch02" fieldId="26" sqlTabName="formonly" tabIndex="29">
+        <Edit width="12" posY="4" posX="10" gridWidth="12"/>
+      </FormField>
+      <Label name="label30" width="8" text="缺陷代碼五" posY="5" posX="1" gridWidth="8">
+        <LStr text="缺陷代碼五"/>
+      </Label>
+      <FormField name="formonly.defect_code05_sch02" colName="defect_code05_sch02" fieldId="27" sqlTabName="formonly" tabIndex="30">
+        <Edit width="12" posY="5" posX="10" gridWidth="12"/>
+      </FormField>
+    </Group>
+    <Group name="group8" text="維護" posY="9" posX="92" gridWidth="18" gridHeight="7">
+      <LStr text="維護"/>
+      <Label name="label36" width="6" text="維護日期" posY="1" posX="1" gridWidth="6">
+        <LStr text="維護日期"/>
+      </Label>
+      <FormField name="formonly.upd_date_sch02" colName="upd_date_sch02" fieldId="28" sqlTabName="formonly" noEntry="1" tabIndex="31">
+        <Edit width="9" format="" picture="" posY="1" posX="8" gridWidth="9"/>
+      </FormField>
+      <Label name="label37" width="6" text="維護時間" posY="2" posX="1" gridWidth="6">
+        <LStr text="維護時間"/>
+      </Label>
+      <FormField name="formonly.upd_time_sch02" colName="upd_time_sch02" fieldId="29" sqlTabName="formonly" noEntry="1" tabIndex="32">
+        <Edit width="9" posY="2" posX="8" gridWidth="9"/>
+      </FormField>
+      <Label name="label38" width="6" text="維護人員" posY="3" posX="1" gridWidth="6">
+        <LStr text="維護人員"/>
+      </Label>
+      <FormField name="formonly.user_name_sch02" colName="user_name_sch02" fieldId="30" sqlTabName="formonly" noEntry="1" tabIndex="33">
+        <Edit width="9" posY="3" posX="8" gridWidth="9"/>
+      </FormField>
+      <Label name="label39" width="6" text="維護程式" posY="4" posX="1" gridWidth="6">
+        <LStr text="維護程式"/>
+      </Label>
+      <FormField name="formonly.prog_name_sch02" colName="prog_name_sch02" fieldId="31" sqlTabName="formonly" noEntry="1" tabIndex="34">
+        <Edit width="9" posY="4" posX="8" gridWidth="9"/>
+      </FormField>
+    </Group>
+    <Group name="group5" text="品管" posY="17" posX="51" gridWidth="59" gridHeight="3">
+      <LStr text="品管"/>
+      <Label name="label10" width="6" text="品管備註" posY="1" posX="1" gridWidth="6">
+        <LStr text="品管備註"/>
+      </Label>
+      <FormField name="formonly.qc_comment_sch02" colName="qc_comment_sch02" fieldId="32" sqlTabName="formonly" tabIndex="35">
+        <Edit width="35" posY="1" posX="8" gridWidth="35"/>
+      </FormField>
+    </Group>
+    <Button name="capsch02_f2" width="7" text="修改PDI" posY="21" posX="51" gridWidth="7" tabIndex="36">
+      <LStr text="修改PDI"/>
+    </Button>
+    <Button name="modok_bt" width="7" text="確認修改" posY="21" posX="59" gridWidth="7" tabIndex="37">
+      <LStr text="確認修改"/>
+    </Button>
+    <Button name="modcxl_bt" width="7" text="取消修改" posY="21" posX="67" gridWidth="7" tabIndex="38">
+      <LStr text="取消修改"/>
+    </Button>
+    <Group name="group7" text="其他" hidden="1" posY="21" posX="92" gridWidth="18" gridHeight="7">
+      <LStr text="其他"/>
+      <Label name="label31" width="6" text="入料內徑" posY="1" posX="1" gridWidth="6">
+        <LStr text="入料內徑"/>
+      </Label>
+      <FormField name="formonly.entry_inner_diameter_sch02" colName="entry_inner_diameter_sch02" fieldId="33" sqlTabName="formonly" tabIndex="39">
+        <Edit width="9" posY="1" posX="8" gridWidth="9"/>
+      </FormField>
+      <Label name="label32" width="6" text="出料內徑" posY="2" posX="1" gridWidth="6">
+        <LStr text="出料內徑"/>
+      </Label>
+      <FormField name="formonly.exit_inner_diameter_sch02" colName="exit_inner_diameter_sch02" fieldId="34" sqlTabName="formonly" tabIndex="40">
+        <Edit width="9" posY="2" posX="8" gridWidth="9"/>
+      </FormField>
+      <Label name="label33" width="6" text="檢驗碼" posY="3" posX="1" gridWidth="6">
+        <LStr text="檢驗碼"/>
+      </Label>
+      <FormField name="formonly.inspection_code_sch02" colName="inspection_code_sch02" fieldId="35" sqlTabName="formonly" tabIndex="41">
+        <Edit width="9" posY="3" posX="8" gridWidth="9"/>
+      </FormField>
+      <Label name="label35" width="6" text="訂單區域" posY="4" posX="1" gridWidth="6">
+        <LStr text="訂單區域"/>
+      </Label>
+      <FormField name="formonly.retrieval_area_sch02" colName="retrieval_area_sch02" fieldId="36" sqlTabName="formonly" tabIndex="42">
+        <Edit width="9" posY="4" posX="8" gridWidth="9"/>
+      </FormField>
+      <Label name="label34" width="7" text="鋼捲夾層紙" posY="5" posX="1" gridWidth="7">
+        <LStr text="鋼捲夾層紙"/>
+      </Label>
+      <FormField name="formonly.sampling_code_sch02" colName="sampling_code_sch02" fieldId="37" sqlTabName="formonly" tabIndex="43">
+        <Edit width="8" posY="5" posX="9" gridWidth="8"/>
+      </FormField>
+    </Group>
+    <Button name="capsch02_f3" width="7" text="刪除PDI" posY="23" posX="51" gridWidth="7" tabIndex="44">
+      <LStr text="刪除PDI"/>
+    </Button>
+    <FormField name="formonly.schdlist_pb" colName="schdlist_pb" fieldId="59" sqlTabName="formonly" noEntry="1" tabIndex="45">
+      <ProgressBar width="28" valueMin="0" valueMax="100" posY="25" posX="3" gridWidth="28"/>
+    </FormField>
+    <Label name="label41" width="132" text="" posY="28" posX="1" gridWidth="132">
+      <LStr text=""/>
+    </Label>
+  </Grid>
+  <RecordView tabName="formonly">
+    <Link colName="schd_order_sch02_col" fieldIdRef="0"/>
+    <Link colName="coil_list_sch02_col" fieldIdRef="1"/>
+    <Link colName="schd_coil_no_sch02_col" fieldIdRef="2"/>
+    <Link colName="coil_no_sch02" fieldIdRef="3"/>
+    <Link colName="coil_status_sch02" fieldIdRef="4"/>
+    <Link colName="steel_grade_sch02" fieldIdRef="5"/>
+    <Link colName="factory_sch02" fieldIdRef="6"/>
+    <Link colName="entry_width_sch02" fieldIdRef="7"/>
+    <Link colName="entry_thickness_sch02" fieldIdRef="8"/>
+    <Link colName="target_thickness_sch02" fieldIdRef="9"/>
+    <Link colName="entry_outer_diameter_sch02" fieldIdRef="10"/>
+    <Link colName="entry_weight_sch02" fieldIdRef="11"/>
+    <Link colName="paper_code_sch02" fieldIdRef="12"/>
+    <Link colName="exit_sleeve_thickness_sch02" fieldIdRef="13"/>
+    <Link colName="class_code_sch02" fieldIdRef="14"/>
+    <Link colName="production_code_sch02" fieldIdRef="15"/>
+    <Link colName="reduction_sch02" fieldIdRef="16"/>
+    <Link colName="selcoil_sch02_fd" fieldIdRef="17"/>
+    <Link colName="order_no_item_sch02" fieldIdRef="18"/>
+    <Link colName="delivery_date_sch02" fieldIdRef="19"/>
+    <Link colName="apn_no_sch02" fieldIdRef="20"/>
+    <Link colName="order_thick_sch02" fieldIdRef="21"/>
+    <Link colName="prod_sch02" fieldIdRef="22"/>
+    <Link colName="defect_code01_sch02" fieldIdRef="23"/>
+    <Link colName="defect_code02_sch02" fieldIdRef="24"/>
+    <Link colName="defect_code03_sch02" fieldIdRef="25"/>
+    <Link colName="defect_code04_sch02" fieldIdRef="26"/>
+    <Link colName="defect_code05_sch02" fieldIdRef="27"/>
+    <Link colName="upd_date_sch02" fieldIdRef="28"/>
+    <Link colName="upd_time_sch02" fieldIdRef="29"/>
+    <Link colName="user_name_sch02" fieldIdRef="30"/>
+    <Link colName="prog_name_sch02" fieldIdRef="31"/>
+    <Link colName="qc_comment_sch02" fieldIdRef="32"/>
+    <Link colName="entry_inner_diameter_sch02" fieldIdRef="33"/>
+    <Link colName="exit_inner_diameter_sch02" fieldIdRef="34"/>
+    <Link colName="inspection_code_sch02" fieldIdRef="35"/>
+    <Link colName="retrieval_area_sch02" fieldIdRef="36"/>
+    <Link colName="sampling_code_sch02" fieldIdRef="37"/>
+    <Link colName="cu_sch02" fieldIdRef="38"/>
+    <Link colName="zn_sch02" fieldIdRef="39"/>
+    <Link colName="pb_sch02" fieldIdRef="40"/>
+    <Link colName="p_sch02" fieldIdRef="41"/>
+    <Link colName="sn_sch02" fieldIdRef="42"/>
+    <Link colName="al_sch02" fieldIdRef="43"/>
+    <Link colName="mn_sch02" fieldIdRef="44"/>
+    <Link colName="ni_sch02" fieldIdRef="45"/>
+    <Link colName="cr_sch02" fieldIdRef="46"/>
+    <Link colName="ti_sch02" fieldIdRef="47"/>
+    <Link colName="zr_sch02" fieldIdRef="48"/>
+    <Link colName="si_sch02" fieldIdRef="49"/>
+    <Link colName="co_sch02" fieldIdRef="50"/>
+    <Link colName="s_sch02" fieldIdRef="51"/>
+    <Link colName="se_sch02" fieldIdRef="52"/>
+    <Link colName="c_sch02" fieldIdRef="53"/>
+    <Link colName="b_sch02" fieldIdRef="54"/>
+    <Link colName="mo_sch02" fieldIdRef="55"/>
+    <Link colName="nb_sch02" fieldIdRef="56"/>
+    <Link colName="v_sch02" fieldIdRef="57"/>
+    <Link colName="w_sch02" fieldIdRef="58"/>
+    <Link colName="schdlist_pb" fieldIdRef="59"/>
+  </RecordView>
+  <RecordView tabName="pdi_r">
+    <Link colName="coil_no_sch02" fieldIdRef="3"/>
+    <Link colName="coil_status_sch02" fieldIdRef="4"/>
+    <Link colName="steel_grade_sch02" fieldIdRef="5"/>
+    <Link colName="entry_width_sch02" fieldIdRef="7"/>
+    <Link colName="entry_thickness_sch02" fieldIdRef="8"/>
+    <Link colName="target_thickness_sch02" fieldIdRef="9"/>
+    <Link colName="entry_outer_diameter_sch02" fieldIdRef="10"/>
+    <Link colName="entry_inner_diameter_sch02" fieldIdRef="33"/>
+    <Link colName="exit_inner_diameter_sch02" fieldIdRef="34"/>
+    <Link colName="entry_weight_sch02" fieldIdRef="11"/>
+    <Link colName="class_code_sch02" fieldIdRef="14"/>
+    <Link colName="inspection_code_sch02" fieldIdRef="35"/>
+    <Link colName="defect_code01_sch02" fieldIdRef="23"/>
+    <Link colName="defect_code02_sch02" fieldIdRef="24"/>
+    <Link colName="defect_code03_sch02" fieldIdRef="25"/>
+    <Link colName="defect_code04_sch02" fieldIdRef="26"/>
+    <Link colName="defect_code05_sch02" fieldIdRef="27"/>
+    <Link colName="sampling_code_sch02" fieldIdRef="37"/>
+    <Link colName="paper_code_sch02" fieldIdRef="12"/>
+    <Link colName="exit_sleeve_thickness_sch02" fieldIdRef="13"/>
+    <Link colName="retrieval_area_sch02" fieldIdRef="36"/>
+    <Link colName="production_code_sch02" fieldIdRef="15"/>
+    <Link colName="apn_no_sch02" fieldIdRef="20"/>
+    <Link colName="upd_date_sch02" fieldIdRef="28"/>
+    <Link colName="upd_time_sch02" fieldIdRef="29"/>
+    <Link colName="user_name_sch02" fieldIdRef="30"/>
+    <Link colName="prog_name_sch02" fieldIdRef="31"/>
+    <Link colName="factory_sch02" fieldIdRef="6"/>
+    <Link colName="qc_comment_sch02" fieldIdRef="32"/>
+    <Link colName="order_no_item_sch02" fieldIdRef="18"/>
+    <Link colName="delivery_date_sch02" fieldIdRef="19"/>
+    <Link colName="reduction_sch02" fieldIdRef="16"/>
+    <Link colName="cu_sch02" fieldIdRef="38"/>
+    <Link colName="zn_sch02" fieldIdRef="39"/>
+    <Link colName="pb_sch02" fieldIdRef="40"/>
+    <Link colName="p_sch02" fieldIdRef="41"/>
+    <Link colName="sn_sch02" fieldIdRef="42"/>
+    <Link colName="al_sch02" fieldIdRef="43"/>
+    <Link colName="mn_sch02" fieldIdRef="44"/>
+    <Link colName="ni_sch02" fieldIdRef="45"/>
+    <Link colName="cr_sch02" fieldIdRef="46"/>
+    <Link colName="ti_sch02" fieldIdRef="47"/>
+    <Link colName="zr_sch02" fieldIdRef="48"/>
+    <Link colName="si_sch02" fieldIdRef="49"/>
+    <Link colName="co_sch02" fieldIdRef="50"/>
+    <Link colName="s_sch02" fieldIdRef="51"/>
+    <Link colName="se_sch02" fieldIdRef="52"/>
+    <Link colName="c_sch02" fieldIdRef="53"/>
+    <Link colName="b_sch02" fieldIdRef="54"/>
+    <Link colName="mo_sch02" fieldIdRef="55"/>
+    <Link colName="nb_sch02" fieldIdRef="56"/>
+    <Link colName="v_sch02" fieldIdRef="57"/>
+    <Link colName="w_sch02" fieldIdRef="58"/>
+  </RecordView>
+  <RecordView tabName="pb">
+    <Link colName="schdlist_pb" fieldIdRef="59"/>
+  </RecordView>
+  <RecordView tabName="controller">
+    <Link colName="selcoil_sch02_fd" fieldIdRef="17"/>
+  </RecordView>
+  <RecordView tabName="pdi_ext_r">
+    <Link colName="order_thick_sch02" fieldIdRef="21"/>
+    <Link colName="prod_sch02" fieldIdRef="22"/>
+  </RecordView>
+</Form>

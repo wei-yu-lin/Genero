@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="ANSI_X3.4-1968"?>
+<StyleList>
+  <Style name="Window">
+      <StyleAttribute name="windowType" value="normal" />
+     <StyleAttribute name="fontSize" value="12" />
+     <StyleAttribute name="fontStyle" value="oblique" />
+     <StyleAttribute name="fontFamily" value="????"  />
+     <StyleAttribute name="backgroundColor" value="#CCCCCC"  />
+  </Style>
+  <Style name="Window.main">
+     <StyleAttribute name="windowType" value="normal" />
+     <StyleAttribute name="startMenuPosition" value="menu" />
+  </Style>
+  <Style name="Window.main2">
+     <StyleAttribute name="windowType" value="normal" />
+     <StyleAttribute name="actionPanelPosition" value="none" />
+     <StyleAttribute name="ringMenuPosition" value="none" />
+  </Style>
+  <Style name="Window.dialog">
+     <StyleAttribute name="windowType" value="modal" />
+     <StyleAttribute name="sizable" value="no" />
+     <StyleAttribute name="position" value="center" />
+     <StyleAttribute name="actionPanelPosition" value="bottom" />
+     <StyleAttribute name="ringMenuPosition" value="bottom" />
+     <StyleAttribute name="toolBarPosition" value="none" />
+     <StyleAttribute name="statusBarType" value="none" />
+     <StyleAttribute name="errorMessagePosition" value="popup" />
+  </Style>
+  <Style name="Window.dialog2">
+     <StyleAttribute name="windowType" value="modal" />
+     <StyleAttribute name="sizable" value="no" />
+     <StyleAttribute name="position" value="center" />
+     <StyleAttribute name="actionPanelPosition" value="none" />
+     <StyleAttribute name="ringMenuPosition" value="none" />
+     <StyleAttribute name="toolBarPosition" value="none" />
+     <StyleAttribute name="statusBarType" value="none" />
+     <StyleAttribute name="errorMessagePosition" value="popup" />
+  </Style>
+  <Style name="Window.dialog3">
+     <StyleAttribute name="windowType" value="modal" />
+     <StyleAttribute name="sizable" value="yes" />
+     <StyleAttribute name="toolBarPosition" value="none" />
+     <StyleAttribute name="actionPanelPosition" value="none" />
+     <StyleAttribute name="ringMenuPosition" value="none" />
+     <StyleAttribute name="statusBarType" value="none" />
+     <StyleAttribute name="errorMessagePosition" value="popup" />
+  </Style>
+  <Style name="Window.dialog4">
+     <StyleAttribute name="windowType" value="modal" />
+     <StyleAttribute name="sizable" value="yes" />
+     <StyleAttribute name="actionPanelPosition" value="bottom" />
+     <StyleAttribute name="ringMenuPosition" value="none" />
+     <StyleAttribute name="statusBarType" value="none" />
+     <StyleAttribute name="errorMessagePosition" value="popup" />
+  </Style>
+  <Style name="Window.naked">
+     <StyleAttribute name="windowType" value="modal" />
+     <StyleAttribute name="border" value="tool" />
+     <StyleAttribute name="actionPanelPosition" value="none" />
+     <StyleAttribute name="ringMenuPosition" value="none" />
+     <StyleAttribute name="toolBarPosition" value="none" />
+     <StyleAttribute name="statusBarType" value="none" />
+  </Style>
+  <Style name="Window.viewer">
+     <StyleAttribute name="windowType" value="modal" />
+     <StyleAttribute name="windowSystemMenu" value="yes" />
+     <StyleAttribute name="windowOptionMinimize" value="no" />
+     <StyleAttribute name="windowOptionMaximize" value="no" />
+     <StyleAttribute name="sizable" value="yes" />
+     <StyleAttribute name="actionPanelPosition" value="none" />
+     <StyleAttribute name="ringMenuPosition" value="none" />
+     <StyleAttribute name="toolBarPosition" value="none" />
+     <StyleAttribute name="statusBarType" value="none" />
+  </Style>
+  <Style name="Window.mystyle">
+     <StyleAttribute name="windowType" value="normal" />
+     <StyleAttribute name="ringMenuPosition" value="none" />
+     <StyleAttribute name="sizable" value="yes" />
+     <StyleAttribute name="position" value="center" />
+     <StyleAttribute name="windowSystemMenu" value="none" />
+     <StyleAttribute name="actionPanelPosition" value="none" />
+     <StyleAttribute name="toolBarPosition" value="top" />
+     <StyleAttribute name="statusBarType" value="yes" />
+     <StyleAttribute name="errorMessagePosition" value="none" />
+     <StyleAttribute name="textColor" value="black" />     
+     <StyleAttribute name="backgroundColor" value="#e6f3fd"  />
+  </Style>
+
+  <Style name="Label.title">
+     <StyleAttribute name="fontFamily" value="Microsoft JhengHei" />
+     <StyleAttribute name="fontSize" value="20" />
+     <StyleAttribute name="textColor" value="#FFFFFF" />
+     <StyleAttribute name="backgroundColor" value="#000000" />
+  </Style>
+
+  <Style name="Label.column">
+     <StyleAttribute name="fontFamily" value="Microsoft JhengHei" />
+     <StyleAttribute name="fontSize" value="14" />
+     <StyleAttribute name="textColor" value="#000000" />
+     <StyleAttribute name="backgroundColor" value="#FFFFFF" />
+  </Style>
+
+  <Style name="Edit.column">
+     <StyleAttribute name="fontFamily" value="Microsoft JhengHei" />
+     <StyleAttribute name="fontSize" value="12" />
+     <StyleAttribute name="textColor" value="#000000" />
+     <StyleAttribute name="backgroundColor" value="#FFFFFF" />
+  </Style>
+  
+   <Style name="Label.csnn">
+     <StyleAttribute name="textColor" value="blue" />
+     
+     <StyleAttribute name="backgroundColor" value="pink"></StyleAttribute>
+  </Style>
+
+  <Style name="Label.msnn">
+     <StyleAttribute name="textColor" value="blue" />
+     
+     <StyleAttribute name="backgroundColor" value="lightgreen"></StyleAttribute>
+  </Style>
+
+  <Style name=".bigfont">
+     <StyleAttribute name="fontSize" value="large" />
+  </Style>
+  
+</StyleList>

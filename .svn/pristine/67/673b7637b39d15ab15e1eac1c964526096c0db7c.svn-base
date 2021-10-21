@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="rdbmic36" fileVersion="31400" gstVersion="31408" name="managedform" uid="{42264826-5994-4f59-b9e2-dcb769ba738f}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="v_micm200f" uid="{771ab680-827a-4edc-a005-a2f36252a2d3}">
+    <RecordField colName="GRADE_CODE" fieldIdRef="1" fieldType="TABLE_COLUMN" name="MICM190M.GRADE_CODE" sqlTabName="MICM190M" uid="{e79502cb-f952-4de8-83c5-b63a7b016c3a}"/>
+    <RecordField colName="DENSITY" fieldIdRef="2" fieldType="TABLE_COLUMN" name="MICM190M.DENSITY" sqlTabName="MICM190M" uid="{62f06e04-3f43-4cf3-9afc-fae1c1532db8}"/>
+    <RecordField colName="SERIAL_CODE" fieldIdRef="3" fieldType="TABLE_COLUMN" name="MICM190M.SERIAL_CODE" sqlTabName="MICM190M" uid="{1e56a20d-e9d4-442a-8cdd-262315d1a94c}"/>
+    <RecordField colName="ALLOY_CODE" fieldIdRef="4" fieldType="TABLE_COLUMN" name="MICM190M.ALLOY_CODE" sqlTabName="MICM190M" uid="{e998b23b-92e6-41e3-a6a1-03149e604542}"/>
+    <RecordField defaultValue="N" fieldIdRef="5" name="del_rec" uid="{d51ee7a0-47c5-4cf0-a3ca-dfff305aa658}"/>
+    <RecordField fieldIdRef="6" name="upd_flag" uid="{f7190c1a-004d-49f9-9d40-f0fe005a14d8}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="61" name="micm200f_f" text="鋼種密度維護作業">
+    <Grid gridHeight="23" gridWidth="57" name="micm200f_g" posX="2" posY="1">
+      <Table aggregateText="" gridHeight="19" gridWidth="49" name="micm200f_t" posX="3" posY="2" totalRows="15">
+        <Edit case="upper" century="C" colName="GRADE_CODE" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" name="MICM190M.GRADE_CODE" notNull="true" posX="0" posY="0" sqlTabName="MICM190M" tabIndex="-1" title="燁聯鋼種" widget="Edit"/>
+        <Edit colName="DENSITY" fieldId="2" fieldType="TABLE_COLUMN" format="-&amp;.&amp;&amp;&amp;" gridHeight="1" gridWidth="10" name="MICM190M.DENSITY" posX="12" posY="0" sizePolicy="fixed" sqlTabName="MICM190M" tabIndex="-1" title="密度(g/cm3)" widget="Edit"/>
+        <Edit colName="SERIAL_CODE" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="5" justify="right" name="MICM190M.SERIAL_CODE" posX="22" posY="0" sqlTabName="MICM190M" tabIndex="-1" title="系列" widget="Edit"/>
+        <Edit case="upper" colName="ALLOY_CODE" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="4" justify="right" name="MICM190M.ALLOY_CODE" posX="27" posY="0" sqlTabName="MICM190M" tabIndex="-1" title="合金碼" widget="Edit"/>
+        <CheckBox defaultValue="N" fieldId="5" gridHeight="1" gridWidth="4" name="del_rec" notNull="true" posX="31" posY="0" tabIndex="-1" text="" title="刪除" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit fieldId="6" gridHeight="1" gridWidth="3" hidden="user" name="upd_flag" posX="35" posY="0" tabIndex="-1" title="upd_flag" widget="Edit"/>
+      </Table>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewA3ADcAMQBhAGIANgA4ADAALQA4ADIANwBhAC0ANABlAGQAYwAtAGEAMAAwADUALQBhADIAZgAzADYAMgA1ADIAYQAyAGQAMwB9AAAAAAAAAAAAAAAAAAAAAD9wYk3S8an8AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

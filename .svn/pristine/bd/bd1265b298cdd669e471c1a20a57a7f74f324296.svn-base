@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="rdbmic36" fileVersion="31400" gstVersion="31408" name="managedform" uid="{80717426-b163-41a2-b810-938320bcfaea}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="v_micm290f" uid="{f29ceeee-34d1-4750-aceb-2f7b6ef0dbbd}">
+    <RecordField colName="PRODUCT_CODE" fieldIdRef="1" fieldType="TABLE_COLUMN" name="MICM290M.PRODUCT_CODE" sqlTabName="MICM290M" uid="{54236740-5fdf-4315-8c4d-f65edf1460ff}"/>
+    <RecordField colName="STEEL_GRADE_2_5" fieldIdRef="2" fieldType="TABLE_COLUMN" name="MICM290M.STEEL_GRADE_2_5" sqlTabName="MICM290M" uid="{8bddd933-37b8-4825-966a-11c238b6282a}"/>
+    <RecordField colName="SANDBLASTING" fieldIdRef="3" fieldType="TABLE_COLUMN" name="MICM290M.SANDBLASTING" sqlTabName="MICM290M" uid="{b00b53b5-8a05-4f14-a824-a137167898e5}"/>
+    <RecordField colName="TITANIZING" fieldIdRef="4" fieldType="TABLE_COLUMN" name="MICM290M.TITANIZING" sqlTabName="MICM290M" uid="{bcdfffa8-c73f-45e7-82e6-0493204a5b8f}"/>
+    <RecordField colName="ANTI_FINGERPRINT" fieldIdRef="5" fieldType="TABLE_COLUMN" name="MICM290M.ANTI_FINGERPRINT" sqlTabName="MICM290M" uid="{06a88b6d-f0c8-4040-ad43-f4bd522ae744}"/>
+    <RecordField colName="WT_MIN" fieldIdRef="6" fieldType="TABLE_COLUMN" name="MICM290M.WT_MIN" sqlTabName="MICM290M" uid="{c8f1b43e-3e29-4de1-baf6-05186521215b}"/>
+    <RecordField colName="WT_MAX" fieldIdRef="7" fieldType="TABLE_COLUMN" name="MICM290M.WT_MAX" sqlTabName="MICM290M" uid="{c434fe34-80dc-42e6-bf2a-8b91eabedd71}"/>
+    <RecordField colName="THICK_MIN" fieldIdRef="8" fieldType="TABLE_COLUMN" name="MICM290M.THICK_MIN" sqlTabName="MICM290M" uid="{518b1641-dce7-4d61-aa41-e1ca3d15e1bb}"/>
+    <RecordField colName="THICK_MAX" fieldIdRef="9" fieldType="TABLE_COLUMN" name="MICM290M.THICK_MAX" sqlTabName="MICM290M" uid="{afb2b84d-96c3-473a-95ea-bf088cc3839a}"/>
+    <RecordField colName="WID_MIN" fieldIdRef="10" fieldType="TABLE_COLUMN" name="MICM290M.WID_MIN" sqlTabName="MICM290M" uid="{312c752b-964a-494a-9e7b-7e8a31b831cf}"/>
+    <RecordField colName="WID_MAX" fieldIdRef="11" fieldType="TABLE_COLUMN" name="MICM290M.WID_MAX" sqlTabName="MICM290M" uid="{0cc1bd45-6030-47ea-81cb-321fd0b921bb}"/>
+    <RecordField colName="LEN_MIN" fieldIdRef="12" fieldType="TABLE_COLUMN" name="MICM290M.LEN_MIN" sqlTabName="MICM290M" uid="{2b212431-8c13-48b7-985e-2eb74a2e6ac8}"/>
+    <RecordField colName="LEN_MAX" fieldIdRef="13" fieldType="TABLE_COLUMN" name="MICM290M.LEN_MAX" sqlTabName="MICM290M" uid="{04563ffa-b8cc-453c-bc17-8f22420834da}"/>
+    <RecordField colName="DATE_LAST_MAINT" fieldIdRef="14" fieldType="TABLE_COLUMN" name="MICM290M.DATE_LAST_MAINT" sqlTabName="MICM290M" uid="{ed16e680-6ac4-4118-811d-a3e53ae3e1c0}"/>
+    <RecordField defaultValue="N" fieldIdRef="15" name="del_rec" uid="{212eb2ce-195f-4418-b88b-975f6de758fe}"/>
+    <RecordField fieldIdRef="16" name="upd_flag" uid="{75c20801-738c-4bb2-8cec-ee5ed0ab0389}"/>
+  </Record>
+  <Form fourSTFile="../../SYS/sys_style.4st" gridHeight="25" gridWidth="160" minHeight="18" minWidth="160" name="form" text="系統代碼維護作業">
+    <Grid gridHeight="18" gridWidth="101" name="grid1" posX="6" posY="1">
+      <Label gridHeight="1" gridWidth="8" justify="center" name="Label1" posX="49" posY="1" text="單重限制[MT]"/>
+      <Label gridHeight="1" gridWidth="8" justify="center" name="Label2" posX="62" posY="1" text="可接單厚度限制[MT]"/>
+      <Label gridHeight="1" gridWidth="8" justify="center" name="Label3" posX="74" posY="1" text="可接單寬度限制[MT]"/>
+      <Label gridHeight="1" gridWidth="8" justify="center" name="Label4" posX="86" posY="1" text="可接單長度限制[MT]"/>
+      <Table gridHeight="13" gridWidth="97" name="table1" posX="4" posY="3" style="custom_style" totalRows="5">
+        <Edit colName="PRODUCT_CODE" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" name="MICM290M.PRODUCT_CODE" posX="0" posY="0" sqlTabName="MICM290M" tabIndex="-1" title="產品別" widget="Edit"/>
+        <Edit colName="STEEL_GRADE_2_5" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" name="MICM290M.STEEL_GRADE_2_5" posX="8" posY="0" sqlTabName="MICM290M" tabIndex="-1" title="鋼種別" widget="Edit"/>
+        <Edit colName="SANDBLASTING" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" name="MICM290M.SANDBLASTING" posX="16" posY="0" sqlTabName="MICM290M" tabIndex="-1" title="拋砂" widget="Edit"/>
+        <Edit colName="TITANIZING" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" name="MICM290M.TITANIZING" posX="24" posY="0" sqlTabName="MICM290M" tabIndex="-1" title="鍍鈦" widget="Edit"/>
+        <Edit colName="ANTI_FINGERPRINT" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" name="MICM290M.ANTI_FINGERPRINT" posX="32" posY="0" sqlTabName="MICM290M" tabIndex="-1" title="抗指紋" widget="Edit"/>
+        <Edit colName="WT_MIN" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" name="MICM290M.WT_MIN" posX="40" posY="0" sqlTabName="MICM290M" tabIndex="-1" title="MIN" widget="Edit"/>
+        <Edit colName="WT_MAX" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" name="MICM290M.WT_MAX" posX="48" posY="0" sqlTabName="MICM290M" tabIndex="-1" title="MAX" widget="Edit"/>
+        <Edit colName="THICK_MIN" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" name="MICM290M.THICK_MIN" posX="56" posY="0" sqlTabName="MICM290M" tabIndex="-1" title="MIN" widget="Edit"/>
+        <Edit colName="THICK_MAX" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" name="MICM290M.THICK_MAX" posX="64" posY="0" sqlTabName="MICM290M" tabIndex="-1" title="MAX" widget="Edit"/>
+        <Edit colName="WID_MIN" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" name="MICM290M.WID_MIN" posX="72" posY="0" sqlTabName="MICM290M" tabIndex="-1" title="MIN" widget="Edit"/>
+        <Edit colName="WID_MAX" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" name="MICM290M.WID_MAX" posX="80" posY="0" sqlTabName="MICM290M" tabIndex="-1" title="MAX" widget="Edit"/>
+        <Edit colName="LEN_MIN" fieldId="12" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" name="MICM290M.LEN_MIN" posX="88" posY="0" sqlTabName="MICM290M" tabIndex="-1" title="MIN" widget="Edit"/>
+        <Edit colName="LEN_MAX" fieldId="13" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="6" name="MICM290M.LEN_MAX" posX="96" posY="0" sqlTabName="MICM290M" tabIndex="-1" title="MAX" widget="Edit"/>
+        <Edit colName="DATE_LAST_MAINT" fieldId="14" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="4" hidden="true" name="MICM290M.DATE_LAST_MAINT" posX="96" posY="0" sqlTabName="MICM290M" tabIndex="-1" title="DATE_LAST_MAINT" widget="Edit"/>
+        <CheckBox defaultValue="N" fieldId="15" gridHeight="1" gridWidth="8" name="del_rec" notNull="true" posX="32" posY="0" tabIndex="-1" title="刪除" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit fieldId="16" gridHeight="1" gridWidth="8" hidden="true" name="upd_flag" posX="40" posY="0" tabIndex="-1" title="upd_flag" widget="Edit"/>
+      </Table>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBmADIAOQBjAGUAZQBlAGUALQAzADQAZAAxAC0ANAA3ADUAMAAtAGEAYwBlAGIALQAyAGYANwBiADYAZQBmADAAZABiAGIAZAB9AAAAAAAAAAAAAAAAAAAAAD+AYk3S8an8AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

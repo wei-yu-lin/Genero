@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="rdbmic36" fileVersion="31400" gstVersion="31408" name="managedform" uid="{34f3aacd-5443-4ead-afeb-ec7137662578}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="v_apym060f" uid="{eefc4042-3fe0-4253-8c89-af6a5decb865}">
+    <RecordField colName="PROC_CODE" fieldIdRef="1" fieldType="TABLE_COLUMN" name="APYM060M.PROC_CODE" sqlTabName="APYM060M" uid="{92a1ea1f-0c84-4d8c-9a94-e387eab7a89f}"/>
+    <RecordField colName="SEQ_NO" fieldIdRef="2" fieldType="TABLE_COLUMN" name="APYM060M.SEQ_NO" sqlTabName="APYM060M" uid="{852a48ae-0e9c-4ed7-b874-d32130ce94d5}"/>
+    <RecordField colName="DESCRIPTION" fieldIdRef="3" fieldType="TABLE_COLUMN" name="APYM060M.DESCRIPTION" sqlTabName="APYM060M" uid="{7943b3c7-9257-4c8d-85b0-8d59786a0c1e}"/>
+    <RecordField defaultValue="N" fieldIdRef="4" name="del_rec" uid="{f292d866-3ce8-4614-88f1-a9264b33a31f}"/>
+    <RecordField fieldIdRef="5" name="upd_flag" uid="{805ecb51-00d8-4f9f-a2e4-9bc039d03fa9}"/>
+  </Record>
+  <Form fourSTFile="../../SYS/sys_style.4st" gridHeight="25" gridWidth="80" name="form" text="製程碼與函數對照表維護作業">
+    <Grid gridHeight="16" gridWidth="76" name="grid1" posX="2" posY="2">
+      <Table gridHeight="10" gridWidth="71" name="table1" posX="2" posY="1" totalRows="5">
+        <Edit case="upper" colName="PROC_CODE" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="APYM060M.PROC_CODE" posX="0" posY="0" sqlTabName="APYM060M" tabIndex="-1" title="製程碼" widget="Edit"/>
+        <Edit colName="SEQ_NO" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" justify="center" name="APYM060M.SEQ_NO" posX="8" posY="0" sqlTabName="APYM060M" tabIndex="-1" title="函數碼" widget="Edit"/>
+        <Edit colName="DESCRIPTION" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="30" justify="left" name="APYM060M.DESCRIPTION" posX="16" posY="0" sqlTabName="APYM060M" tabIndex="-1" title="說明" widget="Edit"/>
+        <CheckBox defaultValue="N" fieldId="4" gridHeight="1" gridWidth="8" name="del_rec" notNull="true" posX="46" posY="0" tabIndex="-1" title="刪除" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit fieldId="5" gridHeight="1" gridWidth="8" hidden="true" name="upd_flag" posX="54" posY="0" tabIndex="-1" title="upd_flag" widget="Edit"/>
+      </Table>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBlAGUAZgBjADQAMAA0ADIALQAzAGYAZQAwAC0ANAAyADUAMwAtADgAYwA4ADkALQBhAGYANgBhADUAZABlAGMAYgA4ADYANQB9AAAAAAAAAAAAAAAAAAAAAD9QYk3S8an8AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

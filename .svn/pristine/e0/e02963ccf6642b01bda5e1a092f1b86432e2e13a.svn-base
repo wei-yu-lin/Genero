@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="yud221" fileVersion="31400" gstVersion="31408" name="managedform" uid="{691e0a24-45f3-4c34-a8cd-685d4619f5d3}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="sectabref_r" uid="{86c68386-d852-4acf-9ff2-ae93b1e9a10e}">
+    <RecordField fieldIdRef="1" name="sys" uid="{bfd503c0-ac70-415b-be1c-68347a8f004b}"/>
+    <RecordField fieldIdRef="2" name="prog_name" uid="{7c4ad7a7-be4a-4da8-a9e1-da66b6249652}"/>
+    <RecordField fieldIdRef="3" name="prog_desc" uid="{e6c60438-6a0b-4449-af86-3071b3c1ba85}"/>
+    <RecordField fieldIdRef="4" name="table_ref" uid="{57ddee60-8fa9-47f9-9231-2558e7f833af}"/>
+    <RecordField fieldIdRef="5" name="upd_code" uid="{82ef2d89-93cc-4503-91ff-edb870cb9fb4}"/>
+    <RecordField fieldIdRef="6" name="calledby" uid="{ad3d45da-19d1-4479-bf3a-d9502aed020d}"/>
+  </Record>
+  <Record name="prog_ref_r" uid="{c1edcea5-9780-4601-b0d6-e36eba1ed250}">
+    <RecordField fieldIdRef="7" name="prog_name_l" uid="{74f8bd35-6121-4f19-ad01-eefcd823ead7}"/>
+    <RecordField fieldIdRef="8" name="prog_desc_l" uid="{a659f713-7ec1-45a0-acc5-d883f9fc5e9a}"/>
+    <RecordField fieldIdRef="11" name="upd_code_l" uid="{1f16486b-6395-4f48-a748-2f816fce87c5}"/>
+  </Record>
+  <Record name="table_ref_r" uid="{254a1338-e8b3-4865-9a56-4a0ec1da7826}">
+    <RecordField fieldIdRef="9" name="table_ref_r" uid="{a251767f-3538-4dee-8474-2ac2bc1d8247}"/>
+    <RecordField fieldIdRef="12" name="upd_code_r" uid="{29ba03bd-5bf4-4839-8156-5d8a582ae8da}"/>
+  </Record>
+  <Record name="sys_cb_r" uid="{d9fc233b-03bc-4060-bb47-73e45c04d303}">
+    <RecordField colName="sys" fieldIdRef="10" fieldType="TABLE_COLUMN" name="sectabref.sys" sqlTabName="sectabref" uid="{1365aa1c-88b8-45d6-96a3-f86eefd72b8e}"/>
+  </Record>
+  <Form gridHeight="25" gridWidth="80" name="TableRef" text="檔案關聯管理作業">
+    <Grid gridHeight="24" gridWidth="76" name="grid1" posX="1" posY="1">
+      <Label gridHeight="1" gridWidth="4" name="label1" posX="43" posY="1" text="系統選擇"/>
+      <ComboBox colName="sys" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" items="" name="sectabref.sys" posX="48" posY="1" sqlTabName="sectabref" tabIndex="-1" title="combobox1" widget="ComboBox"/>
+      <Group gridHeight="12" gridWidth="57" name="main_list" posX="1" posY="3" text="總攬">
+        <Table gridHeight="10" gridWidth="55" name="sectabref_tb" posX="1" posY="1" totalRows="5" unsortableColumns="true">
+          <Edit fieldId="1" gridHeight="1" gridWidth="8" name="sys" posX="0" posY="0" tabIndex="-1" title="系統" widget="Edit"/>
+          <Edit fieldId="2" gridHeight="1" gridWidth="8" name="prog_name" posX="8" posY="0" tabIndex="-1" title="程式名稱" widget="Edit"/>
+          <Edit fieldId="3" gridHeight="1" gridWidth="8" name="prog_desc" posX="16" posY="0" tabIndex="-1" title="程式描述" widget="Edit"/>
+          <Edit fieldId="4" gridHeight="1" gridWidth="8" name="table_ref" posX="24" posY="0" tabIndex="-1" title="檔案關聯" widget="Edit"/>
+          <Edit fieldId="5" gridHeight="1" gridWidth="8" name="upd_code" posX="32" posY="0" tabIndex="-1" title="修改碼" widget="Edit"/>
+          <Edit fieldId="6" gridHeight="1" gridWidth="8" name="calledby" posX="40" posY="0" tabIndex="-1" title="呼叫者" widget="Edit"/>
+        </Table>
+      </Group>
+      <Group gridHeight="9" gridWidth="35" name="prog_list" posX="1" posY="15" text="程式列表">
+        <Table gridHeight="6" gridWidth="33" name="table1" posX="1" posY="1" totalRows="5">
+          <Edit fieldId="7" gridHeight="1" gridWidth="8" name="prog_name_l" posX="0" posY="0" tabIndex="-1" title="程式名稱" widget="Edit"/>
+          <Edit fieldId="8" gridHeight="1" gridWidth="8" name="prog_desc_l" posX="8" posY="0" tabIndex="-1" title="程式描述" widget="Edit"/>
+          <Edit fieldId="11" gridHeight="1" gridWidth="8" name="upd_code_l" posX="16" posY="0" tabIndex="-1" title="修改碼" widget="Edit"/>
+        </Table>
+      </Group>
+      <Group gridHeight="9" gridWidth="21" name="table_list" posX="37" posY="15" text="檔案列表">
+        <Table gridHeight="6" gridWidth="19" name="table2" posX="1" posY="1" totalRows="5">
+          <Edit fieldId="9" gridHeight="1" gridWidth="8" name="table_ref_r" posX="0" posY="0" tabIndex="-1" title="檔案關聯" widget="Edit"/>
+          <Edit fieldId="12" gridHeight="1" gridWidth="8" name="upd_code_r" posX="8" posY="0" tabIndex="-1" title="修改碼" widget="Edit"/>
+        </Table>
+      </Group>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewBkADkAZgBjADIAMwAzAGIALQAwADMAYgBjAC0ANAAwADYAMAAtAGIAYgA0ADcALQA3ADMAZQA0ADUAYwAwADQAZAAzADAAMwB9wEIAAAAAAABAPQAAAAAAAD+Ik3S8an78AQAAAEwAewBjADEAZQBkAGMAZQBhADUALQA5ADcAOAAwAC0ANAA2ADAAMQAtAGIAMABkADYALQBlADMANgBlAGIAYQAxAGUAZAAyADUAMAB9wG1AAAAAAADAUIAAAAAAAD+AYk3S8an8AQAAAEwAewA4ADYAYwA2ADgAMwA4ADYALQBkADgANQAyAC0ANABhAGMAZgAtADkAZgBmADIALQBhAGUAOQAzAGIAMQBlADkAYQAxADAAZQB9wHogAAAAAADAUQAAAAAAAD94k3S8an76AQAAAEwAewAyADUANABhADEAMwAzADgALQBlADgAYgAzAC0ANAA4ADYANQAtADkAYQA1ADYALQA0AGEAMABlAGMAMQBkAGEANwA4ADIANgB9AAAAAAAAAADAVsAAAAAAAD+EeuFHrhR8AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

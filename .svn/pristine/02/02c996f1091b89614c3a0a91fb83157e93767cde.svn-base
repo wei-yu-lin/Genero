@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="rdbmic36" fileVersion="31400" gstVersion="31408" name="managedform" uid="{7b56d49f-8516-4093-957c-55ed057cb222}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record additionalTables="" joinLeft="" joinOperator="" joinRight="" name="m_micm140m" order="" uid="{15d5adbf-48e8-4131-8995-a2d8f8523e70}" where="">
+    <RecordField colName="SPEC" fieldIdRef="1" fieldType="TABLE_COLUMN" name="MICM140M.SPEC" sqlTabName="MICM140M" uid="{e479d865-2a9b-4a46-bcba-95121de31b9c}"/>
+    <RecordField colName="SPEC_DESC" fieldIdRef="2" fieldType="TABLE_COLUMN" name="MICM140M.SPEC_DESC" sqlTabName="MICM140M" uid="{ff37a731-7093-4852-9da5-1cb262ef0b5e}"/>
+  </Record>
+  <Record name="v_micm145m" uid="{7bd6d85d-bcf3-4417-a214-88b29d3d4483}">
+    <RecordField colName="STEEL_GRADE_JIS" fieldIdRef="3" fieldType="TABLE_COLUMN" name="MICM145M.STEEL_GRADE_JIS" sqlTabName="MICM145M" uid="{24434b4c-ea31-4829-b239-1faf498ffa28}"/>
+    <RecordField colName="PSR_NO_2_6" fieldIdRef="4" fieldType="TABLE_COLUMN" name="MICM145M.PSR_NO_2_6" sqlTabName="MICM145M" uid="{a4fe7624-f96f-4df7-b10c-1de8f0e843f5}"/>
+    <RecordField colName="INVOICE_ABBR" fieldIdRef="5" fieldType="TABLE_COLUMN" name="MICM145M.INVOICE_ABBR" sqlTabName="MICM145M" uid="{6106b132-b029-4d09-9c7f-a1518fcba25f}"/>
+    <RecordField defaultValue="N" fieldIdRef="6" name="del_rec" uid="{103098dd-b7d1-4bdd-9ba7-3e152d7ea18d}"/>
+    <RecordField defaultValue="N" fieldIdRef="7" name="upd_flag" uid="{5304581f-65b3-4231-b3cc-cd1578afc09b}"/>
+  </Record>
+  <Form gridHeight="24" gridWidth="76" name="form" text="產品規範資料維護作業">
+    <Grid gridHeight="23" gridWidth="73" name="grid1" posX="1" posY="0">
+      <Label gridHeight="1" gridWidth="6" name="label1" posX="3" posY="1" text="產品規範"/>
+      <Edit case="upper" colName="SPEC" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="18" name="MICM140M.SPEC" posX="10" posY="1" sqlTabName="MICM140M" tabIndex="-1" title="edit1" widget="Edit"/>
+      <Edit case="upper" colName="SPEC_DESC" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="22" name="MICM140M.SPEC_DESC" posX="29" posY="1" sqlTabName="MICM140M" tabIndex="-1" title="edit2" widget="Edit"/>
+      <Table gridHeight="8" gridWidth="53" name="table1" posX="3" posY="3" totalRows="5">
+        <Edit case="upper" colName="STEEL_GRADE_JIS" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="MICM145M.STEEL_GRADE_JIS" posX="0" posY="0" sqlTabName="MICM145M" tabIndex="-1" title="鋼種代號" widget="Edit"/>
+        <Edit case="upper" colName="PSR_NO_2_6" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="12" name="MICM145M.PSR_NO_2_6" posX="8" posY="0" sqlTabName="MICM145M" tabIndex="-1" title="PSR-NO-MIDDLE" widget="Edit"/>
+        <Edit case="upper" colName="INVOICE_ABBR" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="MICM145M.INVOICE_ABBR" posX="20" posY="0" sqlTabName="MICM145M" tabIndex="-1" title="發票簡稱" widget="Edit"/>
+        <CheckBox defaultValue="N" fieldId="6" gridHeight="1" gridWidth="8" name="del_rec" notNull="true" posX="28" posY="0" tabIndex="-1" text="" title="刪除" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <CheckBox defaultValue="N" fieldId="7" gridHeight="1" gridWidth="8" name="upd_flag" notNull="true" posX="36" posY="0" tabIndex="-1" text="" title="upd_flag" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+      </Table>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAxADUAZAA1AGEAZABiAGYALQA0ADgAZQA4AC0ANAAxADMAMQAtADgAOQA5ADUALQBhADIAZAA4AGYAOAA1ADIAMwBlADcAMAB9wEIAAAAAAADAYAAAAAAAAD+ybpeNT98/AQAAAEwAewA3AGIAZAA2AGQAOAA1AGQALQBiAGMAZgAzAC0ANAA0ADEANwAtAGEAMgAxADQALQA4ADgAYgAyADkAZAAzAGQANAA0ADgAMwB9QDQAAAAAAABANAAAAAAAAD+zdLxqfvnfAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

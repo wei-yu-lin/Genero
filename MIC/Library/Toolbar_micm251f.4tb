@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="Big5"?>
+<ToolBar >
+  <ToolBarItem name="micm251f_upd" image="prop" text="修改" />
+  <ToolBarSeparator name="micm251f_updsep" />
+  
+  <ToolBarItem name="micm251f_save" image="disk" text="存檔" />
+  <ToolBarSeparator name="micm251f_savesep" />
+
+  <ToolBarItem name="bye" image="quit" text="離開" />
+</ToolBar>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TopMenu>
+  <TopMenuGroup name = "exit"  text="離開">
+    <TopMenuCommand name="exit" text="離開CAP 排程作業" image="quit" />
+  </TopMenuGroup>
+
+</TopMenu>

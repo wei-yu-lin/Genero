@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="rdbmic36" fileVersion="31400" gstVersion="31408" name="managedform" uid="{5fa9e785-4374-4502-998c-f102c2a6c90b}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="v_micm310f" uid="{11bc3a27-6efe-47d5-8aae-8bb9c329bd31}">
+    <RecordField colName="LINE_MARKING" fieldIdRef="1" fieldType="TABLE_COLUMN" name="MICM310M.LINE_MARKING" sqlTabName="MICM310M" uid="{5d2aa34b-2af0-42ed-81a1-0b44e95c21a8}"/>
+    <RecordField colName="LM_SIDE" fieldIdRef="2" fieldType="TABLE_COLUMN" name="MICM310M.LM_SIDE" sqlTabName="MICM310M" uid="{21efe1d3-cb97-46c2-9687-abe1815fb403}"/>
+    <RecordField colName="LM_PLANE" fieldIdRef="3" fieldType="TABLE_COLUMN" name="MICM310M.LM_PLANE" sqlTabName="MICM310M" uid="{79fbada4-7a4d-4be7-9f5c-8ba7668fdd8f}"/>
+    <RecordField colName="LM_HEAT_NO" fieldIdRef="4" fieldType="TABLE_COLUMN" name="MICM310M.LM_HEAT_NO" sqlTabName="MICM310M" uid="{063220d5-0d0d-4488-879f-8607d7745742}"/>
+    <RecordField colName="LM_COIL_NO" fieldIdRef="5" fieldType="TABLE_COLUMN" name="MICM310M.LM_COIL_NO" sqlTabName="MICM310M" uid="{4a676dce-891d-460b-bf3c-eb123f72f60e}"/>
+    <RecordField colName="LM_SPEC" fieldIdRef="6" fieldType="TABLE_COLUMN" name="MICM310M.LM_SPEC" sqlTabName="MICM310M" uid="{7c7ada58-e6da-4880-b0d6-de9a2bdd920d}"/>
+    <RecordField colName="LM_STEEL_GRADE" fieldIdRef="7" fieldType="TABLE_COLUMN" name="MICM310M.LM_STEEL_GRADE" sqlTabName="MICM310M" uid="{75a803a0-23ad-4622-94e7-49f2e5bdd134}"/>
+    <RecordField colName="LM_SURFACE" fieldIdRef="8" fieldType="TABLE_COLUMN" name="MICM310M.LM_SURFACE" sqlTabName="MICM310M" uid="{afb0ea74-920c-41e6-b035-8bbf4b9742b9}"/>
+    <RecordField colName="LM_DIMEMTION" fieldIdRef="9" fieldType="TABLE_COLUMN" name="MICM310M.LM_DIMEMTION" sqlTabName="MICM310M" uid="{a26633df-8b3d-4243-a020-4cc36e98d415}"/>
+    <RecordField colName="REMARK" fieldIdRef="10" fieldType="TABLE_COLUMN" name="MICM310M.REMARK" sqlTabName="MICM310M" uid="{d9ec8677-1a5c-4b11-8403-92bb64b5c87a}"/>
+    <RecordField defaultValue="N" fieldIdRef="11" name="del_rec" uid="{212eb2ce-195f-4418-b88b-975f6de758fe}"/>
+    <RecordField fieldIdRef="12" name="upd_flag" uid="{75c20801-738c-4bb2-8cec-ee5ed0ab0389}"/>
+  </Record>
+  <Form fourSTFile="../../SYS/sys_style.4st" gridHeight="25" gridWidth="119" name="form" text="LINE MARKING 代碼維護作業">
+    <Grid gridHeight="18" gridWidth="113" name="grid1" posX="6" posY="1">
+      <Label gridHeight="1" gridWidth="8" justify="center" name="Label1" posX="4" posY="1" text="設定    單邊列印[S]    雙邊列印[D]    不列印[ ]    列印設定[Y]"/> 
+      <Table gridHeight="13" gridWidth="109" name="table1" posX="4" posY="3" style="custom_style" totalRows="5">
+        <Edit colName="LINE_MARKING" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="MICM310M.LINE_MARKING" posX="0" posY="0" sqlTabName="MICM310M" tabIndex="-1" title="Line Marking" widget="Edit"/>
+        <Edit colName="LM_SIDE" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="MICM310M.LM_SIDE" posX="0" posY="0" sqlTabName="MICM310M" tabIndex="-1" title="單(雙)面" widget="Edit"/>
+        <Edit colName="LM_PLANE" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="MICM310M.LM_PLANE" posX="0" posY="0" sqlTabName="MICM310M" tabIndex="-1" title="廠名" widget="Edit"/>
+        <Edit colName="LM_HEAT_NO" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="MICM310M.LM_HEAT_NO" posX="0" posY="0" sqlTabName="MICM310M" tabIndex="-1" title="爐號" widget="Edit"/>
+        <Edit colName="LM_COIL_NO" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="MICM310M.LM_COIL_NO" posX="0" posY="0" sqlTabName="MICM310M" tabIndex="-1" title="鋼捲編號" widget="Edit"/>
+        <Edit colName="LM_SPEC" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="MICM310M.LM_SPEC" posX="0" posY="0" sqlTabName="MICM310M" tabIndex="-1" title="規範" widget="Edit"/>
+        <Edit colName="LM_STEEL_GRADE" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="MICM310M.LM_STEEL_GRADE" posX="0" posY="0" sqlTabName="MICM310M" tabIndex="-1" title="鋼鍾" widget="Edit"/>
+        <Edit colName="LM_SURFACE" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="MICM310M.LM_SURFACE" posX="0" posY="0" sqlTabName="MICM310M" tabIndex="-1" title="表面品級" widget="Edit"/>
+        <Edit colName="LM_DIMEMTION" fieldId="9" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="MICM310M.LM_DIMEMTION" posX="0" posY="0" sqlTabName="MICM310M" tabIndex="-1" title="訂單尺寸" widget="Edit"/>
+        <Edit colName="REMARK" fieldId="10" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="MICM310M.REMARK" posX="0" posY="0" sqlTabName="MICM310M" tabIndex="-1" title="說明" widget="Edit"/>
+        <CheckBox defaultValue="N" fieldId="11" gridHeight="1" gridWidth="8" name="del_rec" notNull="true" posX="32" posY="0" tabIndex="-1" title="刪除" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit fieldId="12" gridHeight="1" gridWidth="8" hidden="true" name="upd_flag" posX="40" posY="0" tabIndex="-1" title="upd_flag" widget="Edit"/>
+      </Table>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAxADEAYgBjADMAYQAyADcALQA2AGUAZgBlAC0ANAA3AGQANQAtADgAYQBhAGUALQA4AGIAYgA5AGMAMwAyADkAYgBkADMAMQB9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ==]]>
+  </DiagramLayout>
+</ManagedForm>

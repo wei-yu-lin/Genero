@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Form name="CPSCAP04.tmp" build="3.20.08" text="Form" width="150" height="30">
+  <LStr text="Form"/>
+  <Grid name="grid1" width="150" height="30">
+    <Label name="label1" width="6" text="L2 Server:" posY="1" posX="1" gridWidth="6">
+      <LStr text="L2 Server:"/>
+    </Label>
+    <FormField name="formonly.l2_ip_e" colName="l2_ip_e" fieldId="0" sqlTabName="formonly" tabIndex="1">
+      <Edit width="15" sizePolicy="initial" posY="1" posX="8" gridWidth="15"/>
+    </FormField>
+    <FormField name="formonly.connmsg_te" colName="connmsg_te" fieldId="1" sqlTabName="formonly" tabIndex="2">
+      <TextEdit width="52" height="28" scroll="1" wantReturns="1" posY="1" posX="83" gridWidth="52" gridHeight="28"/>
+    </FormField>
+    <Button name="capsch04_f1" width="13" text="PDI傳送" posY="1" posX="136" gridWidth="13" tabIndex="3">
+      <LStr text="PDI傳送"/>
+    </Button>
+    <Label name="label2" width="6" text="port:" posY="2" posX="1" gridWidth="6">
+      <LStr text="port:"/>
+    </Label>
+    <FormField name="formonly.port_e" colName="port_e" fieldId="2" sqlTabName="formonly" tabIndex="4">
+      <Edit width="4" posY="2" posX="8" gridWidth="4"/>
+    </FormField>
+    <Button name="clean_msg_bt" width="13" text="清空訊息" posY="2" posX="136" gridWidth="13" tabIndex="5">
+      <LStr text="清空訊息"/>
+    </Button>
+    <Table pageSize="5" name="table1" width="81" posY="3" posX="1" gridWidth="81" gridHeight="26" tabName="+tn_0">
+      <TableColumn name="formonly.coil_no_col" colName="coil_no_col" fieldId="3" sqlTabName="formonly" text="鋼捲編號" tabIndex="6">
+        <Edit width="8"/>
+        <LStr text="鋼捲編號"/>
+      </TableColumn>
+      <TableColumn name="formonly.timer_col" colName="timer_col" fieldId="4" sqlTabName="formonly" text="Timer" tabIndex="7">
+        <Edit width="8"/>
+        <LStr text="Timer"/>
+      </TableColumn>
+      <TableColumn name="formonly.ack_col" colName="ack_col" fieldId="5" sqlTabName="formonly" text="Response" tabIndex="8">
+        <Edit width="8"/>
+        <LStr text="Response"/>
+      </TableColumn>
+    </Table>
+    <Button name="capsch04_f2" width="13" text="刪除傳送" posY="3" posX="136" gridWidth="13" tabIndex="9">
+      <LStr text="刪除傳送"/>
+    </Button>
+  </Grid>
+  <RecordView tabName="formonly">
+    <Link colName="l2_ip_e" fieldIdRef="0"/>
+    <Link colName="connmsg_te" fieldIdRef="1"/>
+    <Link colName="port_e" fieldIdRef="2"/>
+    <Link colName="coil_no_col" fieldIdRef="3"/>
+    <Link colName="timer_col" fieldIdRef="4"/>
+    <Link colName="ack_col" fieldIdRef="5"/>
+  </RecordView>
+  <RecordView tabName="ccap215m_r">
+    <Link colName="coil_no_col" fieldIdRef="3"/>
+    <Link colName="ack_col" fieldIdRef="5"/>
+    <Link colName="timer_col" fieldIdRef="4"/>
+  </RecordView>
+  <RecordView tabName="connmsg_r">
+    <Link colName="connmsg_te" fieldIdRef="1"/>
+    <Link colName="l2_ip_e" fieldIdRef="0"/>
+    <Link colName="port_e" fieldIdRef="2"/>
+  </RecordView>
+</Form>

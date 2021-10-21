@@ -1,0 +1,3 @@
+GLOBALS
+    DEFINE p_id, ack_pool STRING
+END GLOBALS

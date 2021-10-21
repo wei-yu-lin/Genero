@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm fileVersion="31400" gstVersion="31408" name="managedform" uid="{54afa41c-ec2d-40a4-8e2a-16082049b64f}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Form gridHeight="25" gridWidth="80" name="form" text="Form">
+    <Grid gridHeight="16" gridWidth="56" name="grid1" posX="8" posY="2">
+      <Image gridHeight="4" gridWidth="47" image="Logo" name="image1" posX="4" posY="0"/>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAg==]]>
+  </DiagramLayout>
+</ManagedForm>

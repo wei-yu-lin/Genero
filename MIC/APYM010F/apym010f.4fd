@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="rdbmic36" fileVersion="31400" gstVersion="31408" name="managedform" uid="{485dff77-091d-461b-93b8-690aefd9dc7c}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="v_apym010f" uid="{08c33bee-d926-40a6-8d51-26c71b9a5e92}">
+    <RecordField colName="APY_CODE" fieldIdRef="1" fieldType="TABLE_COLUMN" name="APYM010M.APY_CODE" sqlTabName="APYM010M" uid="{a30494f2-add8-433b-8e6c-af37f1a58b5c}"/>
+    <RecordField colName="REMARK" fieldIdRef="11" fieldType="TABLE_COLUMN" name="MICM060M.REMARK" sqlTabName="MICM060M" uid="{9b599c8d-0f64-4ed4-9a05-fc0e24d2321f}"/>
+    <RecordField colName="ZMILL_THICK_1_MIN" fieldIdRef="2" fieldType="TABLE_COLUMN" name="APYM010M.ZMILL_THICK_1_MIN" sqlTabName="APYM010M" uid="{502f50e2-6a02-4cd3-aecb-92016bfa2b2f}"/>
+    <RecordField colName="ZMILL_THICK_1_MAX" fieldIdRef="3" fieldType="TABLE_COLUMN" name="APYM010M.ZMILL_THICK_1_MAX" sqlTabName="APYM010M" uid="{91b0f6f9-898e-4ad3-a7e2-aa8bf303c4bd}"/>
+    <RecordField colName="TARGET_WIDTH_MIN" fieldIdRef="4" fieldType="TABLE_COLUMN" name="APYM010M.TARGET_WIDTH_MIN" sqlTabName="APYM010M" uid="{bb7de19b-81af-460a-8c10-00fc4796abb9}"/>
+    <RecordField colName="TARGET_WIDTH_MAX" fieldIdRef="5" fieldType="TABLE_COLUMN" name="APYM010M.TARGET_WIDTH_MAX" sqlTabName="APYM010M" uid="{1d2f6a15-d759-4432-a018-10fe3cfa372a}"/>
+    <RecordField colName="STRIP_THICK" fieldIdRef="6" fieldType="TABLE_COLUMN" name="APYM010M.STRIP_THICK" sqlTabName="APYM010M" uid="{1b5fdb42-22ee-44ad-adf4-9e6280a32ff9}"/>
+    <RecordField colName="STRIP_THICK_MIN" fieldIdRef="7" fieldType="TABLE_COLUMN" name="APYM010M.STRIP_THICK_MIN" sqlTabName="APYM010M" uid="{5b19cadd-a60b-4a43-9c9c-cf871cffe415}"/>
+    <RecordField colName="STRIP_THICK_MAX" fieldIdRef="8" fieldType="TABLE_COLUMN" name="APYM010M.STRIP_THICK_MAX" sqlTabName="APYM010M" uid="{05d50296-6ab3-4fce-96fa-6e70baa460e5}"/>
+    <RecordField defaultValue="N" fieldIdRef="9" name="del_rec" uid="{a0f163d0-50f8-4cdb-ab94-68911f71a650}"/>
+    <RecordField fieldIdRef="10" name="upd_flag" uid="{a25de3d7-061a-4c97-ab52-639308b46b83}"/>
+  </Record>
+  <Form fourSTFile="../../SYS/sys_style.4st" gridHeight="25" gridWidth="127" name="form" text="TABLE B1 維護作業">
+    <Grid gridHeight="16" gridWidth="124" name="grid1" posX="3" posY="1">
+      <Table gridHeight="12" gridWidth="122" name="table1" posX="2" posY="1" totalRows="5">
+        <Edit case="upper" colName="APY_CODE" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" name="APYM010M.APY_CODE" posX="0" posY="0" sqlTabName="APYM010M" tabIndex="-1" title="配料碼" widget="Edit"/>
+        <Edit colName="REMARK" fieldId="11" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="20" name="MICM060M.REMARK" posX="8" posY="0" scroll="false" sizePolicy="dynamic" sqlTabName="MICM060M" tabIndex="-1" title="" widget="Edit"/>
+        <Edit colName="ZMILL_THICK_1_MIN" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" justify="center" name="APYM010M.ZMILL_THICK_1_MIN" posX="28" posY="0" sqlTabName="APYM010M" tabIndex="-1" title="第一次&#10;Z-Mill" widget="Edit"/>
+        <Edit colName="ZMILL_THICK_1_MAX" fieldId="3" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" justify="center" name="APYM010M.ZMILL_THICK_1_MAX" posX="36" posY="0" sqlTabName="APYM010M" tabIndex="-1" title="第一次&#10;厚度" widget="Edit"/>
+        <Edit colName="TARGET_WIDTH_MIN" fieldId="4" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" justify="center" name="APYM010M.TARGET_WIDTH_MIN" posX="44" posY="0" sqlTabName="APYM010M" tabIndex="-1" title="寬度目標值&#10;Min" widget="Edit"/>
+        <Edit colName="TARGET_WIDTH_MAX" fieldId="5" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" justify="center" name="APYM010M.TARGET_WIDTH_MAX" posX="52" posY="0" sqlTabName="APYM010M" tabIndex="-1" title="寬度目標值&#10;Max" widget="Edit"/>
+        <Edit colName="STRIP_THICK" fieldId="6" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" justify="center" name="APYM010M.STRIP_THICK" posX="60" posY="0" sqlTabName="APYM010M" tabIndex="-1" title="STRIP&#10; 厚度" widget="Edit"/>
+        <Edit colName="STRIP_THICK_MIN" fieldId="7" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" justify="center" name="APYM010M.STRIP_THICK_MIN" posX="68" posY="0" sqlTabName="APYM010M" tabIndex="-1" title=" STRIP&#10;厚度下限" widget="Edit"/>
+        <Edit colName="STRIP_THICK_MAX" fieldId="8" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="8" justify="center" name="APYM010M.STRIP_THICK_MAX" posX="76" posY="0" sqlTabName="APYM010M" tabIndex="-1" title=" STRIP&#10;厚度上限" widget="Edit"/>
+        <CheckBox defaultValue="N" fieldId="9" gridHeight="1" gridWidth="8" name="del_rec" notNull="true" posX="84" posY="0" tabIndex="-1" title="刪除" valueChecked="Y" valueUnchecked="N" widget="CheckBox"/>
+        <Edit fieldId="10" gridHeight="1" gridWidth="8" hidden="true" name="upd_flag" posX="92" posY="0" tabIndex="-1" title="upd_flag" widget="Edit"/>
+      </Table>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAwADgAYwAzADMAYgBlAGUALQBkADkAMgA2AC0ANAAwAGEANgAtADgAZAA1ADEALQAyADYAYwA3ADEAYgA5AGEANQBlADkAMgB9AAAAAAAAAAAAAAAAAAAAAD9wYk3S8an8AQ==]]>
+  </DiagramLayout>
+</ManagedForm>

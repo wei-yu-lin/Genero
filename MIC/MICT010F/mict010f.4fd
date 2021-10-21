@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ManagedForm databaseName="rdbmic36" fileVersion="31400" gstVersion="31408" name="managedform" uid="{064cf726-0f9b-4d86-97bc-87f4832733bf}">
+  <AGSettings>
+    <DynamicProperties version="2"/>
+  </AGSettings>
+  <Record name="mict010f" uid="{3577125b-8889-4930-9d96-b8be6bc77109}">
+    <RecordField colName="MIC_NO" fieldIdRef="1" fieldType="TABLE_COLUMN" name="MICM010M.MIC_NO" sqlTabName="MICM010M" uid="{34d5a227-6741-4a90-a1cf-c862362fe507}"/>
+    <RecordField colName="DATE_LAST_MAINT" fieldIdRef="2" fieldType="TABLE_COLUMN" name="MICM010M.DATE_LAST_MAINT" sqlTabName="MICM010M" uid="{64f8ae61-0aee-4e45-a81b-9f9edf2211ec}"/>
+  </Record>
+  <Form fourSTFile="../Library/mic_style.4st" gridHeight="60" gridWidth="80" name="form" text="Form">
+    <Grid gridHeight="30" gridWidth="70" name="grid1" posX="0" posY="0">
+      <Label gridHeight="3" gridWidth="60" justify="center" name="label1" posX="5" posY="0" sizePolicy="fixed" style="title" text="冶金規範資料維護"/>
+      <Label gridHeight="1" gridWidth="8" name="label2" posX="5" posY="4" style="column" text="MIC NO"/>
+      <Edit colName="MIC_NO" fieldId="1" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="10" name="MICM010M.MIC_NO" posX="15" posY="4" sqlTabName="MICM010M" style="column" tabIndex="-1" title="edit1" widget="Edit"/>
+      <Label gridHeight="1" gridWidth="11" name="label3" posX="28" posY="4" style="column" text="建檔日期"/>
+      <Edit colName="DATE_LAST_MAINT" fieldId="2" fieldType="TABLE_COLUMN" gridHeight="1" gridWidth="11" name="MICM010M.DATE_LAST_MAINT" posX="40" posY="4" sqlTabName="MICM010M" style="column" tabIndex="-1" title="edit1" widget="Edit"/>
+    </Grid>
+  </Form>
+  <DiagramLayout>
+    <![CDATA[AAAAAgAAAEwAewAzADUANwA3ADEAMgA1AGIALQA4ADgAOAA5AC0ANAA5ADMAMAAtADkAZAA5ADYALQBiADgAYgBlADYAYgBjADcANwAxADAAOQB9QCQAAAAAAABAJAAAAAAAAD+QYk3S8an+AQ==]]>
+  </DiagramLayout>
+</ManagedForm>
